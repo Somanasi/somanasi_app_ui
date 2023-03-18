@@ -15,8 +15,8 @@ const routes = createBrowserRouter (
       element={<App />}
       errorElement={<Error />}
       path='/'
-
-    />
+    >
+    </Route>
   )
 )
 
