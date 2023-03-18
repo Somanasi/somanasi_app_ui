@@ -10,6 +10,7 @@ import App from './App'
 import Error from './routes/Error'
 import Home from './routes/Home'
 import Courses from './routes/Courses'
+import Blog from './routes/Blog'
 
 const routes = createBrowserRouter (
   createRoutesFromElements (
