@@ -1,52 +1,28 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
+import React from "react";
+import ReactDOM from "react-dom/client";
 import {
   createBrowserRouter,
   createRoutesFromElements,
   RouterProvider,
   Route
-} from 'react-router-dom'
-import App from './App'
-import Error from './routes/Error'
-import Home from './routes/Home'
-import Courses from './routes/Courses'
-import Blog from './routes/Blog'
-import AboutUs from './routes/AboutUs'
-import ContactUs from './routes/ContactUs'
+} from "react-router-dom";
+import App from "./App";
+import { Error, Home, Courses, Blog, AboutUs, ContactUs } from "./routes";
 
-const routes = createBrowserRouter (
-  createRoutesFromElements (
-    <Route 
-      element={<App />}
-      errorElement={<Error />}
-      path='/'
-    >
-      <Route 
-        element={<Home/>}
-        index
-      />
-      <Route
-        element={<Courses />}
-        path='courses'
-      />
-      <Route
-        element={<Blog/>}
-        path='blog'
-      />
-      <Route
-        element={<AboutUs/>}
-        path='about_us'
-      />
-      <Route
-        element={<ContactUs/>}
-        path='contact_us'
-      />
+const routes = createBrowserRouter(
+  createRoutesFromElements(
+    <Route element={<App />} errorElement={<Error />} path="/">
+      <Route element={<Home />} index />
+      <Route element={<Courses />} path="courses" />
+      <Route element={<Blog />} path="blog" />
+      <Route element={<AboutUs />} path="about_us" />
+      <Route element={<ContactUs />} path="contact_us" />
     </Route>
   )
-)
+);
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <RouterProvider router={routes} />
-  </React.StrictMode>,
-)
+  </React.StrictMode>
+);
