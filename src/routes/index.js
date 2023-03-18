@@ -5,6 +5,7 @@ import Blog from './Blog'
 import AboutUs from './AboutUs'
 import ContactUs from './ContactUs'
 import SingleBlog from './SingleBlog'
+import SingleCourse from './SingleCourse'
 
 export {
     Error,
