@@ -14,6 +14,7 @@ const routes = createBrowserRouter(
     <Route element={<App />} errorElement={<Error />} path="/">
       <Route element={<Home />} index />
       <Route element={<Courses />} path="courses" />
+      <Route element={}
       <Route element={<Blog />} path="blog" />
       <Route element={<SingleBlog />} path="blog/:id"/>
       <Route element={<AboutUs />} path="about_us" />

@@ -15,4 +15,5 @@ export {
     AboutUs,
     ContactUs,
     SingleBlog,
+    SingleCourse,
 };
