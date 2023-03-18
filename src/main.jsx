@@ -7,7 +7,7 @@ import {
   Route
 } from 'react-router-dom'
 import App from './App'
-import './index.css'
+import Error from './routes/Error'
 
 const routes = createBrowserRouter (
   createRoutesFromElements (
