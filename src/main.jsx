@@ -8,6 +8,7 @@ import {
 } from 'react-router-dom'
 import App from './App'
 import Error from './routes/Error'
+import Home from './routes/Home'
 
 const routes = createBrowserRouter (
   createRoutesFromElements (
