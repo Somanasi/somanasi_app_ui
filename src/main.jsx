@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import App from "./App";
 import { Error, Home, Courses, Blog, AboutUs, ContactUs, SingleBlog, SingleCourse } from "./routes";
+import './assets/sass/main.scss'
 
 const routes = createBrowserRouter(
   createRoutesFromElements(
