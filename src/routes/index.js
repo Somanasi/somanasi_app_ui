@@ -4,6 +4,7 @@ import Courses from './Courses'
 import Blog from './Blog'
 import AboutUs from './AboutUs'
 import ContactUs from './ContactUs'
+import SingleBlog from './SingleBlog'
 
 export {
     Error,
@@ -11,5 +12,6 @@ export {
     Courses,
     Blog,
     AboutUs,
-    ContactUs
+    ContactUs,
+    SingleBlog,
 };

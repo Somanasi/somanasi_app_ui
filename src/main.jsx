@@ -15,6 +15,7 @@ const routes = createBrowserRouter(
       <Route element={<Home />} index />
       <Route element={<Courses />} path="courses" />
       <Route element={<Blog />} path="blog" />
+      <Route element={<SingleBlog}/>
       <Route element={<AboutUs />} path="about_us" />
       <Route element={<ContactUs />} path="contact_us" />
     </Route>
