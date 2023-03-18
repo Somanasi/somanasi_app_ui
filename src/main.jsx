@@ -11,6 +11,7 @@ import Error from './routes/Error'
 import Home from './routes/Home'
 import Courses from './routes/Courses'
 import Blog from './routes/Blog'
+import AboutUs from './routes/AboutUs'
 
 const routes = createBrowserRouter (
   createRoutesFromElements (
