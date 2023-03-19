@@ -2,6 +2,6 @@
 .header{
     .menu{
         display: none !important;
-        @include u.flexcustomdirection(column, center, end);
+        @include u.flexcustomdirection(none, column, end, center);
     }
 }
