@@ -43,6 +43,7 @@
 
     // Media queries:
     @include u.breakpoint-up(medium){
+        height: 10vh;
         display: grid !important;
         grid-template-columns: 1fr 8fr !important;
         .mobile-view{
