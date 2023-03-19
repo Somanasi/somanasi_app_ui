@@ -2,6 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import Logo from "./Logo";
 import { GoGrabber } from "react-icons/go";
+import Button from "./Button";
 const Navbar = ({visible, toggle}) => {
   return (
     <header className="header">
@@ -11,7 +12,11 @@ const Navbar = ({visible, toggle}) => {
         </NavLink>
       </div>
       <div className="mobile-view">
-        
+        <Button
+        onClick={ () => toggle(!visible)}
+        >
+
+        </Button>
       </div>
       <nav>
         <ul>
