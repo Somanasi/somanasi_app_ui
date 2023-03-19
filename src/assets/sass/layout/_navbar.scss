@@ -40,9 +40,9 @@
     }
 
     // Media queries:
-    @include u.breakpoint-up(xlarge){
+    @include u.breakpoint-up('xlarge'){
         .mobile-view{
-            display: none;
+            display: none !important;
         }
     }
 }
