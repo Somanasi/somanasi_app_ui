@@ -51,7 +51,7 @@
         }
         .menu{
             @include u.flexcustomdirection(column, center, center);
-            padding-top: u.rem(70) !important;
+            // padding-top: u.rem(70) !important;
             // margin-inline: auto !important;
             ul{
                 background-color: transparent !important;
