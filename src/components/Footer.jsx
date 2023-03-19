@@ -3,7 +3,7 @@ import React from "react";
 const Footer = () => {
   return (
     <footer>
-      <div>
+      <div className="footer_seciton__1">
         <div>
           <div>
             <h3>Company</h3>
