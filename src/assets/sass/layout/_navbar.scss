@@ -38,4 +38,11 @@
     .show_menu{
         @include u.flexcustomdirection(column, start, start);
     }
+
+    // Media queries:
+    @include u.breakpoint-up(xlarge){
+        .mobile-view{
+            display: none;
+        }
+    }
 }
