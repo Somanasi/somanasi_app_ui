@@ -2,6 +2,8 @@
 .header{
     .menu{
         display: none !important;
-        flex-direction: column !important;
+    }
+    .show_menu{
+        @include u.flexcustomdirection(column, center, end);
     }
 }
