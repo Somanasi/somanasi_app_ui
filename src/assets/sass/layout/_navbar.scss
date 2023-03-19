@@ -52,7 +52,7 @@
 
     // Media queries:
     @include u.breakpoint-up(medium) {
-        height: auto;
+        height: 10vh;
         display: grid !important;
         grid-template-columns: 1fr 8fr !important;
 
@@ -62,7 +62,7 @@
 
         .menu {
             background-color: red;
-            @include u.flexcustomdirection(column, center, center);
+            @include u.flexcustomdirection(column, start, start);
 
             ul {
                 background-color: transparent !important;
