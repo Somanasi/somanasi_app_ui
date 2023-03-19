@@ -1,7 +1,9 @@
 @use './variables' as v;
+header{
+    background-color: v.$secondary;
+}
 li{
     list-style-type: none;
-    background-color: black;
 }
 a{
     text-decoration: none;
