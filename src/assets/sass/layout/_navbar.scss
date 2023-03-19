@@ -1,62 +1,74 @@
 @use '../utils/' as u;
 @use '../global/' as g;
-.header{
+
+.header {
     display: grid;
     grid-template-columns: 2fr 1fr;
     margin-top: 0 !important;
     padding-top: 0 !important;
-    .mobile-view{
+
+    .mobile-view {
         @include u.flexcustomdirection(row, end, center);
-        button{
+
+        button {
             background-color: transparent !important;
             border: none !important;
             outline: none !important;
             color: g.$text-primary !important;
         }
     }
-    .menu{
+
+    .menu {
         display: none !important;
         margin-top: u.rem(-60) !important;
         padding-left: u.rem(35) !important;
-        ul{
-             padding-right: u.rem(60) !important;
-             padding-left: u.rem(10) !important;
+
+        ul {
+            padding-right: u.rem(60) !important;
+            padding-left: u.rem(10) !important;
             padding-top: u.rem(12) !important;
             background-color: g.$primary;
-            li{
+
+            li {
                 margin-bottom: u.rem(20) !important;
-                a{
+
+                a {
                     color: g.$text-primary;
                     transition: all 0.5s ease-in-out;
-                    &:hover{
-                      background-color: g.$secondary;
-                      padding: u.rem(12) !important;  
-                      color: g.$text-tertiary !important;
+
+                    &:hover {
+                        background-color: g.$secondary;
+                        padding: u.rem(12) !important;
+                        color: g.$text-tertiary !important;
                     }
                 }
             }
         }
     }
-    .show_menu{
+
+    .show_menu {
         @include u.flexcustomdirection(column, start, start);
     }
 
     // Media queries:
-    @include u.breakpoint-up(medium){
-        height: 10vh;
+    @include u.breakpoint-up(medium) {
+        height: auto;
         display: grid !important;
         grid-template-columns: 1fr 8fr !important;
-        .mobile-view{
+
+        .mobile-view {
             display: none !important;
         }
-        .menu{
+
+        .menu {
+            background-color: red;
             @include u.flexcustomdirection(column, center, center);
-            // padding-top: u.rem(70) !important;
-            // margin-inline: auto !important;
-            ul{
+
+            ul {
                 background-color: transparent !important;
-                @include u.flexcustomdirection(row, center, center);
-                li{
+                @include u.flexcustomdirection(row, center, start);
+
+                li {
                     margin-right: u.rem(40);
                 }
             }
