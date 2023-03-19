@@ -8,3 +8,7 @@
     }
     @error 'Please provide a unitless value for #{$pixel}'
 }
+
+// function to convert pixel values to to em. 
+// do not include px when supplying the valu.
+// eg. f.border(35)
