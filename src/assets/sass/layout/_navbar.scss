@@ -15,13 +15,12 @@
     .menu{
         display: none !important;
         background-color: red;
-        width: 100% !important;
         ul{
             background-color: black
         }
     }
     .show_menu{
         // @include u.flexcustomdirection(column, end, center);
-        display: grid;
+        display: block;
     }
 }
