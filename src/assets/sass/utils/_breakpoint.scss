@@ -26,7 +26,7 @@ $screeen-down: (
 
 // min-width mixin:
 @mixin breakpoint-up($size){
-    @media (min-width: $screen-up, $size){
+    @media (min-width: map-get($screen-up, $size)){
         @content;
     }
 }
