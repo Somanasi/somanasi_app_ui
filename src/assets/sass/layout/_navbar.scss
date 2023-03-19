@@ -15,12 +15,13 @@
     .menu{
         display: none !important;
         background-color: red;
+        margin-right: u.rem(-138);
         ul{
-            background-color: black
+            background-color: black;
+            margin-left: u.rem(100) !important;
         }
     }
     .show_menu{
-        // @include u.flexcustomdirection(column, end, center);
-        display: grid !important;
+        @include u.flexcustomdirection(column, end, center);
     }
 }
