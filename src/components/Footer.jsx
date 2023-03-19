@@ -4,7 +4,18 @@ const Footer = () => {
   return (
     <footer>
       <div>
-        <div></div>
+        <div>
+          <div>
+            <h3>Company</h3>
+          </div>
+          <div>
+              Lorem ipsum dolor sit, amet 
+              consectetur adipisicing elit. 
+              Eligendi eum, ad accusantium 
+              iure molestias iste atque qui quia 
+              enim facere in cupiditate, maiores 
+          </div>
+        </div>
         <div></div>
         <div></div>
       </div>
