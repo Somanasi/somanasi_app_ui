@@ -25,6 +25,7 @@
                 margin-bottom: u.rem(20) !important;
                 a{
                     color: g.$text-primary;
+                    transition: all 0.5s ease-in-out;
                     &:hover{
                       background-color: g.$secondary;
                       padding: u.rem(12) !important;  
