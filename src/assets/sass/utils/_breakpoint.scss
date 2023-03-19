@@ -13,7 +13,7 @@ $screen-up: (
     'small': f.em(399),
     'medium': f.em(699),
     'large': f.em(899),
-    'xlarge': f.em(1339)
+    'larger': f.em(1339)
 );
 
 /*
@@ -27,7 +27,7 @@ $screeen-down: (
     'small': f.em(399),
     'medium': f.em(699),
     'large': f.em(999),
-    'xlarge': f.em(1339)
+    'larger': f.em(1339)
 );
 
 // min-width mixin:
