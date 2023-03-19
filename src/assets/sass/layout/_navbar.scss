@@ -16,10 +16,12 @@
         display: none !important;
         margin-right: u.rem(-138) !important;
         margin-top: u.rem(-60) !important;
-        background-color: g.$primary;
         ul{
             margin-right: u.rem(-300) !important;
             padding-right: u.rem(36) !important; 
+            li{
+                margin-bottom: u.rem(20) !important;
+            }
         }
     }
     .show_menu{
