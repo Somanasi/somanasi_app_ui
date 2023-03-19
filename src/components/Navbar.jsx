@@ -4,7 +4,9 @@ const Navbar = () => {
   return (
     <header>
       <nav>
-        
+        <ul>
+          
+        </ul>
       </nav>
     </header>
   )
