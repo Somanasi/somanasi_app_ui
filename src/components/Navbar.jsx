@@ -1,12 +1,14 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import Logo from "./Logo"
-import {GoGrabber} from "react-icons/go"
+import Logo from "./Logo";
+import { GoGrabber } from "react-icons/go";
 const Navbar = () => {
   return (
     <header className="header">
       <div>
-        <Logo/>
+        <NavLink to={"/"}>
+          <Logo />
+        </NavLink>
       </div>
       <nav>
         <ul>
