@@ -1,6 +1,7 @@
 @use '../utils/' as u;
 .header{
     .menu{
+        display: none !important;
         @include u.flexcustomdirection(column, center, end);
     }
 }
