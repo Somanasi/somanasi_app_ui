@@ -1,4 +1,4 @@
 @use '../utils/' as u;
 .logo{
-    width: 50px;
+    width: u.rem(50);
 }
