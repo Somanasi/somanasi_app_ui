@@ -13,9 +13,8 @@ html{
 body{
     margin: 0;
     padding: 0;
-    box-sizing: inherit !important;
     font-family: u.$font;
     background-color: v.$primary;
-    height: 100vh;
+    width: auto !important;
     overflow: hidden;
 }
