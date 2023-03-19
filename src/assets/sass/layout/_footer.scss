@@ -2,6 +2,6 @@
 footer{
     @include u.flexcustomdirection(column, none, none);
     .footer_seciton__1{
-        @include u.flexcustomdirection(row, none, none);
+        @include u.flexcustomdirection(row, start, start);
     }
 }
