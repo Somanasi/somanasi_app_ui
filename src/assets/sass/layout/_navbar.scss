@@ -4,6 +4,7 @@
     display: grid;
     grid-template-columns: 2fr 1fr;
     .mobile-view{
+        @include u.flexcustomdirection(row, end, center);
         button{
             background-color: transparent !important;
             border: none !important;
