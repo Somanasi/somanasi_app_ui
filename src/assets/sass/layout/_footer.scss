@@ -6,6 +6,8 @@ footer{
     color: g.$text-secondary;
     .footer_seciton__1{
         @include u.flexcustomdirection(row, start, start);
+        border-bottom: u.rem(1) solid g.$text-primary;
+        padding-bottom: u.rem(4) !important;
         div{
             div{
                 h3{
