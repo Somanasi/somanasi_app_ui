@@ -47,12 +47,12 @@
             display: none !important;
         }
         .menu{
-            @include u.flexcustomdirection(column, start, start);
-            padding-top: 100px ;
+            @include u.flexcustomdirection(column, center, center);
+            background-color: red;
             // margin-inline: auto !important;
             ul{
-                background-color: transparent !important;
-                display:flex !important;
+                background-color: black !important;
+                @include u.flexcustomdirection(row, center, center);
             }
         }
     }
