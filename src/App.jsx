@@ -4,13 +4,13 @@ import { Footer, Navbar } from './components'
 
 const App = () => {
   return (
-    <div>
+    <>
       <Navbar />
       <section>
         <Outlet/>
       </section>
       <Footer/>
-    </div>
+    </>
 
   )
 }
