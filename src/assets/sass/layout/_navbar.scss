@@ -2,6 +2,11 @@
 .header{
     display: grid;
     grid-template-columns: 2fr 1fr;
+    .mobile-view{
+        button{
+            background-color: transparent !important;
+        }
+    }
     .menu{
         display: none !important;
     }
