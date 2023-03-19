@@ -44,8 +44,8 @@
         .mobile-view{
             display: none !important;
         }
-        ..menu{
-            display: flex !important;
+        .menu{
+            @include u.flexcustomdirection(row, start, start);
         }
     }
 }
