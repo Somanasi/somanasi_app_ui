@@ -21,6 +21,6 @@ footer{
         padding-top: u.rem(2) !important ;
     }
     @include u.breakpoint-up(large){
-        font-size: g.$font-regular;
+        font-size: u.rem(8) !important;
     }
 }
