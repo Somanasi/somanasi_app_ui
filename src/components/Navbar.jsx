@@ -15,7 +15,7 @@ const Navbar = ({visible, toggle}) => {
         <Button
         onClick={ () => toggle(!visible)}
         >
-
+          <GoGrabber size={50} />
         </Button>
       </div>
       <nav>
