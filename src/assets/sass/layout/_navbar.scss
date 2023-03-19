@@ -18,7 +18,8 @@
         margin-right: u.rem(-138);
         ul{
             background-color: black;
-            margin-left: u.rem(100) !important;
+            margin-right: u.rem(-300) !important;
+            padding-right: u.rem(38) !important; 
         }
     }
     .show_menu{
