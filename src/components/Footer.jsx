@@ -41,7 +41,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div>
+      <div className="footer_seciton__2">
         <span>somanasi &copy;2023</span>
       </div>
     </footer>
