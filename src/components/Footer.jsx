@@ -18,7 +18,7 @@ const Footer = () => {
         </div>
         <div>
         <div>
-            <h3>Company</h3>
+            <h3>Links</h3>
           </div>
           <div>
               Lorem ipsum dolor sit, amet 
@@ -30,7 +30,7 @@ const Footer = () => {
         </div>
         <div>
         <div>
-            <h3>Company</h3>
+            <h3>Social</h3>
           </div>
           <div>
               Lorem ipsum dolor sit, amet 
