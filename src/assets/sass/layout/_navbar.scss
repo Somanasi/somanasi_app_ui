@@ -48,9 +48,10 @@
         }
         .menu{
             @include u.flexcustomdirection(column, start, start);
-            background-color: red !important;
             // margin-inline: auto !important;
-            
+            ul{
+                background-color: transparent !important;
+            }
         }
     }
 }
