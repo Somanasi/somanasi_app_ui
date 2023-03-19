@@ -2,7 +2,6 @@
 @use '../global/' as g;
 footer{
     @include u.flexcustomdirection(column, none, none);
-    background-color: black;
     margin-bottom: 0 !important ;
     color: g.$text-secondary;
     .footer_seciton__1{
