@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import Logo from "./Logo";
 import { GoGrabber } from "react-icons/go";
-const Navbar = () => {
+const Navbar = ({visible, toggle}) => {
   return (
     <header className="header">
       <div>
