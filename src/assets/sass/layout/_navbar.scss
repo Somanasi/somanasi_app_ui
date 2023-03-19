@@ -3,6 +3,8 @@
 .header{
     display: grid;
     grid-template-columns: 2fr 1fr;
+    margin-top: 0 !important;
+    padding-top: 0 !important;
     .mobile-view{
         @include u.flexcustomdirection(row, end, center);
         button{
@@ -47,12 +49,15 @@
             display: none !important;
         }
         .menu{
-            @include u.flexcustomdirection(column, center, center);
+            @include u.flexcustomdirection(column, center, start);
             background-color: red;
             // margin-inline: auto !important;
             ul{
                 background-color: black !important;
                 @include u.flexcustomdirection(row, center, center);
+                li{
+                    margin-right: u.rem(40);
+                }
             }
         }
     }
