@@ -3,5 +3,8 @@
 // do not include px when supplying the valu.
 // eg. f.border(35)
 @function rem($pixel){
-    @return math.div($pixel, 16) + 'rem';
+    @if math.is-unitless($pixel){
+        @return math.div($pixel, 16) + 'rem';
+    }
+    @error 'Please provide a unitless value for #{$pixel}'
 }
