@@ -5,6 +5,9 @@ import Logo from '../assets/logo.png'
 const Navbar = () => {
   return (
     <header>
+      <div>
+        <img src={<Logo/>} alt="somanasi logo" />
+      </div>
       <nav>
         <ul>
           <li>
