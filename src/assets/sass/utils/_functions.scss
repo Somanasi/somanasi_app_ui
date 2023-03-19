@@ -2,3 +2,6 @@
 // function to convert pixel values to to rem. 
 // do not include px when supplying the valu.
 // eg. f.border(35)
+@function rem($pixel){
+    @return math.div($pixel, 16) + 'rem';
+}
