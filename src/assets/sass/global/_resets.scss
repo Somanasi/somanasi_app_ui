@@ -1,5 +1,5 @@
 @use '../utils/' as u;
-@use '../global/' as g;
+@use '../global/variables' as v;
 html{
     font-size: 100%;
 }
@@ -15,5 +15,5 @@ body{
     padding: 0;
     box-sizing: inherit !important;
     font-family: u.$font;
-    background-color: g.$primary;
+    background-color: $primary;
 }
