@@ -10,6 +10,9 @@ const Navbar = () => {
           <Logo />
         </NavLink>
       </div>
+      <div>
+        
+      </div>
       <nav>
         <ul>
           <li>
