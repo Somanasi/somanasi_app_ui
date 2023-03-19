@@ -21,6 +21,7 @@
         }
     }
     .show_menu{
-        @include u.flexcustomdirection(column, end, center);
+        // @include u.flexcustomdirection(column, end, center);
+        display: grid;
     }
 }
