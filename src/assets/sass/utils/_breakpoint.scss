@@ -30,3 +30,10 @@ $screeen-down: (
         @content;
     }
 }
+
+// max-width mixin:
+@mixin breakpoint-down($size){
+    @media (max-width: map-get($screen-down, $size)){
+        @content;
+    }
+}
