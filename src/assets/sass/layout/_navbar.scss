@@ -63,6 +63,7 @@
         .menu {
             background-color: red;
             @include u.flexcustomdirection(column, center, center);
+            padding-top: u.rem(60);
 
             ul {
                 background-color: transparent !important;
