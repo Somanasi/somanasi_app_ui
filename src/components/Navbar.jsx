@@ -18,7 +18,7 @@ const Navbar = ({visible, toggle}) => {
           <GoGrabber size={50} />
         </Button>
       </div>
-      <nav>
+      <nav className={ visible? "show_menu menu" : "menu"}>
         <ul>
           <li>
             <NavLink to={"/"}>Home</NavLink>
