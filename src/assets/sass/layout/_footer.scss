@@ -1,3 +1,4 @@
+@use '../utils/' as u;
 footer{
-    
+    @include u.flexcustomdirection(column, none, none);
 }
