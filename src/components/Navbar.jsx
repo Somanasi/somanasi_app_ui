@@ -10,7 +10,7 @@ const Navbar = ({visible, toggle}) => {
           <Logo />
         </NavLink>
       </div>
-      <div>
+      <div className="mobile-view">
         
       </div>
       <nav>
