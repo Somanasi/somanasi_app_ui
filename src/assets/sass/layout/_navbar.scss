@@ -14,11 +14,10 @@
     }
     .menu{
         display: none !important;
-        background-color: red;
         margin-right: u.rem(-138) !important;
         margin-top: u.rem(-60) !important;
+        background-color: g.$primary;
         ul{
-            background-color: black;
             margin-right: u.rem(-300) !important;
             padding-right: u.rem(36) !important; 
         }
