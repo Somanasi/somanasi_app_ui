@@ -16,6 +16,12 @@ $screen-up: (
     'xlarge': f.em(1339)
 );
 
+/*
+for max-width:
+699px - 43.6875em => small screen
+899px - 56.1875em => medium screen
+1439px - 89.9375em => large screen
+*/
 //max-width map:
 $screeen-down: (
     'small': f.em(399),
