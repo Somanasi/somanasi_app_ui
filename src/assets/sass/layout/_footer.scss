@@ -20,4 +20,7 @@ footer{
         text-align: center;
         padding-top: u.rem(2) !important ;
     }
+    @include u.breakpoint-up(large){
+        
+    }
 }
