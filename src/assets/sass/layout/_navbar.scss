@@ -47,12 +47,10 @@
             display: none !important;
         }
         .menu{
-            @include u.flexcustomdirection(row, start, start);
+            @include u.flexcustomdirection(column, start, start);
             background-color: red !important;
             // margin-inline: auto !important;
-            ul{
-               
-            }
+            
         }
     }
 }
