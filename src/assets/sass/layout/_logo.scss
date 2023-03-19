@@ -5,7 +5,7 @@
     width: u.rem(200);
     max-width: u.rem(200);
     height: auto !important;
-    margin-bottom: none !important;
+    margin-bottom: 0 !important;
 
     @include u.breakpoint-up(large) {
         min-width: u.rem(100);
