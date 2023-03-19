@@ -15,7 +15,8 @@
     .menu{
         display: none !important;
         background-color: red;
-        margin-right: u.rem(-138);
+        margin-right: u.rem(-138) !important;
+        margin-top: u.rem(-80) !important;
         ul{
             background-color: black;
             margin-right: u.rem(-300) !important;
