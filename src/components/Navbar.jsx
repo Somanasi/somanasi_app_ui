@@ -1,12 +1,12 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import {ReactComponent as logo} from "../assets/logo.svg";
+import {ReactComponent as Logo} from "../assets/logo.svg";
 
 const Navbar = () => {
   return (
     <header>
       <div>
-        <img src={} alt="somanasi logo" />
+        <Logo width="50px" height="50px" />
       </div>
       <nav>
         <ul>
