@@ -3,8 +3,9 @@
 footer{
     @include u.flexcustomdirection(column, none, none);
     background-color: g.$primary;
-    color: g.$text-tertiary;
+    color: g.$text-primary;
     .footer_seciton__1{
         @include u.flexcustomdirection(row, start, start);
+
     }
 }
