@@ -1,2 +1,17 @@
 @use './functions' as f;
+
 //breakpoints:
+//CREATING MAP OF DIFFERENT SCREEN SIZES
+/*
+for min-width:
+700px - 43.75em => medium screen
+900px-  56.25em => large screen
+1440px - 90em => xlarge screen
+*/
+//min-width map:
+$screen-up: (
+    'small': f.rem(399),
+    'medium': f.rem(699),
+    'large': f.rem(999),
+    'xlarge': f.rem(1339)
+)
