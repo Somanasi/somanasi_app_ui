@@ -10,8 +10,16 @@ for min-width:
 */
 //min-width map:
 $screen-up: (
-    'small': f.rem(399),
-    'medium': f.rem(699),
-    'large': f.rem(999),
-    'xlarge': f.rem(1339)
-)
+    'small': f.em(399),
+    'medium': f.em(699),
+    'large': f.em(999),
+    'xlarge': f.em(1339)
+);
+
+//max-width map:
+$screeen-down: (
+    'small': f.em(399),
+    'medium': f.em(699),
+    'large': f.em(999),
+    'xlarge': f.em(1339)
+);
