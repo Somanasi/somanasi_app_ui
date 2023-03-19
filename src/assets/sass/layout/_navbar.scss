@@ -16,6 +16,6 @@
         display: none !important;
     }
     .show_menu{
-        @include u.flexcustomdirection(column, center, end);
+        @include u.flexcustomdirection(column, end, center);
     }
 }
