@@ -21,6 +21,6 @@
     }
     .show_menu{
         // @include u.flexcustomdirection(column, end, center);
-        display: block;
+        display: grid !important;
     }
 }
