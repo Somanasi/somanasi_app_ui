@@ -6,9 +6,9 @@ const App = () => {
   return (
     <>
       <Navbar />
-      <section>
+      <main>
         <Outlet/>
-      </section>
+      </main>
       <Footer/>
     </>
 
