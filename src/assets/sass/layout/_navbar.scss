@@ -45,8 +45,9 @@
             display: none !important;
         }
         .menu{
+            @include u.flexcustomdirection(row, start, start);
             ul{
-                @include u.flexcustomdirection(row, start, start);
+                
             }
         }
     }
