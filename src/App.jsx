@@ -6,7 +6,7 @@ const App = () => {
   const [toggleMobileView, setToggleMobileView] = useState(false);
   return (
     <>
-      <Navbar />
+      <Navbar  visible={toggleMobileView} toggle={setToggleMobileView}/>
       <main>
         <Outlet/>
       </main>
