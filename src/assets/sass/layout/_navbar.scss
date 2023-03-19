@@ -50,10 +50,10 @@
         }
         .menu{
             @include u.flexcustomdirection(column, center, start);
-            background-color: red;
+            padding-top: u.rem(50) !important;
             // margin-inline: auto !important;
             ul{
-                background-color: black !important;
+                background-color: transparent !important;
                 @include u.flexcustomdirection(row, center, center);
                 li{
                     margin-right: u.rem(40);
