@@ -23,6 +23,9 @@
             li{
                 margin-bottom: u.rem(20) !important;
                 margin-left: u.rem(10) !important;
+                a{
+                    color: g.$text-primary;
+                }
             }
         }
     }
