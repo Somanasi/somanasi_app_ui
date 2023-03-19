@@ -9,7 +9,9 @@ const Footer = () => {
         <div></div>
       </div>
       <div>
-        <span>&COPY;somanasi 2023</span>
+        <span>
+        &copy;somanasi 2023
+        </span>
       </div>
     </footer>
   )
