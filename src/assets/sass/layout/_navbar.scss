@@ -48,9 +48,11 @@
         }
         .menu{
             @include u.flexcustomdirection(column, start, start);
+            padding-top: 100px ;
             // margin-inline: auto !important;
             ul{
                 background-color: transparent !important;
+                display:flex !important;
             }
         }
     }
