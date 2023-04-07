@@ -1,8 +1,9 @@
 //icons are the thumbnail images of the course
 import React from "react";
-import { Link } from "react-router-dom";
+import { Form, Link } from "react-router-dom";
 import "../assets/sass/main.scss";
 import { dummyData } from "../dummydata/Dummy.js";
+import SearchInput from "../components/SearchInput";
 
 const Courses = () => {
   return (
@@ -10,7 +11,9 @@ const Courses = () => {
         <section>
             <div><h1>Courses</h1></div>
             <div>
-                <Input></Input>
+                <Form>
+                    <SearchInput/>
+                </Form>
             </div>
         </section>
       <section>
