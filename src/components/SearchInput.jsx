@@ -6,7 +6,7 @@ const SearchInput = () => {
     <div className='form-group'>
         <label htmlFor="search"></label>
         <input type="text" name='searchText' id='search'/>
-        <span></span>
+        <FaSearch size={50} />
 
     </div>
   )
