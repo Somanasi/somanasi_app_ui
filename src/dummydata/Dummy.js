@@ -1,9 +1,9 @@
-import React from "react";
+// import React from "react";
 
 const dummyData=[
         {
             id:0,
-            icon:require("../img/logo.png"),
+            // icon:import("../img/logo.png"),
             name:"Comp Science",
             instructorName:"Kennedy",
             description:"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores ",
@@ -17,7 +17,7 @@ const dummyData=[
         },
         {
             id:1,
-            icon:require("../img/logo.png"),
+            // icon:import("../img/logo.png"),
             name:"Engineering",
             instructorName:"Kennedy",
             description:"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores ",
@@ -31,7 +31,7 @@ const dummyData=[
         },
         {
             id:2,
-            icon:require("../img/logo.png"),
+            // icon:import("../img/logo.png"),
             name:"Nutrition and Dietetics",
             instructorName:"Kennedy",
             description:"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores ",
@@ -45,7 +45,7 @@ const dummyData=[
         },
         {
             id:3,
-            icon:require("../img/logo.png"),
+            // icon:import("../img/logo.png"),
             name:"Mathematics and Comp Science",
             instructorName:"Kennedy",
             description:"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores ",
@@ -59,7 +59,7 @@ const dummyData=[
         },
         {
             id:4,
-            icon:require("../img/logo.png"),
+            // icon:import("../img/logo.png"),
             name:"Geographical Studies",
             instructorName:"Kennedy",
             description:"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores ",
