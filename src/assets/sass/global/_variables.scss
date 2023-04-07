@@ -1,0 +1,19 @@
+@use '../utils/' as u;
+//Colors:
+//background
+$primary: #47704C;
+$secondary: #10316B;
+$tertiary: #F4F7C0;
+
+//text color
+$text-primary: #FFCE63;
+$text-secondary: #F4F7C0;
+$text-tertiary: #FFFFFF;
+
+// Font-size
+$font-small: u.rem(18);
+$font-medium: u.rem(24);
+$font-large: u.rem(30);
+$font-regular: u.rem(10);
+
+
