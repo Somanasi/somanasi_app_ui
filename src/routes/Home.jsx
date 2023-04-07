@@ -1,6 +1,7 @@
 import React from "react";
 import { Form } from "react-router-dom";
 import Input from "../components/Input";
+import Button from "../components/Button";
 const Home = () => {
   return (
     <main className="home">
@@ -50,7 +51,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section>
+      <section className="mycourses">
         <div>
           <h1>My Courses</h1>
         </div>
@@ -73,6 +74,23 @@ const Home = () => {
           <div>
             <p>course 1</p>
           </div>
+        </div>
+      </section>
+      <section className="home-cta">
+        <div>
+          <Button>Rooms</Button>
+        </div>
+        <div>
+          <Button>Courses</Button>
+        </div>
+        <div>
+          <Button>Subscribe</Button>
+        </div>
+        <div>
+          <Button>History</Button>
+        </div>
+        <div>
+          <Button>Dashboard</Button>
         </div>
       </section>
     </main>
