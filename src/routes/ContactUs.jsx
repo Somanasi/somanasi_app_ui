@@ -4,9 +4,10 @@ const ContactUs = () => {
   return (
     <div>ContactUs</div>
     <div>
-    ADD EMAIL
-ADD PHONE NUMBERS, ADD ACCOUNTS, TWITTER, IG, ETC
-</div>
+    info@someshadada.co.ke
+    +254114147931
+    +254705762124
+    </div>
   )
 }
 
