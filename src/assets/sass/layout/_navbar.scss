@@ -24,6 +24,8 @@
         display: none;
         background-color: g.$secondary;
         z-index: 100;
+        position: absolute;
+        top: 100%;
     }
     .show_menu{
         display: block;
