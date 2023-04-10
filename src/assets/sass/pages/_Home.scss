@@ -12,6 +12,12 @@
         form {
             div.form-group {
                 display: flex;
+                input {
+                    display: block;
+                }
+                span{
+                    display: block;
+                }
             }
         }
     }
