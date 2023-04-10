@@ -30,6 +30,18 @@
         // max-width: 70vw;
         height: 100vh;
         padding-left: u.rem(24);
+
+        ul {
+            li{
+                
+            }
+        }
+
+        span{
+            svg{
+                background-color: g.$secondary;
+            }
+        }
     }
     .show_menu{
         display: block;
