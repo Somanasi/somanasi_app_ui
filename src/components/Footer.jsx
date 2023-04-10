@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer>
       <div className="footer_seciton__1">
-        <div>
+        <div className="section-divider">
           <div>
             <h3>Company</h3>
           </div>
