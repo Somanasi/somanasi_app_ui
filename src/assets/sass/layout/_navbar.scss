@@ -34,12 +34,12 @@
         ul {
             li{
                 margin-bottom: u.rem(16);
-            }
-        }
-
-        span{
-            svg{
-                background-color: g.$secondary;
+        
+                span{
+                        svg{
+                            color: g.$text-primary;
+                        };
+                }
             }
         }
     }
