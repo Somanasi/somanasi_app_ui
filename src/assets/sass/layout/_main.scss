@@ -1,3 +1,4 @@
-// main{
-//     min-height: fit-content;
-// }
+@use '../global/' as g;
+main{
+    background-color: g.$primary;
+}
