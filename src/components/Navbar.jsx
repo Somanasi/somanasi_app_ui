@@ -27,31 +27,31 @@ const Navbar = ({ visible, toggle }) => {
         <ul>
           <li>
             <span>
-              <BsFillHouseFill size={50} />
+              <BsFillHouseFill size={25} />
             </span>
             <NavLink to={"/"}>Home</NavLink>
           </li>
           <li>
             <span>
-              <BsFillBookFill size={50} />
+              <BsFillBookFill size={25} />
             </span>
             <NavLink to={"/courses"}>Course</NavLink>
           </li>
           <li>
             <span>
-              <BsPencilSquare size={50} />
+              <BsPencilSquare size={25} />
             </span>
             <NavLink to={"/blog"}>Blog</NavLink>
           </li>
           <li>
             <span>
-              <BsFillInfoSquareFill size={50} />
+              <BsFillInfoSquareFill size={25} />
             </span>
             <NavLink to={"/about_us"}>About us</NavLink>
           </li>
           <li>
             <span>
-              <BsPhoneFlip size={50} />
+              <BsPhoneFlip size={25} />
             </span>
             <NavLink to={"/contact_us"}>Contact us</NavLink>
           </li>
