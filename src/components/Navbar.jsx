@@ -10,6 +10,7 @@ import {
   BsPhoneFlip
 } from "react-icons/bs";
 import Button from "./Button";
+import ListItems from "./ListItems";
 const Navbar = ({ visible, toggle }) => {
   return (
     <header className="header">
@@ -25,12 +26,12 @@ const Navbar = ({ visible, toggle }) => {
       </div>
       <nav className={visible ? "show_menu menu" : "menu"}>
         <ul>
-          <li>
+          <ListItems>
             <span>
               <BsFillHouseFill size={25} />
             </span>
             <NavLink to={"/"}>Home</NavLink>
-          </li>
+          </ListItems>
           <li>
             <span>
               <BsFillBookFill size={25} />
