@@ -1,5 +1,6 @@
-form {
-    div.form-group {
+@use '../utils/' as u;
+@use '../global/' as g;
+div.form-group {
         display: flex;
         input {
             display: block;
@@ -22,4 +23,3 @@ form {
             padding: u.rem(4);
         }
     }
-}
