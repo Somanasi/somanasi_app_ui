@@ -2,7 +2,6 @@
 @use '../global/' as g;
 .home{
     .searchBar{
-        background-color: red;
         padding: u.rem(4) 0;
         @include u.flexcustomdirection(column, none, flex-start);
 
@@ -19,7 +18,7 @@
                     padding: 0 u.rem(4);
                     width: 88vw;
                     height: 5vh;
-                    border-radius: u.rem(6);
+                    border-radius: u.rem(4);
                 }
                 span{
                     display: block;
