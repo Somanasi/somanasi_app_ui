@@ -7,7 +7,7 @@ const Home = () => {
     <main className="home">
       <section className="searchBar">
         <Form method="GET">
-          <SearchInput />
+          <SearchInput size={25}/>
         </Form>
       </section>
       <section className="tips">
