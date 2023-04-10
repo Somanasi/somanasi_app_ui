@@ -26,7 +26,7 @@ const Navbar = ({ visible, toggle }) => {
       </div>
       <nav className={visible ? "show_menu menu" : "menu"}>
         <ul>
-          <ListItems>
+          <ListItems toggle={toggle} visible={visible}>
             <span>
               <BsFillHouseFill size={25} />
             </span>
