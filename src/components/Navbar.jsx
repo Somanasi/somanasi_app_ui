@@ -2,9 +2,14 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import Logo from "./Logo";
 import { GoGrabber } from "react-icons/go";
-import {BsFillHouseFill, BsFillBookFill, BsPencilSquare, BiInfoCircle  } from "react-icons/bs";
+import {
+  BsFillHouseFill,
+  BsFillBookFill,
+  BsPencilSquare,
+  BiInfoCircle
+} from "react-icons/bs";
 import Button from "./Button";
-const Navbar = ({visible, toggle}) => {
+const Navbar = ({ visible, toggle }) => {
   return (
     <header className="header">
       <div>
@@ -13,13 +18,11 @@ const Navbar = ({visible, toggle}) => {
         </NavLink>
       </div>
       <div className="mobile-view">
-        <Button
-        onClick={ () => toggle(!visible)}
-        >
+        <Button onClick={() => toggle(!visible)}>
           <GoGrabber size={50} />
         </Button>
       </div>
-      <nav className={ visible? "show_menu menu" : "menu"}>
+      <nav className={visible ? "show_menu menu" : "menu"}>
         <ul>
           <li>
             <span>
@@ -28,12 +31,21 @@ const Navbar = ({visible, toggle}) => {
             <NavLink to={"/"}>Home</NavLink>
           </li>
           <li>
+            <span>
+              <BsFillBookFill size={50} />
+            </span>
             <NavLink to={"/courses"}>Course</NavLink>
           </li>
           <li>
+            <span>
+              <BsPencilSquare size={50} />
+            </span>
             <NavLink to={"/blog"}>Blog</NavLink>
           </li>
           <li>
+            <span>
+              <BiInfoCircle size={50} />
+            </span>
             <NavLink to={"/about_us"}>About us</NavLink>
           </li>
           <li>
