@@ -1,7 +1,6 @@
 @use './variables' as v;
 header{
-    background-color: v.$secondary;
-    
+    background-color: v.$secondary; 
 }
 nav{
     margin-top: 0 !important;
