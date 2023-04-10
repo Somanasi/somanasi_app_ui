@@ -7,6 +7,12 @@
         background-color: red;
         text-align: end;
         padding-right:u.rem(20);
+
+        .toggleButton{
+            display:block;
+            margin-inline: auto;
+                       
+        }
     }
     .menu{
         display: none;

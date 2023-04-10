@@ -13,6 +13,7 @@ const Navbar = ({visible, toggle}) => {
       </div>
       <div className="mobile-view">
         <Button
+        className="toggleButton"
         onClick={ () => toggle(!visible)}
         >
           <GoGrabber size={50} />
