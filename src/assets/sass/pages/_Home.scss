@@ -25,6 +25,9 @@
                 button{
                     display: block;
                     transform: rotateY(180deg);
+                    background-color: g.$secondary;
+                    border: none;
+                    border-radius: u.rem(4);
                 }
             }
         }
