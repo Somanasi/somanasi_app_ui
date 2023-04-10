@@ -3,6 +3,8 @@
 .header{
     display: grid;
     grid-template-columns: 4fr 8fr;
+    height: 15vh;
+    position: relative;
 
     .mobile-view{
         position: relative;
@@ -20,5 +22,10 @@
     }
     .menu{
         display: none;
+        background-color: g.$secondary;
+        z-index: 100;
+    }
+    .show_menu{
+        display: block;
     }
 }
