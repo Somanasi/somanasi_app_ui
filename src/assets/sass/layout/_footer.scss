@@ -1,7 +1,7 @@
 @use '../global/' as g;
 @use '../utils/' as u;
 footer {
-    background-color: rgba(g.$text-regular, .8);
+    background-color: g.$secondary;
     padding: u.rem(12) u.rem(8);
 
     .footer_seciton__1{
@@ -10,7 +10,7 @@ footer {
     .footer_seciton__2{
         text-align: center;
         span{
-            font-weight: 200 !important;
+            font-weight: 100 !important;
         }
     }
 }
