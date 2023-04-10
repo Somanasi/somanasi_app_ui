@@ -20,7 +20,7 @@ const Navbar = ({ visible, toggle }) => {
       </div>
       <div className="mobile-view">
         <Button onClick={() => toggle(!visible)}>
-          { visible? <GoX size={50}/> : <GoGrabber size={50} />}
+          { visible? <GoX size={25}/> : <GoGrabber size={50} />}
         </Button>
       </div>
       <nav className={visible ? "show_menu menu" : "menu"}>
