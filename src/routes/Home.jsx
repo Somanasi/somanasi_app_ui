@@ -54,7 +54,7 @@ const Home = () => {
         <div className="section-heading">
           <h1>My Courses</h1>
         </div>
-        <div>
+        <div className="section-content">
           <div>
             <p>course 1</p>
           </div>
