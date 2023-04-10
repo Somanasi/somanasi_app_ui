@@ -1,8 +1,10 @@
 import React from 'react'
 
-const ListItems = () => {
+const ListItems = ({visible, children}) => {
   return (
-    <div>ListItems</div>
+    <li>
+        {children}
+    </li>
   )
 }
 
