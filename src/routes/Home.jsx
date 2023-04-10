@@ -1,15 +1,13 @@
 import React from "react";
 import { Form } from "react-router-dom";
-import Input from "../components/Input";
+import SearchInput from "../components/SearchInput";
 import Button from "../components/Button";
 const Home = () => {
   return (
     <main className="home">
       <section className="searchBar">
         <Form method="GET">
-          <Input name="search" id="search">
-            Search here
-          </Input>
+          <SearchInput />
         </Form>
       </section>
       <section className="tips">
