@@ -3,7 +3,6 @@
     .searchBar{
         background-color: red;
         padding: u.rem(4) 0;
-        display: flex;
-        align-items: flex-start;
+        @include u.flexcustomdirection(column, none, flex-start)
     }
 }
