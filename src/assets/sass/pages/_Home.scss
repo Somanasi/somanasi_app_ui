@@ -17,6 +17,7 @@
         margin-inline: u.rem(-7);
         color: g.$text-tertiary;
         padding: u.rem(24) u.rem(8);
+        @include u.flexcustomdirection(column, none, none);
 
         div {
             h1 {
