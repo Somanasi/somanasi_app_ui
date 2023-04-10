@@ -16,7 +16,7 @@
                     border: u.rem(1) g.$text-tertiary solid ;
                     outline: none;
                     padding: 0 u.rem(4);
-                    width: 88vw;
+                    width: 86vw;
                     height: 5vh;
                     border-radius: u.rem(4);
                     background-color: transparent;
@@ -28,6 +28,8 @@
                     background-color: g.$secondary;
                     border: none;
                     border-radius: u.rem(4);
+                    color: g.$text-secondary;
+                    padding: u.rem(4);
                 }
             }
         }
