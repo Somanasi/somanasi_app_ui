@@ -12,7 +12,7 @@ const Home = () => {
         </Form>
       </section>
       <section className="tips">
-        <div>
+        <div className="section-heading">
           <h1>Why take our courses?</h1>
         </div>
         <div>
@@ -51,7 +51,7 @@ const Home = () => {
         </div>
       </section>
       <section className="mycourses">
-        <div>
+        <div className="section-heading">
           <h1>My Courses</h1>
         </div>
         <div>
