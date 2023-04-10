@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import Logo from "./Logo";
-import { GoGrabber } from "react-icons/go";
+import { GoGrabber, GoX } from "react-icons/go";
 import {
   BsFillHouseFill,
   BsFillBookFill,
@@ -20,7 +20,7 @@ const Navbar = ({ visible, toggle }) => {
       </div>
       <div className="mobile-view">
         <Button onClick={() => toggle(!visible)}>
-          <GoGrabber size={50} />
+          { visible? <GoX size={50}/> : <GoGrabber size={50} />}
         </Button>
       </div>
       <nav className={visible ? "show_menu menu" : "menu"}>
