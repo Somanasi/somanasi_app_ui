@@ -7,7 +7,6 @@ const SearchInput = ({size = 50}) => {
         <label htmlFor="search"></label>
         <input type="text" name='searchText' id='search'/>
         <FaSearch size={size} />
-
     </div>
   )
 }
