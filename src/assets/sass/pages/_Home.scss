@@ -12,8 +12,9 @@
         
     }
     .tips{
-        background-color: white !important;
+        // background-color: white !important;
         background-image:url(../images/why-take-our-course-1.webp) !important;
+        background-size: cover !important;
         margin-inline: u.rem(-7);
         color: g.$text-regular;
     }
