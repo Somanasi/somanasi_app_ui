@@ -6,6 +6,7 @@ const Home = () => {
   return (
     <main className="home">
       <section className="searchBar">
+        <p>Search for a course here</p>
         <Form method="GET">
           <SearchInput size={25}/>
         </Form>
