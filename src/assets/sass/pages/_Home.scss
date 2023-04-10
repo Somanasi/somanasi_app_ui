@@ -29,7 +29,10 @@
         .section-content{
             div{
                 border: u.rem(1) solid g.$text-tertiary;
-                margin-bottom: u.rem(8);
+                margin-bottom: u.rem(16);
+                background-color: g.$text-tertiary;
+                color: g.$text-regular;
+                padding: u.rem(12) u.rem(8);
             }
         }
     }
