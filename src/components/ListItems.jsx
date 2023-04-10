@@ -1,8 +1,8 @@
 import React from 'react'
 
-const ListItems = ({visible, children}) => {
+const ListItems = ({toggle, visible, children}) => {
   return (
-    <li>
+    <li onClick={ () => toggle(!visible) }>
         {children}
     </li>
   )
