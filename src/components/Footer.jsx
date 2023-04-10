@@ -16,8 +16,8 @@ const Footer = () => {
             </p>
           </div>
         </div>
-        <div>
-          <div>
+        <div className="section-divider">
+          <div className="section-heading">
             <h3>Links</h3>
           </div>
           <div>
@@ -28,8 +28,8 @@ const Footer = () => {
             </p>
           </div>
         </div>
-        <div>
-          <div>
+        <div className="section-divider">
+          <div className="section-heading">
             <h3>Social</h3>
           </div>
           <div>
