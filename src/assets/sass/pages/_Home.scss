@@ -1,4 +1,6 @@
+@use '../utils/' as u;
 .home{
-    height: 80vh;
+    height: auto !important;
     color: #fff;
+    margin: u.rem(32) 0 u.rem(32) 0;
 }
