@@ -1,4 +1,6 @@
 @use '../global/' as g;
+@use '../utils/' as u;
 main{
     background-color: g.$primary;
+    padding: u.rem(20);
 }
