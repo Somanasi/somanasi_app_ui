@@ -5,15 +5,17 @@
     grid-template-columns: 4fr 8fr;
 
     .mobile-view{
-        background-color: red;
-        text-align: end !important;
-        padding-right:u.rem(20);
+        position: relative;
 
         button{
             background-color: transparent;
             border: none;
             outline: none;
             color: g.$text-primary;
+            position: absolute;
+            top: 50%;
+            right: 5%;
+            transform: translateY(-50%);
         }
     }
     .menu{
