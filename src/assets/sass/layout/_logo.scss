@@ -1,15 +1,9 @@
 @use '../utils/' as u;
-
 .logo {
-    min-width: u.rem(100);
-    width: u.rem(100);
-    max-width: u.rem(100);
-    height: auto !important;
-    margin-bottom: 0 !important;
+    width: 35vw;
+    max-width: 35vw;
 
-    @include u.breakpoint-up(large) {
-        min-width: u.rem(50);
-        width: u.rem(50);
-        max-width: u.rem(50);
+    @include u.breakpoint-up(medium){
+        max-width: 10vw;
     }
 }

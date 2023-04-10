@@ -3,75 +3,57 @@
 
 .header {
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    margin-top: 0 !important;
-    padding-top: 0 !important;
+    grid-template-columns: 4fr 8fr;
+    height: 15vh;
+    position: relative;
 
     .mobile-view {
-        @include u.flexcustomdirection(row, end, center);
+        position: relative;
 
         button {
-            background-color: transparent !important;
-            border: none !important;
-            outline: none !important;
-            color: g.$text-primary !important;
+            background-color: transparent;
+            border: none;
+            outline: none;
+            color: g.$text-primary;
+            position: absolute;
+            top: 50%;
+            right: 5%;
+            transform: translateY(-50%);
         }
     }
 
     .menu {
-        display: none !important;
-        margin-top: u.rem(-60) !important;
-        padding-left: u.rem(35) !important;
+        display: none;
+        background-color: g.$secondary;
+        z-index: 100;
+        position: absolute;
+        top: 100%;
+        width: 100vw;
+        // max-width: 70vw;
+        height: 100vh;
+        padding-left: u.rem(24);
 
         ul {
-            padding-right: u.rem(60) !important;
-            padding-left: u.rem(10) !important;
-            padding-top: u.rem(12) !important;
-            background-color: g.$primary;
-
             li {
-                margin-bottom: u.rem(20) !important;
+                margin-bottom: u.rem(16);
+                display: flex;
 
-                a {
-                    color: g.$text-primary;
-                    transition: all 0.5s ease-in-out;
-
-                    &:hover {
-                        background-color: g.$secondary;
-                        padding: u.rem(12) !important;
-                        color: g.$text-tertiary !important;
+                span {
+                    display: block;
+                    padding-right: u.rem(16);
+                    svg {
+                        color: g.$primary;
                     }
+                }
+                a{
+                    display: block;
+                    color: g.$text-primary;
                 }
             }
         }
     }
 
     .show_menu {
-        @include u.flexcustomdirection(column, start, start);
-    }
-
-    // Media queries:
-    @include u.breakpoint-up(medium) {
-        height: auto !important;
-        display: grid !important;
-        grid-template-columns: 1fr 8fr !important;
-
-        .mobile-view {
-            display: none !important;
-        }
-
-        .menu {
-            @include u.flexcustomdirection(column, center, center);
-            padding-top: u.rem(60);
-
-            ul {
-                background-color: transparent !important;
-                @include u.flexcustomdirection(row, center, center);
-
-                li {
-                    margin-right: u.rem(40);
-                }
-            }
-        }
+        display: block;
     }
 }
