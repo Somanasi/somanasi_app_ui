@@ -1,7 +1,13 @@
+@use '../utils/' as u;
 .header{
     display: grid;
     grid-template-columns: 4fr 8fr;
 
+    .mobile-view{
+        background-color: red;
+        text-align: end;
+        padding-right:u.rem(20);
+    }
     .menu{
         display: none;
     }
