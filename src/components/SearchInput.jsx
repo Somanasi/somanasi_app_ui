@@ -1,12 +1,12 @@
 import React from 'react'
 import { FaSearch } from 'react-icons/fa'
 
-const SearchInput = () => {
+const SearchInput = ({size = 50}) => {
   return (
     <div className='form-group'>
         <label htmlFor="search"></label>
         <input type="text" name='searchText' id='search'/>
-        <FaSearch size={50} />
+        <FaSearch size={size} />
 
     </div>
   )
