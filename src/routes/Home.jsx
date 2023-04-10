@@ -15,7 +15,7 @@ const Home = () => {
         <div className="section-heading">
           <h1>Why take our courses?</h1>
         </div>
-        <div>
+        <div className="section-content">
           <div>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni,

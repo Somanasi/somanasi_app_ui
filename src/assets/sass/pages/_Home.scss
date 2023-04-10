@@ -26,5 +26,11 @@
                 font-size: g.$font-large;
             }
         }
+        .section-content{
+            div{
+                border: u.rem(1) solid g.$text-tertiary;
+                margin-bottom: u.rem(8);
+            }
+        }
     }
 }
