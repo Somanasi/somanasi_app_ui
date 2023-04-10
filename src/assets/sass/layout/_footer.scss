@@ -10,6 +10,15 @@ footer {
 
         .section-divider{
             margin-bottom: u.rem(16);
+
+            .section-heading{
+                padding-bottom: u.rem(4);
+
+                h3{
+                    font-size: g.$font-medium;
+                    color: g.$primary !important;
+                }
+            }
         }
     }
     .footer_seciton__2{

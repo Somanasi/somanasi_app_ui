@@ -5,39 +5,39 @@ const Footer = () => {
     <footer>
       <div className="footer_seciton__1">
         <div className="section-divider">
-          <div>
+          <div className="section-heading">
             <h3>Company</h3>
           </div>
           <div>
-              Lorem ipsum dolor sit, amet 
-              consectetur adipisicing elit. 
-              Eligendi eum, ad accusantium 
-              iure molestias iste atque qui quia 
-              enim facere in cupiditate, maiores 
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi
+              eum, ad accusantium iure molestias iste atque qui quia enim facere
+              in cupiditate, maiores
+            </p>
           </div>
         </div>
         <div>
-        <div>
+          <div>
             <h3>Links</h3>
           </div>
           <div>
-              Lorem ipsum dolor sit, amet 
-              consectetur adipisicing elit. 
-              Eligendi eum, ad accusantium 
-              iure molestias iste atque qui quia 
-              enim facere in cupiditate, maiores 
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi
+              eum, ad accusantium iure molestias iste atque qui quia enim facere
+              in cupiditate, maiores
+            </p>
           </div>
         </div>
         <div>
-        <div>
+          <div>
             <h3>Social</h3>
           </div>
           <div>
-              Lorem ipsum dolor sit, amet 
-              consectetur adipisicing elit. 
-              Eligendi eum, ad accusantium 
-              iure molestias iste atque qui quia 
-              enim facere in cupiditate, maiores 
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi
+              eum, ad accusantium iure molestias iste atque qui quia enim facere
+              in cupiditate, maiores
+            </p>
           </div>
         </div>
       </div>
