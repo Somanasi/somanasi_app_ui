@@ -1,0 +1,33 @@
+@use '../global/' as g;
+@use '../utils/' as u;
+footer {
+    background-color: g.$secondary;
+    padding: u.rem(12) u.rem(8);
+    color:g.$text-secondary;
+
+    .footer_seciton__1{
+        margin-bottom: u.rem(8);
+
+        .section-divider{
+            margin-bottom: u.rem(16);
+
+            .section-heading{
+                padding-bottom: u.rem(4);
+
+                h3{
+                    font-size: g.$font-medium;
+                    color: g.$primary !important;
+                    font-weight: 800 !important;
+                }
+            }
+        }
+    }
+    .footer_seciton__2{
+        text-align: center;
+        span{
+            font-weight: 100 !important;
+            color: g.$primary !important;
+            font-size: g.$font-small;
+        }
+    }
+}

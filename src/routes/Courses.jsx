@@ -12,7 +12,7 @@ const Courses = () => {
             <div><h1>Courses</h1></div>
             <div>
                 <Form>
-                    <SearchInput/>
+                    <SearchInput size={25}/>
                 </Form>
             </div>
         </section>
