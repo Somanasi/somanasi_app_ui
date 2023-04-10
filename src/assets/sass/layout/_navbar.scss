@@ -1,4 +1,5 @@
 @use '../utils/' as u;
+@use '../global/' as g;
 .header{
     display: grid;
     grid-template-columns: 4fr 8fr;
@@ -12,7 +13,7 @@
             background-color: transparent;
             border: none;
             outline: none;
-            color: #fff;
+            color: g.$text-primary;
         }
     }
     .menu{
