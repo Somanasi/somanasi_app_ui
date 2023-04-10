@@ -1,4 +1,6 @@
 @use '../global/' as g;
+@use '../utils/' as u;
 footer {
-    background-color: rgba(g.$secondary, .4)
+    background-color: rgba(g.$text-regular, .8);
+    padding: u.rem(12) u.rem(8);
 }
