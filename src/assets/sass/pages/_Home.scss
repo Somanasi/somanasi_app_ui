@@ -13,14 +13,16 @@
                 display: flex;
                 input {
                     display: block;
-                    border: none;
+                    border: u.rem(1) g.$text-tertiary solid ;
                     outline: none;
                     padding: 0 u.rem(4);
                     width: 88vw;
                     height: 5vh;
                     border-radius: u.rem(4);
+                    background-color: transparent;
+                    color: g.$text-secondary;
                 }
-                span{
+                button{
                     display: block;
                     transform: rotateY(180deg);
                 }
