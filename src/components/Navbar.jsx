@@ -6,7 +6,8 @@ import {
   BsFillHouseFill,
   BsFillBookFill,
   BsPencilSquare,
-  BiInfoCircle
+  BsFillInfoSquareFill,
+  BsPhoneFlip
 } from "react-icons/bs";
 import Button from "./Button";
 const Navbar = ({ visible, toggle }) => {
@@ -44,11 +45,14 @@ const Navbar = ({ visible, toggle }) => {
           </li>
           <li>
             <span>
-              <BiInfoCircle size={50} />
+              <BsFillInfoSquareFill size={50} />
             </span>
             <NavLink to={"/about_us"}>About us</NavLink>
           </li>
           <li>
+            <span>
+              <BsPhoneFlip size={50} />
+            </span>
             <NavLink to={"/contact_us"}>Contact us</NavLink>
           </li>
         </ul>
