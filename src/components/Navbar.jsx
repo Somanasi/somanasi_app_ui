@@ -32,30 +32,30 @@ const Navbar = ({ visible, toggle }) => {
             </span>
             <NavLink to={"/"}>Home</NavLink>
           </ListItems>
-          <li>
+          <ListItems toggle={toggle} visible={visible}>
             <span>
               <BsFillBookFill size={25} />
             </span>
             <NavLink to={"/courses"}>Course</NavLink>
-          </li>
-          <li>
+          </ListItems>
+          <ListItems toggle={toggle} visible={visible}>
             <span>
               <BsPencilSquare size={25} />
             </span>
             <NavLink to={"/blog"}>Blog</NavLink>
-          </li>
-          <li>
+          </ListItems>
+          <ListItems toggle={toggle} visible={visible}>
             <span>
               <BsFillInfoSquareFill size={25} />
             </span>
             <NavLink to={"/about_us"}>About us</NavLink>
-          </li>
-          <li>
+          </ListItems>
+          <ListItems toggle={toggle} visible={visible}>
             <span>
               <BsPhoneFlip size={25} />
             </span>
             <NavLink to={"/contact_us"}>Contact us</NavLink>
-          </li>
+          </ListItems>
         </ul>
       </nav>
     </header>
