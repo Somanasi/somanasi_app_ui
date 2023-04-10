@@ -5,13 +5,14 @@
 
     .mobile-view{
         background-color: red;
-        text-align: end;
+        text-align: end !important;
         padding-right:u.rem(20);
 
-        .toggleButton{
-            display:block;
-            margin-inline: auto;
-                       
+        button{
+            background-color: transparent;
+            border: none;
+            outline: none;
+            color: #fff;
         }
     }
     .menu{
