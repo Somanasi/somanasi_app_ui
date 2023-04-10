@@ -12,7 +12,7 @@
         
     }
     .tips{
-        background-image: linear-gradient(to left, hsla(0, 0%, 0%, 0.9), hsla(0, 0%, 0%, 0.9)), url(../images/why-take-our-course-1.webp) !important;
+        background-image: linear-gradient(to left, hsla(0, 30%, 96%, 0.9), hsla(0, 20%, 94%, 0.9)), url(../images/why-take-our-course-1.webp) !important;
         background-size: cover !important;
         margin-inline: u.rem(-7);
         color: g.$text-tertiary;
@@ -27,5 +27,10 @@
                 text-align: center;
             }
         }
+        .section-content{
+            div{
+                border: u.rem(1) solid g.$primary;
+            }
+        }    
     }
 }

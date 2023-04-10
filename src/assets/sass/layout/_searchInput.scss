@@ -16,10 +16,10 @@ div.form-group {
         button{
             display: block;
             // transform: rotateY(180deg);
-            background-color: g.$secondary;
+            background-color: rgba(g.$text-tertiary, .2);
             border: none;
             border-radius: u.rem(4);
-            color: g.$text-secondary;
+            color: g.$secondary;
             padding: u.rem(4);
         }
     }
