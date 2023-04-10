@@ -1,4 +1,8 @@
 .header{
     display: grid;
     grid-template-columns: 4fr 8fr;
+
+    .menu{
+        display: none;
+    }
 }
