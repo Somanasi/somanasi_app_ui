@@ -2,6 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import Logo from "./Logo";
 import { GoGrabber } from "react-icons/go";
+import {BsFillHouseFill, BsFillBookFill, BsPencilSquare, BiInfoCircle  } from "react-icons/bs";
 import Button from "./Button";
 const Navbar = ({visible, toggle}) => {
   return (
@@ -21,6 +22,9 @@ const Navbar = ({visible, toggle}) => {
       <nav className={ visible? "show_menu menu" : "menu"}>
         <ul>
           <li>
+            <span>
+              <BsFillHouseFill size={50} />
+            </span>
             <NavLink to={"/"}>Home</NavLink>
           </li>
           <li>
