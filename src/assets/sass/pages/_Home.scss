@@ -1,5 +1,7 @@
+@use '../utils/' as u;
 .home{
     .searchBar{
         background-color: red;
+        padding: u.rem(4) 0;
     }
 }
