@@ -15,6 +15,9 @@ const Login = () => {
             <InputWithLabel name={'userId'} id={'username'}>
               Username or Phone number
             </InputWithLabel>
+            <InputWithLabel type={'password'} name={'password'} id={'password'}>
+              password
+            </InputWithLabel>
             <Button type='submit'>Continue</Button>
           </Form>
         </div>
