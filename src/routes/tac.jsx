@@ -1,9 +1,9 @@
 import React from 'react'
 
-const tac = () => {
+const Tac = () => {
   return (
     <div>tac</div>
   )
 }
 
-export default tac
+export default Tac

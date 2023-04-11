@@ -9,7 +9,7 @@ import AboutUs from './AboutUs'
 import ContactUs from './ContactUs'
 import SingleBlog from './SingleBlog'
 import SingleCourse from './SingleCourse'
-import 
+import Tac from './tac'
 
 
 export {
