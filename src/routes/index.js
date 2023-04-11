@@ -9,8 +9,7 @@ import AboutUs from './AboutUs'
 import ContactUs from './ContactUs'
 import SingleBlog from './SingleBlog'
 import SingleCourse from './SingleCourse'
-import Tac from './tac'
-
+import Terms from './Terms'
 
 export {
     Error,
@@ -24,5 +23,5 @@ export {
     ContactUs,
     SingleBlog,
     SingleCourse,
-    Tac
+    Terms
 };
