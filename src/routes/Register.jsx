@@ -8,10 +8,21 @@ const Register = () => {
     <main className='login'>
       <section className='user_login'>
         <div className='section-heading'>
-          <h1>Login to Somesha Dada</h1>
+          <h1>Register for Somesha Dada</h1>
         </div>
         <div className="user_login__form">
           <Form method='POST'>
+            <div className="form-group">
+              <label htmlFor="user_type">
+                Register as a
+              </label>
+              <select name="user_type" id="user_type">
+                <option value="Student" selected disabled>Select a user type</option>
+                <option value="student">Student</option>
+                <option value="parent" disabled>Parent</option>
+                <option value="school" disabled>School</option>
+              </select>
+            </div>
             <InputWithLabel name={'userId'} id={'username'}>
               Username or Phone number
             </InputWithLabel>
