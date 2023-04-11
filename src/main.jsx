@@ -7,7 +7,7 @@ import {
   Route
 } from "react-router-dom";
 import App from "./App";
-import { Error, Home, Courses, Blog, AboutUs, ContactUs, SingleBlog, SingleCourse, Login, Logout, Register, Tac, } from "./routes";
+import { Error, Home, Courses, Blog, AboutUs, ContactUs, SingleBlog, SingleCourse, Login, Logout, Register, Terms, } from "./routes";
 import './assets/sass/main.scss'
 
 const routes = createBrowserRouter(
@@ -23,7 +23,7 @@ const routes = createBrowserRouter(
       <Route element={<Login />} path="login" />
       <Route element={<Register />} path="register" />
       <Route element={<Logout />} path="logout" />
-      <Route element={<Tac />} />
+      <Route element={<Terms />} />
     </Route>
   )
 );
