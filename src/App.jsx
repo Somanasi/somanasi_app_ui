@@ -9,12 +9,12 @@ const App = () => {
     {
       state_data: [],
       toggleMobileView: false,
-      isLoggedIn: false,
+      isLoggedIn: true,
     }
   )
   return (
     <>
-      <Navbar  visible={appState.toggleMobileView} toggle={dispatchAppState}/>
+      <Navbar  visible={appState} toggle={dispatchAppState}/>
       <main>
         <Outlet/>
       </main>

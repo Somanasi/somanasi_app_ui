@@ -21,10 +21,10 @@ const Navbar = ({ visible, toggle }) => {
       </div>
       <div className="mobile-view">
         <Button onClick={() => toggle({type: 'TOGGLE_MOBILE_VIEW'})}>
-          { visible? <GoX size={25}/> : <GoGrabber size={50} />}
+          { visible.toggleMobileView? <GoX size={25}/> : <GoGrabber size={50} />}
         </Button>
       </div>
-      <nav className={visible ? "show_menu menu" : "menu"}>
+      <nav className={visible.toggleMobileView ? "show_menu menu" : "menu"}>
         <ul>
           <ListItems toggle={toggle} visible={visible}>
             <span>
@@ -62,12 +62,16 @@ const Navbar = ({ visible, toggle }) => {
             </span>
             <NavLink to={"/login"}>Accounts</NavLink>
           </ListItems>
-          <ListItems toggle={toggle} visible={visible}>
+          {
+            visible.isLoggedIn?
+            <ListItems toggle={toggle} visible={visible} >
             <span>
               <GoSignOut size={25} />
             </span>
             <NavLink to={"/logout"}>Logout</NavLink>
           </ListItems>
+          : ''
+          }
         </ul>
       </nav>
     </header>
