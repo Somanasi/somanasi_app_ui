@@ -20,7 +20,7 @@ const Navbar = ({ visible, toggle }) => {
         </NavLink>
       </div>
       <div className="mobile-view">
-        <Button onClick={() => toggle(!visible)}>
+        <Button onClick={() => toggle({type: 'TOGGLE_MOBILE_VIEW'})}>
           { visible? <GoX size={25}/> : <GoGrabber size={50} />}
         </Button>
       </div>

@@ -2,7 +2,7 @@ import React from 'react'
 
 const ListItems = ({toggle, visible, children}) => {
   return (
-    <li onClick={ () => toggle(!visible) }>
+    <li onClick={ () => toggle({type: 'TOGGLE_MOBILE_VIEW'}) }>
         {children}
     </li>
   )

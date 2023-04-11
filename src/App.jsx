@@ -4,7 +4,7 @@ import { Footer, Navbar } from './components'
 import ApplicationStateReducer from './components/StateFunction';
 
 const App = () => {
-  const [toggleMobileView, setToggleMobileView] = useState(false);
+  // const [toggleMobileView, setToggleMobileView] = useState(false);
   const [appState, dispatchAppState] = useReducer(
     ApplicationStateReducer,
     {

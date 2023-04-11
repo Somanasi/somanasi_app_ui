@@ -3,7 +3,7 @@ const ApplicationStateReducer = (state, action) => {
         case 'TOGGLE_MOBILE_VIEW':
             return state = {
                 ...state,
-                toggleMobileView: !toggleMobileView
+                toggleMobileView: !state.toggleMobileView
             }
     }
 };
