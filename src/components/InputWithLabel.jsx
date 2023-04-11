@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Inout = ({name, type='text', id, children}) => {
+const InputWithLabel = ({name, type='text', id, children}) => {
   return (
     <div className='form-group'>
         <label htmlFor={id}>{children}</label>
@@ -9,4 +9,4 @@ const Inout = ({name, type='text', id, children}) => {
   )
 }
 
-export default Inout
+export default InputWithLabel
