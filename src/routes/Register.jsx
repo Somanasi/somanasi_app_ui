@@ -37,7 +37,7 @@ const Register = () => {
             </InputWithLabel>
             <div className="form-group">
               <input type="checkbox" />
-              <label htmlFor=""> I agree to terms and conditions</label>
+              <label htmlFor=""> I agree to <NavLink to={'terms'}>terms and conditions</NavLink></label>
             </div>
             <Button type='submit'>Sign up</Button>
           </Form>
