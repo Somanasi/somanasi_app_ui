@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import Logo from "./Logo";
-import { GoGrabber, GoX } from "react-icons/go";
+import { GoGrabber, GoX, GoPerson } from "react-icons/go";
 import {
   BsFillHouseFill,
   BsFillBookFill,
@@ -55,6 +55,12 @@ const Navbar = ({ visible, toggle }) => {
               <BsPhoneFlip size={25} />
             </span>
             <NavLink to={"/contact_us"}>Contact us</NavLink>
+          </ListItems>
+          <ListItems toggle={toggle} visible={visible}>
+            <span>
+              <GoPerson size={25} />
+            </span>
+            <NavLink to={"/login"}>Accounts</NavLink>
           </ListItems>
         </ul>
       </nav>
