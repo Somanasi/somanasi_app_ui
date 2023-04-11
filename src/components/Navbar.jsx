@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import Logo from "./Logo";
-import { GoGrabber, GoX, GoPerson } from "react-icons/go";
+import { GoGrabber, GoX, GoPerson, GoSignOut } from "react-icons/go";
 import {
   BsFillHouseFill,
   BsFillBookFill,
@@ -61,6 +61,12 @@ const Navbar = ({ visible, toggle }) => {
               <GoPerson size={25} />
             </span>
             <NavLink to={"/login"}>Accounts</NavLink>
+          </ListItems>
+          <ListItems toggle={toggle} visible={visible}>
+            <span>
+              <GoSignOut size={25} />
+            </span>
+            <NavLink to={"/logout"}>Logout</NavLink>
           </ListItems>
         </ul>
       </nav>
