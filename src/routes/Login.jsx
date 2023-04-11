@@ -1,5 +1,5 @@
 import React from 'react'
-import { Form } from 'react-router-dom'
+import { Form, NavLink } from 'react-router-dom'
 import InputWithLabel from '../components/InputWithLabel'
 import Button from '../components/Button'
 
@@ -20,6 +20,12 @@ const Login = () => {
             </InputWithLabel>
             <Button type='submit'>Continue</Button>
           </Form>
+        </div>
+        <div className='new_user'>
+          <p>
+           <span> New to our platform?</span> 
+          <NavLink to={'/register'}>Register Here</NavLink>
+          </p>
         </div>
       </section>
     </main>
