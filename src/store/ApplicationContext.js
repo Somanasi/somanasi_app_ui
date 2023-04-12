@@ -21,4 +21,5 @@ export const ApplicationStateProvider = ({ children }) => {
             </DispatchApplicationState.Provider>
         </ApplicationState.Provider>
     )
-}
+};
+
