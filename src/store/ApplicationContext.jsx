@@ -10,7 +10,7 @@ export const ApplicationStateProvider = ({ children }) => {
         ApplicationStateReducer,
         {
             state_data: [],
-            reviews: [],
+            reviews: [...reviews],
             toggleMobileView: false,
             isLoggedIn: true,
         }
