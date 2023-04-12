@@ -31,37 +31,37 @@ const Navbar = () => {
       </div>
       <nav className={visible.toggleMobileView ? "show_menu menu" : "menu"}>
         <ul>
-          <ListItems toggle={toggle} visible={visible}>
+          <ListItems>
             <span>
               <BsFillHouseFill size={25} />
             </span>
             <NavLink to={"/"}>Home</NavLink>
           </ListItems>
-          <ListItems toggle={toggle} visible={visible}>
+          <ListItems>
             <span>
               <BsFillBookFill size={25} />
             </span>
             <NavLink to={"/courses"}>Course</NavLink>
           </ListItems>
-          <ListItems toggle={toggle} visible={visible}>
+          <ListItems>
             <span>
               <BsPencilSquare size={25} />
             </span>
             <NavLink to={"/blog"}>Blog</NavLink>
           </ListItems>
-          <ListItems toggle={toggle} visible={visible}>
+          <ListItems>
             <span>
               <BsFillInfoSquareFill size={25} />
             </span>
             <NavLink to={"/about_us"}>About us</NavLink>
           </ListItems>
-          <ListItems toggle={toggle} visible={visible}>
+          <ListItems>
             <span>
               <BsPhoneFlip size={25} />
             </span>
             <NavLink to={"/contact_us"}>Contact us</NavLink>
           </ListItems>
-          <ListItems toggle={toggle} visible={visible}>
+          <ListItems>
             <span>
               <GoPerson size={25} />
             </span>
@@ -69,7 +69,7 @@ const Navbar = () => {
           </ListItems>
           {
             visible.isLoggedIn ?
-              <ListItems toggle={toggle} visible={visible} >
+              <ListItems >
                 <span>
                   <GoSignOut size={25} />
                 </span>
