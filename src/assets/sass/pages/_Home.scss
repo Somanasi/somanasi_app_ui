@@ -50,10 +50,18 @@
 
                 .reviewer-dp {
                     border: none !important;
-                    margin-bottom: 0 !important;
+                    margin-bottom: u.rem(6) !important;
                     background-color: transparent !important;
                     padding: 0 !important;
                     border-radius: none !important;
+
+                    img{
+                        width: 25vw;
+                        max-width: 25%;
+                        height: 22.5vw;
+                        max-height: 25% !important;
+                        border-radius: 50% !important;
+                    }
                 }
                 .reviewer-content {
                     border: none !important;
