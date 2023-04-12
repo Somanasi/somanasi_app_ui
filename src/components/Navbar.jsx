@@ -11,7 +11,12 @@ import {
 } from "react-icons/bs";
 import Button from "./Button";
 import ListItems from "./ListItems";
-const Navbar = ({ visible, toggle }) => {
+import { useAppState, useDispatchAppState } from "../store/ApplicationContext";
+
+
+const Navbar = () => {
+  const toggle = useDispatchAppState();
+  const visible = useAppState();
   return (
     <header className="header">
       <div>
@@ -20,8 +25,8 @@ const Navbar = ({ visible, toggle }) => {
         </NavLink>
       </div>
       <div className="mobile-view">
-        <Button onClick={() => toggle({type: 'TOGGLE_MOBILE_VIEW'})}>
-          { visible.toggleMobileView? <GoX size={25}/> : <GoGrabber size={50} />}
+        <Button onClick={() => toggle({ type: 'TOGGLE_MOBILE_VIEW' })}>
+          {visible.toggleMobileView ? <GoX size={25} /> : <GoGrabber size={50} />}
         </Button>
       </div>
       <nav className={visible.toggleMobileView ? "show_menu menu" : "menu"}>
@@ -63,14 +68,14 @@ const Navbar = ({ visible, toggle }) => {
             <NavLink to={"/login"}>Accounts</NavLink>
           </ListItems>
           {
-            visible.isLoggedIn?
-            <ListItems toggle={toggle} visible={visible} >
-            <span>
-              <GoSignOut size={25} />
-            </span>
-            <NavLink to={"/logout"}>Logout</NavLink>
-          </ListItems>
-          : ''
+            visible.isLoggedIn ?
+              <ListItems toggle={toggle} visible={visible} >
+                <span>
+                  <GoSignOut size={25} />
+                </span>
+                <NavLink to={"/logout"}>Logout</NavLink>
+              </ListItems>
+              : ''
           }
         </ul>
       </nav>
