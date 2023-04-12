@@ -1,8 +1,8 @@
 import { createContext, useReducer } from "react";
 import { ApplicationStateReducer } from "./ApplicationStateReducer";
 
-const applicationState = createContext(null);
-const dispatchApplicationState = createContext(null);
+const ApplicationState = createContext(null);
+const DispatchApplicationState = createContext(null);
 
 export const ApplicationStateProvider = ({ children }) => {
     const [appState, dispatchAppState] = useReducer(
@@ -13,5 +13,12 @@ export const ApplicationStateProvider = ({ children }) => {
             toggleMobileView: false,
             isLoggedIn: true,
         }
+    );
+    return (
+        <ApplicationState.Provider value={appState}>
+            <DispatchApplicationState.Provider value={dispatchAppState}>
+                {children}
+            </DispatchApplicationState.Provider>
+        </ApplicationState.Provider>
     )
 }
