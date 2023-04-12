@@ -1,8 +1,8 @@
 import React from "react";
 import { Form } from "react-router-dom";
 import SearchInput from "../components/SearchInput";
-import Button from "../components/Button";
 const Home = () => {
+  const reviews = useAppState();
   return (
     <main className="home">
       <section className="searchBar">
