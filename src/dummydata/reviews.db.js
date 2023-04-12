@@ -31,4 +31,4 @@ export const reviews = [
         sint? Magnam, veritatis. Temporibus, eaque sint enim qui quos esse
         praesentium porro tempore.`
     }
-]
+];
