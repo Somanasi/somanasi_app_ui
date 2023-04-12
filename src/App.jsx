@@ -7,10 +7,7 @@ const App = () => {
   const [appState, dispatchAppState] = useReducer(
     ApplicationStateReducer,
     {
-      state_data: [],
-      reviews: [],
-      toggleMobileView: false,
-      isLoggedIn: true,
+      
     }
   )
   return (
