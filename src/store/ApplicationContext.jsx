@@ -23,5 +23,5 @@ export const ApplicationStateProvider = ({ children }) => {
     )
 };
 
-export const useAppState = useContext(ApplicationState);
-export const useDispatchAppState = useContext(DispatchApplicationState);
+export const useAppState = () => useContext(ApplicationState);
+export const useDispatchAppState = () => useContext(DispatchApplicationState);
