@@ -54,7 +54,8 @@
                     background-color: transparent !important;
                     padding: 0 !important;
                     border-radius: none !important;
-
+                    display: flex;
+                    align-items: center !important;
                     img{
                         width: 25vw;
                         max-width: 25%;
