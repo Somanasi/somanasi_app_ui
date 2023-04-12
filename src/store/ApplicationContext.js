@@ -1,4 +1,4 @@
-import { createContext, useReducer } from "react";
+import { createContext, useContext, useReducer } from "react";
 import { ApplicationStateReducer } from "./ApplicationStateReducer";
 
 const ApplicationState = createContext(null);
@@ -23,3 +23,5 @@ export const ApplicationStateProvider = ({ children }) => {
     )
 };
 
+export const useAppState = useContext(ApplicationState);
+export const useDispatchAppState = useContext(DispatchApplicationState);
