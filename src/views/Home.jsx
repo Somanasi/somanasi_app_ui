@@ -75,21 +75,12 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="home-cta">
-        <div>
-          <Button>Rooms</Button>
+      <section className="reviews">
+        <div className="section-heading">
+          <h1>What people say about us</h1>
         </div>
         <div>
-          <Button>Courses</Button>
-        </div>
-        <div>
-          <Button>Subscribe</Button>
-        </div>
-        <div>
-          <Button>History</Button>
-        </div>
-        <div>
-          <Button>Dashboard</Button>
+          
         </div>
       </section>
     </main>
