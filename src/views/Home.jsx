@@ -93,6 +93,9 @@ const Home = () => {
                   <div>
                     <p>{review}</p>
                   </div>
+                  <div>
+                    <span>{name}</span>
+                  </div>
                 </div>
               )
             })
