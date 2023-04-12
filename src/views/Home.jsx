@@ -3,6 +3,7 @@ import { Form } from "react-router-dom";
 import { v4 as uuidv4 } from 'uuid';
 import SearchInput from "../components/SearchInput";
 import { useAppState, } from "../store/ApplicationContext";
+import { GoQuote } from "react-icons/go"
 
 const Home = () => {
   const reviews = useAppState();
@@ -91,7 +92,13 @@ const Home = () => {
                     <img src={review_image} alt={name} />
                   </div>
                   <div className="reviewer-content">
-                    <p>{review}</p>
+                    <p>
+                      <GoQuote size={25} />
+                      {review}
+                      <span>
+                        <GoQuote size={25} />
+                      </span>
+                    </p>
                   </div>
                   <div className="reviewer-id">
                     <span>{name}</span>
