@@ -1,6 +1,8 @@
 import React from "react";
 import { Form } from "react-router-dom";
 import SearchInput from "../components/SearchInput";
+import { useAppState,  } from "../store/ApplicationContext";
+
 const Home = () => {
   const reviews = useAppState();
   return (
