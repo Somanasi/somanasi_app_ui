@@ -1,6 +1,6 @@
 import { createContext, useContext, useReducer } from "react";
 import { ApplicationStateReducer } from "./ApplicationStateReducer";
-import reviews from " ../dummydata/reviews.db.json";
+import { reviews } from "../dummydata/reviews.db";
 
 const ApplicationState = createContext(null);
 const DispatchApplicationState = createContext(null);
