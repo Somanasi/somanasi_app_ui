@@ -8,6 +8,7 @@ const App = () => {
     ApplicationStateReducer,
     {
       state_data: [],
+      reviews: [],
       toggleMobileView: false,
       isLoggedIn: true,
     }
