@@ -84,7 +84,13 @@ const Home = () => {
         </div>
         <div>
           {
-            reviews.reviews.map( ({review_image, name, review}))
+            reviews.reviews.map( ({review_image, name, review}) => {
+              return (
+                <div key={ () => uuidv4()}>
+
+                </div>
+              )
+            })
           }
         </div>
       </section>
