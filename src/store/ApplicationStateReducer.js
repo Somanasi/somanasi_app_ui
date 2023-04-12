@@ -15,4 +15,4 @@ const ApplicationStateReducer = (state, action) => {
     }
 };
 
-export default ApplicationStateReducer;
+export { ApplicationStateReducer };
