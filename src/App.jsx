@@ -6,7 +6,7 @@ import { ApplicationStateProvider } from './store/ApplicationContext'
 const App = () => {
   return (
     <ApplicationStateProvider>
-      <Navbar  visible={appState} toggle={dispatchAppState}/>
+      <Navbar/>
       <main>
         <Outlet/>
       </main>
