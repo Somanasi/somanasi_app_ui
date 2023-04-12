@@ -5,7 +5,7 @@ import { useDispatchAppState } from '../store/ApplicationContext'
 const ListItems = ({children}) => {
   const toggle = useDispatchAppState();
   return (
-    <li onClick={ () => toggle({type: 'TOGGLE_MOBILE_VIEW'}) } key={uuid()}>
+    <li onClick={ () => toggle({type: 'TOGGLE_MOBILE_VIEW'}) } key={uuidv4()}>
         {children}
     </li>
   )
