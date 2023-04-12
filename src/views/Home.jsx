@@ -82,18 +82,18 @@ const Home = () => {
         <div className="section-heading">
           <h1>What people say about us</h1>
         </div>
-        <div>
+        <div className="section-content">
           {
             reviews.reviews.map(({ review_image, name, review }) => {
               return (
                 <div key={() => uuidv4()}>
-                  <div>
+                  <div className="reviewer-dp">
                     <img src={review_image} alt={name} />
                   </div>
-                  <div>
+                  <div className="reviewer-content">
                     <p>{review}</p>
                   </div>
-                  <div>
+                  <div className="reviewer-id">
                     <span>{name}</span>
                   </div>
                 </div>
