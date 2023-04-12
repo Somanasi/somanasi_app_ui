@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ListItems = ({toggle, visible, children}) => {
+const ListItems = ({children}) => {
   return (
     <li onClick={ () => toggle({type: 'TOGGLE_MOBILE_VIEW'}) }>
         {children}
