@@ -10,6 +10,7 @@ import ContactUs from './ContactUs'
 import SingleBlog from './SingleBlog'
 import SingleCourse from './SingleCourse'
 import Terms from './Terms'
+import Dashboard from './Dashboard'
 
 export {
     Error,
@@ -23,5 +24,6 @@ export {
     ContactUs,
     SingleBlog,
     SingleCourse,
-    Terms
+    Terms,
+    Dashboard,
 };

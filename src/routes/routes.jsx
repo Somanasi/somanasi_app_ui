@@ -20,6 +20,7 @@ import {
         <Route element={<Register />} path="register" />
         <Route element={<Logout />} path="logout" />
         <Route element={<Terms />} path="terms" />
+        <Route element={<Dash />} path="terms" />
       </Route>
     )
   );
