@@ -70,6 +70,15 @@
                     background-color: transparent !important;
                     padding: 0 !important;
                     border-radius: none !important;
+
+                    p {
+                        .closing-quote{
+                            transform: rotateY(180deg) !important;
+                            svg{
+                                transform: rotateY(180deg) !important;
+                            }
+                        }
+                    }
                 }
                 .reviewer-id{
                     border: none !important;

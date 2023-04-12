@@ -95,7 +95,7 @@ const Home = () => {
                     <p>
                       <GoQuote size={25} />
                       {review}
-                      <span>
+                      <span className="closing-quote">
                         <GoQuote size={25} />
                       </span>
                     </p>
