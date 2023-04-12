@@ -1,8 +1,8 @@
 import React from "react";
 import { Form } from "react-router-dom";
-import { v4 as uuidv4} from 'uuid';
+import { v4 as uuidv4 } from 'uuid';
 import SearchInput from "../components/SearchInput";
-import { useAppState,  } from "../store/ApplicationContext";
+import { useAppState, } from "../store/ApplicationContext";
 
 const Home = () => {
   const reviews = useAppState();
@@ -11,7 +11,7 @@ const Home = () => {
       <section className="searchBar">
         <p>Search for a course here</p>
         <Form method="GET">
-          <SearchInput size={25}/>
+          <SearchInput size={25} />
         </Form>
       </section>
       <section className="tips">
@@ -84,10 +84,15 @@ const Home = () => {
         </div>
         <div>
           {
-            reviews.reviews.map( ({review_image, name, review}) => {
+            reviews.reviews.map(({ review_image, name, review }) => {
               return (
-                <div key={ () => uuidv4()}>
-
+                <div key={() => uuidv4()}>
+                  <div>
+                    <img src={review_image} alt={name} />
+                  </div>
+                  <div>
+                    <p>{review}</p>
+                  </div>
                 </div>
               )
             })
