@@ -23,3 +23,5 @@ import {
       </Route>
     )
   );
+
+  export default routes;
