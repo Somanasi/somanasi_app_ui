@@ -86,7 +86,7 @@ const Home = () => {
           {
             reviews.reviews.map(({ review_image, name, review }) => {
               return (
-                <div key={() => uuidv4()}>
+                <div key={() => uuidv4()} className="review-container">
                   <div className="reviewer-dp">
                     <img src={review_image} alt={name} />
                   </div>

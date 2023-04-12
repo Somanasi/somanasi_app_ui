@@ -1,17 +1,19 @@
 @use '../utils/' as u;
 @use '../global/' as g;
-.home{
-    .searchBar{
+
+.home {
+    .searchBar {
         padding: u.rem(4) 0;
         @include u.flexcustomdirection(column, none, flex-start);
 
-        p{
+        p {
             font-size: g.$font-small;
             margin-bottom: u.rem(4);
         }
-        
+
     }
-    .tips{
+
+    .tips {
         background-image: linear-gradient(to left, hsla(0, 30%, 96%, 0.5), hsla(0, 20%, 94%, 0.5)), url(../images/why-take-our-course-2.jpeg) !important;
         background-size: cover !important;
         margin-inline: u.rem(-7);
@@ -27,18 +29,33 @@
                 text-align: center;
             }
         }
-        .section-content{
-            div{
+
+        .section-content {
+            div {
                 border: u.rem(1) solid g.$primary;
                 box-shadow: u.rem(-1) u.rem(-1) u.rem(1) u.rem(2) rgba(g.$primary, .2);
                 transition: all 1s ease-in-out;
-                &:hover{
+
+                &:hover {
                     transform: scaleY(1.2);
                 }
             }
-        }    
+        }
     }
-    .reviews{
-        
+
+    .reviews {
+
+        .section-content {
+            .review-container {
+
+                .reviewer-dp {
+                    border: none !important;
+                    margin-bottom: 0 !important;
+                    background-color: transparent !important;
+                    padding: 0 !important;
+                    border-radius: none !important;
+                }
+            }
+        }
     }
 }
