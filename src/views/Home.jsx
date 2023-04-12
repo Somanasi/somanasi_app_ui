@@ -1,5 +1,6 @@
 import React from "react";
 import { Form } from "react-router-dom";
+import { v4 as uuidv4} from 'uuid';
 import SearchInput from "../components/SearchInput";
 import { useAppState,  } from "../store/ApplicationContext";
 
@@ -82,7 +83,9 @@ const Home = () => {
           <h1>What people say about us</h1>
         </div>
         <div>
-          
+          {
+            reviews.reviews.map( ({review_image, name, review}))
+          }
         </div>
       </section>
     </main>
