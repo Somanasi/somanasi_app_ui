@@ -18,8 +18,14 @@ const ApplicationStateReducer = (state, action) => {
             if ( state.sliderIndex < 0 ){
                return state = {
                  ...state,
-                 sliderIndex
+                 sliderIndex: lastIndex,
                };
+            };
+            if ( state.sliderIndex > lastIndex ){
+                return state = {
+                    ...state,
+                    sliderIndex: 0,
+                };
             }
     }
 };
