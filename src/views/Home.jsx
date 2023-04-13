@@ -6,6 +6,7 @@ import { useAppState, } from "../store/ApplicationContext";
 import { GoQuote } from "react-icons/go"
 
 const Home = () => {
+  const sliderState = useAppState();
   useEffect(() => {
 
   },[]);
