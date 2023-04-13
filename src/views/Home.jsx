@@ -9,7 +9,9 @@ const Home = () => {
   const sliderState = useAppState();
   const sliderStateDispatcher = useDispatchAppState();
   useEffect(() => {
-
+    sliderStateDispatcher({
+      type: 'SET_HOME_PAGE_SLIDER_INDEX',
+    })
   },[]);
   const reviews = useAppState();
   return (
