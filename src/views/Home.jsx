@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Form } from "react-router-dom";
 import { v4 as uuidv4 } from 'uuid';
 import SearchInput from "../components/SearchInput";
@@ -6,6 +6,9 @@ import { useAppState, } from "../store/ApplicationContext";
 import { GoQuote } from "react-icons/go"
 
 const Home = () => {
+  useEffect(() => {
+
+  },[]);
   const reviews = useAppState();
   return (
     <main className="home">
