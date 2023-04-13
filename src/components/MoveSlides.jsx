@@ -1,6 +1,7 @@
 const MoveSlides = (initialPosition, stateIndex, arr, arrayIndex) => {
     let position = initialPosition;
     if (arrayIndex === stateIndex) {
+        console.log(arrayIndex, stateIndex);
         return position = 'activeSlide';
     }
     else if (

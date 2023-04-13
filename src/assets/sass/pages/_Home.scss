@@ -70,54 +70,64 @@
                 padding: u.rem(12) u.rem(8);
                 border-radius: u.rem(4);
 
-                .reviewer-dp {
-                    border: none !important;
-                    margin-bottom: u.rem(6) !important;
-                    background-color: transparent !important;
-                    padding: 0 !important;
-                    border-radius: none !important;
-                    display: flex;
-                    justify-content: center !important;
+                article {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 70vh;
+                    transform: translateX(-100%);
+                    
+                    .reviewer-dp {
+                        border: none !important;
+                        margin-bottom: u.rem(6) !important;
+                        background-color: transparent !important;
+                        padding: 0 !important;
+                        border-radius: none !important;
+                        display: flex;
+                        justify-content: center !important;
 
-                    img {
-                        width: 25vw;
-                        max-width: 25%;
-                        height: 22.5vw;
-                        max-height: 25% !important;
-                        border-radius: 50% !important;
-                    }
-                }
-
-                .reviewer-content {
-                    border: none !important;
-                    margin-bottom: 0 !important;
-                    background-color: transparent !important;
-                    padding: 0 !important;
-                    border-radius: none !important;
-
-                    p {
-                        svg {
-                            color: g.$primary;
+                        img {
+                            width: 25vw;
+                            max-width: 25%;
+                            height: 22.5vw;
+                            max-height: 25% !important;
+                            border-radius: 50% !important;
                         }
+                    }
 
-                        .closing-quote {
+                    .reviewer-content {
+                        border: none !important;
+                        margin-bottom: 0 !important;
+                        background-color: transparent !important;
+                        padding: 0 !important;
+                        border-radius: none !important;
+
+                        p {
                             svg {
-                                transform: rotateY(180deg) !important;
+                                color: g.$primary;
+                            }
+
+                            .closing-quote {
+                                svg {
+                                    transform: rotateY(180deg) !important;
+                                }
                             }
                         }
                     }
+
+                    .reviewer-id {
+                        border: none !important;
+                        margin-bottom: 0 !important;
+                        background-color: transparent !important;
+                        padding: 0 !important;
+                        border-radius: none !important;
+                        font-style: italic;
+                        text-align: center;
+                        text-transform: capitalize;
+                    }
                 }
 
-                .reviewer-id {
-                    border: none !important;
-                    margin-bottom: 0 !important;
-                    background-color: transparent !important;
-                    padding: 0 !important;
-                    border-radius: none !important;
-                    font-style: italic;
-                    text-align: center;
-                    text-transform: capitalize;
-                }
             }
         }
     }

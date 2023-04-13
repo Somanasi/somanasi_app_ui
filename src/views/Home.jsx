@@ -101,16 +101,47 @@ const Home = () => {
           <h1>What people say about us</h1>
         </div>
         <div className="section-content slide-custom">
-          {
-            state.reviews.map(({ ...review_item }, i) => {
-              const position = MoveSlides('nextSlide', state.reviews, i);
-              return (
-                <div className="review-container">
-                  <Reviews key={i} {...review_item} position={position} />
-                </div>
-              )
-            })
-          }
+          <div className="review-container">
+            {
+              state.reviews.map(({ ...review_item }, i) => {
+                // const position = MoveSlides('nextSlide', state.reviews, i);
+                let position = initialPosition;
+                if (arrayIndex === stateIndex) {
+                  console.log(arrayIndex, stateIndex);
+                  position = 'activeSlide';
+                }
+                else if (
+                  (arrayIndex === stateIndex - 1) ||
+                  ((stateIndex === 0) && (arrayIndex === arrayIndex.length - 1))
+                ) {
+                  position = 'lastSlide';
+                }
+                else {
+                  position;
+                }
+                return (
+
+                  <article className={`${position}`}>
+                    <div className="reviewer-dp">
+                      <img src={review_image} alt={name} />
+                    </div>
+                    <div className="reviewer-content">
+                      <p>
+                        <GoQuote size={10} />
+                        {review}
+                        <span className="closing-quote">
+                          <GoQuote size={10} />
+                        </span>
+                      </p>
+                    </div>
+                    <div className="reviewer-id">
+                      <span>{name}</span>
+                    </div>
+                  </article>
+                )
+              })
+            }
+          </div>
         </div>
       </section>
     </main>

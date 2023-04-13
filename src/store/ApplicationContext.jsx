@@ -13,7 +13,6 @@ export const ApplicationStateProvider = ({ children }) => {
             reviews: [...reviews],
             toggleMobileView: false,
             isLoggedIn: true,
-            sliderIndex: 0,
         }
     );
     return (
