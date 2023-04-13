@@ -3,11 +3,11 @@ import { GoQuote } from "react-icons/go"
 
 const Reviews = ({ review_image, name, review }) => {
     return (
-        <div className="review-container">
+        <article className="review-container">
             <div className="reviewer-dp">
                 <img src={review_image} alt={name} />
             </div>
-            <article className="reviewer-content">
+            <div className="reviewer-content">
                 <p>
                     <GoQuote size={10} />
                     {review}
@@ -15,11 +15,11 @@ const Reviews = ({ review_image, name, review }) => {
                         <GoQuote size={10} />
                     </span>
                 </p>
-            </article>
+            </div>
             <div className="reviewer-id">
                 <span>{name}</span>
             </div>
-        </div>
+        </article>
     )
 }
 
