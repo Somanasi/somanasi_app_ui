@@ -1,13 +1,15 @@
-const Logout = (dispatchState) => {
+import { useDispatchAppState } from "../store/ApplicationContext";
+import Button from "./Button";
+
+const Logout = ({children, onClick}) => {
   console.log('user logged out')
-  const logout = dispatchState();
-  const userLogout = logout( {
-    type: 'USER_LOGIN_STATUS',
-    payload: {
-      isLoggedIn: false,
-    }
-  })
-  return userLogout;
+  const logout = useDispatchAppState;
+  console.log(logout)
+  return (
+    <Button onClick={onClick}>
+        {children}
+    </Button>
+  );
 }
 
 export default Logout

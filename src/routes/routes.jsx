@@ -4,7 +4,7 @@ import {
     Route
   } from "react-router-dom";
   import App from "../App";
-  import { Error, Home, Courses, Blog, AboutUs, ContactUs, SingleBlog, SingleCourse, Login, Logout, Register, Terms, Dashboard, } from "../views";
+  import { Error, Home, Courses, Blog, AboutUs, ContactUs, SingleBlog, SingleCourse, Login, Register, Terms, Dashboard, } from "../views";
   
   const routes = createBrowserRouter(
     createRoutesFromElements(
@@ -18,7 +18,6 @@ import {
         <Route element={<ContactUs />} path="contact_us" />
         <Route element={<Login />} path="login" />
         <Route element={<Register />} path="register" />
-        <Route element={<Logout />} path="logout" />
         <Route element={<Terms />} path="terms" />
         <Route element={<Dashboard />} path="terms" />
       </Route>

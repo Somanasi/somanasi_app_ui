@@ -71,12 +71,17 @@ const Navbar = () => {
           </ListItems>
           {
             visible.isLoggedIn ?
-              <ListItems onClick={ () => Logout(toggle)} >
+              <Logout onClick={() => toggle({
+                type: 'USER_LOGIN_STATUS',
+                payload: {
+                  isLoggedIn: false,
+                }
+              })}>
                 <span>
                   <GoSignOut size={25} />
                 </span>
-                <NavLink to={"/logout"}>Logout</NavLink>
-              </ListItems>
+                Logout
+              </Logout>
               : ''
           }
         </ul>
