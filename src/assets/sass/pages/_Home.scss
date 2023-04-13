@@ -57,8 +57,11 @@
                 text-align: center;
             }
         }
+
         .section-content {
             .review-container {
+                display: flex;
+                overflow-x: hidden;
                 position: relative;
                 border: u.rem(1) solid g.$text-tertiary;
                 margin-bottom: u.rem(16);
@@ -75,7 +78,8 @@
                     border-radius: none !important;
                     display: flex;
                     justify-content: center !important;
-                    img{
+
+                    img {
                         width: 25vw;
                         max-width: 25%;
                         height: 22.5vw;
@@ -83,6 +87,7 @@
                         border-radius: 50% !important;
                     }
                 }
+
                 .reviewer-content {
                     border: none !important;
                     margin-bottom: 0 !important;
@@ -91,24 +96,26 @@
                     border-radius: none !important;
 
                     p {
-                        svg{
+                        svg {
                             color: g.$primary;
                         }
-                        .closing-quote{
-                            svg{
+
+                        .closing-quote {
+                            svg {
                                 transform: rotateY(180deg) !important;
                             }
                         }
                     }
                 }
-                .reviewer-id{
+
+                .reviewer-id {
                     border: none !important;
                     margin-bottom: 0 !important;
                     background-color: transparent !important;
                     padding: 0 !important;
                     border-radius: none !important;
                     font-style: italic;
-                    text-align: center ;
+                    text-align: center;
                     text-transform: capitalize;
                 }
             }
