@@ -4,7 +4,7 @@
 .home {
     .searchBar {
         padding: u.rem(4) 0;
-        margin-bottom: u.rem(32);
+        margin-bottom: u.rem(36);
         @include u.flexcustomdirection(column, none, flex-start);
 
         p {
