@@ -93,10 +93,10 @@ const Home = () => {
                   </div>
                   <article className="reviewer-content">
                     <p>
-                      <GoQuote size={25} />
+                      <GoQuote size={10} />
                       {review}
                       <span className="closing-quote">
-                        <GoQuote size={25} />
+                        <GoQuote size={10} />
                       </span>
                     </p>
                   </article>
