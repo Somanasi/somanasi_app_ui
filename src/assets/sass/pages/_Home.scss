@@ -61,8 +61,8 @@
             // height: 90vw !important;
         }
         .section-content {
-            position: relative;
             .review-container {
+                position: relative;
                 border: u.rem(1) solid g.$text-tertiary;
                 margin-bottom: u.rem(16);
                 background-color: rgba(g.$text-tertiary, .3);
