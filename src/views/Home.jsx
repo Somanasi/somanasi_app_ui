@@ -103,7 +103,7 @@ const Home = () => {
           {
             state.reviews.map(({...review_item}, i) => {
               return (
-                <Reviews key={() => uuidv4()} {...review_item}/>
+                <Reviews key={i} {...review_item}/>
               )
             })
           }

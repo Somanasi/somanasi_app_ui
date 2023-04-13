@@ -1,4 +1,5 @@
 import React from 'react'
+import { GoQuote } from "react-icons/go"
 
 const Reviews = ({ review_image, name, review }) => {
     return (
