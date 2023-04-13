@@ -6,16 +6,15 @@ import { useAppState, useDispatchAppState, } from "../store/ApplicationContext";
 import { GoQuote } from "react-icons/go"
 
 const Home = () => {
+  // States
   const sliderState = useAppState();
+  const reviews = useAppState();
   const sliderStateDispatcher = useDispatchAppState();
+  console.log(sliderState)
   useEffect(() => {
-    sliderStateDispatcher({
-      type: 'SET_HOME_PAGE_SLIDER_INDEX',
-    });
-    
     const slider = setInterval(() => {
       sliderStateDispatcher( {
-        type: 'HOME_PAGE_SLIDER',
+        type: 'SET_HOME_PAGE_SLIDER_INDEX',
         payload: {sliderIndex: sliderState.sliderIndex + 1},
       })
     },5000);
@@ -23,8 +22,8 @@ const Home = () => {
     return () => {
       clearInterval(slider);
     }
-  },[]);
-  const reviews = useAppState();
+  },[sliderState.sliderIndex, sliderState.reviews]);
+  
   return (
     <main className="home">
       <section className="searchBar">

@@ -1,4 +1,5 @@
 const ApplicationStateReducer = (state, action) => {
+    console.log(action.type);
     switch (action.type) {
         // Toggling mobile devices
         case 'TOGGLE_MOBILE_VIEW':
@@ -27,11 +28,9 @@ const ApplicationStateReducer = (state, action) => {
                     sliderIndex: 0,
                 };
             };
-        // Home page slider action
-        case 'HOME_PAGE_SLIDER':
             return state = {
                 ...state,
-                sliderIndex: action.payload.sliderIndex,
+                sliderIndex: action.payload.sliderIndex
             };
     }
 };
