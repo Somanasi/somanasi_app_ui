@@ -1,12 +1,11 @@
 import { useDispatchAppState } from "../store/ApplicationContext";
 import Button from "./Button";
 
-const Logout = ({children, onClick}) => {
-  console.log('user logged out')
+const Logout = ({children, toggle, onClick}) => {
   const logout = useDispatchAppState;
   console.log(logout)
   return (
-    <Button onClick={onClick}>
+    <Button onClick={ onClick }>
         {children}
     </Button>
   );

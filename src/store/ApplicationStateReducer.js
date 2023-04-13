@@ -1,5 +1,4 @@
 const ApplicationStateReducer = (state, action) => {
-    console.log(action.type)
     switch (action.type) {
         // Toggling mobile devices
         case 'TOGGLE_MOBILE_VIEW':
