@@ -100,8 +100,8 @@ const Home = () => {
         </div>
         <div className="section-content">
           {
-            state.reviews.map((review, i) => {
-              const { review_image, name, review } = review
+            state.reviews.map((review_item, i) => {
+              const { review_image, name, review } = review_item
               return (
                 <div key={() => uuidv4()} className="review-container">
                   <div className="reviewer-dp">
