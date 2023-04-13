@@ -57,8 +57,18 @@
                 text-align: center;
             }
         }
+        .slide-custom{
+            height: 90vw !important;
+        }
         .section-content {
+            position: relative;
             .review-container {
+                position: absolute;
+                top: 10% !important;
+                left: 0;
+                height: auto !important;
+                opacity: 0;
+                transition: all 0.2s ease-in-out;
                 border: u.rem(1) solid g.$text-tertiary;
                 margin-bottom: u.rem(16);
                 background-color: rgba(g.$text-tertiary, .3);

@@ -100,7 +100,7 @@ const Home = () => {
         <div className="section-heading">
           <h1>What people say about us</h1>
         </div>
-        <div className="section-content">
+        <div className="section-content slide-custom">
           {
             state.reviews.map(({...review_item}, i) => {
               MoveSlides('nextSlide', state.reviews, i);
