@@ -11,7 +11,14 @@ const Home = () => {
   useEffect(() => {
     sliderStateDispatcher({
       type: 'SET_HOME_PAGE_SLIDER_INDEX',
-    })
+    });
+    
+    const slider = setInterval(() => {
+      sliderStateDispatcher( {
+        type: 'HOME_PAGE_SLIDER',
+        payload: {sliderIndex: sliderState.sliderIndex + 1},
+      })
+    },5000)
   },[]);
   const reviews = useAppState();
   return (
