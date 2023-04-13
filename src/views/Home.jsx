@@ -3,23 +3,13 @@ import { Form } from "react-router-dom";
 import SearchInput from "../components/SearchInput";
 import { useAppState, } from "../store/ApplicationContext";
 import Reviews from "../components/Reviews";
-import Slider from 'react-slick';
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-
+// import { register } from 'swiper/element/bundle';
 
 const Home = () => {
   // States
   const state = useAppState();
 
-  // Setttings : slider
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1
-  };
+  // register();
 
   return (
     <main className="home">
@@ -98,7 +88,6 @@ const Home = () => {
           <h1>What people say about us</h1>
         </div>
         <div className="section-content">
-          <Slider>
             {
               state.reviews.map(({ ...review_item }, i) => {
                 return (
@@ -106,7 +95,6 @@ const Home = () => {
                 )
               })
             }
-          </Slider>
         </div>
       </section>
     </main>
