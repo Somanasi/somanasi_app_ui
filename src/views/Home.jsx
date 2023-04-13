@@ -1,13 +1,17 @@
 import React from "react";
 import { Form } from "react-router-dom";
 import SearchInput from "../components/SearchInput";
-import { useAppState,  } from "../store/ApplicationContext";
+import { useAppState, } from "../store/ApplicationContext";
 import Reviews from "../components/Reviews";
+import Slider from 'react-slick';
+import settingsCustom from "../components/MoveSlides";
+
 
 const Home = () => {
   // States
   const state = useAppState();
-  
+ 
+  const settings = settingsCustom();
   return (
     <main className="home">
       <section className="searchBar">
@@ -85,13 +89,15 @@ const Home = () => {
           <h1>What people say about us</h1>
         </div>
         <div className="section-content">
-          {
-            state.reviews.map(({...review_item}, i) => {
-              return (
-                <Reviews key={i} {...review_item}/>
-              )
-            })
-          }
+          <Slider {...settings}>
+            {
+              state.reviews.map(({ ...review_item }, i) => {
+                return (
+                  <Reviews key={i} {...review_item} />
+                )
+              })
+            }
+          </Slider>
         </div>
       </section>
     </main>

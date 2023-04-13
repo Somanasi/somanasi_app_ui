@@ -1,17 +1,10 @@
-const MoveSlides = (initialPosition, stateIndex, arr, arrayIndex) => {
-    let position = initialPosition;
-    if (arrayIndex === stateIndex) {
-        console.log(arrayIndex, stateIndex);
-        return position = 'activeSlide';
-    }
-    else if (
-        (arrayIndex === stateIndex - 1) ||
-        (( stateIndex === 0 ) && ( arrayIndex === arrayIndex.length -1 ))
-    ) {
-       return position = 'lastSlide';
-    }
-    else {
-        return position;
+const MoveSlides = () => {
+    return {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1
     }
 }
 
