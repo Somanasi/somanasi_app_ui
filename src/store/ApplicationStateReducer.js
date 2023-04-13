@@ -12,8 +12,8 @@ const ApplicationStateReducer = (state, action) => {
                 ...state,
                 isLoggedIn: action.payload.isLoggedIn
             };
-        // Home page slider
-        case 'HOME_PAGE_SLIDER':
+        // Home page slider index
+        case 'SET_HOME_PAGE_SLIDER_INDEX':
             const lastIndex = state.reviews.length - 1;
             if ( state.sliderIndex < 0 ){
                return state = {
@@ -26,7 +26,13 @@ const ApplicationStateReducer = (state, action) => {
                     ...state,
                     sliderIndex: 0,
                 };
-            }
+            };
+        // Home page slider action
+        case 'HOME_PAGE_SLIDER':
+            return state = {
+                ...state,
+                sliderIndex: action.payload.sliderIndex,
+            };
     }
 };
 
