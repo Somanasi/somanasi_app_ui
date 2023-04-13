@@ -4,6 +4,7 @@ import { v4 as uuidv4 } from 'uuid';
 import SearchInput from "../components/SearchInput";
 import { useAppState, useDispatchAppState, } from "../store/ApplicationContext";
 import { GoQuote } from "react-icons/go"
+import Reviews from "../components/Reviews";
 
 const Home = () => {
   // States
@@ -100,26 +101,9 @@ const Home = () => {
         </div>
         <div className="section-content">
           {
-            state.reviews.map((review_item, i) => {
-              const { review_image, name, review } = review_item
+            state.reviews.map(({...review_item}, i) => {
               return (
-                <div key={() => uuidv4()} className="review-container">
-                  <div className="reviewer-dp">
-                    <img src={review_image} alt={name} />
-                  </div>
-                  <article className="reviewer-content">
-                    <p>
-                      <GoQuote size={10} />
-                      {review}
-                      <span className="closing-quote">
-                        <GoQuote size={10} />
-                      </span>
-                    </p>
-                  </article>
-                  <div className="reviewer-id">
-                    <span>{name}</span>
-                  </div>
-                </div>
+                <Reviews key={() => uuidv4()} {...review_item}/>
               )
             })
           }
