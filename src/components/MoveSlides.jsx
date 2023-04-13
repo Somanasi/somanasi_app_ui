@@ -9,6 +9,7 @@ const MoveSlides = (initialPosition, stateIndex, arr, arrayIndex) => {
     ) {
         position = 'lastSlide';
     }
+    return position;
 }
 
 export default MoveSlides

@@ -103,9 +103,9 @@ const Home = () => {
         <div className="section-content slide-custom">
           {
             state.reviews.map(({...review_item}, i) => {
-              MoveSlides('nextSlide', state.reviews, i);
+              const position = MoveSlides('nextSlide', state.reviews, i);
               return (
-                <Reviews key={i} {...review_item}/>
+                <Reviews key={i} {...review_item} position={position}/>
               )
             })
           }
