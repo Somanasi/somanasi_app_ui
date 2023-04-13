@@ -1,11 +1,8 @@
 import React, { useEffect } from "react";
 import { Form } from "react-router-dom";
-import { v4 as uuidv4 } from 'uuid';
 import SearchInput from "../components/SearchInput";
 import { useAppState, useDispatchAppState, } from "../store/ApplicationContext";
-import { GoQuote } from "react-icons/go"
 import Reviews from "../components/Reviews";
-import MoveSlides from "../components/MoveSlides";
 
 const Home = () => {
   // States
@@ -13,17 +10,17 @@ const Home = () => {
   const sliderStateDispatcher = useDispatchAppState();
   useEffect(() => {
     const slider = setInterval(() => {
-      sliderStateDispatcher({
+      sliderStateDispatcher( {
         type: 'HOME_PAGE_SLIDER',
-        payload: { sliderIndex: state.sliderIndex + 1 },
+        payload: {sliderIndex: state.sliderIndex + 1},
       })
-    }, 5000);
+    },5000);
 
     return () => {
       clearInterval(slider);
     }
-  }, [state.sliderIndex, state.reviews]);
-
+  },[state.sliderIndex, state.reviews]);
+  
   return (
     <main className="home">
       <section className="searchBar">
@@ -100,48 +97,14 @@ const Home = () => {
         <div className="section-heading">
           <h1>What people say about us</h1>
         </div>
-        <div className="section-content slide-custom">
-          <div className="review-container">
-            {
-              state.reviews.map(({ ...review_item }, i) => {
-                // const position = MoveSlides('nextSlide', state.reviews, i);
-                let position = initialPosition;
-                if (arrayIndex === stateIndex) {
-                  console.log(arrayIndex, stateIndex);
-                  position = 'activeSlide';
-                }
-                else if (
-                  (arrayIndex === stateIndex - 1) ||
-                  ((stateIndex === 0) && (arrayIndex === arrayIndex.length - 1))
-                ) {
-                  position = 'lastSlide';
-                }
-                else {
-                  position;
-                }
-                return (
-
-                  <article className={`${position}`}>
-                    <div className="reviewer-dp">
-                      <img src={review_image} alt={name} />
-                    </div>
-                    <div className="reviewer-content">
-                      <p>
-                        <GoQuote size={10} />
-                        {review}
-                        <span className="closing-quote">
-                          <GoQuote size={10} />
-                        </span>
-                      </p>
-                    </div>
-                    <div className="reviewer-id">
-                      <span>{name}</span>
-                    </div>
-                  </article>
-                )
-              })
-            }
-          </div>
+        <div className="section-content">
+          {
+            state.reviews.map(({...review_item}, i) => {
+              return (
+                <Reviews key={i} {...review_item}/>
+              )
+            })
+          }
         </div>
       </section>
     </main>
