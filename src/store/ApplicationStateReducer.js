@@ -14,7 +14,13 @@ const ApplicationStateReducer = (state, action) => {
             };
         // Home page slider
         case 'HOME_PAGE_SLIDER':
-            return
+            const lastIndex = state.reviews.length - 1;
+            if ( state.sliderIndex < 0 ){
+               return state = {
+                 ...state,
+                 sliderIndex
+               };
+            }
     }
 };
 
