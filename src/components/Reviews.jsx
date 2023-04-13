@@ -3,7 +3,7 @@ import { GoQuote } from "react-icons/go"
 
 const Reviews = ({ review_image, name, review, position }) => {
     return (
-        <article className={`review-container ${position}`}>
+        <article className={`${position}`}>
             <div className="reviewer-dp">
                 <img src={review_image} alt={name} />
             </div>

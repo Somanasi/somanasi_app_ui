@@ -13,17 +13,17 @@ const Home = () => {
   const sliderStateDispatcher = useDispatchAppState();
   useEffect(() => {
     const slider = setInterval(() => {
-      sliderStateDispatcher( {
+      sliderStateDispatcher({
         type: 'HOME_PAGE_SLIDER',
-        payload: {sliderIndex: state.sliderIndex + 1},
+        payload: { sliderIndex: state.sliderIndex + 1 },
       })
-    },5000);
+    }, 5000);
 
     return () => {
       clearInterval(slider);
     }
-  },[state.sliderIndex, state.reviews]);
-  
+  }, [state.sliderIndex, state.reviews]);
+
   return (
     <main className="home">
       <section className="searchBar">
@@ -102,10 +102,12 @@ const Home = () => {
         </div>
         <div className="section-content slide-custom">
           {
-            state.reviews.map(({...review_item}, i) => {
+            state.reviews.map(({ ...review_item }, i) => {
               const position = MoveSlides('nextSlide', state.reviews, i);
               return (
-                <Reviews key={i} {...review_item} position={position}/>
+                <div className="review-container">
+                  <Reviews key={i} {...review_item} position={position} />
+                </div>
               )
             })
           }
