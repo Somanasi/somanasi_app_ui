@@ -12,6 +12,9 @@ const ApplicationStateReducer = (state, action) => {
                 ...state,
                 isLoggedIn: action.payload.isLoggedIn
             };
+        // Home page slider
+        case 'HOME_PAGE_SLIDER':
+            return
     }
 };
 
