@@ -12,6 +12,7 @@ import {
 import Button from "./Button";
 import ListItems from "./ListItems";
 import { useAppState, useDispatchAppState } from "../store/ApplicationContext";
+import Logout from "./Logout";
 
 
 const Navbar = () => {
@@ -70,7 +71,7 @@ const Navbar = () => {
           </ListItems>
           {
             visible.isLoggedIn ?
-              <ListItems >
+              <ListItems onClick={ () => Logout(toggle)} >
                 <span>
                   <GoSignOut size={25} />
                 </span>
