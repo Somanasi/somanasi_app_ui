@@ -80,7 +80,7 @@ const Navbar = () => {
                 <span>
                   <GoSignOut size={25} />
                 </span>
-                <NavLink to={"/"} onClick={}>Logout</NavLink>
+                <NavLink to={"/"} onClick={ () => userLogout }>Logout</NavLink>
               </ListItems>
               : ''
           }
