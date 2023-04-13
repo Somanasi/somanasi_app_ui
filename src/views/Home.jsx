@@ -1,25 +1,12 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Form } from "react-router-dom";
 import SearchInput from "../components/SearchInput";
-import { useAppState, useDispatchAppState, } from "../store/ApplicationContext";
+import { useAppState,  } from "../store/ApplicationContext";
 import Reviews from "../components/Reviews";
 
 const Home = () => {
   // States
   const state = useAppState();
-  const sliderStateDispatcher = useDispatchAppState();
-  useEffect(() => {
-    const slider = setInterval(() => {
-      sliderStateDispatcher( {
-        type: 'HOME_PAGE_SLIDER',
-        payload: {sliderIndex: state.sliderIndex + 1},
-      })
-    },5000);
-
-    return () => {
-      clearInterval(slider);
-    }
-  },[state.sliderIndex, state.reviews]);
   
   return (
     <main className="home">
