@@ -18,7 +18,11 @@ const Home = () => {
         type: 'HOME_PAGE_SLIDER',
         payload: {sliderIndex: sliderState.sliderIndex + 1},
       })
-    },5000)
+    },5000);
+
+    return () => {
+      clearInterval(slider);
+    }
   },[]);
   const reviews = useAppState();
   return (
