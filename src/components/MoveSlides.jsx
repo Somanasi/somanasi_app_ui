@@ -1,15 +1,17 @@
 const MoveSlides = (initialPosition, stateIndex, arr, arrayIndex) => {
     let position = initialPosition;
     if (arrayIndex === stateIndex) {
-        position = 'activeSlide';
-    };
-    if (
+        return position = 'activeSlide';
+    }
+    else if (
         (arrayIndex === stateIndex - 1) ||
         (( stateIndex === 0 ) && ( arrayIndex === arrayIndex.length -1 ))
     ) {
-        position = 'lastSlide';
+       return position = 'lastSlide';
     }
-    return position;
+    else {
+        return position;
+    }
 }
 
 export default MoveSlides
