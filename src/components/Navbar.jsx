@@ -77,10 +77,12 @@ const Navbar = () => {
                   isLoggedIn: false,
                 }
               })}>
-                <span>
+                <span className="logout-icon">
                   <GoSignOut size={25} />
                 </span>
-                Logout
+                <span className="logout-text">
+                  Logout
+                </span>
               </Logout>
               : ''
           }
