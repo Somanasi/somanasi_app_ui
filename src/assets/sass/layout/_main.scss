@@ -2,7 +2,7 @@
 @use '../utils/' as u;
 main{
     background-color: g.$primary;
-    padding: u.rem(16) u.rem(4);
+    padding: u.rem(16) u.rem(4) 0;
     color: g.$text-secondary;
 
     section {
