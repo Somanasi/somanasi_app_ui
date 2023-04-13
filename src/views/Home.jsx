@@ -91,7 +91,7 @@ const Home = () => {
                   <div className="reviewer-dp">
                     <img src={review_image} alt={name} />
                   </div>
-                  <div className="reviewer-content">
+                  <article className="reviewer-content">
                     <p>
                       <GoQuote size={25} />
                       {review}
@@ -99,7 +99,7 @@ const Home = () => {
                         <GoQuote size={25} />
                       </span>
                     </p>
-                  </div>
+                  </article>
                   <div className="reviewer-id">
                     <span>{name}</span>
                   </div>
