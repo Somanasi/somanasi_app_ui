@@ -1,9 +1,9 @@
 import React from 'react'
 import { GoQuote } from "react-icons/go"
 
-const Reviews = ({ review_image, name, review }) => {
+const Reviews = ({ review_image, name, review, position }) => {
     return (
-        <article className="review-container">
+        <article className={`review-container ${position}`}>
             <div className="reviewer-dp">
                 <img src={review_image} alt={name} />
             </div>
