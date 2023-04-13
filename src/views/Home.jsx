@@ -4,14 +4,23 @@ import SearchInput from "../components/SearchInput";
 import { useAppState, } from "../store/ApplicationContext";
 import Reviews from "../components/Reviews";
 import Slider from 'react-slick';
-import settingsCustom from "../components/MoveSlides";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 
 const Home = () => {
   // States
   const state = useAppState();
- 
-  const settings = settingsCustom();
+
+  // Setttings : slider
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1
+  };
+
   return (
     <main className="home">
       <section className="searchBar">
@@ -89,7 +98,7 @@ const Home = () => {
           <h1>What people say about us</h1>
         </div>
         <div className="section-content">
-          <Slider {...settings}>
+          <Slider>
             {
               state.reviews.map(({ ...review_item }, i) => {
                 return (
