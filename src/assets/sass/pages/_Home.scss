@@ -59,6 +59,12 @@
         }
         .section-content {
             .review-container {
+                border: u.rem(1) solid g.$text-tertiary;
+                margin-bottom: u.rem(16);
+                background-color: rgba(g.$text-tertiary, .3);
+                color: g.$text-regular;
+                padding: u.rem(12) u.rem(8);
+                border-radius: u.rem(4);
 
                 .reviewer-dp {
                     border: none !important;
