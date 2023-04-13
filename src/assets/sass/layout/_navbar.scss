@@ -50,6 +50,20 @@
                     color: g.$text-primary;
                 }
             }
+            button{
+                background-color: transparent;
+                border: none;
+                display: flex;
+                .logout-icon{
+                    color: g.$primary;
+                    display: block;
+                    padding-right: u.rem(16);
+                }
+                .logout-text{
+                    color: g.$text-primary;
+                    display: block;
+                }
+            }
         }
     }
 

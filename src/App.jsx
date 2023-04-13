@@ -1,17 +1,17 @@
-import React, {useState} from 'react'
+import React from 'react'
 import { Outlet } from 'react-router-dom'
 import { Footer, Navbar } from './components'
+import { ApplicationStateProvider } from './store/ApplicationContext'
 
 const App = () => {
-  const [toggleMobileView, setToggleMobileView] = useState(false);
   return (
-    <>
-      <Navbar  visible={toggleMobileView} toggle={setToggleMobileView}/>
-      <main>
+    <ApplicationStateProvider>
+      <Navbar/>
+      <>
         <Outlet/>
-      </main>
+      </>
       <Footer/>
-    </>
+    </ApplicationStateProvider>
 
   )
 }

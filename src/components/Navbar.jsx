@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import Logo from "./Logo";
-import { GoGrabber, GoX } from "react-icons/go";
+import { GoGrabber, GoX, GoPerson, GoSignOut } from "react-icons/go";
 import {
   BsFillHouseFill,
   BsFillBookFill,
@@ -11,7 +11,14 @@ import {
 } from "react-icons/bs";
 import Button from "./Button";
 import ListItems from "./ListItems";
-const Navbar = ({ visible, toggle }) => {
+import { useAppState, useDispatchAppState } from "../store/ApplicationContext";
+import Logout from "./Logout";
+
+
+const Navbar = () => {
+  const toggle = useDispatchAppState();
+  const visible = useAppState();
+
   return (
     <header className="header">
       <div>
@@ -20,42 +27,65 @@ const Navbar = ({ visible, toggle }) => {
         </NavLink>
       </div>
       <div className="mobile-view">
-        <Button onClick={() => toggle(!visible)}>
-          { visible? <GoX size={25}/> : <GoGrabber size={50} />}
+        <Button onClick={() => toggle({ type: 'TOGGLE_MOBILE_VIEW' })}>
+          {visible.toggleMobileView ? <GoX size={25} /> : <GoGrabber size={50} />}
         </Button>
       </div>
-      <nav className={visible ? "show_menu menu" : "menu"}>
+      <nav className={visible.toggleMobileView ? "show_menu menu" : "menu"}>
         <ul>
-          <ListItems toggle={toggle} visible={visible}>
+          <ListItems>
             <span>
               <BsFillHouseFill size={25} />
             </span>
             <NavLink to={"/"}>Home</NavLink>
           </ListItems>
-          <ListItems toggle={toggle} visible={visible}>
+          <ListItems>
             <span>
               <BsFillBookFill size={25} />
             </span>
             <NavLink to={"/courses"}>Course</NavLink>
           </ListItems>
-          <ListItems toggle={toggle} visible={visible}>
+          <ListItems>
             <span>
               <BsPencilSquare size={25} />
             </span>
             <NavLink to={"/blog"}>Blog</NavLink>
           </ListItems>
-          <ListItems toggle={toggle} visible={visible}>
+          <ListItems>
             <span>
               <BsFillInfoSquareFill size={25} />
             </span>
             <NavLink to={"/about_us"}>About us</NavLink>
           </ListItems>
-          <ListItems toggle={toggle} visible={visible}>
+          <ListItems>
             <span>
               <BsPhoneFlip size={25} />
             </span>
             <NavLink to={"/contact_us"}>Contact us</NavLink>
           </ListItems>
+          <ListItems>
+            <span>
+              <GoPerson size={25} />
+            </span>
+            <NavLink to={"/login"}>Accounts</NavLink>
+          </ListItems>
+          {
+            visible.isLoggedIn ?
+              <Logout onClick={() => toggle({
+                type: 'USER_LOGIN_STATUS',
+                payload: {
+                  isLoggedIn: false,
+                }
+              })}>
+                <span className="logout-icon">
+                  <GoSignOut size={25} />
+                </span>
+                <span className="logout-text">
+                  Logout
+                </span>
+              </Logout>
+              : ''
+          }
         </ul>
       </nav>
     </header>

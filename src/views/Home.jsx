@@ -1,14 +1,22 @@
 import React from "react";
 import { Form } from "react-router-dom";
 import SearchInput from "../components/SearchInput";
-import Button from "../components/Button";
+import { useAppState, } from "../store/ApplicationContext";
+import Reviews from "../components/Reviews";
+// import { register } from 'swiper/element/bundle';
+
 const Home = () => {
+  // States
+  const state = useAppState();
+
+  // register();
+
   return (
     <main className="home">
       <section className="searchBar">
         <p>Search for a course here</p>
         <Form method="GET">
-          <SearchInput size={25}/>
+          <SearchInput size={25} />
         </Form>
       </section>
       <section className="tips">
@@ -75,21 +83,18 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="home-cta">
-        <div>
-          <Button>Rooms</Button>
+      <section className="reviews">
+        <div className="section-heading">
+          <h1>What people say about us</h1>
         </div>
-        <div>
-          <Button>Courses</Button>
-        </div>
-        <div>
-          <Button>Subscribe</Button>
-        </div>
-        <div>
-          <Button>History</Button>
-        </div>
-        <div>
-          <Button>Dashboard</Button>
+        <div className="section-content">
+            {
+              state.reviews.map(({ ...review_item }, i) => {
+                return (
+                  <Reviews key={i} {...review_item} />
+                )
+              })
+            }
         </div>
       </section>
     </main>
