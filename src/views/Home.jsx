@@ -7,22 +7,20 @@ import { GoQuote } from "react-icons/go"
 
 const Home = () => {
   // States
-  const sliderState = useAppState();
-  const reviews = useAppState();
+  const state = useAppState();
   const sliderStateDispatcher = useDispatchAppState();
-  console.log(sliderState)
   useEffect(() => {
     const slider = setInterval(() => {
       sliderStateDispatcher( {
-        type: 'SET_HOME_PAGE_SLIDER_INDEX',
-        payload: {sliderIndex: sliderState.sliderIndex + 1},
+        type: 'HOME_PAGE_SLIDER',
+        payload: {sliderIndex: state.sliderIndex + 1},
       })
     },5000);
 
     return () => {
       clearInterval(slider);
     }
-  },[sliderState.sliderIndex, sliderState.reviews]);
+  },[state.sliderIndex, state.reviews]);
   
   return (
     <main className="home">
@@ -102,7 +100,7 @@ const Home = () => {
         </div>
         <div className="section-content">
           {
-            reviews.reviews.map(({ review_image, name, review }) => {
+            state.reviews.map(({ review_image, name, review }) => {
               return (
                 <div key={() => uuidv4()} className="review-container">
                   <div className="reviewer-dp">

@@ -14,7 +14,7 @@ const ApplicationStateReducer = (state, action) => {
                 isLoggedIn: action.payload.isLoggedIn
             };
         // Home page slider index
-        case 'SET_HOME_PAGE_SLIDER_INDEX':
+        case 'HOME_PAGE_SLIDER':
             const lastIndex = state.reviews.length - 1;
             if ( state.sliderIndex < 0 ){
                return state = {
