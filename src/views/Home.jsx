@@ -5,6 +5,7 @@ import SearchInput from "../components/SearchInput";
 import { useAppState, useDispatchAppState, } from "../store/ApplicationContext";
 import { GoQuote } from "react-icons/go"
 import Reviews from "../components/Reviews";
+import MoveSlides from "../components/MoveSlides";
 
 const Home = () => {
   // States
@@ -102,6 +103,7 @@ const Home = () => {
         <div className="section-content">
           {
             state.reviews.map(({...review_item}, i) => {
+              MoveSlides('nextSlide', state.reviews, i);
               return (
                 <Reviews key={i} {...review_item}/>
               )
