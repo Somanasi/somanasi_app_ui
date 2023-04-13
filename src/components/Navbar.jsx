@@ -17,6 +17,13 @@ import { useAppState, useDispatchAppState } from "../store/ApplicationContext";
 const Navbar = () => {
   const toggle = useDispatchAppState();
   const visible = useAppState();
+
+  const userLogout = useDispatchAppState( {
+    type: 'SER_LOGIN_STATUS',
+    payload: {
+      isLoggedIn: false,
+    }
+  })
   return (
     <header className="header">
       <div>
@@ -73,7 +80,7 @@ const Navbar = () => {
                 <span>
                   <GoSignOut size={25} />
                 </span>
-                <NavLink to={"/logout"}>Logout</NavLink>
+                <NavLink to={"/"} onClick={}>Logout</NavLink>
               </ListItems>
               : ''
           }
