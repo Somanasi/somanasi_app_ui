@@ -7,9 +7,9 @@ const App = () => {
   return (
     <ApplicationStateProvider>
       <Navbar/>
-      <main>
+      <>
         <Outlet/>
-      </main>
+      </>
       <Footer/>
     </ApplicationStateProvider>
 
