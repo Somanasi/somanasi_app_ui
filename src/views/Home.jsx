@@ -24,13 +24,14 @@ const Home = () => {
           <h1>Why Elimuendelezi?</h1>
         </div>
         <div className="section-content">
-          <div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni,
-              aliquam molestias? Sapiente exercitationem dolorum veniam ipsa
-              debitis accusamus eos est voluptatibus explicabo? Alias facere
-              delectus nobis voluptatibus qui quo cumque.
-            </p>
+          <div className="offers">
+              <h2>Range of Packages</h2>
+              <p>
+                Somesha Dada offers a range of packages, each designed to meet the unique needs of our students. 
+                Our Regular package includes access to articles, read-only notes, and counseling to support our learners.
+                For a more comprehensive learning experience, our Medium package offers additional features such as audio
+                 content in the form of podcasts and songs to aid in memory retention, step-by-step instructions, and video recordings.
+              </p>
           </div>
           <div>
             <p>
@@ -88,13 +89,13 @@ const Home = () => {
           <h1>What people say about us</h1>
         </div>
         <div className="section-content">
-            {
-              state.reviews.map(({ ...review_item }, i) => {
-                return (
-                  <Reviews key={i} {...review_item} />
-                )
-              })
-            }
+          {
+            state.reviews.map(({ ...review_item }, i) => {
+              return (
+                <Reviews key={i} {...review_item} />
+              )
+            })
+          }
         </div>
       </section>
     </main>
