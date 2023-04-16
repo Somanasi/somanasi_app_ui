@@ -35,7 +35,7 @@ const Home = () => {
               </span>
             </h4>
             <p>
-              Somesha Dada offers a range of packages, each designed to meet the unique needs of our students.
+              Elimuendelezi offers a range of packages, each designed to meet the unique needs of our students.
               Our Regular package includes access to articles, read-only notes, and counseling to support our learners.
             </p>
           </div>
@@ -64,7 +64,7 @@ const Home = () => {
               </span>
             </h4>
             <p>
-              With Somesha Dada Premium, students can engage in live video discussions with their peers and instructors, enabling them to ask questions and get immediate feedback.
+              With Elimuendelezi Premium, students can engage in live video discussions with their peers and instructors, enabling them to ask questions and get immediate feedback.
             </p>
           </div>
           <div className="offers">
@@ -77,7 +77,7 @@ const Home = () => {
               </span>
             </h4>
             <p>
-              Somesha Dada offers a range of packages, each designed to meet the unique needs of our students.
+              Elimuendelezi offers a range of packages, each designed to meet the unique needs of our students.
               Our Regular package includes access to articles, read-only notes, and counseling to support our learners.
             </p>
           </div>
