@@ -25,10 +25,12 @@
         div {
             margin-bottom: u.rem(16);
             h1 {
+                padding-top: u.rem(16);
+                padding-bottom: u.rem(16);
                 color: g.$primary;
                 font-weight: 900 !important;
                 font-size: g.$font-large;
-                text-align: center;
+                text-align: left;
             }
         }
 
