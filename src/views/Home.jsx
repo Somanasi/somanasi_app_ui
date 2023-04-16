@@ -21,7 +21,7 @@ const Home = () => {
       </section>
       <section className="tips">
         <div className="section-heading">
-          <h1>Why Somesha Dada?</h1>
+          <h1>Why Elimuendelezi?</h1>
         </div>
         <div className="section-content">
           <div>
