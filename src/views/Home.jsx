@@ -39,28 +39,46 @@ const Home = () => {
               Our Regular package includes access to articles, read-only notes, and counseling to support our learners.
             </p>
           </div>
-          <div>
+          <div className="offers">
+            <h4>
+              <span>
+                <GoPackage size={20} />
+              </span>
+              <span>
+                Range of Packages
+              </span>
+            </h4>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt odit
-              omnis quod perspiciatis amet quia asperiores commodi quasi eius,
-              quidem, assumenda et nisi adipisci quo dolores officia laudantium
-              fuga repellendus!
+              Somesha Dada offers a range of packages, each designed to meet the unique needs of our students.
+              Our Regular package includes access to articles, read-only notes, and counseling to support our learners.
             </p>
           </div>
-          <div>
+          <div className="offers">
+            <h4>
+              <span>
+                <GoPackage size={20} />
+              </span>
+              <span>
+                Range of Packages
+              </span>
+            </h4>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
-              laboriosam tempore earum odio expedita unde consectetur animi
-              sint? Magnam, veritatis. Temporibus, eaque sint enim qui quos esse
-              praesentium porro tempore.
+              Somesha Dada offers a range of packages, each designed to meet the unique needs of our students.
+              Our Regular package includes access to articles, read-only notes, and counseling to support our learners.
             </p>
           </div>
-          <div>
+          <div className="offers">
+            <h4>
+              <span>
+                <GoPackage size={20} />
+              </span>
+              <span>
+                Range of Packages
+              </span>
+            </h4>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Provident animi a totam delectus, dicta iusto dolorem eaque nobis.
-              Repellendus voluptate facere porro eveniet aliquam quisquam
-              quaerat ut nemo necessitatibus accusantium!
+              Somesha Dada offers a range of packages, each designed to meet the unique needs of our students.
+              Our Regular package includes access to articles, read-only notes, and counseling to support our learners.
             </p>
           </div>
         </div>
