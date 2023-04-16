@@ -3,6 +3,7 @@ import { Form } from "react-router-dom";
 import SearchInput from "../components/SearchInput";
 import { useAppState, } from "../store/ApplicationContext";
 import Reviews from "../components/Reviews";
+import { GoPackage } from "react-icons/go";
 // import { register } from 'swiper/element/bundle';
 
 const Home = () => {
@@ -25,13 +26,18 @@ const Home = () => {
         </div>
         <div className="section-content">
           <div className="offers">
-              <h2>Range of Packages</h2>
-              <p>
-                Somesha Dada offers a range of packages, each designed to meet the unique needs of our students. 
-                Our Regular package includes access to articles, read-only notes, and counseling to support our learners.
-                For a more comprehensive learning experience, our Medium package offers additional features such as audio
-                 content in the form of podcasts and songs to aid in memory retention, step-by-step instructions, and video recordings.
-              </p>
+            <h4>
+              <span>
+                <GoPackage size={20} />
+              </span>
+              <span>
+                Range of Packages
+              </span>
+            </h4>
+            <p>
+              Somesha Dada offers a range of packages, each designed to meet the unique needs of our students.
+              Our Regular package includes access to articles, read-only notes, and counseling to support our learners.
+            </p>
           </div>
           <div>
             <p>
