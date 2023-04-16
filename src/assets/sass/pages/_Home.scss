@@ -33,10 +33,22 @@
         }
 
         .section-content {
-            div {
+            div.offers {
                 border: u.rem(1) solid g.$primary;
                 box-shadow: u.rem(-1) u.rem(-1) u.rem(1) u.rem(2) rgba(g.$primary, .2);
-                padding: u.rem(4)
+                padding: u.rem(4);
+
+                h4{
+                    padding: u.rem(16) 0;
+                    display: flex;
+                    
+                    :first-child{
+                        margin-right: u.rem(4);
+                    }
+                    span {
+                      display: block;
+                    }
+                }
                 p{
                     line-height: 1.5;
                 }
