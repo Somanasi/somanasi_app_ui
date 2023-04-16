@@ -23,6 +23,7 @@
         @include u.flexcustomdirection(column, none, none);
 
         div {
+            margin-bottom: u.rem(16);
             h1 {
                 color: g.$primary;
                 font-weight: 900 !important;
