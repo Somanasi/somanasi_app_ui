@@ -49,9 +49,7 @@ const Home = () => {
               </span>
             </h4>
             <p>
-              Subscribers gain access to two learning communities, allowing them to connect with other learners,
-              form study groups, engage in online chat, and participate in community forums.
-              Learning communities are tailored to specific subjects, providing students with an interactive and engaging learning experience.
+            Subscribers access 2 subject-specific learning communities to connect, study, chat, and engage in forums for an interactive learning experience.
             </p>
           </div>
           <div className="offers">
