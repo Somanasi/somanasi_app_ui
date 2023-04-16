@@ -75,8 +75,7 @@ const Home = () => {
               </span>
             </h4>
             <p>
-              Elimuendelezi offers a range of packages, each designed to meet the unique needs of our students.
-              Our Regular package includes access to articles, read-only notes, and counseling to support our learners.
+            At Elimuendelezi, we are committed to providing the highest quality education and training to our students.
             </p>
           </div>
         </div>
