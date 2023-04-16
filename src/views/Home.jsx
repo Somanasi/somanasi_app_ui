@@ -3,7 +3,7 @@ import { Form } from "react-router-dom";
 import SearchInput from "../components/SearchInput";
 import { useAppState, } from "../store/ApplicationContext";
 import Reviews from "../components/Reviews";
-import { GoPackage } from "react-icons/go";
+import { GoPackage, GoCommentDiscussion, GoDeviceCameraVideo, GoStar } from "react-icons/go";
 // import { register } from 'swiper/element/bundle';
 
 const Home = () => {
@@ -42,38 +42,38 @@ const Home = () => {
           <div className="offers">
             <h4>
               <span>
-                <GoPackage size={20} />
+                <GoCommentDiscussion size={20} />
               </span>
               <span>
-                Range of Packages
+                Learning Communities
               </span>
             </h4>
             <p>
-              Somesha Dada offers a range of packages, each designed to meet the unique needs of our students.
-              Our Regular package includes access to articles, read-only notes, and counseling to support our learners.
+              Subscribers gain access to two learning communities, allowing them to connect with other learners,
+              form study groups, engage in online chat, and participate in community forums.
+              Learning communities are tailored to specific subjects, providing students with an interactive and engaging learning experience.
             </p>
           </div>
           <div className="offers">
             <h4>
               <span>
-                <GoPackage size={20} />
+                <GoDeviceCameraVideo size={20} />
               </span>
               <span>
-                Range of Packages
+                Video Conferencing
               </span>
             </h4>
             <p>
-              Somesha Dada offers a range of packages, each designed to meet the unique needs of our students.
-              Our Regular package includes access to articles, read-only notes, and counseling to support our learners.
+              With Somesha Dada Premium, students can engage in live video discussions with their peers and instructors, enabling them to ask questions and get immediate feedback.
             </p>
           </div>
           <div className="offers">
             <h4>
               <span>
-                <GoPackage size={20} />
+                <GoStar size={20} />
               </span>
               <span>
-                Range of Packages
+                High Quality Content
               </span>
             </h4>
             <p>
