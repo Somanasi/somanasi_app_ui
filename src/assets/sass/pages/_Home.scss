@@ -31,6 +31,10 @@
                 font-weight: 900 !important;
                 font-size: g.$font-large;
                 text-align: left;
+
+                span{
+                    border-bottom: u.rem(1) solid g.$text-primary;
+                };
             }
         }
 
