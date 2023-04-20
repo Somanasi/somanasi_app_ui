@@ -19,6 +19,9 @@ const Home = () => {
         <Form method="GET">
           <SearchInput size={25} />
         </Form>
+        <div className="intro">
+          <h1>Revolutionary learning partner</h1>
+        </div>
       </section>
       <section className="tips">
         <div className="section-heading">

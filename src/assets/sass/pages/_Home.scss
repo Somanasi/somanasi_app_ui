@@ -3,13 +3,20 @@
 
 .home {
     .searchBar {
-        padding: u.rem(4) 0;
-        margin-bottom: u.rem(24);
+        // padding: u.rem(4) 0;
+        // margin-bottom: u.rem(24);
+        height: 70vh;
         @include u.flexcustomdirection(column, none, flex-start);
 
         p {
             font-size: g.$font-small;
             margin-bottom: u.rem(4);
+        }
+        .intro{
+            h1{
+                font-size: u.rem(40);
+                text-align: end;
+            }
         }
 
     }
