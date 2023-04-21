@@ -1,5 +1,7 @@
 const PageTitle = (URL) => {
-    const currentRoute = URL.split('/')[-1];
+    const base_url = document.baseURI;
+    let currentRoute;
+    base_url === URL ? currentRoute = "Home" : currentRoute = URL.split('/')[-1];
     const title = document.title;
     title = `${title} | ${currentRoute}`;
     return title;

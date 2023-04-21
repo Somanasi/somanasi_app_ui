@@ -11,6 +11,7 @@ import SingleCourse from './SingleCourse'
 import Terms from './Terms'
 import Dashboard from './Dashboard'
 
+
 export {
     Error,
     Home,
@@ -24,4 +25,5 @@ export {
     SingleCourse,
     Terms,
     Dashboard,
+
 };
