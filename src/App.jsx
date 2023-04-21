@@ -4,6 +4,8 @@ import { Footer, Navbar } from './components'
 import { ApplicationStateProvider } from './store/ApplicationContext'
 
 const App = () => {
+  // Set page title
+  PageTitle(document.URL);
   return (
     <ApplicationStateProvider>
       <Navbar/>
