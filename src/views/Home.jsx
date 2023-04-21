@@ -9,18 +9,14 @@ import { GoPackage, GoCommentDiscussion, GoDeviceCameraVideo, GoStar } from "rea
 const Home = () => {
   // States
   const state = useAppState();
-
+  console.log(document.URL)
   // register();
 
   return (
     <main className="home">
-      <section className="searchBar">
-        <p>Search for a course here</p>
-        <Form method="GET">
-          <SearchInput size={25} />
-        </Form>
+      <section className="introduction">
         <div className="intro">
-          <h1>Revolutionary learning partner</h1>
+          <h1>Elimuendelezi</h1>
         </div>
       </section>
       <section className="tips">

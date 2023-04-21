@@ -6,6 +6,7 @@ import { dummyData } from "../dummydata/Dummy.js";
 import SearchInput from "../components/SearchInput";
 
 const Courses = () => {
+  console.log(document.URL.split("/"))
   return (
     <main>
         <section>
