@@ -6,7 +6,7 @@ const SearchInput = ({ size = 50 }) => {
   return (
     <div className="form-group">
       <label htmlFor="search"></label>
-      <input type="text" name="searchText" id="search" />
+      <input type="search" name="searchText" id="search" />
       <Button type="sumbit">
         <FaSearch size={size} />
       </Button>

@@ -3,10 +3,11 @@ import React from "react";
 import { Form, Link } from "react-router-dom";
 import "../assets/sass/main.scss";
 import { dummyData } from "../dummydata/Dummy.js";
-import SearchInput from "../components/SearchInput";
+import {PageTitle, SearchInput} from "../components";
 
 const Courses = () => {
-  console.log(document.URL.split("/"))
+  PageTitle(document.URL);
+  console.log(document.title)
   return (
     <main>
         <section>
