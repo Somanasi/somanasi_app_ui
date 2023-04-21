@@ -13,6 +13,7 @@ export const ApplicationStateProvider = ({ children }) => {
             reviews: [...reviews],
             toggleMobileView: false,
             isLoggedIn: true,
+            pageTitle: 'Home',
         }
     );
     return (

@@ -4,7 +4,6 @@ import SearchInput from "../components/SearchInput";
 import { useAppState, } from "../store/ApplicationContext";
 import Reviews from "../components/Reviews";
 import { GoPackage, GoCommentDiscussion, GoDeviceCameraVideo, GoStar } from "react-icons/go";
-import { PageTitle } from "../components";
 // import { register } from 'swiper/element/bundle';
 
 const Home = () => {
