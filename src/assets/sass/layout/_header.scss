@@ -8,7 +8,11 @@ header{
     .show_menu{
         display: flex;
     }
-    .heading-text{
+    .heading-text-container{
         position: absolute;
+        top: 50%;
+        .big_text{
+            
+        }
     }
 }

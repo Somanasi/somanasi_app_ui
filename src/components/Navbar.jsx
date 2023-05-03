@@ -88,8 +88,8 @@ const Navbar = () => {
           }
         </ul>
       </nav>
-      <div className="heading-text">
-        <h1>
+      <div className="heading-text-container">
+        <h1 className="big_text">
           A Learned commuity in the modern community
         </h1>
       </div>
