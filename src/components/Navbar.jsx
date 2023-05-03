@@ -93,7 +93,7 @@ const Navbar = () => {
           A Learned commuity,
           <span> A modern community</span>
         </h1>
-        <div className="cta-btn bg-information w-28 py-2">
+        <div className="cta-btn-courses bg-information w-28 py-2">
           <NavLink to={'/courses'}>
             Visit Courses
           </NavLink>
