@@ -3,7 +3,14 @@
 header{
     position: relative;
     display: flex;
-
+    .mobile-view{
+        position: absolute;
+        top: 4%;
+        right: 4%;
+        button{
+            color: #fff;
+        }
+    }
     .menu{
         display: none;
     }
@@ -14,6 +21,7 @@ header{
         position: absolute;
         top: 32%;
         .big_text{
+            color: #fff;
             font-size: u.rem(52);
             font-weight: 700;
             text-align: right;

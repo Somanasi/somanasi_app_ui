@@ -90,9 +90,14 @@ const Navbar = () => {
       </nav>
       <div className="heading-text-container">
         <h1 className="big_text">
-          A Learned commuity, 
+          A Learned commuity,
           <span> A modern community</span>
         </h1>
+        <div className="cta-btn">
+          <NavLink to={'/courses'}>
+            Visit Courses
+          </NavLink>
+        </div>
       </div>
     </header>
   );
