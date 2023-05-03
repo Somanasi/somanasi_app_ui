@@ -14,10 +14,13 @@ header{
         position: absolute;
         top: 32%;
         .big_text{
-            font-size: u.rem(44);
+            font-size: u.rem(52);
             font-weight: 700;
             text-align: right;
             padding-inline: u.rem(16);
+            span{
+                display: block;
+            }
         }
     }
 }

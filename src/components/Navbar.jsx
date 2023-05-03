@@ -90,8 +90,8 @@ const Navbar = () => {
       </nav>
       <div className="heading-text-container">
         <h1 className="big_text">
-          A Learned commuity 
-          <span> in the modern community</span>
+          A Learned commuity, 
+          <span> A modern community</span>
         </h1>
       </div>
     </header>
