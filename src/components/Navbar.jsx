@@ -20,7 +20,7 @@ const Navbar = () => {
   const visible = useAppState();
 
   return (
-    <header className="header">
+    <header className="bg-warning h-screen">
       <div>
         <NavLink to={"/"}>
           <Logo />
@@ -88,6 +88,11 @@ const Navbar = () => {
           }
         </ul>
       </nav>
+      <div>
+        <h1>
+          A Learned commuity in the modern community
+        </h1>
+      </div>
     </header>
   );
 };

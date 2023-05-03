@@ -1,7 +1,6 @@
 //icons are the thumbnail images of the course
 import React from "react";
 import { Form, Link } from "react-router-dom";
-import "../assets/sass/main.scss";
 import { dummyData } from "../dummydata/Dummy.js";
 import {PageTitle, SearchInput} from "../components";
 

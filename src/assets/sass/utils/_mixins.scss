@@ -1,6 +1,0 @@
-@mixin flexcustomdirection($direction, $justify, $align){
-    display: flex !important;
-    flex-direction: $direction !important;
-    justify-content: $justify !important;
-    align-items: $align !important;
-}

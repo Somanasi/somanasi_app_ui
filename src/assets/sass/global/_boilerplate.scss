@@ -3,14 +3,13 @@ html{
 }
 *,
 *::before,
-*::after {
+*::after{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body {
+body{
     margin: 0;
     padding: 0;
-    box-sizing: inherit;
-    height: auto;
+    box-sizing: inherit !important;
 }
