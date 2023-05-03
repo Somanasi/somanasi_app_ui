@@ -19,7 +19,7 @@ header{
     }
     .heading-text-container{
         position: absolute;
-        top: 32%;
+        top: 20%;
         .big_text{
             color: #fff;
             font-size: u.rem(52);
@@ -29,6 +29,16 @@ header{
             span{
                 display: block;
             }
+        }
+    }
+    .cta-btn{
+        box-shadow: u.rem(-1) u.rem(-1) u.rem(2) u.rem(4) rgba(0, 0, 0, 0.103);
+        margin-top: u.rem(40);
+        margin-left: 60%;
+        text-align: center;
+        border-radius: 4%;
+        a{
+            color: #fff;
         }
     }
 }
