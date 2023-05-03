@@ -1,4 +1,14 @@
 header{
+    position: relative;
     display: flex;
-    
+
+    .menu{
+        display: none;
+    }
+    .show_menu{
+        display: flex;
+    }
+    .heading-text{
+        position: absolute;
+    }
 }
