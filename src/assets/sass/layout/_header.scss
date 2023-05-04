@@ -3,6 +3,7 @@
 header{
     position: relative;
     display: flex;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 0 100%);
     .mobile-view{
         position: absolute;
         top: 4%;
@@ -28,6 +29,24 @@ header{
                 & *:first-child{
                     margin-right: u.rem(8);
                 }
+                span{
+                    color: #f5f8de;
+                }
+                a{
+                    color: #fff;
+                }
+            }
+        }
+        button{
+            display: flex;
+            & *:first-child{
+                margin-right: u.rem(8);
+            }
+            .logout-icon{
+                color: #949494;
+            }
+            .logout-text{
+                color: #949494;
             }
         }
     }
@@ -36,7 +55,7 @@ header{
     }
     .heading-text-container{
         position: absolute;
-        top: 20%;
+        top: 22%;
         .big_text{
             color: #fff;
             font-size: u.rem(52);
@@ -56,6 +75,7 @@ header{
         border-radius: 4%;
         a{
             color: #fff;
+            text-decoration: none;
         }
     }
 }

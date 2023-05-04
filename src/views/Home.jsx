@@ -1,10 +1,9 @@
 import React from "react";
-import { Form } from "react-router-dom";
-import SearchInput from "../components/SearchInput";
 import { useAppState, } from "../store/ApplicationContext";
 import Reviews from "../components/Reviews";
 import { GoPackage, GoCommentDiscussion, GoDeviceCameraVideo, GoStar } from "react-icons/go";
-// import { register } from 'swiper/element/bundle';
+import LiteratureImage from '../assets/images/literature.jpeg';
+import { NavLink } from "react-router-dom";
 
 const Home = () => {
   // States
@@ -12,10 +11,42 @@ const Home = () => {
   // register();
 
   return (
-    <main className="home">
-      <section className="introduction">
-        <div className="intro">
-          <h1>Elimuendelezi</h1>
+    <main className="">
+      <section className="px-4 pt-12 bg-primary">
+        <div className="text-center mb-12">
+          <h1 className="font-extrabold subpixel-antialiased text-2xl">My Courses</h1>
+        </div>
+        <div className="section-content ">
+          <div className="flex-col items-center">
+            <div className="mb-2 ">
+              <img src={LiteratureImage} alt="physics course image" className="rounded-md shadow-lg shadow-indigo-500/40 " />
+            </div>
+            <div>
+              <h3 className="font-medium text-lg capitalize">physics</h3>
+              <p className="text-sm">
+                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quis ipsum harum assumenda
+                   at deleniti enim sed quidem quam quasi odio eos laudantium cumque numquam pariatur, laborum modi totam optio.</span>
+              </p>
+            </div>
+            <div>
+                <NavLink to={'/courses/:id'}>Explore</NavLink>
+            </div>
+          </div>
+          <div>
+            <p>course 1</p>
+          </div>
+          <div>
+            <p>course 1</p>
+          </div>
+          <div>
+            <p>course 1</p>
+          </div>
+          <div>
+            <p>course 1</p>
+          </div>
+          <div>
+            <p>course 1</p>
+          </div>
         </div>
       </section>
       <section className="tips">
@@ -47,7 +78,7 @@ const Home = () => {
               </span>
             </h4>
             <p>
-            Subscribers access 2 subject-specific learning communities to connect, study, chat, and engage in forums for an interactive learning experience.
+              Subscribers access 2 subject-specific learning communities to connect, study, chat, and engage in forums for an interactive learning experience.
             </p>
           </div>
           <div className="offers">
@@ -73,33 +104,8 @@ const Home = () => {
               </span>
             </h4>
             <p>
-            At Elimuendelezi, we are committed to providing the highest quality education and training to our students.
+              At Elimuendelezi, we are committed to providing the highest quality education and training to our students.
             </p>
-          </div>
-        </div>
-      </section>
-      <section className="mycourses">
-        <div className="section-heading">
-          <h1>My Courses</h1>
-        </div>
-        <div className="section-content">
-          <div>
-            <p>course 1</p>
-          </div>
-          <div>
-            <p>course 1</p>
-          </div>
-          <div>
-            <p>course 1</p>
-          </div>
-          <div>
-            <p>course 1</p>
-          </div>
-          <div>
-            <p>course 1</p>
-          </div>
-          <div>
-            <p>course 1</p>
           </div>
         </div>
       </section>
