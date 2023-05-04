@@ -1,7 +1,8 @@
 import React from "react";
 import { useAppState, } from "../store/ApplicationContext";
 import Reviews from "../components/Reviews";
-import { GoPackage, GoCommentDiscussion, GoDeviceCameraVideo, GoStar } from "react-icons/go";
+import { GoPackage, GoCommentDiscussion, GoDeviceCameraVideo, GoStar, GoLinkExternal } from "react-icons/go";
+import LiteratureImage from '../assets/images/literature.jpeg';
 import LiteratureImage from '../assets/images/literature.jpeg';
 import { NavLink } from "react-router-dom";
 
@@ -17,7 +18,7 @@ const Home = () => {
           <h1 className="font-extrabold subpixel-antialiased text-2xl">My Courses</h1>
         </div>
         <div className="section-content ">
-          <div className="flex-col items-center">
+          <div className="flex-col items-center shadow-lg shadow-indigo-500/30 px-4 py-4 bg-secondary_light">
             <div className="mb-2 ">
               <img src={LiteratureImage} alt="physics course image" className="rounded-md shadow-lg shadow-indigo-500/40 " />
             </div>
@@ -28,24 +29,102 @@ const Home = () => {
                    at deleniti enim sed quidem quam quasi odio eos laudantium cumque numquam pariatur, laborum modi totam optio.</span>
               </p>
             </div>
-            <div>
-                <NavLink to={'/courses/:id'}>Explore</NavLink>
+            <div className="bg-secondary w-28 text-center">
+                <NavLink to={'/courses/:id'}>
+                  <span>Explore</span>
+                  <GoLinkExternal size={20} />
+                </NavLink>
             </div>
           </div>
-          <div>
-            <p>course 1</p>
+          <div className="flex-col items-center shadow-lg shadow-indigo-500/30 px-4 py-4 bg-secondary_light">
+            <div className="mb-2 ">
+              <img src={LiteratureImage} alt="physics course image" className="rounded-md shadow-lg shadow-indigo-500/40 " />
+            </div>
+            <div>
+              <h3 className="font-medium text-lg capitalize">Mathematics</h3>
+              <p className="text-sm">
+                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quis ipsum harum assumenda
+                   at deleniti enim sed quidem quam quasi odio eos laudantium cumque numquam pariatur, laborum modi totam optio.</span>
+              </p>
+            </div>
+            <div className="bg-secondary w-28 text-center">
+                <NavLink to={'/courses/:id'}>
+                  <span>Explore</span>
+                  <GoLinkExternal size={20} />
+                </NavLink>
+            </div>
           </div>
-          <div>
-            <p>course 1</p>
+          <div className="flex-col items-center shadow-lg shadow-indigo-500/30 px-4 py-4 bg-secondary_light">
+            <div className="mb-2 ">
+              <img src={LiteratureImage} alt="physics course image" className="rounded-md shadow-lg shadow-indigo-500/40 " />
+            </div>
+            <div>
+              <h3 className="font-medium text-lg capitalize">Chemistry</h3>
+              <p className="text-sm">
+                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quis ipsum harum assumenda
+                   at deleniti enim sed quidem quam quasi odio eos laudantium cumque numquam pariatur, laborum modi totam optio.</span>
+              </p>
+            </div>
+            <div className="bg-secondary w-28 text-center">
+                <NavLink to={'/courses/:id'}>
+                  <span>Explore</span>
+                  <GoLinkExternal size={20} />
+                </NavLink>
+            </div>
           </div>
-          <div>
-            <p>course 1</p>
+          <div className="flex-col items-center shadow-lg shadow-indigo-500/30 px-4 py-4 bg-secondary_light">
+            <div className="mb-2 ">
+              <img src={LiteratureImage} alt="physics course image" className="rounded-md shadow-lg shadow-indigo-500/40 " />
+            </div>
+            <div>
+              <h3 className="font-medium text-lg capitalize">Biology</h3>
+              <p className="text-sm">
+                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quis ipsum harum assumenda
+                   at deleniti enim sed quidem quam quasi odio eos laudantium cumque numquam pariatur, laborum modi totam optio.</span>
+              </p>
+            </div>
+            <div className="bg-secondary w-28 text-center">
+                <NavLink to={'/courses/:id'}>
+                  <span>Explore</span>
+                  <GoLinkExternal size={20} />
+                </NavLink>
+            </div>
           </div>
-          <div>
-            <p>course 1</p>
+          <div className="flex-col items-center shadow-lg shadow-indigo-500/30 px-4 py-4 bg-secondary_light">
+            <div className="mb-2 ">
+              <img src={LiteratureImage} alt="physics course image" className="rounded-md shadow-lg shadow-indigo-500/40 " />
+            </div>
+            <div>
+              <h3 className="font-medium text-lg capitalize">Literature</h3>
+              <p className="text-sm">
+                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quis ipsum harum assumenda
+                   at deleniti enim sed quidem quam quasi odio eos laudantium cumque numquam pariatur, laborum modi totam optio.</span>
+              </p>
+            </div>
+            <div className="bg-secondary w-28 text-center">
+                <NavLink to={'/courses/:id'}>
+                  <span>Explore</span>
+                  <GoLinkExternal size={20} />
+                </NavLink>
+            </div>
           </div>
-          <div>
-            <p>course 1</p>
+          <div className="flex-col items-center shadow-lg shadow-indigo-500/30 px-4 py-4 bg-secondary_light">
+            <div className="mb-2 ">
+              <img src={LiteratureImage} alt="physics course image" className="rounded-md shadow-lg shadow-indigo-500/40 " />
+            </div>
+            <div>
+              <h3 className="font-medium text-lg capitalize">Computer studies</h3>
+              <p className="text-sm">
+                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quis ipsum harum assumenda
+                   at deleniti enim sed quidem quam quasi odio eos laudantium cumque numquam pariatur, laborum modi totam optio.</span>
+              </p>
+            </div>
+            <div className="bg-secondary w-28 text-center">
+                <NavLink to={'/courses/:id'}>
+                  <span>Explore</span>
+                  <GoLinkExternal size={20} />
+                </NavLink>
+            </div>
           </div>
         </div>
       </section>
