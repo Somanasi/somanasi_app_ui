@@ -1,0 +1,12 @@
+/**
+APPLICATION CUSTOME VARIABLES
+*/
+@use '../utilities/' as u;
+
+/**
+FONT SIZES
+*/
+$font-small: u.rem(16);
+$font-medium: u.rem(24);
+$font-large: u.rem(32);
+$font-xlarge: u.rem(44);

@@ -1,0 +1,16 @@
+@use '../utilities/' as u;
+.homepage{
+    .section_courses{
+        .section_courses-content{
+            .course_card-btn_row{
+                a{
+                    color: #f5f8de;
+                    @include u.custom_flex_display(center, center);
+                    & *{
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -16,12 +16,12 @@ const Home = () => {
   // register();
 
   return (
-    <main className="">
-      <section className="px-4 pt-12 bg-primary">
+    <main className="homepage">
+      <section className="section_courses px-4 pt-12 bg-primary">
         <div className="text-center mb-12">
           <h1 className="font-extrabold subpixel-antialiased text-2xl text-secondary">My Courses</h1>
         </div>
-        <div className="section-content ">
+        <div className="section_courses-content ">
           <div className="flex-col items-center shadow-lg shadow-indigo-500/30 px-4 py-4 mb-12 bg-secondary_light">
             <div className="mb-2 ">
               <img src={Physics} alt="physics course image" className="rounded-md shadow-lg shadow-indigo-500/40 " />
@@ -30,14 +30,14 @@ const Home = () => {
               <h3 className="font-medium text-lg capitalize">physics</h3>
               <p className="text-sm">
                 <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quis ipsum harum assumenda
-                   at deleniti enim sed quidem quam quasi odio eos laudantium cumque numquam pariatur, laborum modi totam optio.</span>
+                  at deleniti enim sed quidem quam quasi odio eos laudantium cumque numquam pariatur, laborum modi totam optio.</span>
               </p>
             </div>
-            <div className="bg-secondary w-28 text-center">
-                <NavLink to={'/courses/:id'}>
-                  <span>Explore</span>
-                  <GoLinkExternal size={20} />
-                </NavLink>
+            <div className="course_card-btn_row bg-secondary w-28 text-center mt-4 py-2 rounded-md shadow-lg shadow-cyan-200/20">
+              <NavLink to={'/courses/:id'}>
+                <span className="mr-2"><GoLinkExternal size={20} /></span>
+                <span>Explore</span>
+              </NavLink>
             </div>
           </div>
           <div className="flex-col items-center shadow-lg shadow-indigo-500/30 px-4 py-4 mb-8 bg-secondary_light">
@@ -48,14 +48,14 @@ const Home = () => {
               <h3 className="font-medium text-lg capitalize">Mathematics</h3>
               <p className="text-sm">
                 <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quis ipsum harum assumenda
-                   at deleniti enim sed quidem quam quasi odio eos laudantium cumque numquam pariatur, laborum modi totam optio.</span>
+                  at deleniti enim sed quidem quam quasi odio eos laudantium cumque numquam pariatur, laborum modi totam optio.</span>
               </p>
             </div>
-            <div className="bg-secondary w-28 text-center">
-                <NavLink to={'/courses/:id'}>
-                  <span>Explore</span>
-                  <GoLinkExternal size={20} />
-                </NavLink>
+            <div className="course_card-btn_row bg-secondary w-28 text-center mt-4 py-2 rounded-md shadow-lg shadow-cyan-200/20">
+              <NavLink to={'/courses/:id'}>
+                <span className="mr-2"><GoLinkExternal size={20} /></span>
+                <span>Explore</span>
+              </NavLink>
             </div>
           </div>
           <div className="flex-col items-center shadow-lg shadow-indigo-500/30 px-4 py-4 mb-8 bg-secondary_light">
@@ -66,14 +66,14 @@ const Home = () => {
               <h3 className="font-medium text-lg capitalize">Chemistry</h3>
               <p className="text-sm">
                 <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quis ipsum harum assumenda
-                   at deleniti enim sed quidem quam quasi odio eos laudantium cumque numquam pariatur, laborum modi totam optio.</span>
+                  at deleniti enim sed quidem quam quasi odio eos laudantium cumque numquam pariatur, laborum modi totam optio.</span>
               </p>
             </div>
-            <div className="bg-secondary w-28 text-center">
-                <NavLink to={'/courses/:id'}>
-                  <span>Explore</span>
-                  <GoLinkExternal size={20} />
-                </NavLink>
+            <div className="course_card-btn_row bg-secondary w-28 text-center mt-4 py-2 rounded-md shadow-lg shadow-cyan-200/20">
+              <NavLink to={'/courses/:id'}>
+                <span className="mr-2"><GoLinkExternal size={20} /></span>
+                <span>Explore</span>
+              </NavLink>
             </div>
           </div>
           <div className="flex-col items-center shadow-lg shadow-indigo-500/30 px-4 py-4 mb-8 bg-secondary_light">
@@ -84,14 +84,14 @@ const Home = () => {
               <h3 className="font-medium text-lg capitalize">Biology</h3>
               <p className="text-sm">
                 <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quis ipsum harum assumenda
-                   at deleniti enim sed quidem quam quasi odio eos laudantium cumque numquam pariatur, laborum modi totam optio.</span>
+                  at deleniti enim sed quidem quam quasi odio eos laudantium cumque numquam pariatur, laborum modi totam optio.</span>
               </p>
             </div>
-            <div className="bg-secondary w-28 text-center">
-                <NavLink to={'/courses/:id'}>
-                  <span>Explore</span>
-                  <GoLinkExternal size={20} />
-                </NavLink>
+            <div className="course_card-btn_row bg-secondary w-28 text-center mt-4 py-2 rounded-md shadow-lg shadow-cyan-200/20">
+              <NavLink to={'/courses/:id'}>
+                <span className="mr-2"><GoLinkExternal size={20} /></span>
+                <span>Explore</span>
+              </NavLink>
             </div>
           </div>
           <div className="flex-col items-center shadow-lg shadow-indigo-500/30 px-4 py-4 mb-8 bg-secondary_light">
@@ -102,17 +102,17 @@ const Home = () => {
               <h3 className="font-medium text-lg capitalize">Literature</h3>
               <p className="text-sm">
                 <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quis ipsum harum assumenda
-                   at deleniti enim sed quidem quam quasi odio eos laudantium cumque numquam pariatur, laborum modi totam optio.</span>
+                  at deleniti enim sed quidem quam quasi odio eos laudantium cumque numquam pariatur, laborum modi totam optio.</span>
               </p>
             </div>
-            <div className="bg-secondary w-28 text-center">
-                <NavLink to={'/courses/:id'}>
-                  <span>Explore</span>
-                  <GoLinkExternal size={20} />
-                </NavLink>
+            <div className="course_card-btn_row bg-secondary w-28 text-center mt-4 py-2 rounded-md shadow-lg shadow-cyan-200/20">
+              <NavLink to={'/courses/:id'}>
+                <span className="mr-2"><GoLinkExternal size={20} /></span>
+                <span>Explore</span>
+              </NavLink>
             </div>
           </div>
-          <div className="flex-col items-center shadow-lg shadow-indigo-500/30 px-4 py-8 mb-8  bg-secondary_light">
+          <div className="course_card flex-col items-center shadow-lg shadow-indigo-500/30 px-4 py-8 mb-8  bg-secondary_light">
             <div className="mb-2 ">
               <img src={CompStudies} alt="physics course image" className="rounded-md shadow-lg mb-8 shadow-indigo-500/40 " />
             </div>
@@ -120,21 +120,21 @@ const Home = () => {
               <h3 className="font-medium text-lg capitalize">Computer studies</h3>
               <p className="text-sm">
                 <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quis ipsum harum assumenda
-                   at deleniti enim sed quidem quam quasi odio eos laudantium cumque numquam pariatur, laborum modi totam optio.</span>
+                  at deleniti enim sed quidem quam quasi odio eos laudantium cumque numquam pariatur, laborum modi totam optio.</span>
               </p>
             </div>
-            <div className=" course_card bg-secondary w-28 text-center mt-8">
-                <NavLink to={'/courses/:id'}>
-                  <span>Explore</span>
-                  <GoLinkExternal size={20} />
-                </NavLink>
+            <div className=" course_card-btn_row bg-secondary w-28 text-center mt-4 py-2 rounded-md shadow-lg shadow-cyan-200/20">
+              <NavLink to={'/courses/:id'}>
+                <span className="mr-2"><GoLinkExternal size={20} /></span>
+                <span>Explore</span>
+              </NavLink>
             </div>
           </div>
         </div>
       </section>
       <section className="tips">
         <div className="section-heading">
-          <h1><span>Why</span> Elimuendelezi?</h1>
+          <h1><span>Elimuendelezi</span> way</h1>
         </div>
         <div className="section-content">
           <div className="offers">
