@@ -3,7 +3,17 @@
 header{
     position: relative;
     display: flex;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 0 100%);
+    &::after{
+        content: "";
+        position: absolute;
+        background-color: transparent;
+        width: u.rem(50);
+        height: u.rem(60);
+        bottom: u.rem(-4);
+        right: 0;
+        border-bottom-right-radius: u.rem(25);
+        box-shadow: u.rem(10) 0 0 0 #f5f8de;
+    }
     .mobile-view{
         position: absolute;
         top: 4%;

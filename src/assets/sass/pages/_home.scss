@@ -1,6 +1,18 @@
 @use '../utilities/' as u;
 .homepage{
     .section_courses{
+        position: relative;
+        &::before{
+            content: "";
+            position: absolute;
+            background-color: transparent;
+            width: u.rem(30);
+            height: u.rem(60);
+            bottom: u.rem(-60);
+            left: 0;
+            border-top-left-radius: u.rem(25);
+            box-shadow: 0 -25px 0 0 #f5f8de;
+        }
         .section_courses-content{
             .course_card-btn_row{
                 a{
