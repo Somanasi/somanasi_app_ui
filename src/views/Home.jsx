@@ -3,7 +3,11 @@ import { useAppState, } from "../store/ApplicationContext";
 import Reviews from "../components/Reviews";
 import { GoPackage, GoCommentDiscussion, GoDeviceCameraVideo, GoStar, GoLinkExternal } from "react-icons/go";
 import LiteratureImage from '../assets/images/literature.jpeg';
-import LiteratureImage from '../assets/images/literature.jpeg';
+import Physics from '../assets/images/physics.jpeg';
+import Maths from '../assets/images/maths.jpeg';
+import Chem from '../assets/images/chem.jpeg';
+import Bio from '../assets/images/biology.jpeg';
+import CompStudies from '../assets/images/comp.jpeg';
 import { NavLink } from "react-router-dom";
 
 const Home = () => {
@@ -15,12 +19,12 @@ const Home = () => {
     <main className="">
       <section className="px-4 pt-12 bg-primary">
         <div className="text-center mb-12">
-          <h1 className="font-extrabold subpixel-antialiased text-2xl">My Courses</h1>
+          <h1 className="font-extrabold subpixel-antialiased text-2xl text-secondary">My Courses</h1>
         </div>
         <div className="section-content ">
-          <div className="flex-col items-center shadow-lg shadow-indigo-500/30 px-4 py-4 bg-secondary_light">
+          <div className="flex-col items-center shadow-lg shadow-indigo-500/30 px-4 py-4 mb-12 bg-secondary_light">
             <div className="mb-2 ">
-              <img src={LiteratureImage} alt="physics course image" className="rounded-md shadow-lg shadow-indigo-500/40 " />
+              <img src={Physics} alt="physics course image" className="rounded-md shadow-lg shadow-indigo-500/40 " />
             </div>
             <div>
               <h3 className="font-medium text-lg capitalize">physics</h3>
@@ -36,9 +40,9 @@ const Home = () => {
                 </NavLink>
             </div>
           </div>
-          <div className="flex-col items-center shadow-lg shadow-indigo-500/30 px-4 py-4 bg-secondary_light">
+          <div className="flex-col items-center shadow-lg shadow-indigo-500/30 px-4 py-4 mb-8 bg-secondary_light">
             <div className="mb-2 ">
-              <img src={LiteratureImage} alt="physics course image" className="rounded-md shadow-lg shadow-indigo-500/40 " />
+              <img src={Maths} alt="physics course image" className="rounded-md shadow-lg shadow-indigo-500/40 " />
             </div>
             <div>
               <h3 className="font-medium text-lg capitalize">Mathematics</h3>
@@ -54,9 +58,9 @@ const Home = () => {
                 </NavLink>
             </div>
           </div>
-          <div className="flex-col items-center shadow-lg shadow-indigo-500/30 px-4 py-4 bg-secondary_light">
+          <div className="flex-col items-center shadow-lg shadow-indigo-500/30 px-4 py-4 mb-8 bg-secondary_light">
             <div className="mb-2 ">
-              <img src={LiteratureImage} alt="physics course image" className="rounded-md shadow-lg shadow-indigo-500/40 " />
+              <img src={Chem} alt="physics course image" className="rounded-md shadow-lg shadow-indigo-500/40 " />
             </div>
             <div>
               <h3 className="font-medium text-lg capitalize">Chemistry</h3>
@@ -72,9 +76,9 @@ const Home = () => {
                 </NavLink>
             </div>
           </div>
-          <div className="flex-col items-center shadow-lg shadow-indigo-500/30 px-4 py-4 bg-secondary_light">
+          <div className="flex-col items-center shadow-lg shadow-indigo-500/30 px-4 py-4 mb-8 bg-secondary_light">
             <div className="mb-2 ">
-              <img src={LiteratureImage} alt="physics course image" className="rounded-md shadow-lg shadow-indigo-500/40 " />
+              <img src={Bio} alt="physics course image" className="rounded-md shadow-lg shadow-indigo-500/40 " />
             </div>
             <div>
               <h3 className="font-medium text-lg capitalize">Biology</h3>
@@ -90,7 +94,7 @@ const Home = () => {
                 </NavLink>
             </div>
           </div>
-          <div className="flex-col items-center shadow-lg shadow-indigo-500/30 px-4 py-4 bg-secondary_light">
+          <div className="flex-col items-center shadow-lg shadow-indigo-500/30 px-4 py-4 mb-8 bg-secondary_light">
             <div className="mb-2 ">
               <img src={LiteratureImage} alt="physics course image" className="rounded-md shadow-lg shadow-indigo-500/40 " />
             </div>
@@ -108,9 +112,9 @@ const Home = () => {
                 </NavLink>
             </div>
           </div>
-          <div className="flex-col items-center shadow-lg shadow-indigo-500/30 px-4 py-4 bg-secondary_light">
+          <div className="flex-col items-center shadow-lg shadow-indigo-500/30 px-4 py-8 mb-8  bg-secondary_light">
             <div className="mb-2 ">
-              <img src={LiteratureImage} alt="physics course image" className="rounded-md shadow-lg shadow-indigo-500/40 " />
+              <img src={CompStudies} alt="physics course image" className="rounded-md shadow-lg mb-8 shadow-indigo-500/40 " />
             </div>
             <div>
               <h3 className="font-medium text-lg capitalize">Computer studies</h3>
@@ -119,7 +123,7 @@ const Home = () => {
                    at deleniti enim sed quidem quam quasi odio eos laudantium cumque numquam pariatur, laborum modi totam optio.</span>
               </p>
             </div>
-            <div className="bg-secondary w-28 text-center">
+            <div className=" course_card bg-secondary w-28 text-center mt-8">
                 <NavLink to={'/courses/:id'}>
                   <span>Explore</span>
                   <GoLinkExternal size={20} />
