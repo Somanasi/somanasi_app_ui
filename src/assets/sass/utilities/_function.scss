@@ -1,7 +1,5 @@
 @use 'sass:math';
-// function to convert pixel values to to rem. 
-// do not include px when supplying the valu.
-// eg. f.border(35)
+
 @function rem($pixel){
     @if math.is-unitless($pixel){
         @return math.div($pixel, 16) + rem;
@@ -9,16 +7,9 @@
     @error 'Please provide a unitless value for #{$pixel}';
 }
 
-// function to convert pixel values to to em. 
-// do not include px when supplying the valu.
-// eg. f.border(35)
 @function em($pixel){
     @if math.is-unitless($pixel){
         @return math.div($pixel, 16) + em;
     }
     @error 'Please provide a unitless value for #{$pixel}';
 }
-
-/**
- DRY -DO NOT REPEAT YOURSELF
-*/

@@ -1,20 +1,12 @@
-@use '../utils/' as u;
-//Colors:
-//background
-$primary: rgb(44,100,60);
-$secondary: #10316B;
-$tertiary: rgb(41,100,49);
+/**
+APPLICATION CUSTOME VARIABLES
+*/
+@use '../utilities/' as u;
 
-//text color
-$text-primary: #F8F8F8;
-$text-secondary: #F4F7C0;
-$text-tertiary: #FFFFFF;
-$text-regular: rgb(0,0,58);
-
-// Font-size
-$font-small: u.rem(18);
+/**
+FONT SIZES
+*/
+$font-small: u.rem(16);
 $font-medium: u.rem(24);
-$font-large: u.rem(30);
-$font-regular: u.rem(10);
-
-
+$font-large: u.rem(32);
+$font-xlarge: u.rem(44);

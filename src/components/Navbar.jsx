@@ -20,7 +20,7 @@ const Navbar = () => {
   const visible = useAppState();
 
   return (
-    <header className="header">
+    <header className="bg-warning h-screen">
       <div>
         <NavLink to={"/"}>
           <Logo />
@@ -35,37 +35,37 @@ const Navbar = () => {
         <ul>
           <ListItems>
             <span>
-              <BsFillHouseFill size={25} />
+              <BsFillHouseFill size={20} />
             </span>
             <NavLink to={"/"}>Home</NavLink>
           </ListItems>
           <ListItems>
             <span>
-              <BsFillBookFill size={25} />
+              <BsFillBookFill size={20} />
             </span>
             <NavLink to={"/courses"}>Course</NavLink>
           </ListItems>
           <ListItems>
             <span>
-              <BsPencilSquare size={25} />
+              <BsPencilSquare size={20} />
             </span>
             <NavLink to={"/blog"}>Blog</NavLink>
           </ListItems>
           <ListItems>
             <span>
-              <BsFillInfoSquareFill size={25} />
+              <BsFillInfoSquareFill size={20} />
             </span>
             <NavLink to={"/about_us"}>About us</NavLink>
           </ListItems>
           <ListItems>
             <span>
-              <BsPhoneFlip size={25} />
+              <BsPhoneFlip size={20} />
             </span>
             <NavLink to={"/contact_us"}>Contact us</NavLink>
           </ListItems>
           <ListItems>
             <span>
-              <GoPerson size={25} />
+              <GoPerson size={20} />
             </span>
             <NavLink to={"/login"}>Accounts</NavLink>
           </ListItems>
@@ -78,7 +78,7 @@ const Navbar = () => {
                 }
               })}>
                 <span className="logout-icon">
-                  <GoSignOut size={25} />
+                  <GoSignOut size={20} />
                 </span>
                 <span className="logout-text">
                   Logout
@@ -88,6 +88,17 @@ const Navbar = () => {
           }
         </ul>
       </nav>
+      <div className="heading-text-container">
+        <h1 className="big_text">
+          A Learned commuity,
+          <span> A modern community</span>
+        </h1>
+        <div className="cta-btn-courses bg-information w-28 py-2">
+          <NavLink to={'/courses'}>
+            Visit Courses
+          </NavLink>
+        </div>
+      </div>
     </header>
   );
 };

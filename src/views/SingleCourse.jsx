@@ -1,6 +1,5 @@
 import React, {useState} from 'react'
 import {Link, useParams} from "react-router-dom";
-import '../assets/sass/main.scss';
 import {dummyData} from '../dummydata/Dummy.js';
 
 const SingleCourse = () => {

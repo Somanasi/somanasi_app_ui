@@ -1,9 +1,0 @@
-@use '../utils/' as u;
-.logo {
-    width: 35vw;
-    max-width: 35vw;
-
-    @include u.breakpoint-up(medium){
-        max-width: 10vw;
-    }
-}

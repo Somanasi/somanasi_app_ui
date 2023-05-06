@@ -1,0 +1,91 @@
+@use '../utilities/' as u;
+
+header{
+    position: relative;
+    display: flex;
+    &::after{
+        content: "";
+        position: absolute;
+        background-color: transparent;
+        width: u.rem(50);
+        height: u.rem(60);
+        bottom: u.rem(-4);
+        right: 0;
+        border-bottom-right-radius: u.rem(25);
+        box-shadow: u.rem(10) 0 0 0 #f5f8de;
+    }
+    .mobile-view{
+        position: absolute;
+        top: 4%;
+        right: 4%;
+        z-index: 2;
+        button{
+            color: #fff;
+        }
+    }
+    .menu{
+        display: none;
+        background-color: #faab00;
+        width: 100vw;
+        height: 100vh;
+        z-index: 1;
+        position: absolute;
+        padding-top: u.rem(52);
+        padding-left: u.rem(16);
+        ul{
+            li{
+                display: flex;
+                margin-bottom: u.rem(16);
+                & *:first-child{
+                    margin-right: u.rem(8);
+                }
+                span{
+                    color: #f5f8de;
+                }
+                a{
+                    color: #fff;
+                }
+            }
+        }
+        button{
+            display: flex;
+            & *:first-child{
+                margin-right: u.rem(8);
+            }
+            .logout-icon{
+                color: #949494;
+            }
+            .logout-text{
+                color: #949494;
+            }
+        }
+    }
+    .show_menu{
+        display: flex;
+    }
+    .heading-text-container{
+        position: absolute;
+        top: 22%;
+        .big_text{
+            color: #fff;
+            font-size: u.rem(52);
+            font-weight: 700;
+            text-align: right;
+            padding-inline: u.rem(16);
+            span{
+                display: block;
+            }
+        }
+    }
+    .cta-btn-courses{
+        box-shadow: u.rem(-1) u.rem(-1) u.rem(2) u.rem(4) rgba(0, 0, 0, 0.103);
+        margin-top: u.rem(40);
+        margin-left: 60%;
+        text-align: center;
+        border-radius: 4%;
+        a{
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+}

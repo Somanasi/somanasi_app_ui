@@ -1,14 +1,4 @@
 @use './variables' as v;
-header{
-    background-color: v.$secondary; 
-}
-nav{
-    margin-top: 0 !important;
-}
-li{
-    list-style-type: none;
-}
-a{
-    text-decoration: none;
-    color: v.$text-tertiary;
+h1{
+    font-size: v.$font-large;
 }
