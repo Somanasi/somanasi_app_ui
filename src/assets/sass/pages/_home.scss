@@ -1,4 +1,5 @@
 @use '../utilities/' as u;
+@use '../global/' as g;
 .homepage{
     .section_courses{
         position: relative;
@@ -6,9 +7,9 @@
             content: "";
             position: absolute;
             background-color: transparent;
-            width: u.rem(30);
+            width: u.rem(50);
             height: u.rem(60);
-            bottom: u.rem(-60);
+            bottom: u.rem(-55);
             left: 0;
             border-top-left-radius: u.rem(25);
             box-shadow: 0 -25px 0 0 #f5f8de;
@@ -17,9 +18,53 @@
             .course_card-btn_row{
                 a{
                     color: #f5f8de;
-                    @include u.custom_flex_display(center, center);
+                    @include u.custom_flex_display(none,center, center);
                     & *{
                         display: block;
+                    }
+                }
+            }
+        }
+    }
+    .section_tips{
+        position: relative;
+        &::before{
+            content: "";
+            position: absolute;
+            background-color: transparent;
+            width: u.rem(50);
+            height: u.rem(60);
+            bottom: u.rem(-60);
+            right: 0;
+            border-top-right-radius: u.rem(25);
+            box-shadow: 0 -25px 0 0 #f5f8de;
+        }
+    }
+    .reviews{
+        .section-content{
+            opacity: 1;
+            transition: opacity 0.5s ease-out;
+            &.hidden {
+                opacity: 0;
+              }
+            article.review-container{
+                div.reviewer-content{
+                    p{
+                        @include u.custom_flex_display(column, center, center);
+                        span.openig-quote{
+                            @include u.custom_flex_display(none, left, center);
+                            width: 100%;
+                            color: #ffc933;
+                        }
+                        span.closing-quote{
+                            @include u.custom_flex_display(none, right, center);
+                            width: 100%;
+                            text-align: right;
+                            color: #ffc933;
+                             svg{
+                                transform: rotate(180deg);
+                            }
+                        }
                     }
                 }
             }

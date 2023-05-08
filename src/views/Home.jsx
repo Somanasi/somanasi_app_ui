@@ -30,6 +30,7 @@ const Home = () => {
     }, 15000);
   }, [currentReviewIndex]);
   const currentReview = state.reviews[currentReviewIndex];
+
   return (
     <main className="homepage">
       <section className="section_courses px-4 pt-12 pb-8 bg-primary">
@@ -221,7 +222,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="section_tips bg-secondary_light py-8 px-4">
+      <section className="section_tips bg-primary pt-8 pb-12 px-4">
         <div className="section-tips_heading pt-4 pb-8">
           <h1 className="text-2xl text-center font-extrabold text-secondary ">
             <span>Elimuendelezi</span> way
@@ -282,11 +283,11 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="reviews">
-        <div className="section-heading">
-          <h1>What people say about us</h1>
+      <section className="reviews bg-secondary py-8 px-4">
+        <div className="section-heading pt-16 pb-16 text-center">
+          <h1 className="font-extrabold text-2xl capitalize subpixel-antialiased text-primary">What people say about us</h1>
         </div>
-        <div className="section-content">
+        <div className="section-content shadow-lg shadow-indigo-50/4 bg-primary rounded mb-20">
           <Reviews review={currentReview} />
         </div>
       </section>
