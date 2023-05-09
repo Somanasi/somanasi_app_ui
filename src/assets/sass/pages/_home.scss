@@ -3,16 +3,17 @@
 .homepage{
     .section_courses{
         position: relative;
-        &::before{
+        &::after{
             content: "";
             position: absolute;
             background-color: transparent;
             width: u.rem(50);
             height: u.rem(60);
-            bottom: u.rem(-55);
+            top: u.rem(0);
             left: 0;
             border-top-left-radius: u.rem(25);
-            box-shadow: 0 -25px 0 0 #f5f8de;
+            box-shadow: 0 -25px 0 0 #faab00;
+            z-index: 2;
         }
         .section_courses-content{
             .course_card-btn_row{
@@ -38,9 +39,22 @@
             right: 0;
             border-top-right-radius: u.rem(25);
             box-shadow: 0 -25px 0 0 #f5f8de;
+            z-index: 2;
         }
     }
     .reviews{
+        position: relative;
+        &::before{
+            content: "";
+            position: absolute;
+            background-color: transparent;
+            width: u.rem(50);
+            height: u.rem(60);
+            bottom: u.rem(-60);
+            left: 0;
+            border-top-left-radius: u.rem(25);
+            box-shadow: 0 -25px 0 0 #ffc933;
+        }
         .section-content{
             opacity: 1;
             transition: opacity 0.5s ease-out;

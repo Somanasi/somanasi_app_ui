@@ -229,7 +229,7 @@ const Home = () => {
           </h1>
         </div>
         <div className="section-content">
-          <div className="offers bg-primary opacity-60 py-4 px-4 rounded-md shadow-lg shadow-yellow-50/1 mb-8">
+          <div className="offers bg-primary opacity-90 py-4 px-4 rounded-md shadow-lg shadow-cyan-900/10 mb-8">
             <h4 className="">
               <span className="text-warning">
                 <GoPackage size={20} />
@@ -243,7 +243,7 @@ const Home = () => {
               learners.
             </p>
           </div>
-          <div className="offers bg-primary opacity-60 py-4 px-4 rounded-md shadow-lg shadow-yellow-50/1 mb-8">
+          <div className="offers bg-primary opacity-90 py-4 px-4 rounded-md shadow-lg shadow-cyan-900/10 mb-8">
             <h4>
               <span className="text-information">
                 <GoCommentDiscussion size={20} />
@@ -256,7 +256,7 @@ const Home = () => {
               learning experience.
             </p>
           </div>
-          <div className="offers bg-primary opacity-60 py-4 px-4 rounded-md shadow-lg shadow-yellow-50/1 mb-8">
+          <div className="offers bg-primary opacity-90 py-4 px-4 rounded-md shadow-lg shadow-yellow-900/10 mb-8">
             <h4>
               <span className="">
                 <GoDeviceCameraVideo size={20} />
@@ -269,7 +269,7 @@ const Home = () => {
               questions and get immediate feedback.
             </p>
           </div>
-          <div className="offers bg-primary opacity-60 py-4 px-4 rounded-md shadow-lg shadow-yellow-50/1 mb-8">
+          <div className="offers bg-primary opacity-90 py-4 px-4 rounded-md shadow-lg shadow-yellow-900/10 mb-8">
             <h4>
               <span className="text-secondary">
                 <FaHourglass size={20} />
