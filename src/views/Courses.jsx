@@ -2,46 +2,44 @@
 import React from "react";
 import { Form, Link } from "react-router-dom";
 import { dummyData } from "../dummydata/Dummy.js";
-import {PageTitle, SearchInput} from "../components";
+import { PageTitle, SearchInput } from "../components";
 
 const Courses = () => {
   PageTitle(document.URL);
   console.log(document.title)
   return (
-    <main>
-        <section>
-            <div><h1>Courses</h1></div>
-            <div>
-                <Form>
-                    <SearchInput size={25}/>
-                </Form>
-            </div>
-        </section>
+    <main className="main_courses bg-primary py-12 px-4">
+      <section className="section_introduction">
+        <div role="search" className="search_div pb-12 w-full">
+          <Form>
+            <SearchInput size={25} placeholder="Search courses" />
+          </Form>
+        </div>
+        <div className="flex justify-left pb-4">
+          <h1 className="font-extrabold text-warning text-2xl">Courses for you </h1>
+        </div>
+      </section>
       <section>
-        <div style={{ overflow: "auto", position: "relative" }}>
-          <div style={{ textAlign: "center", fontSize: "25px" }}>
-            <h1>Courses</h1>
-          </div>
+        <div>
           {dummyData.map((items, index) => (
-            <div style={{ width: "80vw", position: "relative" }}>
-              <div style={{ display: "flex", margin: "10px" }}>
+            <div className="py-8  mb-8 drop-shadow-lg  px-2 ">
+              <div className="flex align-middle">
                 <div>
                   <Link to={"/courses/" + items.id}>
                     <div>
-                      <h3 style={{ padding: "10px" }}>{items.name}</h3>
+                      <h3 className="font-bold text-information">{items.name}</h3>
                     </div>
                     <div>
                       <p>{items.description}</p>
                     </div>
                   </Link>
                 </div>
-                <div style={{ padding: "10px" }}>
+                <div >
                   <Link to={"/courses/" + items.id}>
-                    <img width="100px" height="100px" src={items.icon} />
+                    <img  src={items.icon} alt={items.name} className="w-2/3"/>
                   </Link>
                 </div>
               </div>
-              <hr />
             </div>
           ))}
         </div>

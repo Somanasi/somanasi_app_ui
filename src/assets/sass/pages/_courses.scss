@@ -1,0 +1,38 @@
+@use '../utilities/' as u;
+main.main_courses{
+    section.section_introduction{
+        div.search_div{
+            // @include u.custom_flex_display(none, center, center);
+            form{
+                width: 100%;
+                div.form-group{
+                    @include u.custom_flex_display(none, none, center);
+                    & *{
+                        display: block;
+                    }
+                    input[type=search]{
+                        width: 80%;
+                        height: 5vh;
+                        padding-inline: 4% ;
+                        outline: none;
+                        border: u.rem(1) solid #faab00;
+                        border-top-left-radius: u.rem(50);
+                        border-bottom-left-radius: u.rem(50);
+                    }
+                    button{
+                        background-color: #faab00;
+                        color: #f5f8de;
+                        height: 5vh;
+                        width: 15%;
+                        padding: 0 2%;
+                        outline: none;
+                        border: u.rem(1) solid #faab00;
+                        border-top-right-radius: u.rem(50);
+                        border-bottom-right-radius: u.rem(50);
+                        @include u.custom_flex_display(none, center, center);
+                    }
+                }
+            }
+        }
+    }
+}
