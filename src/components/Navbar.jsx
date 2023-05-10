@@ -20,7 +20,7 @@ const Navbar = () => {
   const visible = useAppState();
 
   return (
-    <header className="bg-warning h-screen">
+    <header className="bg-warning h-1/4">
       <div>
         <NavLink to={"/"}>
           <Logo />
@@ -88,17 +88,6 @@ const Navbar = () => {
           }
         </ul>
       </nav>
-      <div className="heading-text-container">
-        <h1 className="big_text">
-          A Learned commuity,
-          <span> A modern community</span>
-        </h1>
-        <div className="cta-btn-courses bg-information w-28 py-2">
-          <NavLink to={'/courses'}>
-            Visit Courses
-          </NavLink>
-        </div>
-      </div>
     </header>
   );
 };

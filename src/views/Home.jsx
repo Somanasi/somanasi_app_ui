@@ -33,6 +33,19 @@ const Home = () => {
 
   return (
     <main className="homepage">
+      <section className="section_introduction h-3/4">
+        <div className="heading-text-container">
+          <h1 className="big_text">
+            A Learned commuity,
+            <span> A modern community</span>
+          </h1>
+          <div className="cta-btn-courses bg-warning font-bold w-28 py-2">
+            <NavLink to={'/courses'}>
+              Visit Courses
+            </NavLink>
+          </div>
+        </div>
+      </section>
       <section className="section_courses px-4 pt-12 pb-8 bg-primary">
         <div className="text-center mb-12">
           <h1 className="font-extrabold subpixel-antialiased text-2xl text-secondary">
