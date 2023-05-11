@@ -5,6 +5,7 @@ import { dummyData } from "../dummydata/Dummy.js";
 import { PageTitle, SearchInput } from "../components";
 import { FaFilter } from "react-icons/fa"
 import { BiBookmark } from "react-icons/bi"
+import { GoPrimitiveDot} from "react-icons/go"
 import { Button, DurationFormat } from "../components";
 const Courses = () => {
   const [filterCourses, setFilterCourses] = useState(false);
@@ -52,12 +53,12 @@ const Courses = () => {
                   <div className="col-course-name max-w-max px-2 pb-1 rounded-lg">
                     <h3 className=" text-blue-500 font-thin ">{items.name}</h3>
                   </div>
-                  <div>
-                    <div>
+                  <div className="col-course-desc">
+                    <div className="col-course-desc-row">
                       <p>{items.description}</p>
                     </div>
-                    <div>
-                      <p className="text-xs font-normal">
+                    <div className="col-course-desc-row">
+                      <p className="text-xs font-medium">
                         <span>
                           {
                             (() => {
@@ -66,7 +67,7 @@ const Courses = () => {
                             })()
                           }
                         </span>
-                        <span>.</span>
+                        <span className="dot"><GoPrimitiveDot size={10}/></span>
                         <span>
                           {items.lessons}
                           {items.lessons > 1 ? " Lessons" : " Lesson"}
@@ -90,7 +91,7 @@ const Courses = () => {
                 </span>
               </div>
               <div className="course_card_row_col justify-end align-middle w-2/6">
-                <span className="last_row_span">KES. {items.price}</span>
+                <span className="last_row_span text-blue-500 font-semibold">KES. {items.price}</span>
               </div>
             </div>
           </div>
