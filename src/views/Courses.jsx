@@ -5,7 +5,7 @@ import { dummyData } from "../dummydata/Dummy.js";
 import { PageTitle, SearchInput } from "../components";
 import { FaFilter } from "react-icons/fa"
 import { BiBookmark } from "react-icons/bi"
-import { Button } from "../components";
+import { Button, DurationFormat } from "../components";
 const Courses = () => {
   const [filterCourses, setFilterCourses] = useState(false);
   PageTitle(document.URL);
@@ -57,16 +57,21 @@ const Courses = () => {
                       <p>{items.description}</p>
                     </div>
                     <div>
-                        <p className="text-xs font-normal">
-                          <span>
-                            {items.duration}
-                          </span>
-                          <span>.</span>
-                          <span>
-                            {items.lessons}
-                            {items.lessons>1?" lessons":" lesson"}
-                          </span>
-                        </p>
+                      <p className="text-xs font-normal">
+                        <span>
+                          {
+                            (() => {
+                              const { minutes, hours } = DurationFormat(items.duration);
+                              return `${hours>0? hours+"h":""} ${minutes>0? minutes+"m":""}`
+                            })()
+                          }
+                        </span>
+                        <span>.</span>
+                        <span>
+                          {items.lessons}
+                          {items.lessons > 1 ? " Lessons" : " Lesson"}
+                        </span>
+                      </p>
                     </div>
                   </div>
                 </Link>

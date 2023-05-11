@@ -1,7 +1,7 @@
 
 const DurationFormat = (duration) => {
-    const minutes = Math.floor(duration / (1000 * 60) % 60);
-    const hours = Math.floor(duration / (1000 * 60 * 60) % 24);
+    const hours = Math.floor(duration / 60);
+    const minutes = duration % 60;
     return {
         minutes,
         hours,
