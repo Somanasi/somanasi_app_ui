@@ -5,7 +5,7 @@ import { dummyData } from "../dummydata/Dummy.js";
 import { PageTitle, SearchInput } from "../components";
 import { FaFilter } from "react-icons/fa"
 import { BiBookmark } from "react-icons/bi"
-import { Button} from "../components";
+import { Button } from "../components";
 const Courses = () => {
   const [filterCourses, setFilterCourses] = useState(false);
   PageTitle(document.URL);
@@ -53,25 +53,39 @@ const Courses = () => {
                     <h3 className=" text-blue-500 font-thin ">{items.name}</h3>
                   </div>
                   <div>
-                    <p>{items.description}</p>
+                    <div>
+                      <p>{items.description}</p>
+                    </div>
+                    <div>
+                        <p className="text-xs font-normal">
+                          <span>
+                            {items.duration}
+                          </span>
+                          <span>.</span>
+                          <span>
+                            {items.lessons}
+                            {items.lessons>1?" lessons":" lesson"}
+                          </span>
+                        </p>
+                    </div>
                   </div>
                 </Link>
                 <Button>
-                  <BiBookmark size={25} />
+                  <BiBookmark size={20} />
                 </Button>
               </div>
             </div>
-            <div className=" flex align-middle pt-2">
-              <div className="w-1/6">
-                <img src={items.author_avatar} alt={items.author} className="w-8 h-8 rounded-full" />
+            <div className="course_card_row flex align-middle pt-4">
+              <div className="course_card_row_col w-1/6">
+                <img src={items.author_avatar} alt={items.author} className=" w-10 h-10 rounded-full" />
               </div>
-              <div className="w-3/6 ">
-                <span className="">
+              <div className="course_card_row_col w-3/6 ">
+                <span className="last_row_span">
                   {items.author}
                 </span>
               </div>
-              <div className="flex justify-end w-2/6">
-                <span>KES. {items.price}</span>
+              <div className="course_card_row_col justify-end align-middle w-2/6">
+                <span className="last_row_span">KES. {items.price}</span>
               </div>
             </div>
           </div>

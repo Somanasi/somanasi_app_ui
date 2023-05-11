@@ -104,17 +104,32 @@ main.main_courses {
     }
 
     .section_course_list {
-        .course_card {
-            border-bottom:.1rem #86941e17 solid;
-            // box-shadow: 0 .1rem 0 1px #f5f8de;
 
-                .course_card_row_col{
-                    a{
-                        div.col-course-name{
+        .course_card {
+            border-bottom: .1rem #86941e21 solid;
+
+            // box-shadow: 0 .1rem 0 1px #f5f8de;
+            .course_card_row {
+            .course_card_row_col{
+                    position: relative;
+                    a {
+                        div.col-course-name {
                             background-color: #00648b13;
                         }
                     }
+
+                    button {
+                        position: absolute;
+                        right: 0;
+                        top: 0;
+                        color: #949494;
+                    }
+                    span.last_row_span{
+                        position: absolute;
+                        top: 20%;
+                    }
                 }
+            }
         }
     }
 }
