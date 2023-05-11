@@ -1,50 +1,41 @@
 @use '../utilities/' as u;
-main.main_courses{
-    position: relative;
-    section.section_introduction{
-        div.search_div{
-            width: 100%;
-            // position: relative;
-            form{
-                width: 100%;
-                @include u.custom_flex_display(none, none, center);
 
-                div.form-group{
+main.main_courses {
+    position: relative;
+
+    section.section_introduction {
+        div.search_div {
+            width: 100%;
+
+            // position: relative;
+            .toggle-form-display {
+                @include u.custom_flex_display(column, none, right);
+
+                div.position-filter {
+                    margin-left: 0 !important;
+                    @include u.custom_flex_display(none, left, none);
+                }
+
+                div.form-group {
                     width: 80%;
                     @include u.custom_flex_display(none, none, center);
-                    margin-bottom: u.rem(8);
-                    & *{
+                    margin-left: 0 !important;
+                    margin-bottom: u.rem(16);
+
+                    & * {
                         display: block;
                     }
-                    input[type=search]{
-                        width: 70%;
-                        height: 5vh;
-                        padding-inline: 4% ;
-                        outline: none;
-                        border: u.rem(1) solid #faab00;
-                        border-top-left-radius: u.rem(50);
-                        border-bottom-left-radius: u.rem(50);
-                    }
-                    button{
-                        background-color: #faab00;
-                        color: #f5f8de;
-                        height: 5vh;
-                        width: 20%;
-                        padding: 0 2%;
-                        outline: none;
-                        border: u.rem(1) solid #faab00;
-                        border-top-right-radius: u.rem(50);
-                        border-bottom-right-radius: u.rem(50);
-                        @include u.custom_flex_display(none, center, center);
-                    }
-                    select.courses{
+
+                    select.courses {
                         width: 70%;
                         height: 5vh;
                         border: u.rem(1) solid #faab00;
+                        color: gray;
                         outline: none;
                         border-top-right-radius: u.rem(10);
                         border-bottom-right-radius: u.rem(10);
                     }
+
                     span.filter-icon {
                         background-color: #faab00;
                         color: #f5f8de;
@@ -58,22 +49,72 @@ main.main_courses{
                         @include u.custom_flex_display(none, center, center);
                     }
                 }
-                // div.position-filter{
-                //     width: 40%;
-                //     border: u.rem(1) red solid;
-                //     position: absolute;
-                //     top: 3.6%;
-                //     right: 0;
-                //     select.courses{
-                //         margin-inline: auto;
-                //         width: 100%;
-                //     }
-                //     svg{
-                //         position: absolute;
-                //         left: 2%;
-                //     }
-                // }
             }
+
+            form {
+                width: 100%;
+                @include u.custom_flex_display(none, none, right);
+
+                div.form-group {
+                    width: 80%;
+                    @include u.custom_flex_display(none, none, center);
+                    margin-bottom: u.rem(8);
+
+                    & * {
+                        display: block;
+                    }
+
+                    input[type=search] {
+                        width: 70%;
+                        height: 5vh;
+                        padding-inline: 4%;
+                        outline: none;
+                        border: u.rem(1) solid #faab00;
+                        border-top-left-radius: u.rem(50);
+                        border-bottom-left-radius: u.rem(50);
+                    }
+
+                    button {
+                        background-color: #faab00;
+                        color: #f5f8de;
+                        height: 5vh;
+                        width: 20%;
+                        padding: 0 2%;
+                        outline: none;
+                        border: u.rem(1) solid #faab00;
+                        border-top-right-radius: u.rem(50);
+                        border-bottom-right-radius: u.rem(50);
+                        @include u.custom_flex_display(none, center, center);
+                    }
+
+                }
+
+                div.position-filter {
+                    width: 10%;
+                    @include u.custom_flex_display(none, right, center);
+                    margin-left: u.rem(20);
+
+                    .filter-icon {
+                        text-align: end;
+                        color: #faab00;
+                    }
+                }
+            }
+        }
+    }
+
+    .section_course_list {
+        .course_card {
+            border-bottom:.1rem #86941e17 solid;
+            // box-shadow: 0 .1rem 0 1px #f5f8de;
+
+                .course_card_row_col{
+                    a{
+                        div.col-course-name{
+                            background-color: #00648b13;
+                        }
+                    }
+                }
         }
     }
 }

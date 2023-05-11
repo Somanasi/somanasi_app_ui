@@ -3,12 +3,15 @@
 const dummyData=[
         {
             id:0,
-            // icon:import("../img/logo.png"),
+            icon: "src/assets/images/comp_science.jpg",
             name:"Comp Science",
             instructorName:"Kennedy",
-            description:"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores ",
+            description:"Lorem ipsum dolor sit,",
+            author_avatar:"src/assets/images/comp_science.jpg",
+            author:"Kariuki Ng'ang'a",
+            price: 2000,
             dummyLessons:[
-                {id:0, lesson:"1", completionTime:"5 hours", downloadPdfLink:"/123456789", description:"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores "},
+                {id:0, lesson:"1", completionTime:"5 hours", downloadPdfLink:"/123456789", description:"Lorem ipsum dolor sit "},
                 {id:1, lesson:"2", completionTime:"2 hours", downloadPdfLink:"/123456789", description:"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores "},
                 {id:2, lesson:"3", completionTime:"3 hours", downloadPdfLink:"/123456789", description:"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores "},
                 {id:3, lesson:"4", completionTime:"4 hours", downloadPdfLink:"/123456789", description:"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores "},
