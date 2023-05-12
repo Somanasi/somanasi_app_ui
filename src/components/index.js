@@ -1,6 +1,6 @@
 import Navbar from "./Navbar";
 import Footer from "./Footer";
-import { PageTitle, DurationFormat} from "./utility";
+import { PageTitle, DurationFormat, courseFilters} from "./utility";
 import SearchInput from "./SearchInput";
 import Button from "./Button";
 
@@ -10,6 +10,6 @@ export {
     PageTitle,
     SearchInput,
     Button,
-    DurationFormat
-
+    DurationFormat,
+    courseFilters
 }

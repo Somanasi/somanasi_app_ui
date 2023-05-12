@@ -22,9 +22,12 @@ header{
         padding-top: u.rem(52);
         padding-left: u.rem(16);
         ul{
+            // width: 100%;
             li{
                 display: flex;
                 margin-bottom: u.rem(16);
+                border-bottom: u.rem(1) #f5f8de solid;
+                // padding-left: u.rem(16);
                 & *:first-child{
                     margin-right: u.rem(8);
                 }

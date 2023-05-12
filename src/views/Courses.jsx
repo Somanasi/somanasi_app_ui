@@ -12,12 +12,12 @@ const Courses = () => {
   PageTitle(document.URL);
   console.log(document.title)
   return (
-    <main className="main_courses bg-primary py-12 px-1">
+    <main className="main_courses bg-primary">
       <section className="section_introduction">
         <div role="search" className="search_div pb-12 w-full">
           <Form className={filterCourses ? "toggle-form-display" : ''}>
             <SearchInput size={25} placeholder="Search courses" />
-            <div className="form-group position-filter">
+            {/* <div className="form-group position-filter">
               < span title="Filter courses" className="filter-icon" onClick={() => setFilterCourses(!filterCourses)}>
                 <FaFilter size={filterCourses ? 20 : 30} />
               </span>
@@ -32,13 +32,16 @@ const Courses = () => {
                   </select>
                   : ""
               }
-            </div>
+            </div> */}
           </Form>
         </div>
-        <div className="flex justify-left pb-4">
+        <div className="flex justify-left pb-12 px-2">
           <h1 className="font-extrabold text-warning text-2xl">Courses for you </h1>
         </div>
       </section>
+      <div className="course_list_filter">
+            
+      </div>
       <section className="section_course_list">
         {dummyData.map((items, index) => (
           <div className="course_card py-8  mb-0 drop-shadow-lg  px-2" key={index}>
