@@ -3,6 +3,7 @@
 
 main.main_courses {
     position: relative;
+
     section.section_introduction {
         div.search_div {
             width: 100%;
@@ -104,26 +105,50 @@ main.main_courses {
     }
 
     .section_course_list {
+        .course_list_filter {
+            position: relative;
+            @include u.custom_flex_display(row, none, center);
+            border-top-left-radius: u.rem(50);
+            border-bottom-left-radius: u.rem(50);
+            background-color: red;
+            width: 97.8vw;
+            padding-left: u.rem(8);
+            .filter_card{
+                margin-right: u.rem(16);
+                &:last-of-type{
+                    margin-right: 0 !important;
+                }
+            }
+            .hide_all_filter_list_button {
+                position: absolute;
+                top: 20%;
+                right: 4%;
+            }
+        }
 
         .course_card {
             border-bottom: .1rem #86941e21 solid;
 
             // box-shadow: 0 .1rem 0 1px #f5f8de;
             .course_card_row {
-            .course_card_row_col{
+                .course_card_row_col {
                     position: relative;
+
                     a {
                         div.col-course-name {
                             background-color: #00648b13;
                         }
-                        div.col-course-desc{
-                            div.col-course-desc-row{
-                                p{
-                                    @include u.custom_flex_display(row,none, center);
-                                    & *{
+
+                        div.col-course-desc {
+                            div.col-course-desc-row {
+                                p {
+                                    @include u.custom_flex_display(row, none, center);
+
+                                    & * {
                                         display: block;
                                     }
-                                    span.dot{
+
+                                    span.dot {
                                         padding-inline: u.rem(8);
                                         font-size: g.$font-large;
                                     }
@@ -138,7 +163,8 @@ main.main_courses {
                         top: 0;
                         color: #949494;
                     }
-                    span.last_row_span{
+
+                    span.last_row_span {
                         position: absolute;
                         top: 24%;
                     }
