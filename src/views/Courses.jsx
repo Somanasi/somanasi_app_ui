@@ -9,7 +9,18 @@ import { Button, DurationFormat, courseFilters } from "../components";
 const Courses = () => {
   const [filterCourses, setFilterCourses] = useState(false);
   PageTitle(document.URL);
-  console.log(document.title)
+  
+
+  const scrollingFilterHandler = (e) => {
+    e.stopPropagation();
+    if (e.target.tagName === 'svg') {
+      const filter_scroller = e.target.parentElement.parentElement.parentElement.children;
+      const targetFilter = Array.from(filter_scroller)[Array.from(filter_scroller).length - 2];
+
+      console.log(targetFilter.textContent)
+    }
+  }
+
   return (
     <main className="main_courses bg-primary">
       <section className="section_introduction">
@@ -50,7 +61,7 @@ const Courses = () => {
             })
           }
           <div className="hide_all_filter_list_button">
-            <Button>
+            <Button onClick={scrollingFilterHandler}>
               <GoChevronRight size={20} />
             </Button>
           </div>
