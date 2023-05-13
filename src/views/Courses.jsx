@@ -2,54 +2,18 @@
 import React, { useState } from "react";
 import { Form, Link } from "react-router-dom";
 import { dummyData } from "../dummydata/Dummy.js";
-import { PageTitle, SearchInput } from "../components";
 import { BiBookmark } from "react-icons/bi"
 import { GoPrimitiveDot, GoChevronRight } from "react-icons/go"
-import { Button, DurationFormat, courseFilters } from "../components";
+import { SearchInput, Button, DurationFormat, courseFilters, CourseFilterList } from "../components";
 
 const filter = [];
 
 const Courses = () => {
-  const [filterCourses, setFilterCourses] = useState(false);
-  PageTitle(document.URL);
-
-
-  const scrollingFilterHandler = (e) => {
-    e.stopPropagation();
-    if (e.target.tagName === 'svg') {
-      const filter_scroller = e.target.parentElement.parentElement.parentElement.children;
-      const targetFilter = Array.from(filter_scroller)[Array.from(filter_scroller).length - 2];
-      const pos = gettingPositionOfItemInArray(courseFilters, "filter_name", targetFilter.textContent);
-
-      pos === -1 ? updateFilterList(filter, courseFilters[0]) : updateFilterList(filter, courseFilters[checkPositionOfItemInArray(courseFilters, pos)]);
-    }
-  }
-
-  const gettingPositionOfItemInArray = (arr, field_name, item) => {
-    return arr.findIndex((a) => a[field_name] === item);
-  }
-
-  const checkPositionOfItemInArray = (arr, position) =>{
-    return arr.length - 1 === position ? 0 : position + 1;
-  };
-  
-
-  const updateFilterList = (arr, item) => {
-    arr.length <= 2 ?
-      arr.push(item) :
-      arr.shift(); arr.push(item);
-  };
-
-  const displayFilterList = (arr1, arr2) => {
-    arr1.length <= 3 ? arr1.unshift(arr2.slice(0, 1)[0], arr2.slice(1, 2)[0]) : arr1;
-    return arr1;
-  };
- 
   return (
     <main className="main_courses bg-primary">
       <section className="section_introduction">
         <div role="search" className="search_div pb-8 w-full">
-          <Form className={filterCourses ? "toggle-form-display" : ''}>
+          <Form>
             <SearchInput size={25} placeholder="Search courses" />
             {/* <div className="form-group position-filter">
               < span title="Filter courses" className="filter-icon" onClick={() => setFilterCourses(!filterCourses)}>
@@ -74,22 +38,7 @@ const Courses = () => {
         </div>
       </section>
       <section className="section_course_list">
-        <div className="course_list_filter ml-2 py-1 drop-shadow-lg mb-2">
-          {
-            courseFilters.slice(0, 3).map(({ id, filter_name }) => {
-              return (
-                <div key={id} className="filter_card px-6">
-                  {filter_name}
-                </div>
-              )
-            })
-          }
-          <div className="hide_all_filter_list_button">
-            <Button onClick={scrollingFilterHandler}>
-              <GoChevronRight size={20} />
-            </Button>
-          </div>
-        </div>
+          <CourseFilterList courseFilters={courseFilters} />
         {dummyData.map((items, index) => (
           <div className="course_card py-8  mb-0 drop-shadow-lg  px-2" key={index}>
             <div className="course_card_row flex align-middle">

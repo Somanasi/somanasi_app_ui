@@ -115,7 +115,9 @@ main.main_courses {
             width: 97.8vw;
             padding-left: u.rem(8);
             .filter_card{
+                width: 40vh;
                 margin-right: u.rem(16);
+                background-color: yellow;
                 &:last-of-type{
                     margin-right: 0 !important;
                 }
