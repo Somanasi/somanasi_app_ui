@@ -38,7 +38,7 @@ const Courses = () => {
         </div>
       </section>
       <section className="section_course_list">
-          <CourseFilterList courseFilters={courseFilters} />
+        <CourseFilterList courseFilters={courseFilters} />
         {dummyData.map((items, index) => (
           <div className="course_card py-8  mb-0 drop-shadow-lg  px-2" key={index}>
             <div className="course_card_row flex align-middle">
