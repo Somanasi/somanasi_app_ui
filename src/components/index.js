@@ -3,8 +3,7 @@ import Footer from "./Footer";
 import { PageTitle, DurationFormat, courseFilters, CourseFilterList} from "./utility";
 import SearchInput from "./SearchInput";
 import Button from "./Button";
-import CourseBreakDown from "./CourseBreakDown";
-
+const {WeeklyLesson}
 
 export {
     Navbar,
@@ -15,5 +14,5 @@ export {
     DurationFormat,
     courseFilters,
     CourseFilterList,
-    CourseBreakDown
+    
 }
