@@ -6,7 +6,7 @@ export const courseFilters = [
     },
     { id: uuidv4(), filter_name: "Sciences" },
     { id: uuidv4(), filter_name: "Humanities" },
-    { id: uuidv4(), filter_name: "Geography" },
+    { id: uuidv4(), filter_name: "Geographical Sciences" },
     { id: uuidv4(), filter_name: "Business" },
     { id: uuidv4(), filter_name: "Trending" },
     { id: uuidv4(), filter_name: "New Courses" },

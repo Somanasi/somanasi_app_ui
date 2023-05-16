@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { GoChevronRight, GoChevronLeft } from "react-icons/go"
+import { GoChevronRight, GoChevronLeft } from "react-icons/go";
 
 export const CourseFilterList = ({ courseFilters }) => {
   const [scrollOffset, setScrollOffset] = useState(0);

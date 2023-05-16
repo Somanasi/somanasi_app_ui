@@ -1,6 +1,9 @@
 import React, { useState } from 'react'
 import { Link, useParams } from "react-router-dom";
 import { dummyData } from '../dummydata/Dummy.js';
+import { GoChevronLeft } from "react-icons/go";
+import { Button} from "../components";
+
 
 const SingleCourse = () => {
     const [courseOpen, setCourseOpen] = useState(null);
@@ -12,13 +15,64 @@ const SingleCourse = () => {
     return (
         <main className='single_course'>
             <section className='course_header'>
-
+                <div>
+                    <GoChevronLeft size={30} />
+                </div>
+                <div>
+                    <h1>Course</h1>
+                </div>
             </section>
-            <section>
+            <section className='course_details'>
                 {/*get single course info from database*/}
                 {dummyData.map((item, index) => (((item.id + '') === params.id) ?
                     <>
-                        <div><h2 style={{ textAlign: "center" }}>{item.name}</h2></div>
+                        <div className='course_title'>
+                            <div>
+                                <div>
+                                    {item.classification}
+                                </div>
+                                <div>
+                                    <h2>{item.name}</h2>
+                                </div>
+                                <div>
+                                    <span>KES. {item.price}</span>
+                                </div>
+                            </div>
+                            <div>
+                                <img src={item.course_avatart} alt={item.name} />
+                            </div>
+                        </div>
+                        <div className='course_description'>
+                            <div>
+                                <div>
+                                    <h3>Abour Course</h3>
+                                </div>
+                                <div>
+                                    <span>
+                                        &#9733; 4.4(700);
+                                    </span>
+                                </div>
+                            </div>
+                            <div>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    Laborum odit itaque ut doloribus, nesciunt labore id 
+                                    doloremque saepe aliquid quisquam ipsam quia ea! Magnam 
+                                    harum ipsam iusto exercitationem quod suscipit!
+                                </p>
+                            </div>
+                        </div>
+                        <div className=''>
+                            <div>
+                                <h3>Course</h3>
+                            </div>
+                            <div>
+                                <Button>See All</Button>
+                            </div>
+                        </div>
+                        <div className="course_breakdown">
+                            
+                        </div>
                         <div style={{ textAlign: "center" }}><p><strong>Instructed by: </strong>{item.instructorName}</p></div>
                         <div><p>{item.description}</p></div>
                         <div style={{ textAlign: "center", margin: "10px" }}>
