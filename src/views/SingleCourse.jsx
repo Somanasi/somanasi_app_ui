@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Link, useParams } from "react-router-dom";
 import { dummyData } from '../dummydata/Dummy.js';
 import { GoChevronLeft } from "react-icons/go";
-import { Button} from "../components";
+import { Button, CourseBreakDown } from "../components";
 
 
 const SingleCourse = () => {
@@ -55,9 +55,9 @@ const SingleCourse = () => {
                             </div>
                             <div>
                                 <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                    Laborum odit itaque ut doloribus, nesciunt labore id 
-                                    doloremque saepe aliquid quisquam ipsam quia ea! Magnam 
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Laborum odit itaque ut doloribus, nesciunt labore id
+                                    doloremque saepe aliquid quisquam ipsam quia ea! Magnam
                                     harum ipsam iusto exercitationem quod suscipit!
                                 </p>
                             </div>
@@ -71,7 +71,11 @@ const SingleCourse = () => {
                             </div>
                         </div>
                         <div className="course_breakdown">
-
+                            {
+                                item.course_breakdown.map((breakdown, index) => {
+                                    return <CourseBreakDown breakdown={breakdown} key={index} />
+                                })
+                            }
                         </div>
                         <div style={{ textAlign: "center" }}><p><strong>Instructed by: </strong>{item.instructorName}</p></div>
                         <div><p>{item.description}</p></div>
