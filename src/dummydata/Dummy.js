@@ -3,7 +3,7 @@
 const dummyData = [
     {
         id: 0,
-        icon: "../../public/images/comp_science.jpg",
+        icon: "/public/images/comp_science.jpg",
         course_avatart: "../../public/images/learning_avatar.jpg",
         name: "Comp Sci.",
         instructorName: "Kennedy",
