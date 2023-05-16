@@ -1,7 +1,8 @@
-import React from "react"
-const WeeklyLessons =  React.lazy(import('./WeeklyLessons'));
-const CourseBreakDown = React.lazy(import('./CourseBreakDown'));
+import WeeklyLessons from './WeeklyLessons';
+import CourseBreakDown from './CourseBreakDown';
+import Course from './Course';
 export {
     WeeklyLessons,
     CourseBreakDown,
+    Course,
 }

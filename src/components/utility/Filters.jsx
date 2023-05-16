@@ -36,7 +36,6 @@ export const CourseFilterList = ({ courseFilters }) => {
     setScrollOffset((offset) => offset - 1);
   };
 
-  console.log(visibleFilters)
   return (
     <div className={visibleFilters.length === 1 ? "course_list_filter_one_item course_list_filter ml-2 py-1 drop-shadow-lg mb-2" : "course_list_filter ml-2 py-1 drop-shadow-lg mb-2"}>
       {visibleFilters.map(({ id, filter_name }) => (

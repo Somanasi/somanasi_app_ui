@@ -114,7 +114,7 @@ main.main_courses {
             @include u.custom_flex_display(row, none, center);
             border-top-left-radius: u.rem(50);
             border-bottom-left-radius: u.rem(50);
-            background-color: #f4fac9;
+            background-color: #f4fac959;
             width: 97.8vw;
             padding-left: u.rem(8);
 
@@ -133,7 +133,7 @@ main.main_courses {
             }
 
             .scroll_button {
-                background-color: #f4fac9;
+                background-color: #f4fac959;
                 // background-color: red;
                 padding-left: u.rem(1);
                 height: 2rem;

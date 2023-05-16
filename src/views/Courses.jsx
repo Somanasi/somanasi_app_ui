@@ -15,22 +15,6 @@ const Courses = () => {
         <div role="search" className="search_div pb-8 w-full">
           <Form>
             <SearchInput size={25} placeholder="Search courses" />
-            {/* <div className="form-group position-filter">
-              < span title="Filter courses" className="filter-icon" onClick={() => setFilterCourses(!filterCourses)}>
-                <FaFilter size={filterCourses ? 20 : 30} />
-              </span>
-              {
-                filterCourses ?
-                  <select name="courses" id="courses" className="courses">
-                    <option disabled selected>Filter your courses</option>
-                    <option value="in progress">In progress</option>
-                    <option value="completed">Completed</option>
-                    <option value="popular">Popular</option>
-                    <option value="new">New courses</option>
-                  </select>
-                  : ""
-              }
-            </div> */}
           </Form>
         </div>
         <div className="flex justify-left pb-8 px-2">
