@@ -136,14 +136,14 @@ main.main_courses {
                 background-color: #f4fac9;
                 // background-color: red;
                 padding-left: u.rem(1);
-                height: 4.4vh;
+                height: 2rem;
                 width: 12vw;
                 @include u.custom_flex_display(none, center, center);
             }
 
             .right {
                 position: absolute;
-                top: 1.2%;
+                top: 2%;
                 right: 0;
             }
 
