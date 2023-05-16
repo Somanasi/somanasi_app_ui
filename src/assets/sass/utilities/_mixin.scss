@@ -1,5 +1,6 @@
-@mixin custom_flex_display($justification, $aligment){
-    display: flex;
-    justify-content: $justification;
-    align-items: $aligment;
+@mixin custom_flex_display($direction, $justification, $aligment){
+    display: flex !important;
+    flex-direction: $direction !important;
+    justify-content: $justification !important;
+    align-items: $aligment !important;
 }

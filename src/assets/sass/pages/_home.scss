@@ -1,25 +1,125 @@
 @use '../utilities/' as u;
+@use '../global/' as g;
 .homepage{
-    .section_courses{
+    .section_introduction{
         position: relative;
-        &::before{
+        height: 90vh !important;
+        background-color: black !important;
+        &::after{
             content: "";
             position: absolute;
             background-color: transparent;
-            width: u.rem(30);
+            width: u.rem(50);
             height: u.rem(60);
-            bottom: u.rem(-60);
+            top: u.rem(-55.2);
+            right: 0;
+            border-bottom-right-radius: u.rem(25);
+            box-shadow: u.rem(10) 0 0 0 black;
+        }
+        .heading-text-container{
+            position: absolute;
+            top: 26.4%;
+            .big_text{
+                color: #fff;
+                font-size: u.rem(52);
+                font-weight: 700;
+                text-align: right;
+                padding-inline: u.rem(16);
+                span{
+                    display: block;
+                }
+            }
+        }
+        .cta-btn-courses{
+            box-shadow: u.rem(-1) u.rem(-1) u.rem(2) u.rem(4) rgba(0, 0, 0, 0.103);
+            margin-top: u.rem(40);
+            margin-left: 60%;
+            text-align: center;
+            border-radius: 4%;
+            a{
+                color: #fff;
+                text-decoration: none;
+            }
+        }
+    }
+    .section_courses{
+        position: relative;
+        &::after{
+            content: "";
+            position: absolute;
+            background-color: transparent;
+            width: u.rem(50);
+            height: u.rem(60);
+            top: u.rem(0);
             left: 0;
             border-top-left-radius: u.rem(25);
-            box-shadow: 0 -25px 0 0 #f5f8de;
+            box-shadow: 0 -25px 0 0 black;
+            z-index: 2;
         }
         .section_courses-content{
             .course_card-btn_row{
                 a{
                     color: #f5f8de;
-                    @include u.custom_flex_display(center, center);
+                    @include u.custom_flex_display(none,center, center);
                     & *{
                         display: block;
+                    }
+                }
+            }
+        }
+    }
+    .section_tips{
+        position: relative;
+        &::before{
+            content: "";
+            position: absolute;
+            background-color: transparent;
+            width: u.rem(50);
+            height: u.rem(60);
+            bottom: u.rem(-60);
+            right: 0;
+            border-top-right-radius: u.rem(25);
+            box-shadow: 0 -25px 0 0 #f5f8de;
+            z-index: 2;
+        }
+    }
+    .reviews{
+        position: relative;
+        &::before{
+            content: "";
+            position: absolute;
+            background-color: transparent;
+            width: u.rem(50);
+            height: u.rem(60);
+            bottom: u.rem(-60);
+            left: 0;
+            border-top-left-radius: u.rem(25);
+            box-shadow: 0 -25px 0 0 #ffc933;
+        }
+        .section-content{
+            opacity: 1;
+            transition: opacity 0.5s ease-out;
+            &.hidden {
+                opacity: 0;
+              }
+            article.review-container{
+                div.reviewer-content{
+                    p{
+                        @include u.custom_flex_display(column, center, center);
+                        span.openig-quote{
+                            @include u.custom_flex_display(none, left, center);
+                            width: 100%;
+                            color: #ffc933;
+                        }
+                        span.closing-quote{
+                            @include u.custom_flex_display(none, right, center);
+                            width: 100%;
+                            text-align: right;
+                            color: #ffc933;
+                             svg{
+                                transform: rotate(180deg);
+                            }
+                        }
                     }
                 }
             }
