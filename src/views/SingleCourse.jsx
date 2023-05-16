@@ -71,7 +71,7 @@ const SingleCourse = () => {
                             </div>
                         </div>
                         <div className="course_breakdown">
-                            
+
                         </div>
                         <div style={{ textAlign: "center" }}><p><strong>Instructed by: </strong>{item.instructorName}</p></div>
                         <div><p>{item.description}</p></div>
@@ -83,7 +83,7 @@ const SingleCourse = () => {
                         <div style={courseOpen ? { display: "block" } : { display: "none" }}>
                             <div style={{ padding: "10px" }}>
                                 {/*Get course data from database*/}
-                                {item.dummyLessons.map((items, index) => {
+                                {/* {item.dummyLessons.map((items, index) => {
                                     return (
                                         <>
                                             <hr />
@@ -96,7 +96,7 @@ const SingleCourse = () => {
                                             <hr /></>
                                     )
                                 }
-                                )}
+                                )} */}
                             </div>
                         </div>
                     </>
