@@ -14,12 +14,97 @@ const dummyData = [
         lessons: 12,
         price: 2000,
         classification: "Computer Science & Information Technology",
-        dummyLessons: [
-            { id: 0, lesson: "1", completionTime: "5 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit " },
-            { id: 1, lesson: "2", completionTime: "2 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
-            { id: 2, lesson: "3", completionTime: "3 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
-            { id: 3, lesson: "4", completionTime: "4 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
-            { id: 4, lesson: "5", completionTime: "1 hour", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+        course_breakdown: [
+            {
+                tag: "Week 1",
+                lessons: [
+                    { id: 0, lesson: "1", completionTime: "5 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 1, lesson: "2", completionTime: "2 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 2, lesson: "3", completionTime: "3 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 3, lesson: "4", completionTime: "4 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 4, lesson: "5", completionTime: "1 hour", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " }
+                ]
+            },
+            {
+                tag: "Week 2",
+                lessons: [
+                    { id: 0, lesson: "1", completionTime: "5 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 1, lesson: "2", completionTime: "2 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 2, lesson: "3", completionTime: "3 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 3, lesson: "4", completionTime: "4 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 4, lesson: "5", completionTime: "1 hour", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " }
+                ]
+            },
+            {
+                tag: "Week 3",
+                lessons: [
+                    { id: 0, lesson: "1", completionTime: "5 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 1, lesson: "2", completionTime: "2 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 2, lesson: "3", completionTime: "3 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 3, lesson: "4", completionTime: "4 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 4, lesson: "5", completionTime: "1 hour", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " }
+                ]
+            },
+            {
+                tag: "Week 4",
+                lessons: [
+                    { id: 0, lesson: "1", completionTime: "5 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 1, lesson: "2", completionTime: "2 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 2, lesson: "3", completionTime: "3 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 3, lesson: "4", completionTime: "4 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 4, lesson: "5", completionTime: "1 hour", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " }
+                ]
+            },
+            {
+                tag: "Week 5",
+                lessons: [
+                    { id: 0, lesson: "1", completionTime: "5 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 1, lesson: "2", completionTime: "2 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 2, lesson: "3", completionTime: "3 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 3, lesson: "4", completionTime: "4 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 4, lesson: "5", completionTime: "1 hour", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " }
+                ]
+            },
+            {
+                tag: "Week 7",
+                lessons: [
+                    { id: 0, lesson: "1", completionTime: "5 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 1, lesson: "2", completionTime: "2 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 2, lesson: "3", completionTime: "3 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 3, lesson: "4", completionTime: "4 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 4, lesson: "5", completionTime: "1 hour", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " }
+                ]
+            },
+            {
+                tag: "Week 8",
+                lessons: [
+                    { id: 0, lesson: "1", completionTime: "5 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 1, lesson: "2", completionTime: "2 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 2, lesson: "3", completionTime: "3 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 3, lesson: "4", completionTime: "4 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 4, lesson: "5", completionTime: "1 hour", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " }
+                ]
+            },
+            {
+                tag: "Week 9",
+                lessons: [
+                    { id: 0, lesson: "1", completionTime: "5 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 1, lesson: "2", completionTime: "2 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 2, lesson: "3", completionTime: "3 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 3, lesson: "4", completionTime: "4 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 4, lesson: "5", completionTime: "1 hour", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " }
+                ]
+            },
+            {
+                tag: "Week 10",
+                lessons: [
+                    { id: 0, lesson: "1", completionTime: "5 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 1, lesson: "2", completionTime: "2 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 2, lesson: "3", completionTime: "3 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 3, lesson: "4", completionTime: "4 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 4, lesson: "5", completionTime: "1 hour", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " }
+                ]
+            },
         ],
     },
     {
@@ -35,12 +120,97 @@ const dummyData = [
         lessons: 8,
         price: 2000,
         classification: "Science",
-        dummyLessons: [
-            { id: 0, lesson: "1", completionTime: "5 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
-            { id: 1, lesson: "2", completionTime: "2 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
-            { id: 2, lesson: "3", completionTime: "3 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
-            { id: 3, lesson: "4", completionTime: "4 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
-            { id: 4, lesson: "5", completionTime: "1 hour", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " }
+        course_breakdown: [
+            {
+                tag: "Week 1",
+                lessons: [
+                    { id: 0, lesson: "1", completionTime: "5 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 1, lesson: "2", completionTime: "2 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 2, lesson: "3", completionTime: "3 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 3, lesson: "4", completionTime: "4 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 4, lesson: "5", completionTime: "1 hour", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " }
+                ]
+            },
+            {
+                tag: "Week 2",
+                lessons: [
+                    { id: 0, lesson: "1", completionTime: "5 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 1, lesson: "2", completionTime: "2 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 2, lesson: "3", completionTime: "3 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 3, lesson: "4", completionTime: "4 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 4, lesson: "5", completionTime: "1 hour", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " }
+                ]
+            },
+            {
+                tag: "Week 3",
+                lessons: [
+                    { id: 0, lesson: "1", completionTime: "5 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 1, lesson: "2", completionTime: "2 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 2, lesson: "3", completionTime: "3 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 3, lesson: "4", completionTime: "4 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 4, lesson: "5", completionTime: "1 hour", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " }
+                ]
+            },
+            {
+                tag: "Week 4",
+                lessons: [
+                    { id: 0, lesson: "1", completionTime: "5 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 1, lesson: "2", completionTime: "2 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 2, lesson: "3", completionTime: "3 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 3, lesson: "4", completionTime: "4 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 4, lesson: "5", completionTime: "1 hour", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " }
+                ]
+            },
+            {
+                tag: "Week 5",
+                lessons: [
+                    { id: 0, lesson: "1", completionTime: "5 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 1, lesson: "2", completionTime: "2 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 2, lesson: "3", completionTime: "3 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 3, lesson: "4", completionTime: "4 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 4, lesson: "5", completionTime: "1 hour", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " }
+                ]
+            },
+            {
+                tag: "Week 7",
+                lessons: [
+                    { id: 0, lesson: "1", completionTime: "5 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 1, lesson: "2", completionTime: "2 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 2, lesson: "3", completionTime: "3 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 3, lesson: "4", completionTime: "4 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 4, lesson: "5", completionTime: "1 hour", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " }
+                ]
+            },
+            {
+                tag: "Week 8",
+                lessons: [
+                    { id: 0, lesson: "1", completionTime: "5 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 1, lesson: "2", completionTime: "2 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 2, lesson: "3", completionTime: "3 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 3, lesson: "4", completionTime: "4 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 4, lesson: "5", completionTime: "1 hour", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " }
+                ]
+            },
+            {
+                tag: "Week 9",
+                lessons: [
+                    { id: 0, lesson: "1", completionTime: "5 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 1, lesson: "2", completionTime: "2 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 2, lesson: "3", completionTime: "3 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 3, lesson: "4", completionTime: "4 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 4, lesson: "5", completionTime: "1 hour", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " }
+                ]
+            },
+            {
+                tag: "Week 10",
+                lessons: [
+                    { id: 0, lesson: "1", completionTime: "5 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 1, lesson: "2", completionTime: "2 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 2, lesson: "3", completionTime: "3 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 3, lesson: "4", completionTime: "4 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 4, lesson: "5", completionTime: "1 hour", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " }
+                ]
+            },
         ],
     },
     {
@@ -56,12 +226,97 @@ const dummyData = [
         lessons: 6,
         price: 2000,
         classification: "Food Science",
-        dummyLessons: [
-            { id: 0, lesson: "1", completionTime: "5 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
-            { id: 1, lesson: "2", completionTime: "2 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
-            { id: 2, lesson: "3", completionTime: "3 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
-            { id: 3, lesson: "4", completionTime: "4 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
-            { id: 4, lesson: "5", completionTime: "1 hour", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " }
+        course_breakdown: [
+            {
+                tag: "Week 1",
+                lessons: [
+                    { id: 0, lesson: "1", completionTime: "5 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 1, lesson: "2", completionTime: "2 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 2, lesson: "3", completionTime: "3 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 3, lesson: "4", completionTime: "4 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 4, lesson: "5", completionTime: "1 hour", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " }
+                ]
+            },
+            {
+                tag: "Week 2",
+                lessons: [
+                    { id: 0, lesson: "1", completionTime: "5 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 1, lesson: "2", completionTime: "2 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 2, lesson: "3", completionTime: "3 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 3, lesson: "4", completionTime: "4 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 4, lesson: "5", completionTime: "1 hour", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " }
+                ]
+            },
+            {
+                tag: "Week 3",
+                lessons: [
+                    { id: 0, lesson: "1", completionTime: "5 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 1, lesson: "2", completionTime: "2 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 2, lesson: "3", completionTime: "3 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 3, lesson: "4", completionTime: "4 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 4, lesson: "5", completionTime: "1 hour", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " }
+                ]
+            },
+            {
+                tag: "Week 4",
+                lessons: [
+                    { id: 0, lesson: "1", completionTime: "5 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 1, lesson: "2", completionTime: "2 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 2, lesson: "3", completionTime: "3 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 3, lesson: "4", completionTime: "4 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 4, lesson: "5", completionTime: "1 hour", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " }
+                ]
+            },
+            {
+                tag: "Week 5",
+                lessons: [
+                    { id: 0, lesson: "1", completionTime: "5 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 1, lesson: "2", completionTime: "2 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 2, lesson: "3", completionTime: "3 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 3, lesson: "4", completionTime: "4 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 4, lesson: "5", completionTime: "1 hour", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " }
+                ]
+            },
+            {
+                tag: "Week 7",
+                lessons: [
+                    { id: 0, lesson: "1", completionTime: "5 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 1, lesson: "2", completionTime: "2 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 2, lesson: "3", completionTime: "3 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 3, lesson: "4", completionTime: "4 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 4, lesson: "5", completionTime: "1 hour", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " }
+                ]
+            },
+            {
+                tag: "Week 8",
+                lessons: [
+                    { id: 0, lesson: "1", completionTime: "5 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 1, lesson: "2", completionTime: "2 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 2, lesson: "3", completionTime: "3 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 3, lesson: "4", completionTime: "4 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 4, lesson: "5", completionTime: "1 hour", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " }
+                ]
+            },
+            {
+                tag: "Week 9",
+                lessons: [
+                    { id: 0, lesson: "1", completionTime: "5 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 1, lesson: "2", completionTime: "2 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 2, lesson: "3", completionTime: "3 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 3, lesson: "4", completionTime: "4 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 4, lesson: "5", completionTime: "1 hour", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " }
+                ]
+            },
+            {
+                tag: "Week 10",
+                lessons: [
+                    { id: 0, lesson: "1", completionTime: "5 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 1, lesson: "2", completionTime: "2 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 2, lesson: "3", completionTime: "3 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 3, lesson: "4", completionTime: "4 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 4, lesson: "5", completionTime: "1 hour", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " }
+                ]
+            },
         ],
     },
     {
@@ -184,12 +439,97 @@ const dummyData = [
         lessons: 4,
         price: 2000,
         classification: "Humanities",
-        dummyLessons: [
-            { id: 0, lesson: "1", completionTime: "5 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
-            { id: 1, lesson: "2", completionTime: "2 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
-            { id: 2, lesson: "3", completionTime: "3 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
-            { id: 3, lesson: "4", completionTime: "4 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
-            { id: 4, lesson: "5", completionTime: "1 hour", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " }
+        course_breakdown: [
+            {
+                tag: "Week 1",
+                lessons: [
+                    { id: 0, lesson: "1", completionTime: "5 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 1, lesson: "2", completionTime: "2 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 2, lesson: "3", completionTime: "3 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 3, lesson: "4", completionTime: "4 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 4, lesson: "5", completionTime: "1 hour", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " }
+                ]
+            },
+            {
+                tag: "Week 2",
+                lessons: [
+                    { id: 0, lesson: "1", completionTime: "5 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 1, lesson: "2", completionTime: "2 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 2, lesson: "3", completionTime: "3 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 3, lesson: "4", completionTime: "4 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 4, lesson: "5", completionTime: "1 hour", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " }
+                ]
+            },
+            {
+                tag: "Week 3",
+                lessons: [
+                    { id: 0, lesson: "1", completionTime: "5 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 1, lesson: "2", completionTime: "2 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 2, lesson: "3", completionTime: "3 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 3, lesson: "4", completionTime: "4 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 4, lesson: "5", completionTime: "1 hour", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " }
+                ]
+            },
+            {
+                tag: "Week 4",
+                lessons: [
+                    { id: 0, lesson: "1", completionTime: "5 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 1, lesson: "2", completionTime: "2 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 2, lesson: "3", completionTime: "3 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 3, lesson: "4", completionTime: "4 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 4, lesson: "5", completionTime: "1 hour", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " }
+                ]
+            },
+            {
+                tag: "Week 5",
+                lessons: [
+                    { id: 0, lesson: "1", completionTime: "5 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 1, lesson: "2", completionTime: "2 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 2, lesson: "3", completionTime: "3 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 3, lesson: "4", completionTime: "4 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 4, lesson: "5", completionTime: "1 hour", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " }
+                ]
+            },
+            {
+                tag: "Week 7",
+                lessons: [
+                    { id: 0, lesson: "1", completionTime: "5 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 1, lesson: "2", completionTime: "2 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 2, lesson: "3", completionTime: "3 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 3, lesson: "4", completionTime: "4 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 4, lesson: "5", completionTime: "1 hour", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " }
+                ]
+            },
+            {
+                tag: "Week 8",
+                lessons: [
+                    { id: 0, lesson: "1", completionTime: "5 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 1, lesson: "2", completionTime: "2 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 2, lesson: "3", completionTime: "3 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 3, lesson: "4", completionTime: "4 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 4, lesson: "5", completionTime: "1 hour", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " }
+                ]
+            },
+            {
+                tag: "Week 9",
+                lessons: [
+                    { id: 0, lesson: "1", completionTime: "5 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 1, lesson: "2", completionTime: "2 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 2, lesson: "3", completionTime: "3 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 3, lesson: "4", completionTime: "4 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 4, lesson: "5", completionTime: "1 hour", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " }
+                ]
+            },
+            {
+                tag: "Week 10",
+                lessons: [
+                    { id: 0, lesson: "1", completionTime: "5 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 1, lesson: "2", completionTime: "2 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 2, lesson: "3", completionTime: "3 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 3, lesson: "4", completionTime: "4 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
+                    { id: 4, lesson: "5", completionTime: "1 hour", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " }
+                ]
+            },
         ],
     },
 ];
