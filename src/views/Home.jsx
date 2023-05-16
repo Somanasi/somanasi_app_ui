@@ -8,12 +8,12 @@ import {
   GoLinkExternal
 } from "react-icons/go";
 import { FaHourglass } from "react-icons/fa";
-import LiteratureImage from "../assets/images/literature.jpeg";
-import Physics from "../assets/images/physics.jpeg";
-import Maths from "../assets/images/maths.jpeg";
-import Chem from "../assets/images/chem.jpeg";
-import Bio from "../assets/images/biology.jpeg";
-import CompStudies from "../assets/images/comp.jpeg";
+import LiteratureImage from "../../public/images/literature.jpeg";
+import Physics from "../../public/images/physics.jpeg";
+import Maths from "../../public/images/maths.jpeg";
+import Chem from "../../public/images/chem.jpeg";
+import Bio from "../../public/images/biology.jpeg";
+import CompStudies from "../../public/images/comp.jpeg";
 import { NavLink } from "react-router-dom";
 
 const Home = () => {
