@@ -1,9 +1,10 @@
+import React from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import { PageTitle, DurationFormat, courseFilters, CourseFilterList} from "./utility";
 import SearchInput from "./SearchInput";
 import Button from "./Button";
-const {WeeklyLesson}
+const {WeeklyLessons, CourseBreakDown} = React.lazy( import('./Courses'));
 
 export {
     Navbar,
@@ -14,5 +15,6 @@ export {
     DurationFormat,
     courseFilters,
     CourseFilterList,
-    
+    WeeklyLessons,
+    CourseBreakDown,
 }
