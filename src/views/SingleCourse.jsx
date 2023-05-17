@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Link, useParams } from "react-router-dom";
 import { dummyData } from '../dummydata/Dummy.js';
-import { GoChevronLeft } from "react-icons/go";
+import { GoChevronLeft, GoKebabVertical } from "react-icons/go";
 import { FaShoppingBag } from "react-icons/fa"
 import { Button, Course } from '../components';
 
@@ -15,7 +15,7 @@ const SingleCourse = () => {
         setCoure(foundCourse);
     }, [id]);
     
-    if(!course) return <div><h1>Error</h1><p>Course Not Found!</p></div>;
+    if(!course) return <div className='errorBoundary'><h1>Error</h1><p>Course Not Found!</p></div>;
 
     return (
         <main className='single_course'>
@@ -27,6 +27,9 @@ const SingleCourse = () => {
                 </div>
                 <div>
                     <h1>Course</h1>
+                </div>
+                <div>
+                    <GoKebabVertical size={30} />
                 </div>
             </section>
             <section className='course_details'>
