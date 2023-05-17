@@ -9,10 +9,10 @@ const Course = ({ course }) => {
     };
 
     return (
-        <div>
-            <div className='course_title'>
-                <div>
-                    <div>
+        <>
+            <div className='course_title rounded-lg py-4 '>
+                <div className='course_title_column pl-4 '>
+                    <div >
                         {course.classification}
                     </div>
                     <div>
@@ -22,8 +22,8 @@ const Course = ({ course }) => {
                         <span>KES. {course.price}</span>
                     </div>
                 </div>
-                <div>
-                    <img src={course.course_avatart} alt={course.name} />
+                <div className='course_title_img_holder'>
+                    {/* <img src={course.course_avatart} alt={course.name} className='bg-information w-80' /> */}
                 </div>
             </div>
             <div className='course_description'>
@@ -61,7 +61,7 @@ const Course = ({ course }) => {
                     })
                 }
             </div>
-        </div>
+        </>
     )
 }
 

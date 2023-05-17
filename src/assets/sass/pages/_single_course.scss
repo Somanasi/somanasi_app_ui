@@ -1,0 +1,23 @@
+@use '../utilities/' as u;
+@use '../global/' as g;
+main.single_course{
+    section.course_header{
+        @include u.custom_flex_display(row, none, center);
+        div.course_header_column{
+            width: 33%;
+        }
+    }
+    section.course_details{
+        div.course_title{
+            background-color: #bee1f4;
+            @include u.custom_flex_display(row, none, none);
+            height: 25vh;;
+        }
+        div.course_title_img_holder{
+            background-image: url("../public/images/learning_avatar.png");
+            background-size: cover;
+            width: 40%;
+            z-index: 10;
+        }
+    }
+}
