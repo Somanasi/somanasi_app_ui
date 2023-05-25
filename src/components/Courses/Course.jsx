@@ -48,7 +48,7 @@ const Course = ({ course }) => {
         <div className="division_column">
           <h3 className="text-warning font-bold text-lg">Course</h3>
         </div>
-        <div>
+        <div className="division_column column_with_toggle_btn">
           <Button onClick={(e) => toggleCourseOpen(e)}>See All</Button>
         </div>
       </div>
