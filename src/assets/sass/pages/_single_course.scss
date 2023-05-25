@@ -28,7 +28,10 @@ main.single_course{
             .about_course{
                 background-color: red;
                 @include u.custom_flex_display(row, none, none);
-                
+
+                div.column-two{
+                    
+                }
             }
         }
     }
