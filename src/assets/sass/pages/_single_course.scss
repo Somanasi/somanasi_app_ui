@@ -48,7 +48,7 @@ main.single_course{
             }
 
             div.column_with_toggle_btn{
-
+                @include u.custom_flex_display(row, right, center);
             }
         }
     }
