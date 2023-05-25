@@ -40,5 +40,8 @@ main.single_course{
                 }
             }
         }
+        .course_and_course_details_toggle_button{
+            @include u.custom_flex_display(row, none, none);
+        }
     }
 }

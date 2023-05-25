@@ -44,9 +44,9 @@ const Course = ({ course }) => {
           </p>
         </div>
       </div>
-      <div className="">
+      <div className="course_and_course_details_toggle_button">
         <div>
-          <h3>Course</h3>
+          <h3 className="text-warning">Course</h3>
         </div>
         <div>
           <Button onClick={(e) => toggleCourseOpen(e)}>See All</Button>
