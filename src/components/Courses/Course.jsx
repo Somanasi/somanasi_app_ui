@@ -29,7 +29,7 @@ const Course = ({ course }) => {
           <div>
             <h3 className="font-bold text-warning">Abour Course</h3>
           </div>
-          <div>
+          <div className="about_course_column column-two">
             <span className="text-warning">&#9733;</span>
             <span className="font-bold">4.4</span>
             <span className="font-extralight">(700)</span>
