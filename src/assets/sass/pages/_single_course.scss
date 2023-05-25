@@ -29,6 +29,9 @@ main.single_course{
                 background-color: red;
                 @include u.custom_flex_display(row, none, none);
 
+                div.about_course_column{
+                    width: 50%;
+                }
                 div.column-two{
                     background-color: yellow;
                 }
