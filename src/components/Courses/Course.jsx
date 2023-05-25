@@ -2,11 +2,13 @@ import React, { useState } from "react";
 import { CourseBreakDown } from "./index";
 import { Button } from "../index";
 const Course = ({ course }) => {
-  const [courseOpen, setCourseOpen] = useState(null);
+  const [courseOpen, setCourseOpen] = useState(false);
   const toggleCourseOpen = (e) => {
     e.preventDefault();
     setCourseOpen(!courseOpen);
+    console.log(courseOpen)
   };
+  const courseBreakdown = courseOpen ? course.course_breakdown :  course.course_breakdown.slice(0, 3);
 
   return (
     <>
@@ -53,7 +55,7 @@ const Course = ({ course }) => {
         </div>
       </div>
       <div className="course_breakdown">
-        {course.course_breakdown.map((breakdown, index) => {
+        {courseBreakdown.map((breakdown, index) => {
           return <CourseBreakDown breakdown={breakdown} key={index} />;
         })}
       </div>
