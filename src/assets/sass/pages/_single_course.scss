@@ -11,13 +11,49 @@ main.single_course{
         div.course_title{
             background-color: #bee1f4;
             @include u.custom_flex_display(row, none, none);
-            height: 25vh;;
+            height: 25vh;
+
+            div.course_title_column{
+                @include u.custom_flex_display(column, center, none);
+            }
+
+            div.course_title_img_holder{
+                background-image:  url("../public/assets/course_title_image.png");
+                background-size: cover;
+                width: 80%;
+                z-index: 10;
+            }
         }
-        div.course_title_img_holder{
-            background-image: url("../public/images/learning_avatar.png");
-            background-size: cover;
-            width: 40%;
-            z-index: 10;
+        .course_description{
+            .about_course{
+                @include u.custom_flex_display(row, center, none);
+
+                div.about_course_column{
+                    width: 50%;
+                }
+                div.column-two{
+                    @include u.custom_flex_display(row, right, center);
+
+                    & * {
+                        display: block;
+                    }
+                }
+            }
+        }
+        .course_and_course_details_toggle_button{
+            @include u.custom_flex_display(row, none, none);
+
+            div.division_column{
+                width: 50%;
+            }
+
+            div.column_with_toggle_btn{
+                @include u.custom_flex_display(row, right, center);
+                button{
+                    color:#0000df;
+                    font-weight: 700;
+                }
+            }
         }
     }
 }
