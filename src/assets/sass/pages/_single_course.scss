@@ -14,7 +14,7 @@ main.single_course{
             height: 25vh;
 
             div.course_title_img_holder{
-                background-image: url("../public/images/learning_avatar.png");
+                background-image: linear-gradient(to left, red, yellow), url("../public/assets/course_title_image.png");
                 background-size: cover;
                 width: 40%;
                 z-index: 10;
