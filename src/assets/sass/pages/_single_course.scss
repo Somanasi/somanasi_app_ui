@@ -44,8 +44,9 @@ main.single_course{
             @include u.custom_flex_display(row, none, none);
 
             div.division_column{
-                
+                width: 50%;
             }
+
             div.column_with_toggle_btn{
 
             }
