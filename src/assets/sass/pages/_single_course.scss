@@ -34,6 +34,7 @@ main.single_course{
                 }
                 div.column-two{
                     background-color: yellow;
+                    @include u.custom_flex_display(row, none, none);
                 }
             }
         }
