@@ -26,8 +26,8 @@ const Course = ({ course }) => {
       </div>
       <div className="course_description py-8">
         <div className="about_course pb-4">
-          <div>
-            <h3 className="font-bold text-warning">Abour Course</h3>
+          <div  className="about_course_column">
+            <h3 className="font-bold text-warning">About Course</h3>
           </div>
           <div className="about_course_column column-two">
             <span className="text-warning">&#9733;</span>
