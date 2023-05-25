@@ -26,15 +26,17 @@ main.single_course{
         }
         .course_description{
             .about_course{
-                background-color: red;
-                @include u.custom_flex_display(row, none, none);
+                @include u.custom_flex_display(row, center, none);
 
                 div.about_course_column{
                     width: 50%;
                 }
                 div.column-two{
-                    background-color: yellow;
-                    @include u.custom_flex_display(row, none, none);
+                    @include u.custom_flex_display(row, right, center);
+
+                    & * {
+                        display: block;
+                    }
                 }
             }
         }
