@@ -12,12 +12,12 @@ const Course = ({ course }) => {
     <>
       <div className="course_title rounded-lg py-4 ">
         <div className="course_title_column pl-4 ">
-          <div>{course.classification}</div>
+          <div className="font-extralight">{course.classification}</div>
           <div>
-            <h2>{course.name}</h2>
+            <h2 className="font-medium text-lg">{course.name}</h2>
           </div>
           <div>
-            <span>KES. {course.price}</span>
+            <span className="text-warning font-bold text-lg">KES. {course.price}</span>
           </div>
         </div>
         <div className="course_title_img_holder">
