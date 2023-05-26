@@ -98,7 +98,6 @@ main.single_course {
     section.buy_course_now{
         @include u.custom_flex_display(row, none, none);
         width: 100%;
-        background-color: #0000df;
         div.buy_course_now_column{
             width: 50%;
         }
