@@ -32,7 +32,7 @@ const SingleCourse = () => {
                     <BsThreeDotsVertical size={25} />
                 </div>
             </section>
-            <section className='course_details py-4 px-2'>
+            <section className='course_details py-4 px-2 '>
                 {/*get single course info from database*/}
                 {dummyData.map((course, index) => (((course.id + '') === id) ?
                     <Course course={course} key={index} />

@@ -12,7 +12,7 @@ main.single_course{
             background-color: #bee1f4;
             @include u.custom_flex_display(row, none, none);
             height: 25vh;
-            width: 100vw;
+            width: 100%;
 
             div.course_title_column{
                 @include u.custom_flex_display(column, center, none);
