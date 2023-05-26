@@ -1,47 +1,54 @@
 @use '../utilities/' as u;
 @use '../global/' as g;
-main.single_course{
-    section.course_header{
+
+main.single_course {
+    section.course_header {
         @include u.custom_flex_display(row, none, center);
-        div.course_header_column{
+
+        div.course_header_column {
             width: 33%;
         }
     }
-    section.course_details{
-        div.course_title{
+
+    section.course_details {
+        div.course_title {
             position: relative;
             background-color: #bee1f4;
             @include u.custom_flex_display(row, none, none);
             height: 25vh;
             width: 100%;
 
-            div.course_title_column{
+            div.course_title_column {
                 @include u.custom_flex_display(column, center, none);
                 width: 66vw;
                 max-width: 120vw;
-                
+
             }
 
-            div.course_title_img_holder{
+            div.course_title_img_holder {
                 position: absolute;
-                top:-8%;
+                top: -8%;
                 right: 2%;
-                background-image:  url("../public/assets/course_title_image.png");
+                background-image: url("../public/assets/course_title_image.png");
                 background-size: cover;
                 width: 40%;
                 height: 90%;
-                z-index: 10;
-                transform: rotateY('90deg')
+                // z-index: 10;
+                // transform-origin: top right;
+                // transform: translate(-100%, 10%) rotate(-90deg);
+                // background-color: blue;
             }
         }
-        .course_description{
-            .about_course{
+
+        .course_description {
+            .about_course {
                 @include u.custom_flex_display(row, center, none);
 
-                div.about_course_column{
+                div.about_course_column {
                     width: 50%;
                 }
-                div.column-two{
+
+                div.column-two {
                     @include u.custom_flex_display(row, right, center);
 
                     & * {
@@ -50,17 +57,19 @@ main.single_course{
                 }
             }
         }
-        .course_and_course_details_toggle_button{
+
+        .course_and_course_details_toggle_button {
             @include u.custom_flex_display(row, none, none);
 
-            div.division_column{
+            div.division_column {
                 width: 50%;
             }
 
-            div.column_with_toggle_btn{
+            div.column_with_toggle_btn {
                 @include u.custom_flex_display(row, right, center);
-                button{
-                    color:#0000df;
+
+                button {
+                    color: #0000df;
                     font-weight: 700;
                 }
             }
