@@ -95,10 +95,14 @@ main.single_course {
         }
     }
     section.buy_course_now{
-        position: relative;
+        // position: fixed;
         background-color: #0000df;
+        height: 70vh;
         div.buy_course_now_column{
-            position: absolute;
+        }
+        div.second_column_buy{
+            // right: 10%;
+            background-color: red;
         }
     }
 }
