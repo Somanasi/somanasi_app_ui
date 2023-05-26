@@ -60,7 +60,7 @@ const Course = ({ course }) => {
       </div>
       <div className="course_breakdown py-1">
         {courseBreakdown.map((breakdown, index) => {
-          return <CourseBreakDown breakdown={breakdown} key={index} />;
+          return <CourseBreakDown breakdown={breakdown} index={index} key={index} />;
         })}
       </div>
     </>
