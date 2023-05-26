@@ -17,23 +17,20 @@ const CourseBreakDown = ({ breakdown }) => {
           <h2 className='font-bold text-lg'>{breakdown.tag}</h2>
         </div>
         <div className='course_breakdown_card_navigation_column icon pr-2'>
-         {
-          seeLessons ? 
-          <GoChevronUp size={30} className='text-warning' />
-          :
-          <GoChevronRight size={30} className='text-warning' />
-         }
+          {seeLessons ? (
+            <GoChevronUp size={30} className='text-warning' />
+          ) : (
+            <GoChevronRight size={30} className='text-warning' />
+          )}
         </div>
       </div>
-      {
-        seeLessons ?
+      {seeLessons && (
         <div>
-        {breakdown.lessons.map((lesson, index) => {
-          return <WeeklyLessons lesson={lesson} key={index} />;
-        })}
-      </div>
-      : ""
-      }
+          {breakdown.lessons.map((lesson, index) => {
+            return <WeeklyLessons lesson={lesson} key={index} />;
+          })}
+        </div>
+      )}
     </div>
   );
 };
