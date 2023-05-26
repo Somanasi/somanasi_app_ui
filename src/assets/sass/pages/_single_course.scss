@@ -2,6 +2,7 @@
 @use '../global/' as g;
 
 main.single_course {
+    position: relative;
     section.course_header {
         @include u.custom_flex_display(row, none, center);
 
@@ -95,14 +96,14 @@ main.single_course {
         }
     }
     section.buy_course_now{
-        // position: fixed;
+        @include u.custom_flex_display(row, none, none);
+        width: 100%;
         background-color: #0000df;
-        height: 70vh;
         div.buy_course_now_column{
+            width: 50%;
         }
         div.second_column_buy{
             // right: 10%;
-            background-color: red;
         }
     }
 }
