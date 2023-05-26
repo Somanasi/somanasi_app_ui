@@ -9,6 +9,7 @@ main.single_course{
     }
     section.course_details{
         div.course_title{
+            position: relative;
             background-color: #bee1f4;
             @include u.custom_flex_display(row, none, none);
             height: 25vh;
@@ -16,15 +17,21 @@ main.single_course{
 
             div.course_title_column{
                 @include u.custom_flex_display(column, center, none);
-                background-color: #0000df;
+                width: 66vw;
+                max-width: 120vw;
                 
             }
 
             div.course_title_img_holder{
+                position: absolute;
+                top:-8%;
+                right: 2%;
                 background-image:  url("../public/assets/course_title_image.png");
                 background-size: cover;
-                width: 80%;
+                width: 40%;
+                height: 90%;
                 z-index: 10;
+                transform: rotateY('90deg')
             }
         }
         .course_description{
