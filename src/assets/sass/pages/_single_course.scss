@@ -79,7 +79,8 @@ main.single_course {
             @include u.custom_flex_display(column, none, none);
 
             div.course_breakdown_card{
-                
+                box-shadow: u.rem(1) u.rem(1) u.rem(2) u.rem(1) rgba(0, 0, 0, 0.09);
+                margin-bottom: 8%;
                 div.course_breakdown_card_navigation{
                     @include u.custom_flex_display(row, none, none);
 

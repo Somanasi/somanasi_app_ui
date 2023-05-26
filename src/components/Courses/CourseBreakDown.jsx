@@ -11,7 +11,7 @@ const CourseBreakDown = ({ breakdown }) => {
   };
 
   return (
-    <div className='course_breakdown_card mb-4'>
+    <div className='course_breakdown_card py-2 rounded-lg'>
       <div onClick={handleLessonView} className='course_breakdown_card_navigation'>
         <div className='course_breakdown_card_navigation_column tag pl-1'>
           <h2 className='font-bold text-lg'>{breakdown.tag}</h2>
