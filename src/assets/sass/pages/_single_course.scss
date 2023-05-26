@@ -79,7 +79,7 @@ main.single_course {
             @include u.custom_flex_display(column, none, none);
 
             div.course_breakdown_card{
-
+                
                 div.course_breakdown_card_navigation{
                     @include u.custom_flex_display(row, none, none);
 
