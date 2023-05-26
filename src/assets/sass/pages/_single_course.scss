@@ -76,13 +76,19 @@ main.single_course {
             }
         }
         div.course_breakdown {
-            background-color: red;
             @include u.custom_flex_display(column, none, none);
 
             div.course_breakdown_card{
 
                 div.course_breakdown_card_navigation{
+                    @include u.custom_flex_display(row, none, none);
 
+                    div.course_breakdown_card_navigation_column{
+                        width: 50%;
+                    }
+                    div.icon{
+                        @include u.custom_flex_display(row, right, none);
+                    }
                 }
             }
         }

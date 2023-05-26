@@ -11,13 +11,13 @@ const CourseBreakDown = ({ breakdown }) => {
   };
 
   return (
-    <div className='course_breakdown_card'>
-      <div className='course_breakdown_card_navigation'>
-        <div className='tag'>
+    <div className='course_breakdown_card mb-4'>
+      <div onClick={handleLessonView} className='course_breakdown_card_navigation'>
+        <div className='course_breakdown_card_navigation_column tag'>
           <h2 className='font-bold text-lg'>{breakdown.tag}</h2>
         </div>
-        <div>
-          <GoChevronRight size={30} />
+        <div className='course_breakdown_card_navigation_column icon pr-2'>
+          <GoChevronRight size={30} className='text-warning' />
         </div>
       </div>
       {
