@@ -41,12 +41,12 @@ const SingleCourse = () => {
                 }
             </section>
             <section className='buy_course_now mb-8 px-4'>
-                <div>
+                <div className='buy_course_now_column'>
                     <Button>
                         <FaShoppingBag size={30} />
                     </Button>
                 </div>
-                <div>
+                <div className='buy_course_now_column second_column_buy bg-warning'>
                     <Button>
                         Buy Course Now
                     </Button>
