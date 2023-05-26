@@ -94,4 +94,8 @@ main.single_course {
             }
         }
     }
+    section.buy_course_now{
+        background-color: #0000df;
+        @include u.custom_flex_display(row, right, none);
+    }
 }

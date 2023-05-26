@@ -40,7 +40,7 @@ const SingleCourse = () => {
                 ))
                 }
             </section>
-            <section className='buy_course_now'>
+            <section className='buy_course_now mb-8 px-4'>
                 <div>
                     <Button>
                         <FaShoppingBag size={30} />
