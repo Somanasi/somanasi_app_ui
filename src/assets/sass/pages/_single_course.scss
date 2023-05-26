@@ -76,7 +76,15 @@ main.single_course {
             }
         }
         div.course_breakdown {
+            background-color: red;
+            @include u.custom_flex_display(column, none, none);
 
+            div.course_breakdown_card{
+
+                div.course_breakdown_card_navigation{
+
+                }
+            }
         }
     }
 }
