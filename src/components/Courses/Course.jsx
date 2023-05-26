@@ -51,12 +51,16 @@ const Course = ({ course }) => {
           <h3 className="text-warning font-bold text-lg">Course</h3>
         </div>
         <div className="division_column column_with_toggle_btn mr-2">
-          <Button onClick={(e) => toggleCourseOpen(e)}>See All</Button>
+          <Button onClick={(e) => toggleCourseOpen(e)}>
+            {
+              courseOpen ? "See Less" : "See All"
+            }
+          </Button>
         </div>
       </div>
-      <div className="course_breakdown">
+      <div className="course_breakdown py-1">
         {courseBreakdown.map((breakdown, index) => {
-          return <CourseBreakDown breakdown={breakdown} key={index} />;
+          return <CourseBreakDown breakdown={breakdown} index={index} key={index} />;
         })}
       </div>
     </>

@@ -32,7 +32,7 @@ const SingleCourse = () => {
                     <BsThreeDotsVertical size={25} />
                 </div>
             </section>
-            <section className='course_details py-4 px-2'>
+            <section className='course_details py-4 px-2 '>
                 {/*get single course info from database*/}
                 {dummyData.map((course, index) => (((course.id + '') === id) ?
                     <Course course={course} key={index} />
@@ -40,13 +40,13 @@ const SingleCourse = () => {
                 ))
                 }
             </section>
-            <section className='buy_course_now'>
-                <div>
+            <section className='buy_course_now px-4 pb-8'>
+                <div className='buy_course_now_column first_column_buy'>
                     <Button>
                         <FaShoppingBag size={30} />
                     </Button>
                 </div>
-                <div>
+                <div className='buy_course_now_column second_column_buy  pl-4'>
                     <Button>
                         Buy Course Now
                     </Button>
