@@ -46,7 +46,7 @@ const SingleCourse = () => {
                         <FaShoppingBag size={30} />
                     </Button>
                 </div>
-                <div className='buy_course_now_column second_column_buy bg-warning'>
+                <div className='buy_course_now_column second_column_buy bg-warning pl-4'>
                     <Button>
                         Buy Course Now
                     </Button>
