@@ -96,8 +96,24 @@ main.single_course {
                         @include u.custom_flex_display(row, right, none);
                     }
                 }
-                div.course_breakdown_card_lessons{
-                    
+
+                div.course_breakdown_card_lessons {
+                    div.card_lesson {
+                        @include u.custom_flex_display(row, none, none);
+
+                        &>div {
+                            flex-grow: 1;
+                            flex-basis: 0;
+                        }
+
+                        &>div:nth-child(2) {
+                            flex-grow: 6.6;
+                        }
+
+                        &>div:last-child {
+                            flex-grow: 1.2;
+                        }
+                    }
                 }
             }
         }
@@ -109,6 +125,7 @@ main.single_course {
 
         div.buy_course_now_column {
             width: 80%;
+
             // @include u.custom_flex_display(row, center, right);
             button {
                 background-color: #faab00;
@@ -118,10 +135,12 @@ main.single_course {
                 color: #f5f8de;
                 outline: none;
                 @include u.custom_flex_display(row, none, center);
+
                 & * {
                     display: block;
                 }
-                & *:first-child{
+
+                & *:first-child {
                     margin-right: u.rem(4);
                 }
             }
