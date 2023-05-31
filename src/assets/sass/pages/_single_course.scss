@@ -103,7 +103,8 @@ main.single_course {
         }
         div.first_column_buy{
             @include u.custom_flex_display(row, center, right);
-
+            color:#faab00;
+            background-color:#f5f8de;
         }
         div.second_column_buy{
             @include u.custom_flex_display(row, center, left);
