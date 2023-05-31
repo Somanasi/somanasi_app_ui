@@ -41,7 +41,7 @@ const SingleCourse = () => {
                 }
             </section>
             <section className='buy_course_now px-4 pb-8'>
-                <div className='buy_course_now_column first_column_buy'>
+                <div className='buy_course_now_column first_column_buy '>
                     <Button>
                         <FaShoppingBag size={30} />
                     </Button>
