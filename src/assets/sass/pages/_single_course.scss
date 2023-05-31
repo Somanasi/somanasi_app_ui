@@ -146,4 +146,18 @@ main.single_course {
             }
         }
     }
+    section.buy_course_now{
+        @include u.custom_flex_display(row, none, none);
+        width: 100%;
+        div.buy_course_now_column{
+            width: 50%;
+        }
+        div.first_column_buy{
+            @include u.custom_flex_display(row, center, none);
+
+        }
+        div.second_column_buy{
+            // right: 10%;
+        }
+    }
 }
