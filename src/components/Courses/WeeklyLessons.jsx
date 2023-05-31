@@ -6,7 +6,7 @@ import Button from '../Button'
 
 const WeeklyLessons = ({lesson}) => {
   return (
-    <div>
+    <div className='card_lesson'>
         <div>
             <div>
                 <Button>
