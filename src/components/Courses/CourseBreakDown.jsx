@@ -16,8 +16,13 @@ const CourseBreakDown = ({ breakdown }) => {
         <div className='course_breakdown_card_navigation_column tag pl-1'>
           <h2 className='font-bold text-lg'>{breakdown.tag}</h2>
         </div>
-        <div>
-          <GoChevronRight size={30} />
+        <div className='course_breakdown_card_navigation_column icon pr-2'>
+         {
+          seeLessons ? 
+          <GoChevronUp size={30} className='text-warning' />
+          :
+          <GoChevronRight size={30} className='text-warning' />
+         }
         </div>
       </div>
       {
