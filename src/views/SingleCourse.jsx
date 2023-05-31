@@ -40,11 +40,15 @@ const SingleCourse = () => {
                 ))
                 }
             </section>
-            <section className='buy_course_now px-4 pb-8'>
-                <div className='buy_course_now_column pl-4'>
+            <section className='buy_course_now'>
+                <div>
                     <Button>
-                        <span><FaShoppingBag size={30} /></span>
-                        <span>Buy Course Now</span>
+                        <FaShoppingBag size={30} />
+                    </Button>
+                </div>
+                <div>
+                    <Button>
+                        Buy Course Now
                     </Button>
                 </div>
             </section>

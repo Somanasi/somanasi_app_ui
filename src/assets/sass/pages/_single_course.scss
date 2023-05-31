@@ -3,7 +3,6 @@
 
 main.single_course {
     position: relative;
-
     section.course_header {
         @include u.custom_flex_display(row, none, center);
 
@@ -99,7 +98,8 @@ main.single_course {
 
                 div.course_breakdown_card_lessons {
                     div.card_lesson {
-                        @include u.custom_flex_display(row, none, none);
+                        @include u.custom_flex_display(row, none, center);
+                        box-shadow: u.rem(1) u.rem(1) u.rem(2) u.rem(1) rgba(0, 0, 0, 0.09);
 
                         &>div {
                             flex-grow: 1;

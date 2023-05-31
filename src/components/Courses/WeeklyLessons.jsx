@@ -6,7 +6,7 @@ import Button from '../Button'
 
 const WeeklyLessons = ({ lesson }) => {
     return (
-        <div className='card_lesson mb-4'>
+        <div className='card_lesson mb-4 rounded-lg py-2 px-2'>
             <div className='text-warning'>
                 <Button>
                     {lesson.type === 'video' ? <GoPlay size={25} /> : <FaBookReader size={25} />}
