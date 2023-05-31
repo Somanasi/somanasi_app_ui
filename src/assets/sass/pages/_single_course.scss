@@ -3,6 +3,7 @@
 
 main.single_course {
     position: relative;
+
     section.course_header {
         @include u.custom_flex_display(row, none, center);
 
@@ -76,38 +77,49 @@ main.single_course {
                 }
             }
         }
+
         div.course_breakdown {
             @include u.custom_flex_display(column, none, none);
 
-            div.course_breakdown_card{
+            div.course_breakdown_card {
                 box-shadow: u.rem(1) u.rem(1) u.rem(2) u.rem(1) rgba(0, 0, 0, 0.09);
                 margin-bottom: 8%;
-                div.course_breakdown_card_navigation{
+
+                div.course_breakdown_card_navigation {
                     @include u.custom_flex_display(row, none, none);
 
-                    div.course_breakdown_card_navigation_column{
+                    div.course_breakdown_card_navigation_column {
                         width: 50%;
                     }
-                    div.icon{
+
+                    div.icon {
                         @include u.custom_flex_display(row, right, none);
                     }
                 }
             }
         }
     }
-    section.buy_course_now{
+
+    section.buy_course_now {
         @include u.custom_flex_display(row, none, none);
         width: 100%;
-        div.buy_course_now_column{
+
+        div.buy_course_now_column {
             width: 50%;
         }
-        div.first_column_buy{
+
+        div.first_column_buy {
             @include u.custom_flex_display(row, center, right);
-            color:#faab00;
-            background-color:#f5f8de;
+
+            button {
+                color: #faab00;
+                background-color: #bee1f4;
+            }
         }
-        div.second_column_buy{
+
+        div.second_column_buy {
             @include u.custom_flex_display(row, center, left);
+
             button {
                 background-color: #faab00;
                 padding: 4% 8%;
