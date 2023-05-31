@@ -27,7 +27,7 @@ const CourseBreakDown = ({ breakdown }) => {
       </div>
       {
         seeLessons ?
-        <div>
+        <div className='course_breakdown_card_lessons py-2 '>
         {breakdown.lessons.map((lesson, index) => {
           return <WeeklyLessons lesson={lesson} key={index} />;
         })}

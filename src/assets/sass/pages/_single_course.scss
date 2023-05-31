@@ -76,37 +76,74 @@ main.single_course {
                 }
             }
         }
+
         div.course_breakdown {
             @include u.custom_flex_display(column, none, none);
 
-            div.course_breakdown_card{
+            div.course_breakdown_card {
                 box-shadow: u.rem(1) u.rem(1) u.rem(2) u.rem(1) rgba(0, 0, 0, 0.09);
                 margin-bottom: 8%;
-                div.course_breakdown_card_navigation{
+
+                div.course_breakdown_card_navigation {
                     @include u.custom_flex_display(row, none, none);
 
-                    div.course_breakdown_card_navigation_column{
+                    div.course_breakdown_card_navigation_column {
                         width: 50%;
                     }
-                    div.icon{
+
+                    div.icon {
                         @include u.custom_flex_display(row, right, none);
+                    }
+                }
+
+                div.course_breakdown_card_lessons {
+                    div.card_lesson {
+                        @include u.custom_flex_display(row, none, center);
+                        box-shadow: u.rem(1) u.rem(1) u.rem(2) u.rem(1) rgba(0, 0, 0, 0.09);
+
+                        &>div {
+                            flex-grow: 1;
+                            flex-basis: 0;
+                        }
+
+                        &>div:nth-child(2) {
+                            flex-grow: 6.6;
+                        }
+
+                        &>div:last-child {
+                            flex-grow: 1.2;
+                        }
                     }
                 }
             }
         }
     }
-    section.buy_course_now{
-        @include u.custom_flex_display(row, none, none);
-        width: 100%;
-        div.buy_course_now_column{
-            width: 50%;
-        }
-        div.first_column_buy{
-            @include u.custom_flex_display(row, center, none);
 
-        }
-        div.second_column_buy{
-            // right: 10%;
+    section.buy_course_now {
+        @include u.custom_flex_display(row, right, center);
+        width: 100%;
+
+        div.buy_course_now_column {
+            width: 80%;
+
+            // @include u.custom_flex_display(row, center, right);
+            button {
+                background-color: #faab00;
+                padding: 4% 8%;
+                border: none;
+                border-radius: u.rem(12);
+                color: #f5f8de;
+                outline: none;
+                @include u.custom_flex_display(row, none, center);
+
+                & * {
+                    display: block;
+                }
+
+                & *:first-child {
+                    margin-right: u.rem(4);
+                }
+            }
         }
     }
 }
