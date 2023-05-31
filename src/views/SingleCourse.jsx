@@ -41,14 +41,10 @@ const SingleCourse = () => {
                 }
             </section>
             <section className='buy_course_now px-4 pb-8'>
-                <div className='buy_course_now_column first_column_buy '>
+                <div className='buy_course_now_column pl-4'>
                     <Button>
-                        <FaShoppingBag size={30} />
-                    </Button>
-                </div>
-                <div className='buy_course_now_column second_column_buy  pl-4'>
-                    <Button>
-                        Buy Course Now
+                        <span><FaShoppingBag size={30} /></span>
+                        <span>Buy Course Now</span>
                     </Button>
                 </div>
             </section>

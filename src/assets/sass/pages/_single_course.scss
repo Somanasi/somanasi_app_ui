@@ -101,31 +101,26 @@ main.single_course {
     }
 
     section.buy_course_now {
-        @include u.custom_flex_display(row, none, none);
+        @include u.custom_flex_display(row, right, center);
         width: 100%;
 
         div.buy_course_now_column {
-            width: 50%;
-        }
-
-        div.first_column_buy {
-            @include u.custom_flex_display(row, center, right);
-
-            button {
-                color: #faab00;
-                background-color: #bee1f4;
-            }
-        }
-
-        div.second_column_buy {
-            @include u.custom_flex_display(row, center, left);
-
+            width: 80%;
+            // @include u.custom_flex_display(row, center, right);
             button {
                 background-color: #faab00;
                 padding: 4% 8%;
                 border: none;
                 border-radius: u.rem(12);
                 color: #f5f8de;
+                outline: none;
+                @include u.custom_flex_display(row, none, center);
+                & * {
+                    display: block;
+                }
+                & *:first-child{
+                    margin-right: u.rem(4);
+                }
             }
         }
     }
