@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import Logo from "./Logo";
+import Logo from "../../components/Logo";
 import { GoGrabber, GoX, GoPerson, GoSignOut } from "react-icons/go";
 import {
   BsFillHouseFill,
@@ -9,10 +9,10 @@ import {
   BsFillInfoSquareFill,
   BsPhoneFlip
 } from "react-icons/bs";
-import Button from "./Button";
-import ListItems from "./ListItems";
-import { useAppState, useDispatchAppState } from "../store/ApplicationContext";
-import Logout from "./Logout";
+import Button from "../../components/Button";
+import ListItems from "../../components/ListItems";
+import { useAppState, useDispatchAppState } from "../../store/ApplicationContext";
+import Logout from "../../components/Logout";
 
 
 const Navbar = () => {

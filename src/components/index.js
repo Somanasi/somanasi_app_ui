@@ -1,6 +1,6 @@
 import React from "react";
-import Navbar from "./Navbar";
-import Footer from "./Footer";
+import Navbar from "../modules/layout/Navbar";
+import Footer from "../modules/layout/Footer";
 import { PageTitle, DurationFormat, courseFilters, CourseFilterList} from "./utility";
 import SearchInput from "./SearchInput";
 import Button from "./Button";
