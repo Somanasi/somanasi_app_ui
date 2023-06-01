@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import Logo from "../shared/Logo";
+import Logo from "../shared/components/Logo";
 import { GoGrabber, GoX, GoPerson, GoSignOut } from "react-icons/go";
 import {
   BsFillHouseFill,
@@ -9,7 +9,7 @@ import {
   BsFillInfoSquareFill,
   BsPhoneFlip
 } from "react-icons/bs";
-import Button from "../shared/Button";
+import Button from "../shared/components/Button";
 import ListItems from "./ListItems";
 import { useAppState, useDispatchAppState } from "../../store/ApplicationContext";
 import Logout from "../auth/logout/components/Logout";

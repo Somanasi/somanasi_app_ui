@@ -1,5 +1,5 @@
 import { useDispatchAppState } from "../../../../store/ApplicationContext";
-import Button from "../../../shared/Button";
+import Button from "../../../shared/components/Button";
 
 const Logout = ({children, toggle, onClick}) => {
   return (

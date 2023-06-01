@@ -1,7 +1,7 @@
 import React from 'react'
 import { GoPlay } from 'react-icons/go'
 import { FaBookReader } from 'react-icons/fa'
-import Button from '../../modules/shared/Button'
+import Button from '../../shared/components/Button'
 
 
 const WeeklyLessons = ({ lesson }) => {

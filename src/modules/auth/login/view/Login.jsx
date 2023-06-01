@@ -1,7 +1,7 @@
 import React from 'react'
 import { Form, NavLink } from 'react-router-dom'
-import InputWithLabel from '../../../shared/InputWithLabel'
-import Button from '../../../shared/Button'
+import InputWithLabel from '../../../shared/components/InputWithLabel'
+import Button from '../../../shared/components/Button'
 
 const Login = () => {
   return (

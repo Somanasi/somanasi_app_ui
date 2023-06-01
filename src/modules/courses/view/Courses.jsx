@@ -4,7 +4,8 @@ import { Form, Link } from "react-router-dom";
 import { dummyData } from "../../../dummydata/Dummy.js";
 import { BiBookmark } from "react-icons/bi"
 import { GoPrimitiveDot, GoChevronRight } from "react-icons/go"
-import { SearchInput, Button, DurationFormat, courseFilters, CourseFilterList } from "../../../components/index.js";
+import { SearchInput, Button, DurationFormat, } from "../../shared/index.js";
+import { CourseFilterList, courseFilters } from "../utils";
 
 const filter = [];
 
