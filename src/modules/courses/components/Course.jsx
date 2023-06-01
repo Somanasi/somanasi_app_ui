@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { CourseBreakDown } from "./index";
-import { Button } from "../index";
+import { Button } from "../../shared/index";
 const Course = ({ course }) => {
   const [courseOpen, setCourseOpen] = useState(false);
   const toggleCourseOpen = (e) => {

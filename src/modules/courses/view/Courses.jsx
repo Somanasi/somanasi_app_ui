@@ -1,10 +1,11 @@
 //icons are the thumbnail images of the course
 import React, { useState } from "react";
 import { Form, Link } from "react-router-dom";
-import { dummyData } from "../dummydata/Dummy.js";
+import { dummyData } from "../../../dummydata/Dummy.js";
 import { BiBookmark } from "react-icons/bi"
 import { GoPrimitiveDot, GoChevronRight } from "react-icons/go"
-import { SearchInput, Button, DurationFormat, courseFilters, CourseFilterList } from "../components";
+import { SearchInput, Button, DurationFormat, } from "../../shared/index.js";
+import { CourseFilterList, courseFilters } from "../utils";
 
 const filter = [];
 

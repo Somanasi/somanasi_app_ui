@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from "../assets/logo.png";
+import logo from "/src/assets/logo.png";
 const Logo = () => {
   return (
     <img className="w-24" src={logo} alt="somanasi logo" />

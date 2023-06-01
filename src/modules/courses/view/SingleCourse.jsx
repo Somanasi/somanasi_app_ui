@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import { Link, useParams } from "react-router-dom";
-import { dummyData } from '../dummydata/Dummy.js';
+import { dummyData } from '../../../dummydata/Dummy.js';
 import { BsChevronLeft, BsThreeDotsVertical } from "react-icons/bs";
 import { FaShoppingBag } from "react-icons/fa"
-import { Button, Course } from '../components';
+import { Button, } from '../../shared/index.js';
+import { Course} from '../components'
 
 const SingleCourse = () => {
 
