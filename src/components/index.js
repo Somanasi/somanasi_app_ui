@@ -2,8 +2,8 @@ import React from "react";
 import Navbar from "../modules/layout/Navbar";
 import Footer from "../modules/layout/Footer";
 import { PageTitle, DurationFormat, courseFilters, CourseFilterList} from "./utility";
-import SearchInput from "./SearchInput";
-import Button from "./Button";
+import SearchInput from "../modules/shared/SearchInput";
+import Button from "../modules/shared/Button";
 import { WeeklyLessons, CourseBreakDown, Course} from './Courses';
 
 export {
