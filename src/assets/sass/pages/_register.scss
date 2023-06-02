@@ -40,7 +40,8 @@ main.login {
 
                     input {
                         margin: u.rem(2) 0 u.rem(12);
-                        height: u.rem(40);
+                        height: u.rem(48);
+                        padding: 0 u.rem(8) 0;
                     }
                 }
             }
@@ -54,7 +55,11 @@ main.login {
 
                 input {
                     margin: u.rem(2) 0 u.rem(12);
-                    height: u.rem(40);
+                    height: u.rem(48);
+                    padding: 0 u.rem(8) 0;
+                    // background-color: blueviolet;
+                    width: 100%;
+                    border-radius: u.rem(8);
                 }
             }
             div.gender{

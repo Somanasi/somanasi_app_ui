@@ -6,7 +6,7 @@ import Button from '../../../shared/components/Button'
 const Register = () => {
   return (
     <main className='login pt-12 px-2 bg-primary'>
-      <section className='user_login py-4 px-4'>
+      <section className='user_login py-4 px-8'>
         <div className='section-heading text-center pb-1'>
           <h1 className='font-light text-lg text-tertiary'>Registration</h1>
         </div>
