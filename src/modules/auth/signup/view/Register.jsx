@@ -5,26 +5,26 @@ import Button from '../../../shared/components/Button'
 
 const Register = () => {
   return (
-    <main className='login'>
-      <section className='user_login'>
-        <div className='section-heading'>
-          <h1>Registration</h1>
+    <main className='login pt-12 px-2 bg-primary'>
+      <section className='user_login py-4 px-4'>
+        <div className='section-heading text-center pb-1'>
+          <h1 className='font-light text-lg text-tertiary'>Registration</h1>
         </div>
         <hr />
         <div className="user_login__form">
           <Form method='POST'>
-            <div className="form-group">
+            <div className="form-group user_type_groups py-4 ">
               <div>
                 <input type="radio" name="user_type" id="admin" value={'admin'} />
                 <label htmlFor="admin">Admin</label>
               </div>
               <div>
                 <input type="radio" name="user_type" id="workspace" value={'wrokspace'} />
-                <label htmlFor="admin">Wrokspace</label>
+                <label htmlFor="workspace">Wrokspace</label>
               </div>
               <div>
                 <input type="radio" name="user_type" id="student" value={'student'} />
-                <label htmlFor="admin">Student</label>
+                <label htmlFor="student">Student</label>
               </div>
             </div>
             <div className="name">

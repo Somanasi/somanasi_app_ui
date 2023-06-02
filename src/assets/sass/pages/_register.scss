@@ -1,3 +1,28 @@
+@use '../utilities/' as u;
+@use '../global/' as g;
+
 main.login{
     height: 90vh;
+    section.user_login{
+        box-shadow: u.rem(-1) u.rem(-1) u.rem(2) u.rem(4) rgba(0, 0, 0, 0.103);
+        border-radius: u.rem(8);
+
+        form {
+            div.user_type_groups{
+                @include u.custom_flex_display(row, justify, none);
+                 & > div {
+                    padding: 0 u.rem(4);
+                    @include u.custom_flex_display(row, justify, center);
+
+                    & * {
+                        display: block;
+                        
+                    }
+                    input[type="radio"]{
+                        margin-right: u.rem(4);
+                    }
+                 }
+            }
+        }
+    }
 }
