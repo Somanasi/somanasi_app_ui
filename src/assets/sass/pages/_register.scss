@@ -23,6 +23,18 @@ main.login{
                     }
                  }
             }
+            div.name{
+                @include u.custom_flex_display(column, justify, none);
+                div.form-group {
+                 width: 100%;
+                 & * {
+                    display: block;
+                 }
+                 input{
+                    margin: u.rem(2) 0 u.rem(12);
+                 }
+                }
+            }
         }
     }
 }

@@ -14,13 +14,13 @@ const Register = () => {
         <div className="user_login__form">
           <Form method='POST'>
             <div className="form-group user_type_groups py-4 ">
-              <div>
+              {/* <div>
                 <input type="radio" name="user_type" id="admin" value={'admin'} />
                 <label htmlFor="admin">Admin</label>
-              </div>
+              </div> */}
               <div>
                 <input type="radio" name="user_type" id="workspace" value={'wrokspace'} />
-                <label htmlFor="workspace">Wrokspace</label>
+                <label htmlFor="workspace">Workspace</label>
               </div>
               <div>
                 <input type="radio" name="user_type" id="student" value={'student'} />
