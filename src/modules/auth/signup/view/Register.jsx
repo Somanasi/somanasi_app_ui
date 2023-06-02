@@ -28,21 +28,21 @@ const Register = () => {
               </div>
             </div>
             <div className="name">
-            <InputWithLabel name={'userId'} id={'username'} placeholder={'Enter first name'}>
-             First Name
-            </InputWithLabel>
-            <InputWithLabel name={'userId'} id={'username'} placeholder={'Enter last name'}>
-             Last  Name
-            </InputWithLabel>
-            <InputWithLabel name={'userId'} id={'username'} placeholder={'other name'}>
-              Other Name
-            </InputWithLabel>
+              <InputWithLabel name={'user_firstname'} id={'username'} placeholder={'Enter first name'}>
+                First Name
+              </InputWithLabel>
+              <InputWithLabel name={'user_lastname'} id={'username'} placeholder={'Enter last name'}>
+                Last  Name
+              </InputWithLabel>
+              <InputWithLabel name={'user_othername'} id={'username'} placeholder={'other name'}>
+                Other Name
+              </InputWithLabel>
             </div>
-            <InputWithLabel>
-            Email
+            <InputWithLabel name={'user_email'} id={'phoneNumber'} placeholder={'otherperson@someone.com'}>
+              Email
             </InputWithLabel>
             <InputWithLabel name={'userId'} id={'phoneNumber'} placeholder={'0700268088'}>
-             Phone number
+              Phone number
             </InputWithLabel>
             <InputWithLabel type={'password'} name={'password'} id={'password'}>
               password

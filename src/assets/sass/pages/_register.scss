@@ -2,7 +2,7 @@
 @use '../global/' as g;
 
 main.login{
-    height: 90vh;
+    // height: 90vh;
     section.user_login{
         box-shadow: u.rem(-1) u.rem(-1) u.rem(2) u.rem(4) rgba(0, 0, 0, 0.103);
         border-radius: u.rem(8);
@@ -32,9 +32,20 @@ main.login{
                  }
                  input{
                     margin: u.rem(2) 0 u.rem(12);
+                    height: u.rem(40);
                  }
                 }
             }
+            div.form-group {
+                width: 100%;
+                & * {
+                   display: block;
+                }
+                input{
+                   margin: u.rem(2) 0 u.rem(12);
+                   height: u.rem(40);
+                }
+               }
         }
     }
 }
