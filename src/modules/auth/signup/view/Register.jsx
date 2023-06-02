@@ -8,23 +8,38 @@ const Register = () => {
     <main className='login'>
       <section className='user_login'>
         <div className='section-heading'>
-          <h1>Register for Somesha Dada</h1>
+          <h1>Registration</h1>
         </div>
+        <hr />
         <div className="user_login__form">
           <Form method='POST'>
             <div className="form-group">
-              <label htmlFor="user_type">
-                Register as a
-              </label>
-              <select name="user_type" id="user_type">
-                <option value="" selected disabled>Select a user type</option>
-                <option value="student">Student</option>
-                <option value="parent" disabled>Parent</option>
-                <option value="school" disabled>School</option>
-              </select>
+              <div>
+                <input type="radio" name="user_type" id="admin" value={'admin'} />
+                <label htmlFor="admin">Admin</label>
+              </div>
+              <div>
+                <input type="radio" name="user_type" id="workspace" value={'wrokspace'} />
+                <label htmlFor="admin">Wrokspace</label>
+              </div>
+              <div>
+                <input type="radio" name="user_type" id="student" value={'student'} />
+                <label htmlFor="admin">Student</label>
+              </div>
             </div>
-            <InputWithLabel name={'userId'} id={'username'} placeholder={'Enter your full name'}>
-              Name
+            <div className="name">
+            <InputWithLabel name={'userId'} id={'username'} placeholder={'Enter first name'}>
+             First Name
+            </InputWithLabel>
+            <InputWithLabel name={'userId'} id={'username'} placeholder={'Enter last name'}>
+             Last  Name
+            </InputWithLabel>
+            <InputWithLabel name={'userId'} id={'username'} placeholder={'other name'}>
+              Other Name
+            </InputWithLabel>
+            </div>
+            <InputWithLabel>
+            Email
             </InputWithLabel>
             <InputWithLabel name={'userId'} id={'phoneNumber'} placeholder={'0700268088'}>
              Phone number
@@ -35,6 +50,14 @@ const Register = () => {
             <InputWithLabel type={'password'} name={'confirmPassword'} id={'reTypePassword'}>
               Re-type password
             </InputWithLabel>
+            <div>
+              <input type="radio" name="gender" id="female" />
+              <label htmlFor="female">Female</label>
+            </div>
+            <div>
+              <input type="radio" name="gender" id="male" />
+              <label htmlFor="male">Male</label>
+            </div>
             <div className="form-group">
               <input type="checkbox" />
               <label htmlFor=""> I agree to <NavLink to={'terms'}>terms and conditions</NavLink></label>
