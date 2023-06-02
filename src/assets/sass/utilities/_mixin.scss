@@ -1,6 +1,18 @@
+@use './function' as f;
+
 @mixin custom_flex_display($direction, $justification, $aligment){
     display: flex !important;
     flex-direction: $direction !important;
     justify-content: $justification !important;
     align-items: $aligment !important;
+}
+
+// Invalid input on focus:
+@mixin invalid_focused_input {
+    &:invalid{
+        border: f.rem(4) red solid !important;
+    }
+    &:focus{
+        // box-shadow: 0 0 5px red;
+    }
 }

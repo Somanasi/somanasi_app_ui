@@ -55,7 +55,10 @@ main.login {
                     display: block;
                 }
 
-                input {
+                input[type="text"], 
+                input[type="password"],
+                input[type="email"],
+                input[type="tel"] {
                     margin: u.rem(2) 0 u.rem(12);
                     height: u.rem(48);
                     padding: 0 u.rem(8) 0;
@@ -64,9 +67,13 @@ main.login {
                     border-radius: u.rem(8);
                     border: none;
                     outline: none;
-
-                    &:focus, &:invalid{
-
+                    &:focus {
+                        &:invalid{
+                            border: u.rem(4) red solid !important;
+                        }
+                        &:valid{
+                            border: u.rem(4) rgb(31, 206, 57) solid !important;
+                        }
                     }
                 }
             }

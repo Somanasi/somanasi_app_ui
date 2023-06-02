@@ -5,7 +5,7 @@ import Button from '../../../shared/components/Button'
 
 const Register = () => {
   return (
-    <main className='login pt-12 px-2 bg-primary'>
+    <main className='login py-8 px-2 bg-primary'>
       <section className='user_login py-4 px-8'>
         <div className='section-heading text-center pb-1'>
           <h1 className='font-light text-lg text-tertiary'>Registration</h1>
@@ -19,44 +19,44 @@ const Register = () => {
                 <label htmlFor="admin">Admin</label>
               </div> */}
               <div>
-                <input type="radio" name="user_type" id="workspace" value={'wrokspace'} />
+                <input type="radio" name="user_type" id="workspace" value={'wrokspace'} required/>
                 <label htmlFor="workspace">Workspace</label>
               </div>
               <div>
-                <input type="radio" name="user_type" id="student" value={'student'} />
+                <input type="radio" name="user_type" id="student" value={'student'} required/>
                 <label htmlFor="student">Student</label>
               </div>
             </div>
             <div className="name">
-              <InputWithLabel name={'user_firstname'} id={'username'} placeholder={'Enter first name'}>
+              <InputWithLabel name={'user_firstname'} id={'username'} placeholder={'Enter first name'} required={ true}>
                 First Name
               </InputWithLabel>
-              <InputWithLabel name={'user_lastname'} id={'username'} placeholder={'Enter last name'}>
+              <InputWithLabel name={'user_lastname'} id={'username'} placeholder={'Enter last name'} required={ true}>
                 Last  Name
               </InputWithLabel>
               <InputWithLabel name={'user_othername'} id={'username'} placeholder={'other name'}>
                 Other Name
               </InputWithLabel>
             </div>
-            <InputWithLabel name={'user_email'} id={'phoneNumber'} placeholder={'otherperson@someone.com'}>
+            <InputWithLabel type={'email'} name={'user_email'} id={'phoneNumber'} placeholder={'otherperson@someone.com'} required={ true}>
               Email
             </InputWithLabel>
-            <InputWithLabel name={'userId'} id={'phoneNumber'} placeholder={'0700268088'}>
+            <InputWithLabel type={'tel'} name={'userId'} id={'phoneNumber'} placeholder={'0700268088'} required={ true}>
               Phone number
             </InputWithLabel>
-            <InputWithLabel type={'password'} name={'password'} id={'password'}>
+            <InputWithLabel type={'password'} name={'password'} id={'password'} required={ true}>
               password
             </InputWithLabel>
-            <InputWithLabel type={'password'} name={'confirmPassword'} id={'reTypePassword'}>
+            <InputWithLabel type={'password'} name={'confirmPassword'} id={'reTypePassword'} required={ true}>
               Re-type password
             </InputWithLabel>
-            <div className="gender">
+            <div className="gender py-6">
               <div>
-                <input type="radio" name="gender" id="female" />
+                <input type="radio" name="gender" id="female" required/>
                 <label htmlFor="female">Female</label>
               </div>
               <div>
-                <input type="radio" name="gender" id="male" />
+                <input type="radio" name="gender" id="male" required/>
                 <label htmlFor="male">Male</label>
               </div>
             </div>
