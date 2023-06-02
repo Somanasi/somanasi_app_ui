@@ -42,6 +42,8 @@ main.login {
                         margin: u.rem(2) 0 u.rem(12);
                         height: u.rem(48);
                         padding: 0 u.rem(8) 0;
+                        border: none;
+                        outline: none;
                     }
                 }
             }
@@ -60,6 +62,12 @@ main.login {
                     // background-color: blueviolet;
                     width: 100%;
                     border-radius: u.rem(8);
+                    border: none;
+                    outline: none;
+
+                    &:focus, &:invalid{
+
+                    }
                 }
             }
             div.gender{
