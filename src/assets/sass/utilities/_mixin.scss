@@ -1,3 +1,5 @@
+@use './function' as f;
+
 @mixin custom_flex_display($direction, $justification, $aligment){
     display: flex !important;
     flex-direction: $direction !important;
