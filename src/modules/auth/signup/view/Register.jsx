@@ -60,9 +60,9 @@ const Register = () => {
                 <label htmlFor="male">Male</label>
               </div>
             </div>
-            <div className="form-group">
+            <div className="form-group terms_and_policy">
               <input type="checkbox" />
-              <label htmlFor=""> I agree to <NavLink to={'terms'}>terms and conditions</NavLink></label>
+              <label htmlFor=""><span className='mr-1'> I agree to </span> <NavLink to={'terms'}> terms and conditions</NavLink></label>
             </div>
             <Button type='submit'>Sign up</Button>
           </Form>

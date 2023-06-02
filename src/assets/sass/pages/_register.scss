@@ -90,6 +90,20 @@ main.login {
                     }
                 }
             }
+            div.terms_and_policy {
+                @include u.custom_flex_display(row, justify, center);
+                input[type="checkbox"] {
+                    background-color: black;
+                }
+                label{
+                    // background-color: black;
+                    @include u.custom_flex_display(row, justify, center);
+                    margin-left: u.rem(4);
+                    & * {
+                        display: block;
+                    }
+                }
+            }
         }
     }
 }
