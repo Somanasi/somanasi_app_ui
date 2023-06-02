@@ -1,51 +1,75 @@
 @use '../utilities/' as u;
 @use '../global/' as g;
 
-main.login{
+main.login {
+
     // height: 90vh;
-    section.user_login{
+    section.user_login {
         box-shadow: u.rem(-1) u.rem(-1) u.rem(2) u.rem(4) rgba(0, 0, 0, 0.103);
         border-radius: u.rem(8);
 
         form {
-            div.user_type_groups{
+            div.user_type_groups {
                 @include u.custom_flex_display(row, justify, none);
-                 & > div {
+
+                &>div {
+                    position: relative;
                     padding: 0 u.rem(4);
                     @include u.custom_flex_display(row, justify, center);
 
                     & * {
                         display: block;
-                        
+
+                    }
+
+                    input[type="radio"] {
+                        margin-right: u.rem(4);
+                    }
+                }
+            }
+
+            div.name {
+                @include u.custom_flex_display(column, justify, center);
+
+                div.form-group {
+                    width: 100%;
+
+                    & * {
+                        display: block;
+                    }
+
+                    input {
+                        margin: u.rem(2) 0 u.rem(12);
+                        height: u.rem(40);
+                    }
+                }
+            }
+
+            div.form-group {
+                width: 100%;
+
+                & * {
+                    display: block;
+                }
+
+                input {
+                    margin: u.rem(2) 0 u.rem(12);
+                    height: u.rem(40);
+                }
+            }
+            div.gender{
+                @include u.custom_flex_display(row, justify, none);
+                & > div {
+                    margin: 0 u.rem(8);
+                    @include u.custom_flex_display(row, justify, center);
+                    & * {
+                        display: block;
                     }
                     input[type="radio"]{
                         margin-right: u.rem(4);
                     }
-                 }
-            }
-            div.name{
-                @include u.custom_flex_display(column, justify, none);
-                div.form-group {
-                 width: 100%;
-                 & * {
-                    display: block;
-                 }
-                 input{
-                    margin: u.rem(2) 0 u.rem(12);
-                    height: u.rem(40);
-                 }
                 }
             }
-            div.form-group {
-                width: 100%;
-                & * {
-                   display: block;
-                }
-                input{
-                   margin: u.rem(2) 0 u.rem(12);
-                   height: u.rem(40);
-                }
-               }
         }
     }
 }
