@@ -56,6 +56,11 @@ main.login {
                 }
 
                 @include u.selectInputWithButtonSubmit;
+                button[type="submit"]{
+                    background-color: #faab00;
+                    color: #f5f8de;
+                    font-size: g.$font-medium;
+                }
             }
             div.gender{
                 @include u.custom_flex_display(row, justify, none);
