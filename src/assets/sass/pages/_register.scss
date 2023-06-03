@@ -91,6 +91,7 @@ main.login {
                 }
             }
             div.terms_and_policy {
+                margin-top: u.rem(-28);
                 @include u.custom_flex_display(row, justify, center);
                &  *{
                     display: block;
@@ -101,7 +102,7 @@ main.login {
                 label{
                     // background-color: black;
                     // @include u.custom_flex_display(row, justify, center);
-                    padding-top: u.rem(52);
+                    padding-top: u.rem(48);
                     margin-left: u.rem(4);
                     & * {
                         display: inline !important;
