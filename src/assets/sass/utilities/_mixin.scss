@@ -33,3 +33,14 @@
         }
     }
 }
+
+@mixin account_options{
+    div.acount_options{
+        p {
+            a{
+                text-decoration: underline;
+                color: #0000df;
+            }
+        }
+    }
+}

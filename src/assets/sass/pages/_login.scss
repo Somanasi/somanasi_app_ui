@@ -8,8 +8,15 @@ main.login{
             form{
                 div.form-group {
                     @include u.selectInputWithButtonSubmit;
+                    button[type="submit"]{
+                        background-color: #faab00;
+                        color: #f5f8de;
+                        font-size: g.$font-medium;
+                        font-weight: g.$font-bold;
+                    }
                 }
             }
         }
+        @include u.account_options;
     }
 }

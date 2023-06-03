@@ -7,7 +7,7 @@ const Register = () => {
   return (
     <main className='register py-8 px-2 bg-primary'>
       <section className='new_user py-4 px-8'>
-        <div className='section-heading text-center pb-1'>
+        <div className='section-heading text-center pt-8 pb-1'>
           <h1 className='font-light text-lg text-tertiary'>Registration</h1>
         </div>
         <hr />
@@ -69,7 +69,7 @@ const Register = () => {
               </div>
           </Form>
         </div>
-        <div className='old_user py-8'>
+        <div className='acount_options py-8'>
           <p>
             <span className='mr-1'> Already have an account?</span>
             <NavLink to={'/login'}>Sign in</NavLink>
