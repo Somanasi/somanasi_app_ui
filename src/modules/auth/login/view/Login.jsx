@@ -22,7 +22,7 @@ const Login = () => {
             <div className="forgot_password">
               <NavLink>forgot password?</NavLink>
             </div>
-            <div className="form-group">
+            <div className="form-group pt-12">
               <Button type='submit'>Login</Button>
             </div>
           </Form>

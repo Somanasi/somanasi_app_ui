@@ -1,14 +1,19 @@
 @use '../utilities/' as u;
 @use '../global/' as g;
-main.login{
-    section.user_login{
+
+main.login {
+    section.user_login {
         box-shadow: u.rem(-1) u.rem(-1) u.rem(2) u.rem(4) rgba(0, 0, 0, 0.103);
         border-radius: u.rem(8);
-        div.user_login__form{
-            form{
+
+        div.user_login__form {
+            form {
+                position: relative;
+
                 div.form-group {
                     @include u.selectInputWithButtonSubmit;
-                    button[type="submit"]{
+
+                    button[type="submit"] {
                         background-color: #faab00;
                         color: #f5f8de;
                         font-size: g.$font-medium;
@@ -16,7 +21,19 @@ main.login{
                     }
                 }
             }
+
+            div.forgot_password {
+                position: absolute;
+                right: 0;
+                top: 57%;
+
+                a {
+                    text-decoration: underline;
+                    color: #0000df;
+                }
+            }
         }
+
         @include u.account_options;
     }
 }
