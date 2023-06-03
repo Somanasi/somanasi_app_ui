@@ -62,7 +62,7 @@ const Register = () => {
             </div>
             <div className="form-group terms_and_policy mb-6">
               <input type="checkbox" />
-              <label htmlFor=""><span className='mr-1'> I agree to </span> <NavLink to={'terms'}> terms and conditions</NavLink></label>
+              <label htmlFor=""><span className='mr-1'> Click here to agree to our </span> <NavLink to={'terms'}> terms and conditions</NavLink> <span>and our </span> <NavLink>data protection policy</NavLink></label>
             </div>
             <Button type='submit'>Sign up</Button>
           </Form>

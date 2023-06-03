@@ -92,15 +92,23 @@ main.login {
             }
             div.terms_and_policy {
                 @include u.custom_flex_display(row, justify, center);
+               &  *{
+                    display: block;
+                }
                 input[type="checkbox"] {
                     background-color: black;
                 }
                 label{
                     // background-color: black;
-                    @include u.custom_flex_display(row, justify, center);
+                    // @include u.custom_flex_display(row, justify, center);
+                    padding-top: u.rem(52);
                     margin-left: u.rem(4);
                     & * {
-                        display: block;
+                        display: inline !important;
+                    }
+                    & > a {
+                        text-decoration: underline;
+                        color:#0000df;
                     }
                 }
             }
