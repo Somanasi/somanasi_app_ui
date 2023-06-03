@@ -31,21 +31,21 @@ main.register {
                 div.name {
                     @include u.custom_flex_display(column, justify, center);
     
-                    div.form-group {
-                        width: 100%;
+                    // div.form-group {
+                    //     width: 100%;
     
-                        & * {
-                            display: block;
-                        }
+                    //     & * {
+                    //         display: block;
+                    //     }
     
-                        input {
-                            margin: u.rem(2) 0 u.rem(12);
-                            height: u.rem(48);
-                            padding: 0 u.rem(8) 0;
-                            border: none;
-                            outline: none;
-                        }
-                    }
+                    //     input {
+                    //         margin: u.rem(2) 0 u.rem(12);
+                    //         height: u.rem(48);
+                    //         padding: 0 u.rem(8) 0;
+                    //         border: none;
+                    //         outline: none;
+                    //     }
+                    // }
                 }
     
                 div.form-group {

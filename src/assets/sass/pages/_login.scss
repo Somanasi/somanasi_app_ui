@@ -1,0 +1,15 @@
+@use '../utilities/' as u;
+@use '../global/' as g;
+main.login{
+    section.user_login{
+        box-shadow: u.rem(-1) u.rem(-1) u.rem(2) u.rem(4) rgba(0, 0, 0, 0.103);
+        border-radius: u.rem(8);
+        div.user_login__form{
+            form{
+                div.form-group {
+                    @include u.selectInputWithButtonSubmit;
+                }
+            }
+        }
+    }
+}
