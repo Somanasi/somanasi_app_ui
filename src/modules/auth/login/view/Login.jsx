@@ -13,7 +13,7 @@ const Login = () => {
         <div className="user_login__form">
           <Form method='POST'>
             <InputWithLabel name={'userId'} id={'username'}>
-              Username or Phone number
+              email or Phone number
             </InputWithLabel>
             <InputWithLabel type={'password'} name={'password'} id={'password'}>
               password
