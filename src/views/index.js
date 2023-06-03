@@ -2,7 +2,7 @@ import Error from '../modules/error/views/Error'
 import Home from '../modules/home/view/Home'
 import Courses from '../modules/courses/view/Courses'
 import Blog from '../modules/blog/views/Blog'
-import Login from '../modules/auth/login/view/Login'
+import Login, {loginAction} from '../modules/auth/login/view/Login'
 import Register from '../modules/auth/signup/view/Register'
 import AboutUs from '../modules/contacts_and_about_us/view/AboutUs'
 import ContactUs from '../modules/contacts_and_about_us/view/ContactUs'
@@ -25,5 +25,5 @@ export {
     SingleCourse,
     Terms,
     Dashboard,
-
+    loginAction,
 };
