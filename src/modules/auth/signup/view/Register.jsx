@@ -72,7 +72,7 @@ const Register = () => {
         <div className='old_user py-8'>
           <p>
             <span className='mr-1'> Already have an account?</span>
-            <NavLink to={'/register'}>Sign in</NavLink>
+            <NavLink to={'/login'}>Sign in</NavLink>
           </p>
         </div>
       </section>
