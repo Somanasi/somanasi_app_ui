@@ -30,7 +30,7 @@ const Login = () => {
         <div className='acount_options pb-4'>
           <p>
             <span className='mr-1'> New to our platform?</span>
-            <NavLink to={'/register'}>Register Here</NavLink>
+            <NavLink to={'/register'}>Register here</NavLink>
           </p>
         </div>
       </section>
