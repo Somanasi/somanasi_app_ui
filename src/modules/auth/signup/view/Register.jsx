@@ -5,13 +5,13 @@ import Button from '../../../shared/components/Button'
 
 const Register = () => {
   return (
-    <main className='login py-8 px-2 bg-primary'>
-      <section className='user_login py-4 px-8'>
-        <div className='section-heading text-center pb-1'>
+    <main className='register py-8 px-2 bg-primary'>
+      <section className='new_user py-4 px-8'>
+        <div className='section-heading text-center pt-8 pb-1'>
           <h1 className='font-light text-lg text-tertiary'>Registration</h1>
         </div>
         <hr />
-        <div className="user_login__form">
+        <div className="new_user__form">
           <Form method='POST'>
             <div className="form-group user_type_groups py-4 ">
               {/* <div>
@@ -62,15 +62,17 @@ const Register = () => {
             </div>
             <div className="form-group terms_and_policy mb-6">
               <input type="checkbox" />
-              <label htmlFor=""><span className='mr-1'> I agree to </span> <NavLink to={'terms'}> terms and conditions</NavLink></label>
+              <label htmlFor=""><span className='mr-1'> Click here to agree to our </span> <NavLink to={'terms'}> terms and conditions</NavLink> <span>and our </span> <NavLink>data protection policy</NavLink></label>
             </div>
-            <Button type='submit'>Sign up</Button>
+              <div className='form-group'>
+              <Button type='submit'>Sign up</Button>
+              </div>
           </Form>
         </div>
-        <div className='new_user'>
+        <div className='acount_options py-8'>
           <p>
-            <span> Already have an account?</span>
-            <NavLink to={'/register'}>Sign in instead</NavLink>
+            <span className='mr-1'> Already have an account?</span>
+            <NavLink to={'/login'}>Sign in</NavLink>
           </p>
         </div>
       </section>

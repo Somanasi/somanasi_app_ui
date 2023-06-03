@@ -1,109 +1,106 @@
 @use '../utilities/' as u;
 @use '../global/' as g;
 
-main.login {
+main.register {
 
     // height: 90vh;
-    section.user_login {
+    section.new_user {
         box-shadow: u.rem(-1) u.rem(-1) u.rem(2) u.rem(4) rgba(0, 0, 0, 0.103);
         border-radius: u.rem(8);
-
-        form {
-            div.user_type_groups {
-                @include u.custom_flex_display(row, justify, none);
-
-                &>div {
-                    position: relative;
-                    padding: 0 u.rem(4);
-                    @include u.custom_flex_display(row, justify, center);
-
-                    & * {
-                        display: block;
-
-                    }
-
-                    input[type="radio"] {
-                        margin-right: u.rem(4);
+        div.new_user__form{
+            form {
+                div.user_type_groups {
+                    @include u.custom_flex_display(row, justify, none);
+    
+                    &>div {
+                        position: relative;
+                        padding: 0 u.rem(4);
+                        @include u.custom_flex_display(row, justify, center);
+    
+                        & * {
+                            display: block;
+    
+                        }
+    
+                        input[type="radio"] {
+                            margin-right: u.rem(4);
+                        }
                     }
                 }
-            }
-
-            div.name {
-                @include u.custom_flex_display(column, justify, center);
-
+    
+                div.name {
+                    @include u.custom_flex_display(column, justify, center);
+    
+                    // div.form-group {
+                    //     width: 100%;
+    
+                    //     & * {
+                    //         display: block;
+                    //     }
+    
+                    //     input {
+                    //         margin: u.rem(2) 0 u.rem(12);
+                    //         height: u.rem(48);
+                    //         padding: 0 u.rem(8) 0;
+                    //         border: none;
+                    //         outline: none;
+                    //     }
+                    // }
+                }
+    
                 div.form-group {
                     width: 100%;
-
+    
                     & * {
                         display: block;
                     }
-
-                    input {
-                        margin: u.rem(2) 0 u.rem(12);
-                        height: u.rem(48);
-                        padding: 0 u.rem(8) 0;
-                        border: none;
-                        outline: none;
+    
+                    @include u.selectInputWithButtonSubmit;
+                    button[type="submit"]{
+                        background-color: #faab00;
+                        color: #f5f8de;
+                        font-size: g.$font-medium;
+                        font-weight: g.$font-bold;
                     }
                 }
-            }
-
-            div.form-group {
-                width: 100%;
-
-                & * {
-                    display: block;
-                }
-
-                input[type="text"], 
-                input[type="password"],
-                input[type="email"],
-                input[type="tel"] {
-                    margin: u.rem(2) 0 u.rem(12);
-                    height: u.rem(48);
-                    padding: 0 u.rem(8) 0;
-                    // background-color: blueviolet;
-                    width: 100%;
-                    border-radius: u.rem(8);
-                    border: none;
-                    outline: none;
-                    &:focus {
-                        &:invalid{
-                            border: u.rem(4) red solid !important;
+                div.gender{
+                    @include u.custom_flex_display(row, justify, none);
+                    & > div {
+                        margin: 0 u.rem(8);
+                        @include u.custom_flex_display(row, justify, center);
+                        & * {
+                            display: block;
                         }
-                        &:valid{
-                            border: u.rem(4) rgb(31, 206, 57) solid !important;
+                        input[type="radio"]{
+                            margin-right: u.rem(4);
                         }
                     }
                 }
-            }
-            div.gender{
-                @include u.custom_flex_display(row, justify, none);
-                & > div {
-                    margin: 0 u.rem(8);
+                div.terms_and_policy {
+                    margin-top: u.rem(-28);
                     @include u.custom_flex_display(row, justify, center);
-                    & * {
+                   &  *{
                         display: block;
                     }
-                    input[type="radio"]{
-                        margin-right: u.rem(4);
+                    input[type="checkbox"] {
+                        background-color: black;
                     }
-                }
-            }
-            div.terms_and_policy {
-                @include u.custom_flex_display(row, justify, center);
-                input[type="checkbox"] {
-                    background-color: black;
-                }
-                label{
-                    // background-color: black;
-                    @include u.custom_flex_display(row, justify, center);
-                    margin-left: u.rem(4);
-                    & * {
-                        display: block;
+                    label{
+                        // background-color: black;
+                        // @include u.custom_flex_display(row, justify, center);
+                        padding-top: u.rem(48);
+                        margin-left: u.rem(4);
+                        & * {
+                            display: inline !important;
+                        }
+                        & > a {
+                            text-decoration: underline;
+                            color:#0000df;
+                        }
                     }
                 }
             }
         }
+        @include u.account_options;
     }
 }

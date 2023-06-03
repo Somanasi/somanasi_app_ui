@@ -1,8 +1,46 @@
 @use './function' as f;
 
-@mixin custom_flex_display($direction, $justification, $aligment){
+@mixin custom_flex_display($direction, $justification, $aligment) {
     display: flex !important;
     flex-direction: $direction !important;
     justify-content: $justification !important;
     align-items: $aligment !important;
+}
+
+@mixin selectInputWithButtonSubmit {
+    input[type="text"],
+    input[type="password"],
+    input[type="email"],
+    input[type="tel"],
+    button[type="submit"] {
+        margin: f.rem(2) 0 f.rem(12);
+        height: f.rem(48);
+        padding: 0 f.rem(8) 0;
+        // background-color: blueviolet;
+        width: 100%;
+        border-radius: f.rem(8);
+        border: none;
+        outline: none;
+
+        &:focus {
+            &:invalid {
+                border: f.rem(4) red solid !important;
+            }
+
+            &:valid {
+                border: f.rem(4) rgb(31, 206, 57) solid !important;
+            }
+        }
+    }
+}
+
+@mixin account_options{
+    div.acount_options{
+        p {
+            a{
+                text-decoration: underline;
+                color: #0000df;
+            }
+        }
+    }
 }
