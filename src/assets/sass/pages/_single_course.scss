@@ -1,23 +1,149 @@
 @use '../utilities/' as u;
 @use '../global/' as g;
-main.single_course{
-    section.course_header{
+
+main.single_course {
+    position: relative;
+    section.course_header {
         @include u.custom_flex_display(row, none, center);
-        div.course_header_column{
+
+        div.course_header_column {
             width: 33%;
         }
     }
-    section.course_details{
-        div.course_title{
+
+    section.course_details {
+        div.course_title {
+            position: relative;
             background-color: #bee1f4;
             @include u.custom_flex_display(row, none, none);
-            height: 25vh;;
+            height: 25vh;
+            width: 100%;
+
+            div.course_title_column {
+                @include u.custom_flex_display(column, center, none);
+                width: 66vw;
+                max-width: 120vw;
+
+            }
+
+            div.course_title_img_holder {
+                position: absolute;
+                top: -8%;
+                right: 2%;
+                background-image: url("../public/assets/course_title_image.png");
+                background-size: cover;
+                width: 40%;
+                height: 90%;
+                // z-index: 10;
+                // transform-origin: top right;
+                // transform: translate(-100%, 10%) rotate(-90deg);
+                // background-color: blue;
+            }
         }
-        div.course_title_img_holder{
-            background-image: url("../public/images/learning_avatar.png");
-            background-size: cover;
-            width: 40%;
-            z-index: 10;
+
+        .course_description {
+            .about_course {
+                @include u.custom_flex_display(row, center, none);
+
+                div.about_course_column {
+                    width: 50%;
+                }
+
+                div.column-two {
+                    @include u.custom_flex_display(row, right, center);
+
+                    & * {
+                        display: block;
+                    }
+                }
+            }
+        }
+
+        .course_and_course_details_toggle_button {
+            @include u.custom_flex_display(row, none, none);
+
+            div.division_column {
+                width: 50%;
+            }
+
+            div.column_with_toggle_btn {
+                @include u.custom_flex_display(row, right, center);
+
+                button {
+                    color: #0000df;
+                    font-weight: 700;
+                    outline: none;
+                }
+            }
+        }
+
+        div.course_breakdown {
+            @include u.custom_flex_display(column, none, none);
+
+            div.course_breakdown_card {
+                box-shadow: u.rem(1) u.rem(1) u.rem(2) u.rem(1) rgba(0, 0, 0, 0.09);
+                margin-bottom: 8%;
+
+                div.course_breakdown_card_navigation {
+                    @include u.custom_flex_display(row, none, none);
+
+                    div.course_breakdown_card_navigation_column {
+                        width: 50%;
+                    }
+
+                    div.icon {
+                        @include u.custom_flex_display(row, right, none);
+                    }
+                }
+
+                div.course_breakdown_card_lessons {
+                    div.card_lesson {
+                        @include u.custom_flex_display(row, none, center);
+                        box-shadow: u.rem(1) u.rem(1) u.rem(2) u.rem(1) rgba(0, 0, 0, 0.09);
+
+                        &>div {
+                            flex-grow: 1;
+                            flex-basis: 0;
+                        }
+
+                        &>div:nth-child(2) {
+                            flex-grow: 6.6;
+                        }
+
+                        &>div:last-child {
+                            flex-grow: 1.2;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    section.buy_course_now {
+        @include u.custom_flex_display(row, right, center);
+        width: 100%;
+
+        div.buy_course_now_column {
+            width: 80%;
+
+            // @include u.custom_flex_display(row, center, right);
+            button {
+                background-color: #faab00;
+                padding: 4% 8%;
+                border: none;
+                border-radius: u.rem(12);
+                color: #f5f8de;
+                outline: none;
+                @include u.custom_flex_display(row, none, center);
+
+                & * {
+                    display: block;
+                }
+
+                & *:first-child {
+                    margin-right: u.rem(4);
+                }
+            }
         }
     }
 }
