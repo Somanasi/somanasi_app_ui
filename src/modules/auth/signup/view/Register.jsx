@@ -64,7 +64,9 @@ const Register = () => {
               <input type="checkbox" />
               <label htmlFor=""><span className='mr-1'> Click here to agree to our </span> <NavLink to={'terms'}> terms and conditions</NavLink> <span>and our </span> <NavLink>data protection policy</NavLink></label>
             </div>
-            <Button type='submit'>Sign up</Button>
+              <div className='form-group'>
+              <Button type='submit'>Sign up</Button>
+              </div>
           </Form>
         </div>
         <div className='new_user'>
