@@ -28,26 +28,26 @@ const Register = () => {
               </div>
             </div>
             <div className="name">
-              <InputWithLabel name={'user_firstname'} id={'firstname'} placeholder={'Enter first name'} required={ true} error={...errors}>
+              <InputWithLabel name={'user_firstname'} id={'firstname'} placeholder={'Enter first name'} required={ true} error={errors}>
                 First Name
               </InputWithLabel>
-              <InputWithLabel name={'user_lastname'} id={'lastname'} placeholder={'Enter last name'} required={ true} error={...errors}>
+              <InputWithLabel name={'user_lastname'} id={'lastname'} placeholder={'Enter last name'} required={ true} error={errors}>
                 Last  Name
               </InputWithLabel>
-              <InputWithLabel name={'user_othername'} id={'othername'} placeholder={'other name'} error={...errors}>
+              <InputWithLabel name={'user_othername'} id={'othername'} placeholder={'other name'} error={errors}>
                 Other Name
               </InputWithLabel>
             </div>
-            <InputWithLabel type={'email'} name={'user_email'} id={'email'} placeholder={'otherperson@someone.com'} required={ true} error={...errors}>
+            <InputWithLabel type={'email'} name={'user_email'} id={'email'} placeholder={'otherperson@someone.com'} required={ true} error={errors}>
               Email
             </InputWithLabel>
-            <InputWithLabel type={'tel'} name={'userId'} id={'phoneNumber'} placeholder={'0700268088'} required={ true} error={...errors}>
+            <InputWithLabel type={'tel'} name={'userId'} id={'phoneNumber'} placeholder={'0700268088'} required={ true} error={errors}>
               Phone number
             </InputWithLabel>
-            <InputWithLabel type={'password'} name={'password'} id={'password'} required={ true} error={...errors}>
+            <InputWithLabel type={'password'} name={'password'} id={'password'} required={ true} error={errors}>
               password
             </InputWithLabel>
-            <InputWithLabel type={'password'} name={'confirmPassword'} id={'reTypePassword'} required={ true} error={...errors}>
+            <InputWithLabel type={'password'} name={'confirmPassword'} id={'reTypePassword'} required={ true} error={errors}>
               Re-type password
             </InputWithLabel>
             <div className="gender py-6">
