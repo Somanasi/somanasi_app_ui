@@ -1,8 +1,10 @@
 import axios from "axios";
-const call = (methodType, url, payload, options={}) => {
-    axios.[methodType](
-        url,
-        payload,
-        options
-    )
+const call = (requestType, url, params = {}, headers = {}, payload = {}) => {
+  return axios.request({
+    method: requestType,
+    url: url,
+    params: params,
+    headers: headers,
+    data: payload
+  });
 };
