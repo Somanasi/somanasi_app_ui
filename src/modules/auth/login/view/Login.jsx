@@ -4,8 +4,6 @@ import InputWithLabel from '../../../shared/components/InputWithLabel'
 import Button from '../../../shared/components/Button'
 
 //import axios from 'axios';
-//import Cookies from "universal-cookie";
-//const cookies = new Cookies();
 
 export default function Login () {
   const data = useActionData()
@@ -66,9 +64,7 @@ export const loginAction = async ({request}) => {
   axios(configuration)
   .then((result)=>{
       setLogin(true);
-      //set the cookie and using "/" makes it available on all pages.
-      //result.data.token is the value of the cookie
-      cookies.set("TOKEN", result.data.token, {path:"/",});
+      
       //redirect opens about us page after a successful login. Change to convenience*/
       return redirect ("/dashboard") 
   /*})
