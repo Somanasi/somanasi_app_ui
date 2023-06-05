@@ -70,7 +70,7 @@ export const loginAction = async ({request}) => {
       //result.data.token is the value of the cookie
       cookies.set("TOKEN", result.data.token, {path:"/",});
       //redirect opens about us page after a successful login. Change to convenience*/
-      return redirect ("/about_us") 
+      return redirect ("/dashboard") 
   /*})
   .catch((error)=>{error = new Error();});*/
 }
