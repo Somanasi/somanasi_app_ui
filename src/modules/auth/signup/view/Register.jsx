@@ -1,8 +1,9 @@
 import React from 'react'
-import { Form, NavLink } from 'react-router-dom'
+import { Form, NavLink, useActionData } from 'react-router-dom'
 import {InputWithLabel, Button} from '../../../shared'
 
 const Register = () => {
+  const errors = useActionData();
   return (
     <main className='register py-8 px-2 bg-primary'>
       <section className='new_user py-4 px-8'>
@@ -27,26 +28,26 @@ const Register = () => {
               </div>
             </div>
             <div className="name">
-              <InputWithLabel name={'user_firstname'} id={'firstname'} placeholder={'Enter first name'} required={ true}>
+              <InputWithLabel name={'user_firstname'} id={'firstname'} placeholder={'Enter first name'} required={ true} error={...errors}>
                 First Name
               </InputWithLabel>
-              <InputWithLabel name={'user_lastname'} id={'lastname'} placeholder={'Enter last name'} required={ true}>
+              <InputWithLabel name={'user_lastname'} id={'lastname'} placeholder={'Enter last name'} required={ true} error={...errors}>
                 Last  Name
               </InputWithLabel>
-              <InputWithLabel name={'user_othername'} id={'othername'} placeholder={'other name'}>
+              <InputWithLabel name={'user_othername'} id={'othername'} placeholder={'other name'} error={...errors}>
                 Other Name
               </InputWithLabel>
             </div>
-            <InputWithLabel type={'email'} name={'user_email'} id={'email'} placeholder={'otherperson@someone.com'} required={ true}>
+            <InputWithLabel type={'email'} name={'user_email'} id={'email'} placeholder={'otherperson@someone.com'} required={ true} error={...errors}>
               Email
             </InputWithLabel>
-            <InputWithLabel type={'tel'} name={'userId'} id={'phoneNumber'} placeholder={'0700268088'} required={ true}>
+            <InputWithLabel type={'tel'} name={'userId'} id={'phoneNumber'} placeholder={'0700268088'} required={ true} error={...errors}>
               Phone number
             </InputWithLabel>
-            <InputWithLabel type={'password'} name={'password'} id={'password'} required={ true}>
+            <InputWithLabel type={'password'} name={'password'} id={'password'} required={ true} error={...errors}>
               password
             </InputWithLabel>
-            <InputWithLabel type={'password'} name={'confirmPassword'} id={'reTypePassword'} required={ true}>
+            <InputWithLabel type={'password'} name={'confirmPassword'} id={'reTypePassword'} required={ true} error={...errors}>
               Re-type password
             </InputWithLabel>
             <div className="gender py-6">
