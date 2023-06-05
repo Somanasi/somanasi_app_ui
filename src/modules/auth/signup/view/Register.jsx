@@ -27,17 +27,17 @@ const Register = () => {
               </div>
             </div>
             <div className="name">
-              <InputWithLabel name={'user_firstname'} id={'username'} placeholder={'Enter first name'} required={ true}>
+              <InputWithLabel name={'user_firstname'} id={'firstname'} placeholder={'Enter first name'} required={ true}>
                 First Name
               </InputWithLabel>
-              <InputWithLabel name={'user_lastname'} id={'username'} placeholder={'Enter last name'} required={ true}>
+              <InputWithLabel name={'user_lastname'} id={'lastname'} placeholder={'Enter last name'} required={ true}>
                 Last  Name
               </InputWithLabel>
-              <InputWithLabel name={'user_othername'} id={'username'} placeholder={'other name'}>
+              <InputWithLabel name={'user_othername'} id={'othername'} placeholder={'other name'}>
                 Other Name
               </InputWithLabel>
             </div>
-            <InputWithLabel type={'email'} name={'user_email'} id={'phoneNumber'} placeholder={'otherperson@someone.com'} required={ true}>
+            <InputWithLabel type={'email'} name={'user_email'} id={'email'} placeholder={'otherperson@someone.com'} required={ true}>
               Email
             </InputWithLabel>
             <InputWithLabel type={'tel'} name={'userId'} id={'phoneNumber'} placeholder={'0700268088'} required={ true}>
@@ -51,11 +51,11 @@ const Register = () => {
             </InputWithLabel>
             <div className="gender py-6">
               <div>
-                <input type="radio" name="gender" id="female" required/>
+                <input type="radio" name="gender" value={'female'} id="female" required/>
                 <label htmlFor="female">Female</label>
               </div>
               <div>
-                <input type="radio" name="gender" id="male" required/>
+                <input type="radio" name="gender" value={'male'} id="male" required/>
                 <label htmlFor="male">Male</label>
               </div>
             </div>

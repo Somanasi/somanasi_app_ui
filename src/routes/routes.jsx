@@ -17,7 +17,12 @@ import {
         <Route element={<AboutUs />} path="about_us" />
         <Route element={<ContactUs />} path="contact_us" />
         <Route element={<Login />} path="login" />
-        <Route element={<Register />} path="register" />
+
+        <Route element={<Register />} 
+        path="register"
+        action={registerAction}
+         />
+
         <Route element={<Terms />} path="terms" />
         <Route element={<Dashboard />} path="terms" />
       </Route>

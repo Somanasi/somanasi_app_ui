@@ -1,8 +1,8 @@
 import React from 'react'
 
 const registerAction = async({request}) => {
-    const formData = await request.formData();
-    console.log(formData);
+    const payload = Object.fromEntries(await request.formData());
+    console.log(payload);
 //   return (
 //     <div>registerAction</div>
 //   )
