@@ -4,8 +4,9 @@ import {
     Route
   } from "react-router-dom";
   import App from "../App";
+    
   import { Error, Home, Courses, Blog, AboutUs, ContactUs, SingleBlog, SingleCourse, Login, loginAction, Register, Terms, Dashboard, } from "../views";
-  
+  import { registerAction } from "../modules/auth/signup/services/registerAction";
   const routes = createBrowserRouter(
     createRoutesFromElements(
       <Route element={<App />} errorElement={<Error />} path="/">
@@ -16,8 +17,13 @@ import {
         <Route element={<SingleBlog />} path="blog/:id"/>
         <Route element={<AboutUs />} path="about_us" />
         <Route element={<ContactUs />} path="contact_us" />
-        <Route element={<Login />} path="login" action={loginAction}/>
-        <Route element={<Register />} path="register" />
+        <Route element={<Login />} path="login" />
+
+        <Route element={<Register />} 
+        path="register"
+        action={registerAction}
+         />
+
         <Route element={<Terms />} path="terms" />
         <Route element={<Dashboard />} path="terms" />
       </Route>

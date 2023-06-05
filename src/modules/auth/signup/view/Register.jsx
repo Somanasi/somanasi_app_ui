@@ -1,9 +1,9 @@
 import React from 'react'
-import { Form, NavLink } from 'react-router-dom'
-import InputWithLabel from '../../../shared/components/InputWithLabel'
-import Button from '../../../shared/components/Button'
+import { Form, NavLink, useActionData } from 'react-router-dom'
+import {InputWithLabel, Button} from '../../../shared'
 
 const Register = () => {
+  const errors = useActionData();
   return (
     <main className='register py-8 px-2 bg-primary'>
       <section className='new_user py-4 px-8'>
@@ -28,40 +28,40 @@ const Register = () => {
               </div>
             </div>
             <div className="name">
-              <InputWithLabel name={'user_firstname'} id={'username'} placeholder={'Enter first name'} required={ true}>
+              <InputWithLabel name={'user_firstname'} id={'firstname'} placeholder={'Enter first name'} required={ true} error={errors}>
                 First Name
               </InputWithLabel>
-              <InputWithLabel name={'user_lastname'} id={'username'} placeholder={'Enter last name'} required={ true}>
+              <InputWithLabel name={'user_lastname'} id={'lastname'} placeholder={'Enter last name'} required={ true} error={errors}>
                 Last  Name
               </InputWithLabel>
-              <InputWithLabel name={'user_othername'} id={'username'} placeholder={'other name'}>
+              <InputWithLabel name={'user_othername'} id={'othername'} placeholder={'other name'} error={errors}>
                 Other Name
               </InputWithLabel>
             </div>
-            <InputWithLabel type={'email'} name={'user_email'} id={'phoneNumber'} placeholder={'otherperson@someone.com'} required={ true}>
+            <InputWithLabel type={'email'} name={'user_email'} id={'email'} placeholder={'otherperson@someone.com'} required={ true} error={errors}>
               Email
             </InputWithLabel>
-            <InputWithLabel type={'tel'} name={'userId'} id={'phoneNumber'} placeholder={'0700268088'} required={ true}>
+            <InputWithLabel type={'tel'} name={'userId'} id={'phoneNumber'} placeholder={'0700268088'} required={ true} error={errors}>
               Phone number
             </InputWithLabel>
-            <InputWithLabel type={'password'} name={'password'} id={'password'} required={ true}>
+            <InputWithLabel type={'password'} name={'password'} id={'password'} required={ true} error={errors}>
               password
             </InputWithLabel>
-            <InputWithLabel type={'password'} name={'confirmPassword'} id={'reTypePassword'} required={ true}>
+            <InputWithLabel type={'password'} name={'confirmPassword'} id={'reTypePassword'} required={ true} error={errors}>
               Re-type password
             </InputWithLabel>
             <div className="gender py-6">
               <div>
-                <input type="radio" name="gender" id="female" required/>
+                <input type="radio" name="gender" value={'female'} id="female" required/>
                 <label htmlFor="female">Female</label>
               </div>
               <div>
-                <input type="radio" name="gender" id="male" required/>
+                <input type="radio" name="gender" value={'male'} id="male" required/>
                 <label htmlFor="male">Male</label>
               </div>
             </div>
             <div className="form-group terms_and_policy mb-6">
-              <input type="checkbox" />
+              <input type="checkbox" required/>
               <label htmlFor=""><span className='mr-1'> Click here to agree to our </span> <NavLink to={'terms'}> terms and conditions</NavLink> <span>and our </span> <NavLink>data protection policy</NavLink></label>
             </div>
               <div className='form-group'>
