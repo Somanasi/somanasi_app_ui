@@ -49,7 +49,7 @@ export default function Courses() {
           <Form onSubmit={(event)=>handleSearch(event)}>
             <SearchInput size={25} placeholder="Search courses" value={searchResult} valueChange={(event)=>handleSearch(event)}/>
           </Form>
-          <Search input={searchResult} />
+          {!searchResult?"":<Search input={searchResult} />}
         </div>
         <div className="flex justify-left pb-8 px-2">
           <h1 className="font-extrabold text-warning text-2xl">Courses for you </h1>
