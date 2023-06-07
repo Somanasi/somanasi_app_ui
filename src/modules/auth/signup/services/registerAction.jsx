@@ -1,4 +1,3 @@
-import React from 'react'
 import { call, Event, constants } from '../../../shared/services';
 import { redirect } from 'react-router-dom';
 
@@ -11,13 +10,13 @@ const registerAction = async({request}) => {
         /**
          * @todo unset loading state
          */
-        Event('onSuccess', "Successfully registered");
+        Event('onSuccess', response.message);
         redirect('/login');
     }).catch((error) => {
         /**
          * @todo unset loading state
          */
-        Event('onError', error.response.message);
+        Event('onError', error.response.errorMessage);
     });
 
 }
