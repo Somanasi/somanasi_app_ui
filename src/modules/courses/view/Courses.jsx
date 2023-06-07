@@ -12,14 +12,12 @@ import { FaSearch } from "react-icons/fa";
 const filter = [];
 
 function Search(props){
-  console.log(props.input);
   const filteredCourses = dummyData.filter((item)=>{
     if(props.input === ''){
-      return <p>Search item is empty!{item}</p>;
+      return item;
     }
     else{
-      console.log(props.input);
-      return item.name.toLowerCase().includes(props.input);
+      return item.name.toLowerCase().includes(props.input) || item.author.toLowerCase().includes(props.input);
     }
   }); 
   return (
@@ -51,7 +49,6 @@ export default function Courses() {
           <Form onSubmit={(event)=>handleSearch(event)}>
             <SearchInput size={25} placeholder="Search courses" value={searchResult} valueChange={(event)=>handleSearch(event)}/>
           </Form>
-          {searchResult}
           <Search input={searchResult} />
         </div>
         <div className="flex justify-left pb-8 px-2">
