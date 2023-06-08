@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaBars, FaCalendarAlt, FaCog, 
   FaPalette, FaRegChartBar, FaRegFileVideo, FaUsers, FaRoute, FaTasks, FaChevronDown, FaBell, FaEnvelope, FaUser, FaFilter, FaSearch, FaUserFriends, FaClipboardCheck,FaChartLine, FaStar, FaHive, FaCompass } from "react-icons/fa";
-import BarChart from './graphs-init';
+import BarChart from '../components/charts/graphs-init';
 
 const Dashboard = () => {
   return (
