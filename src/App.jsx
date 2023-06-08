@@ -7,11 +7,11 @@ const App = () => {
   
   return (
     <ApplicationStateProvider>
-      <Navbar />
+      {/* <Navbar /> */}
       <>
         <Outlet />
       </>
-      <Footer />
+      {/* <Footer /> */}
     </ApplicationStateProvider>
 
   )
