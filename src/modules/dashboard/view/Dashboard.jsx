@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaBars, FaCalendarAlt, FaCog, 
   FaPalette, FaRegChartBar, FaRegFileVideo, FaUsers, FaRoute, FaTasks, FaChevronDown, FaBell, FaEnvelope, FaUser, FaFilter, FaSearch, FaUserFriends, FaClipboardCheck,FaChartLine, FaStar, FaHive, FaCompass } from "react-icons/fa";
-  import BarChart from './graphs-init';
+import BarChart from './graphs-init';
 
 const Dashboard = () => {
   return (
@@ -161,7 +161,7 @@ const Dashboard = () => {
                   </div>
                   <span className='tex-center text-xl p-1 px-12'>Courses</span>
                   <p className='font-bold p-1 text-4xl'>+13</p>
-                </div>=-
+                </div>
               </div>
             </div>
 
