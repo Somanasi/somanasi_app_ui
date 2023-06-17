@@ -24,7 +24,7 @@ import {
          />
 
         <Route element={<Terms />} path="terms" />
-        <Route element={<Dashboard />} path="terms" />
+        <Route element={<Dashboard />} path="dashboard" />
       </Route>
     )
   );
