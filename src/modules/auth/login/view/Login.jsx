@@ -1,5 +1,5 @@
 import React from 'react'
-import { Form, NavLink, redirect, useActionData } from 'react-router-dom'
+import { Form, NavLink, useActionData } from 'react-router-dom'
 import InputWithLabel from '../../../shared/components/InputWithLabel'
 import Button from '../../../shared/components/Button'
 
@@ -15,7 +15,7 @@ export default function Login () {
         </div>
         <hr />
         <div className="user_login__form py-8">
-          <Form method='POST' action='/login'>
+          <Form method='POST'>{/*<Form method='POST' action='/login'>*/}
             <InputWithLabel name={'userId'} id={'username'} placeholder={'email or phone number'} required={true}>
               username
             </InputWithLabel>
@@ -40,33 +40,4 @@ export default function Login () {
       </section>
     </main>
   )
-}
-
-export const loginAction = async ({request}) => {
-  const data = await request.formData()
-  const submitted = {
-    password: data.get('password'),
-    userId: data.get('userId'),
-  }
-  console.log(submitted)//check output on browser console
-
-  //validate password length
-  if(submitted.password.length < 8){
-    return {error: "Password must be over 8 characters long!"}
-  }
-  //send post request. use axios here after opening database
-
-  /*const configuration = {
-    method:"post",
-    url:"http://localhost:9000/login",
-    data:{userId, password},
-  };
-  axios(configuration)
-  .then((result)=>{
-      setLogin(true);
-      
-      //redirect opens about us page after a successful login. Change to convenience*/
-      return redirect ("/dashboard") 
-  /*})
-  .catch((error)=>{error = new Error();});*/
 }

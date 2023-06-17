@@ -5,7 +5,8 @@ import {
   } from "react-router-dom";
   import App from "../App";
     
-  import { Error, Home, Courses, Blog, AboutUs, ContactUs, SingleBlog, SingleCourse, Login, loginAction, Register, Terms, Dashboard, } from "../views";
+  import { Error, Home, Courses, Blog, AboutUs, ContactUs, SingleBlog, SingleCourse, Login, Register, Terms, Dashboard, } from "../views";
+  import { loginAction } from "../modules/auth/login/services/loginAction";
   import { registerAction } from "../modules/auth/signup/services/registerAction";
   const routes = createBrowserRouter(
     createRoutesFromElements(
