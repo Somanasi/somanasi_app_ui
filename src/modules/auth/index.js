@@ -1,7 +1,7 @@
 const AuthService = {
     checkAuth(){
        return localStorage.getItem('elimuendelezi_token') ? true : false;
-    }
+    },
     token: () => {
         let token;
         if(checkAuth()) {
