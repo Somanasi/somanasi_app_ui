@@ -1,7 +1,6 @@
 import client from './client';
 
-
-export default  const call = async(
+const call = async(
     requestType,
     url,
     payload = null,
@@ -15,3 +14,5 @@ export default  const call = async(
       data: payload
     });
   };
+
+  export default call;

@@ -1,4 +1,4 @@
-import { call, Event, constants } from '../../../shared/services';
+import {Event, constants } from '../../../shared/services';
 import call from '../../../../services/htpp';
 import { redirect } from 'react-router-dom';
 
