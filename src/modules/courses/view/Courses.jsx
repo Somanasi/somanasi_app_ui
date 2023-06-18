@@ -6,6 +6,7 @@ import { BiBookmark } from "react-icons/bi"
 import { GoPrimitiveDot, GoChevronRight } from "react-icons/go"
 import { SearchInput, Button, DurationFormat, } from "../../shared/index.js";
 import { CourseFilterList, courseFilters } from "../utils";
+import Favorite from "../utils/FavoriteCourses.jsx";
 
 const filter = [];
 
@@ -60,9 +61,9 @@ const Courses = () => {
                     </div>
                   </div>
                 </Link>
-                <Button>
+                <Button onClick={()=> Favorite(items.id)}>
                   <BiBookmark size={20} />
-                </Button>
+                </Button >
               </div>
             </div>
             <div className="course_card_row flex align-middle pt-4">
