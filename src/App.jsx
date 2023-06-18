@@ -11,7 +11,7 @@ const App = () => {
       <>
         <Outlet />
       </>
-      {/* <Footer /> */}
+      <Footer />
     </ApplicationStateProvider>
 
   )
