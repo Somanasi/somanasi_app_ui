@@ -2,6 +2,7 @@ import React from 'react'
 import { FaClock, FaEllipsisV, FaEnvelope, FaFilter, FaHome, FaLifeRing, FaReact, FaSearch, FaVectorSquare } from 'react-icons/fa'
 import { DashboardCardData } from '../../data/cards'
 import BarChart from '../charts/graphs-init';
+// import { Dashboardfooter } from "../../components/layouts/Dashboardfooter"
 
 
 const MainApp = () => {
@@ -33,7 +34,7 @@ const MainApp = () => {
 
 
         {/* Display section */}
-        <main className='w-full lg:px-10'>
+        <main className='w-full lg:px-10 relative'>
           <setion className="bg-slate-50 grid lg:grid-cols-4 gap-1 py-2 px-6 h-24 mt-2 rounded-tl-md rounded-tr-md relative mb-4">
             {
               DashboardCardData.map((data, id) => {
@@ -67,69 +68,11 @@ const MainApp = () => {
             {/* Table section */}
             <div className='shadow-md bg-slate-50 py-4 px-2'>
               <div className='flex flex-row justify-between items-center border-b-2 border-gray-100 py-1'>
-                <h1 className='font-bold'>Table ~ Courses</h1>
-                <FaEllipsisV/>
-              </div>
-              <div className='w-full overflow-hidden h-60 px-2'>
-                <div class="relative overflow-x-auto shadow-md sm:rounded-lg h-100">
-                  <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400 h-full">
-
-                    <thead class="text-xs text-gray-700 uppercase bg-gray-5 dark:text-gray-400">
-                      <tr>
-                        <th scope="col" class="px-6 py-3">Course Name</th>
-                        <th scope="col" class="px-6 py-3">
-                            <div class="flex items-center">Units</div>
-                        </th>
-                        <th scope="col" class="px-6 py-3">
-                            <div class="flex items-center">Length</div>
-                        </th>
-                        <th scope="col" class="px-6 py-3">
-                            <div class="flex items-center">Price</div>
-                        </th>
-                        <th scope="col" class="px-6 py-3">
-                          <div class="flex items-center">Action</div>
-                        </th>
-                      </tr>
-                    </thead>
-
-                    <tbody>
-                      <tr class="border-b dark:border-gray-700 bg-slate-400">
-                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Computer Science</th>
-                        <td class="px-6 py-4 dark:text-white">48</td>
-                        <td class="px-6 py-4 dark:text-white">3hrs/day</td>
-                        <td class="px-6 py-4 dark:text-white">$2999</td>
-                        <td class="px-6 py-4 text-right">
-                            <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
-                        </td>
-                      </tr>
-                      <tr class="border-b dark:border-gray-700 bg-slate-400">
-                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Nursing</th>
-                        <td class="px-6 py-4 dark:text-white">32</td>
-                        <td class="px-6 py-4 dark:text-white">3hrs/day</td>
-                        <td class="px-6 py-4 dark:text-white">$20300</td>
-                        <td class="px-6 py-4 text-right">
-                            <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
-                        </td>
-                      </tr>
-                      
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-            </div>
-          </section>
-
-
-
-          {/* Links Available */}
-          <section className='p2'>
-           <div className='shadow-md bg-slate-50 py-4 px-2'>
-              <div className='flex flex-row justify-between items-center border-b-2 border-gray-100 py-1'>
                 <h1 className='font-bold'>Links ~ History</h1>
                 <FaEllipsisV/>
               </div>
               <div className='w-full overflow-hidden px-2'>
-                <ul class="flex flex-wrap text-sm font-medium text-center text-gray-500 dark:text-gray-400 mt-1">
+                <ul class="flex flex-wrap text-sm font-medium text-center text-gray-500 dark:text-gray-400 mt-1 gap-2">
                   <li class="mr-2">
                     <a href="#" class="px-4 py-3 hover:text-white bg-gray-200 text-black hover:bg-blue-600 rounded-full active flex flex-row items-center" aria-current="page"> <FaHome/>&nbsp;Home Packages</a>
                   </li>
@@ -146,9 +89,15 @@ const MainApp = () => {
                     <a href="#" class="px-4 py-3 hover:text-white bg-gray-200 text-black hover:bg-blue-600 rounded-full active flex flex-row items-center" aria-current="page"> <FaClock/>&nbsp;Time elapse</a>
                   </li>
                 </ul>
-
               </div>
             </div>
+          </section>
+
+
+
+          {/* Footer section */}
+          <section  className='py-2 px-2 flex justify-center items-center bg-slate-100 fixed bottom-0 rounded-md'>
+            <p className='text-xm text-black text-center'>Copyright&copy;2023Elimuendelezi.co.ke</p>
           </section>
 
         </main>
