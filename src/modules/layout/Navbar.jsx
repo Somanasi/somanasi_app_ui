@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink, useLocation } from "react-router-dom";
+import { NavLink, } from "react-router-dom";
 import Logo from "../shared/components/Logo";
 import { GoGrabber, GoX, GoPerson, GoSignOut } from "react-icons/go";
 import {
@@ -13,15 +13,14 @@ import Button from "../shared/components/Button";
 import ListItems from "./ListItems";
 import { useAppState, useDispatchAppState } from "../../store/ApplicationContext";
 import Logout from "../auth/logout/components/Logout";
+import isSpecifiedPath from "../shared/utils/RouterUtil";
 
 
 const Navbar = () => {
   const toggle = useDispatchAppState();
   const visible = useAppState();
 
-  const location = useLocation();
-  const isDashboardRoute = location.pathname.includes('/dashboard');
-  if (isDashboardRoute) return null;
+  if(isSpecifiedPath('/dashboard')) return null;
 
   return (
     <header className="bg-warning h-1/4">
