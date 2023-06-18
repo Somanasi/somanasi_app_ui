@@ -3,7 +3,7 @@ import AuthService from "../../../modules/auth";
 import { handleLogout as Logout } from "../../../modules/auth/logout/components/Logout";
 
 const client = axios.create({
-  baseURL: import.meta.env.REACT_APP_BASE_API_URL
+  baseURL: import.meta.env.REACT_APP_BASE_API_URL,
 });
 
 const authInterceptor = (config) => {
