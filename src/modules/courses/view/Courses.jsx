@@ -8,16 +8,49 @@ import { SearchInput, Button, DurationFormat, } from "../../shared/index.js";
 import { CourseFilterList, courseFilters } from "../utils";
 import Favorite from "../utils/FavoriteCourses.jsx";
 
+import { FaSearch } from "react-icons/fa";
+
 const filter = [];
 
-const Courses = () => {
+function Search(props){
+  const filteredCourses = dummyData.filter((item)=>{
+    if(props.input === ''){
+      return item;
+    }
+    else{
+      return item.name.toLowerCase().includes(props.input) || item.author.toLowerCase().includes(props.input);
+    }
+  }); 
+  return (
+    <>
+    {filteredCourses.map((item, index)=>(
+    <Link to={"/courses/" + item.id} key={index}>
+      <img src={item.icon} alt={item.name} className=" rounded-md w-60" />
+      <div className="col-course-name max-w-max px-2 pb-1 rounded-lg">
+            <h3 className=" text-blue-500 font-thin ">{item.name}</h3>
+          </div>
+    </Link>
+    ))}
+    </>
+  )
+}
+
+export default function Courses() {
+  const [searchResult, setSearchResult] = useState("");
+  const handleSearch=(event)=>{
+    event.preventDefault();
+    setSearchResult(event.target.value);
+    console.log(searchResult);
+  }
   return (
     <main className="main_courses bg-primary">
       <section className="section_introduction">
         <div role="search" className="search_div pb-8 w-full">
-          <Form>
-            <SearchInput size={25} placeholder="Search courses" />
+          
+          <Form onSubmit={(event)=>handleSearch(event)}>
+            <SearchInput size={25} placeholder="Search courses" value={searchResult} valueChange={(event)=>handleSearch(event)}/>
           </Form>
+          {!searchResult?"":<Search input={searchResult} />}
         </div>
         <div className="flex justify-left pb-8 px-2">
           <h1 className="font-extrabold text-warning text-2xl">Courses for you </h1>
@@ -85,5 +118,3 @@ const Courses = () => {
     </main>
   );
 };
-
-export default Courses;
