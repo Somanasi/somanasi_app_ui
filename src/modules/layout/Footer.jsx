@@ -1,6 +1,10 @@
 import React from "react";
+import isSpecifiedPath from "../shared/utils/RouterUtil";
 
 const Footer = () => {
+
+  if(isSpecifiedPath('/dashboard')) return null;
+ 
   return (
     <footer className="bg-tertiary flex flex-col px-4 pt-12">
       <div className="footer_seciton__1 flex flex-col">

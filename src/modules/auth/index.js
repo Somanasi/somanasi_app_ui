@@ -1,10 +1,20 @@
 const AuthService = {
+
+    /**
+     * 
+     * @returns Boolean whether the user is authenticated or not
+     */
     checkAuth(){
        return localStorage.getItem('elimuendelezi_token') ? true : false;
     },
-    token: () => {
+
+    /**
+     * 
+     * @returns token string
+     */
+    token(){
         let token;
-        if(checkAuth()) {
+        if(this.checkAuth()) {
             token = localStorage.getItem('elimuendelezi_token');
         }
         return token;

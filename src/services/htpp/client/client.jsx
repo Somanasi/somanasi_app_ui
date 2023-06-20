@@ -3,9 +3,14 @@ import AuthService from "../../../modules/auth";
 import { handleLogout as Logout } from "../../../modules/auth/logout/components/Logout";
 
 const client = axios.create({
-  baseURL: import.meta.env.REACT_APP_BASE_API_URL
+  baseURL: import.meta.env.REACT_APP_BASE_API_URL,
 });
 
+/**
+ * 
+ * @param {*} config  -> request object
+ * @returns must return request object after appending Authorization header and common headers in case the user is authenticated
+ */
 const authInterceptor = (config) => {
   if (AuthService.checkAuth()) {
     config.headers.Authorization = `Bearer ${AuthService.token()}`;
@@ -14,6 +19,12 @@ const authInterceptor = (config) => {
   return config;
 };
 
+
+/**
+ * 
+ * @param {*} config -> requst object
+ * @returns -> returns request object.
+ */
 const loggerInterceptor = (config) => {
   console.log(config);
   return config;
