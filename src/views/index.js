@@ -25,5 +25,4 @@ export {
     SingleCourse,
     Terms,
     Dashboard,
-
 };
