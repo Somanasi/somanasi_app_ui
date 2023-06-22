@@ -1,5 +1,5 @@
 // HIGHLIGHTS >>  Cards data >> User data section
-import { FaUserFriends, FaStar, FaCompass,  FaRegChartBar, FaRegFileVideo, FaUsers, FaRoute, FaTasks, FaClipboardCheck,FaChartLine, FaHive , FaCalendarAlt, FaPalette, FaUser, FaLock, FaPushed} from "react-icons/fa";
+import { FaUserFriends, FaStar, FaCompass,  FaRegChartBar, FaRegFileVideo, FaUsers, FaRoute, FaTasks, FaClipboardCheck,FaChartLine, FaHive , FaCalendarAlt, FaPalette, FaLock, FaUserCog, FaListAlt, FaHistory, FaCloudUploadAlt, FaSatellite, FaSyncAlt} from "react-icons/fa";
 
 export const DashboardCardData = [
     {
@@ -46,13 +46,23 @@ export const NavigationsLinks = [
         headingIcon: <FaPalette />,
         data: [
           { icon: <FaCalendarAlt />, text: "Calenda" },
-          { icon: <FaUser />, text: "Profile" },
-          { icon: <FaLock />, text: "Change Password" },
-          { icon: <FaPushed />, text: "Update" },
+          { icon: <FaSatellite />, text: "Upgrade Pro" },
+          { icon: <FaCloudUploadAlt />, text: "Backups" },
         ]
     },
     {
         id: 2,
+        heading: "User Settings",
+        headingIcon: <FaUserCog />,
+        data: [
+          { icon: <FaListAlt />, text: "View Profile" },
+          { icon: <FaLock />, text: "Change Password" },
+          { icon: <FaHistory />, text: "Manage History" },
+          { icon: <FaSyncAlt />, text: "Synch Data" },
+        ]
+    },
+    {
+        id: 3,
         heading: "Courses",
         headingIcon: <FaTasks />,
         data: [
@@ -62,7 +72,7 @@ export const NavigationsLinks = [
         ],
     },
     {
-        id: 3,
+        id: 4,
         heading: "Activities",
         headingIcon: <FaRoute />,
         data: [

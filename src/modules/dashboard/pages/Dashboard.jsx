@@ -32,11 +32,11 @@ const Dashboardliteral = () => {
 
       
         {/* Display section */}
-        <main className='w-100 p-0 m-0'>
+        <main className='p-0 m-0'>
           <setion className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2 mt-4">
             {
               DashboardCardData.map((data, id) => {
-                return   <article className='w-[250px] p-4 flex flex-row justify-between items-start shadow rounded-md mt-4 border-t-4 border-orange-500' key={id}>
+                return   <article className='w-[240px] p-4 flex flex-row justify-between items-start shadow rounded-md mt-4 border-t-4 border-orange-500' key={id}>
                 <div className='flex flex-col justify-between items-start'>
                   <small className='text-gray-600 font-bold text-xl'>{data.cardTitle}</small>
                   <small className='text-gray-600 font-bold text-xl'>{data.cardCapacity}</small>
@@ -70,20 +70,20 @@ const Dashboardliteral = () => {
                 <FaEllipsisV/>
               </div>
               <div className='w-[100%] pt-4'>
-                <ul className='w-inherit flex flex-row flex-wrap gap-2 items-center justify-start'>
-                  <li className='flex flex-row items-center justify-center py-2 px-4 bg-slate-200 hover:bg-blue-500 hover:text-white transition-all duration-500 cursor-pointer rounded-full text-xl'>
+                <ul className='w-inherit flex flex-row flex-wrap gap-4 items-center justify-start w-[90%] mx-auto'>
+                  <li className='flex flex-row items-center justify-center bg-slate-200 hover:bg-blue-500 hover:text-white transition-all duration-500 cursor-pointer rounded-full text-xl'>
                     <FaClock/><small className='pl-2'>History</small>
                   </li>
-                  <li className='flex flex-row items-center justify-center py-2 px-4 bg-slate-200 hover:bg-blue-500 hover:text-white transition-all duration-500 cursor-pointer rounded-full text-xl'>
+                  <li className='flex flex-row items-center justify-center bg-slate-200 hover:bg-blue-500 hover:text-white transition-all duration-500 cursor-pointer rounded-full text-xl'>
                     <FaEnvelope/><small className='pl-2'>All Notofications</small>
                   </li>
-                  <li className='flex flex-row items-center justify-center py-2 px-4 bg-slate-200 hover:bg-blue-500 hover:text-white transition-all duration-500 cursor-pointer rounded-full text-xl'>
+                  <li className='flex flex-row items-center justify-center bg-slate-200 hover:bg-blue-500 hover:text-white transition-all duration-500 cursor-pointer rounded-full text-xl'>
                     <FaHome/><small className='pl-2'>Dashboard</small>
                   </li>
-                  <li className='flex flex-row items-center justify-center py-2 px-4 bg-slate-200 hover:bg-blue-500 hover:text-white transition-all duration-500 cursor-pointer rounded-full text-xl'>
+                  <li className='flex flex-row items-center justify-center bg-slate-200 hover:bg-blue-500 hover:text-white transition-all duration-500 cursor-pointer rounded-full text-xl'>
                     <FaReact/><small className='pl-2'>Chemistry</small>
                   </li>
-                  <li className='flex flex-row items-center justify-center py-2 px-4 bg-slate-200 hover:bg-blue-500 hover:text-white transition-all duration-500 cursor-pointer rounded-full text-xl'>
+                  <li className='flex flex-row items-center justify-center bg-slate-200 hover:bg-blue-500 hover:text-white transition-all duration-500 cursor-pointer rounded-full text-xl'>
                     <FaVectorSquare/><small className='pl-2'>Graphs</small>
                   </li>
                 </ul>

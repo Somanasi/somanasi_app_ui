@@ -10,8 +10,6 @@ import SingleBlog from '../modules/blog/views/SingleBlog'
 import SingleCourse from '../modules/courses/view/SingleCourse'
 import Terms from '../modules/terms_and_policies/views/Terms'
 import Dashboard from '../modules/dashboard/view/Dashboard'
-import Portaldasgboard from "../modules/dashboard/pages/Dashboard"
-import USerProfile from "../modules/dashboard/pages/Profile"
 
 
 export {
@@ -27,8 +25,4 @@ export {
     SingleCourse,
     Terms,
     Dashboard,
-<<<<<<< HEAD
-    Portaldasgboard, USerProfile,
-=======
->>>>>>> 7482436d65f78c59898b8e7a13f34ef7012dd816
-};
+}

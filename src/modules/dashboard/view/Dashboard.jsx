@@ -1,7 +1,9 @@
 import React from 'react';
 import Sidebar from '../components/layouts/Sidebar';
 import Topbar from '../components/layouts/Topbar';
-import Dashboardliteral from '../pages/Dashboard';
+// import Dashboardliteral from '../pages/Dashboard';
+import Profile from '../pages/Profile';
+
 
 const Dashboard = () => {
   return (
@@ -15,7 +17,8 @@ const Dashboard = () => {
       <Topbar />
 
       {/* Main display init */}
-      <Dashboardliteral/>
+      {/* <Dashboardliteral/> */}
+      <Profile/>
 
      </section>
     </main>

@@ -6,7 +6,7 @@ const Topbar = () => {
 
   return (
     <>
-       <header className='w-100 py-2 lg:px-4 md:px-2 sm:px-1 flex flex-row justify-between items-center shadow-inner'>
+       <header className='w-100 py-2 lg:px-4 md:px-2 sm:px-1 flex flex-row justify-between items-center'>
         <div className=''>
           {/* <div className='w-20 h-6 rounded bg-slate-400 overflow-hidden'></div> */}
           <p className='text-4xl text-amber-600'>Elimuendelezi</p>

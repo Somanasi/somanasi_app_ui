@@ -35,8 +35,8 @@ const Sidebar = () => {
 
         </div>
         <div className='mt-2 flex flex-col items-center justify-center'>
-          <small className='text-white font-bold text-xl'>Michael&nbsp;Douglas</small>
-          <small className='text-white font-bold text-xl'>gtech29.gmail@gmail.com</small>
+          <small className='text-white text-xl'>Michael&nbsp;Douglas</small>
+          <small className='text-white text-xl'>gtech29.gmail@gmail.com</small>
         </div>
       </div>
       </section>
@@ -52,8 +52,8 @@ const Sidebar = () => {
                   className='flex flex-row items-center justify-start cursor-pointer py-1 px-2 flex-grow text-2xl'
                   onClick={() => handleHeadingClick(id)}
                 >
-                  <span className='font-bold text-white'>{item.headingIcon}</span>
-                  <span className='ml-5 font-bold text-white'>{item.heading}</span>
+                  <span className='text-white'>{item.headingIcon}</span>
+                  <span className='ml-5 text-white'>{item.heading}</span>
                 </div>
                 {expanded === id && ( // Render the links only if expanded is true for this item
                   <div className='ml-14 flex flex-col justify-center items-start transition-all duration-500'>
