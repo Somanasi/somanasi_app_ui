@@ -123,7 +123,7 @@ const dummyData = [
         author_avatar: "/assets/physics.jpeg",
         author_avatar: "/assets/physics.jpeg",
         author_avatar: "/assets/physics.jpeg",
-        author: "Kariuki Ng'ang'a",
+        author: "David",
         duration: 620,
         lessons: 8,
         price: 2000,

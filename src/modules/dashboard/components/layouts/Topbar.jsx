@@ -6,17 +6,17 @@ const Topbar = () => {
 
   return (
     <>
-       <header className='py-1 sm:px-2 lg:px-4 bg-green-200 flex justify-between items-center'>
-        <div className='flex flex-row justify-around items-center'>
+       <header className='w-100 py-2 lg:px-4 md:px-2 sm:px-1 flex flex-row justify-between items-center shadow-inner'>
+        <div className=''>
           {/* <div className='w-20 h-6 rounded bg-slate-400 overflow-hidden'></div> */}
-          <p className='font-bold text-orange-500 text-2xl ml-2'>Elimuendelezi</p>
+          <p className='text-4xl text-amber-600'>Elimuendelezi</p>
         </div>
 
 
-        <div className='flex justify-around items-center sm:mr-1 lg:mr-4 sm:flex-wrap'> 
-          <div className='mr-2 w-8 h-6 grid items-center cursor-pointer hover:text-orange-400 border-r-2 border-white-50'><FaSignInAlt/></div>
-          <div className='px-2 mr-2 w-8 h-6 grid items-center cursor-pointer hover:text-orange-400 border-r-2 border-white-50'><FaBell/></div>
-          <div className='px-2 mr-2 w-8 h-6 grid items-center cursor-pointer hover:text-orange-400 border-r-2 border-white-50'><FaCog/></div>
+        <div className='py-2 lg:px-8 sm:px-1 flex flex-row justify-between items-center'> 
+          <div className='p-2 hover:text-white hover:bg-blue-700  transition-all duration-300 mr-4 rounded-md text-gray-500 cursor-pointer bg-gray-300'><FaSignInAlt/></div>
+          <div className='p-2 hover:text-white hover:bg-blue-700  transition-all duration-300 mr-4 rounded-md text-gray-500 cursor-pointer bg-gray-300'><FaBell/></div>
+          <div className='p-2 hover:text-white hover:bg-blue-700  transition-all duration-300 mr-4 rounded-md text-gray-500 cursor-pointer bg-gray-300'><FaCog/></div>
         </div>
        </header>
     </>

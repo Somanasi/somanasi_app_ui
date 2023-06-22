@@ -1,9 +1,12 @@
 import React from 'react'
-import { Form, NavLink } from 'react-router-dom'
+import { Form, NavLink, useActionData } from 'react-router-dom'
 import InputWithLabel from '../../../shared/components/InputWithLabel'
 import Button from '../../../shared/components/Button'
 
-const Login = () => {
+//import axios from 'axios';
+
+export default function Login () {
+  const data = useActionData()
   return (
     <main className='login py-8 px-2 bg-primary'>
       <section className='user_login py-8 px-8'>
@@ -12,7 +15,7 @@ const Login = () => {
         </div>
         <hr />
         <div className="user_login__form py-8">
-          <Form method='POST'>
+          <Form method='POST'>{/*<Form method='POST' action='/login'>*/}
             <InputWithLabel name={'userId'} id={'username'} placeholder={'email or phone number'} required={true}>
               username
             </InputWithLabel>
@@ -25,6 +28,7 @@ const Login = () => {
             <div className="form-group pt-12">
               <Button type='submit'>Login</Button>
             </div>
+            {data && data.error && <p>{data.error}</p>}
           </Form>
         </div>
         <div className='acount_options pb-4'>
@@ -37,5 +41,3 @@ const Login = () => {
     </main>
   )
 }
-
-export default Login

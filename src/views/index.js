@@ -27,5 +27,8 @@ export {
     SingleCourse,
     Terms,
     Dashboard,
+<<<<<<< HEAD
     Portaldasgboard, USerProfile,
+=======
+>>>>>>> 7482436d65f78c59898b8e7a13f34ef7012dd816
 };

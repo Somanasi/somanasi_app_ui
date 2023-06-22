@@ -8,41 +8,41 @@ import { DashboardCardData } from '../data/cards'
 const Dashboardliteral = () => {
   return (
     <>
-      <article className='w-screen py-2 px-1 lg:px-12 md:px-4 sm:px-1'>
+      <article className='m-0 sm:px-1 md:px-2 lg:px-16'>
         {/* top section */}
-        <div className='py-1 sm:px-1 lg:px-4 bg-green-50 sm:w-[100%] lg:w-50 flex justify-between items-center shadow-sm'>
+        <div className='py-2 flex flex-row justify-between items-center'>
           {/* Navigator */}
-          <div className='font-bold'>
+          <div className='font-bold text-xl'>
             Dashboard
           </div>
 
 
           {/* Search container */}
-          <div className='py-1 px-2 flex flex-row items-center justify-start w-80 rounded-full bg-slate-50'> 
+          <div className='flex flex-row items-center'> 
             <FaSearch/>
-            <input type='search' placeholder='Search...' className='ml-2 py-1 px-4 outline-0 border-spacing-0 w-full rounded-full'/>
+            <input type='search' placeholder='Search...' className='ml-2 px-2 border-none outline-none py-1'/>
           </div>
 
           {/* Filter page */}
-          <div className='flex flex-row sm:justify-end lg:justify-center items-center sm:mr-1 lg:mr-4'> 
-            <div className='px-2 mr-2 w-8 h-6 grid items-center cursor-pointer hover:text-orange-400'><FaLifeRing/></div>
-            <div className='px-2 mr-2 w-8 h-6 grid items-center cursor-pointer hover:text-orange-400'><FaFilter/></div>
+          <div className='flex flex-row items-center'> 
+            <div className='p-2 hover:text-white hover:bg-blue-700  transition-all duration-300 mr-4 rounded-md text-gray-500 cursor-pointer bg-gray-300'><FaLifeRing/></div>
+            <div className='p-2 hover:text-white hover:bg-blue-700  transition-all duration-300 rounded-md text-gray-500 cursor-pointer bg-gray-300'><FaFilter/></div>
           </div>
         </div>
 
       
         {/* Display section */}
-        <main className='relative lg:mt-6 md:mt-2 sm:mt-0'>
-          <setion className="grid md:grid-col-2 lg:grid-cols-4 gap-2 py-2 mt-2 rounded-tl-md rounded-tr-md relative mb-4">
+        <main className='w-100 p-0 m-0'>
+          <setion className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2 mt-4">
             {
               DashboardCardData.map((data, id) => {
-                return   <article className='p-2 shadow-md rounded-md mt-2 bg-white flex flex-row justify-around items-start border-l-8 border-orange-500 mx-auto' key={id}>
-                <div className='flex flex-col justify-start items-start'>
-                  <small className='font-bold py-1 text-sm'>{data.cardTitle}</small>
-                  <small className='font-bold py-1 text-sm'>{data.cardCapacity}</small>
-                  <small className='font-bold py-1 text-sm'>{data.time}</small>
+                return   <article className='w-[250px] p-4 flex flex-row justify-between items-start shadow rounded-md mt-4 border-t-4 border-orange-500' key={id}>
+                <div className='flex flex-col justify-between items-start'>
+                  <small className='text-gray-600 font-bold text-xl'>{data.cardTitle}</small>
+                  <small className='text-gray-600 font-bold text-xl'>{data.cardCapacity}</small>
+                  <small className='text-gray-600 font-bold text-xl'>{data.time}</small>
                 </div>
-                <div className='w-12 h-12 flex justify-center items-center ml-2 text-4xl cursor-pointer'>{data.cardIcon}</div>
+                <div className='text-4xl'>{data.cardIcon}</div>
               </article>
               })
             }
@@ -51,49 +51,49 @@ const Dashboardliteral = () => {
 
 
           {/* Graph visualization */}
-          <section className='py-4 mt-8 grid lg:grid-cols-2 sm:grid-col-1 gap-4 lg:px-8 sm:px-0 md:px-2'>
-            <div className='shadow-md bg-slate-50 py-2 w-auto'>
-              <div className='flex flex-row justify-between items-center border-b-2 border-gray-100 py-1 px-4'>
-                <h1 className='font-bold'>Visualize ~ Studies</h1>
+          <section className='grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 sm:mt-4 lg:mt-12 gap-2'>
+            <div className='m-0 py-2 lg:px-4 md:px-2 shadow-inner'>
+              <div className='flex flex-row justify-between items-center border-b border-gray-300 py-2'>
+                <h1 className='text-xl text-gray-500 font-bold'>Visualize ~ Studies</h1>
                 <FaEllipsisV/>
               </div>
-              <div className='w-full overflow-hidden h-68 px-2'>
+              <div className='w-[100%]'>
                <BarChart />
               </div>
             </div>
 
 
             {/* Table section */}
-            <div className='shadow-md bg-slate-50 py-4'>
-              <div className='flex flex-row justify-between items-center border-b-2 border-gray-100 py-1 px-4'>
-                <h1 className='font-bold'>Visualize ~ Studies</h1>
+            <div className='m-0 py-2 lg:px-4 md:px-2 shadow-inner'>
+              <div className='flex flex-row justify-between items-center border-b border-gray-300 py-2'>
+                <h1 className='text-xl text-gray-500 font-bold'>Visualize ~ Studies</h1>
                 <FaEllipsisV/>
               </div>
-              {/* <div className='w-full overflow-hidden h-68'>
-                <ul className='m-2 p-1 flex flex-row flex-wrap items-center justify-start'>
-                  <li className='flex flex-row items-center justify-center py-1 px-2 cursor-pointer bg-gray-200 rounded-full hover:bg-blue-400 hover:text-white transition-all duration-500'>
+              <div className='w-[100%] pt-4'>
+                <ul className='w-inherit flex flex-row flex-wrap gap-2 items-center justify-start'>
+                  <li className='flex flex-row items-center justify-center py-2 px-4 bg-slate-200 hover:bg-blue-500 hover:text-white transition-all duration-500 cursor-pointer rounded-full text-xl'>
                     <FaClock/><small className='pl-2'>History</small>
                   </li>
-                  <li className='flex flex-row items-center justify-center py-1 px-2 cursor-pointer bg-gray-200 rounded-full hover:bg-blue-400 hover:text-white transition-all duration-500'>
+                  <li className='flex flex-row items-center justify-center py-2 px-4 bg-slate-200 hover:bg-blue-500 hover:text-white transition-all duration-500 cursor-pointer rounded-full text-xl'>
                     <FaEnvelope/><small className='pl-2'>All Notofications</small>
                   </li>
-                  <li className='flex flex-row items-center justify-center py-1 px-2 cursor-pointer bg-gray-200 rounded-full hover:bg-blue-400 hover:text-white transition-all duration-500'>
+                  <li className='flex flex-row items-center justify-center py-2 px-4 bg-slate-200 hover:bg-blue-500 hover:text-white transition-all duration-500 cursor-pointer rounded-full text-xl'>
                     <FaHome/><small className='pl-2'>Dashboard</small>
                   </li>
-                  <li className='flex flex-row items-center justify-center py-1 px-2 cursor-pointer bg-gray-200 rounded-full hover:bg-blue-400 hover:text-white transition-all duration-500'>
+                  <li className='flex flex-row items-center justify-center py-2 px-4 bg-slate-200 hover:bg-blue-500 hover:text-white transition-all duration-500 cursor-pointer rounded-full text-xl'>
                     <FaReact/><small className='pl-2'>Chemistry</small>
                   </li>
-                  <li className='flex flex-row items-center justify-center py-1 px-2 cursor-pointer bg-gray-200 rounded-full hover:bg-blue-400 hover:text-white transition-all duration-500'>
+                  <li className='flex flex-row items-center justify-center py-2 px-4 bg-slate-200 hover:bg-blue-500 hover:text-white transition-all duration-500 cursor-pointer rounded-full text-xl'>
                     <FaVectorSquare/><small className='pl-2'>Graphs</small>
                   </li>
                 </ul>
-              </div> */}
+              </div>
             </div>
           </section>
 
 
           {/* Footer sectiob */}
-          <section className='mt-8'>
+          <section className=''>
             <Dashboardfooter />
           </section>
 
