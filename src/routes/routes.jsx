@@ -4,7 +4,7 @@ import {
     Route
   } from "react-router-dom";
   import App from "../App";
-  import { Error, Home, Courses, Blog, AboutUs, ContactUs, SingleBlog, SingleCourse, Login, Register, Terms, Dashboard, } from "../views";
+  import { Error, Home, Courses, Blog, AboutUs, ContactUs, SingleBlog, SingleCourse, Login, Register, Terms, Dashboard, Portaldasgboard, USerProfile, } from "../views";
   import { registerAction } from "../modules/auth/signup/services/registerAction";
   const routes = createBrowserRouter(
     createRoutesFromElements(
@@ -17,7 +17,7 @@ import {
         <Route element={<AboutUs />} path="about_us" />
         <Route element={<ContactUs />} path="contact_us" />
         <Route element={<Login />} path="login" />
-
+        
         <Route element={<Register />} 
         path="register"
         action={registerAction}
@@ -25,6 +25,9 @@ import {
 
         <Route element={<Terms />} path="terms" />
         <Route element={<Dashboard />} path="dashboard" />
+        <Route element={<Portaldasgboard />} path="dashboard/display" />
+        <Route element={<USerProfile />} path="dashboard/profile" />
+
       </Route>
     )
   );

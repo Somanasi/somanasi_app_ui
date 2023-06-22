@@ -4,7 +4,7 @@ const Dashboardfooter = () => {
   return (
     <>
        {/* Footer copyright */}
-       <article className='sm:w-100 bg-gray-900 py-2 px-1 mb-0'>
+       <article className='w-full bg-gray-500 static bottom-0 rounded-md mt-18 py-2'>
           <p className='text-center text-xm text-white'>Copyright&copy;2023Elimuendelezi.co.ke</p>
         </article>
     </>

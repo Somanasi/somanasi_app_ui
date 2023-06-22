@@ -18,7 +18,8 @@ const Sidebar = () => {
     
   return (
     <>
-    <section className='py-2 px-2 bg-gray-900 flex flex-col justify-between w-60'>
+    <section className='hidden sm:block py-2 px-1 bg-gray-900 sm:w-[100%] lg:w-[20%] h-screen fixed left-0 top-0 z-50 right-0
+    md:w-[40%]'>
      <nav>
       {/* Dashboard logo */}
       <section className='w-100 rounded p-2 flex border-b-2 border-white select-none
@@ -44,14 +45,14 @@ const Sidebar = () => {
 
 
       {/* Links sets */}
-      <section className='w-100 rounded p-2 flex 
+      <section className='w-[100%] rounded p-2 flex 
      flex-col justify-between items-cente mt-2 border-t-2 border-white'>
         {NavigationsLinks.map((item, id) => {
           return (
             <article key={id} className='flex flex-col justify-start py-1 transition-all duration-300'>
               <div className='p-0 flex flex-col'>
                 <div
-                  className='flex flex-row items-center p-2 rounded-md cursor-pointer text-white transition-opacity duration-500 bg-yellow-500 w-full'
+                  className='flex flex-row items-center p-2 rounded-md cursor-pointer text-white transition-opacity duration-500 bg-yellow-500 w-full px-4'
                   onClick={() => handleHeadingClick(id)}
                 >
                   <span>{item.headingIcon}</span>
@@ -79,7 +80,7 @@ const Sidebar = () => {
 
      {/* Start di rhe logut */}
      <div className='w-100 bg-lime-50 rounded p-2 flex 
-     flex-row justify-between items-center'>
+     flex-row justify-between items-center absolute bottom-1 right-4 left-4'>
       <button className='rounded bg-red-400 text-center 
       tracking-wider px-2 text-white py-1'><FaAccessibleIcon/></button>
       <small>12:00noon</small>

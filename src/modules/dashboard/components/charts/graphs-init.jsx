@@ -33,9 +33,9 @@ const BarChart = () => {
     ],
   };
   return (
-    <div>
+    <>
       <Bar data={data} />
-    </div>
+    </>
   );
 };
 

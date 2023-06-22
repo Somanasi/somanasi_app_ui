@@ -1,22 +1,21 @@
 import React from 'react';
 import Sidebar from '../components/layouts/Sidebar';
 import Topbar from '../components/layouts/Topbar';
-import MainApp from '../components/layouts/MainApp';
-// import Dashboardfooter from '../components/layouts/Dashboardfooter';
+import Dashboardliteral from '../pages/Dashboard';
 
 const Dashboard = () => {
   return (
-    <main className='w-screen h-screen m-0 p-0 flex'>
+    <main className='h-screen flex flex-row flex-wrap'>
      {/* Side bar */}
      <Sidebar />
 
      {/* Right display */}
-     <section className='flex-grow bg-white'>
+     <section className='sm:w-[100%] lg:w-auto flex-auto'>
       {/* Top Display */}
       <Topbar />
 
       {/* Main display init */}
-      <MainApp />
+      <Dashboardliteral/>
 
      </section>
     </main>
