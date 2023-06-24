@@ -11,7 +11,7 @@ import SingleCourse from '../modules/courses/view/SingleCourse'
 import Terms from '../modules/terms_and_policies/views/Terms'
 import Dashboard from '../modules/dashboard/view/Dashboard'
 import UserProfile from '../modules/dashboard/view/UserProfile'
-
+import ChangePassword from '../modules/dashboard/view/ChangePassword'
 
 export {
     Error,
@@ -27,4 +27,5 @@ export {
     Terms,
     Dashboard,
     UserProfile,
+    ChangePassword,
 }

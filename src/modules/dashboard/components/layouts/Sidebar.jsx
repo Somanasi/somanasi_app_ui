@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { FaAccessibleIcon, FaBars, FaInfo } from 'react-icons/fa'
+import { FaAccessibleIcon, FaBars, FaChevronRight, FaInfo } from 'react-icons/fa'
 // import { FaTimes } from "react-icons/fa";
 // import { NavigationsLinks } from '../../data/cards';
 import { NavigationsLinks } from '../../data/cards'
@@ -25,7 +25,7 @@ const Sidebar = () => {
       {/* Dashboard logo */}
       <section className={'flex items-center justify-between py-2 px-2 bg-slate-50 rounded-md'+ (toggle ? ' pl-2' : ' pl-4 bg-transparent')}>
        <div className={'text-xl font-bold text-black'+ (toggle ? ' block' : ' hidden')}>Logo</div>
-       <FaBars size={20} className={'text-black cursor-pointer'+ (toggle ? ' text-black' : ' text-white text-xl')} onClick={() => {setToggle(!toggle)}}/>
+       <FaBars size={20} className={'text-black cursor-pointer'+ (toggle ? ' text-black' : ' text-white text-md')} onClick={() => {setToggle(!toggle)}}/>
       </section>
 
 
@@ -50,11 +50,14 @@ const Sidebar = () => {
             <article key={id} className='p-2 flex flex-row items-center justify-start'>
               <div className='flex flex-col items-start w-[100%] rounded-md'>
                 <div
-                  className='flex flex-row items-center justify-start cursor-pointer py-1 px-2 flex-grow text-md flex-1'
+                  className={`flex flex-row items-center justify-between cursor-pointer py-2 px-2 flex-grow text-md w-[100%] rounded-md ${expanded == id && "bg-slate-900"}`}
                   onClick={() => handleHeadingClick(id)}
                 >
+                 <div className='flex flex-row items-center justify-start'>
                   <span className='text-white'>{item.headingIcon}</span>
                   <span className='ml-3 text-white'>{item.heading}</span>
+                 </div>
+                 <><span className={`w-6 h-6 flex items-center justify-center text-white transition-all ${expanded == id ? " rotate-[90deg]" : " rotate-[0deg]"}`}><FaChevronRight/></span></>
                 </div>
                 {expanded === id && ( // Render the links only if expanded is true for this item
                   <div className='ml-9 flex flex-col justify-center items-start transition-all duration-500 w-[80%] rounded-md'>  

@@ -1,5 +1,5 @@
 // HIGHLIGHTS >>  Cards data >> User data section
-import { FaUserFriends, FaStar, FaCompass,  FaRegChartBar, FaRegFileVideo, FaUsers, FaRoute, FaTasks, FaClipboardCheck,FaChartLine, FaHive , FaCalendarAlt, FaPalette, FaLock, FaUserCog, FaListAlt, FaHistory, FaCloudUploadAlt, FaSatellite, FaSyncAlt, FaHome} from "react-icons/fa";
+import { FaUserFriends, FaStar, FaCompass,  FaRegChartBar, FaRegFileVideo, FaUsers, FaRoute, FaTasks, FaClipboardCheck,FaChartLine, FaHive , FaCalendarAlt, FaPalette, FaLock, FaUserCog, FaListAlt, FaHistory, FaCloudUploadAlt, FaSatellite, FaSyncAlt,FaWindows} from "react-icons/fa";
 
 export const DashboardCardData = [
     {
@@ -45,7 +45,7 @@ export const NavigationsLinks = [
         heading: "Dashboard",
         headingIcon: <FaPalette />,
         data: [
-          { icon: <FaHome/>, text: "Home Page", path: "/dashboard" },
+          { icon: <FaWindows/>, text: "Home Page", path: "/dashboard" },
           { icon: <FaCalendarAlt />, text: "Calenda", path: "/calenda" },
           { icon: <FaSatellite />, text: "Upgrade Pro", path: "/upgrade" },
           { icon: <FaCloudUploadAlt />, text: "Backups", path: "/backup" },

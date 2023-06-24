@@ -1,5 +1,6 @@
 import React from 'react'
-import { FaFilter, FaLifeRing, FaSearch } from 'react-icons/fa'
+import { FaFilter, FaLifeRing, } from 'react-icons/fa'
+// import { Dashboardfooter } from "../components/layouts/Dashboardfooter"
 
 
 const Profile = () => {
@@ -82,11 +83,6 @@ const Profile = () => {
                   <span className='p-2 text-gray-600'>Status: Active</span>
                 </div>
               </div>
-            </article>
-
-            {/* Bottom section */}
-            <article className='grid grid-cols-2 mt-6 gap-14'>
-
             </article>
           </section>
         </main>

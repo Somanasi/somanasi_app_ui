@@ -38,9 +38,9 @@ const Dashboardliteral = () => {
               DashboardCardData.map((data, id) => {
                 return   <article className='w-[240px] p-4 flex flex-row justify-between items-start shadow rounded-md mt-4 border-t-4 border-orange-500' key={id}>
                 <div className='flex flex-col justify-between items-start'>
-                  <small className='text-gray-600 font-bold text-xl'>{data.cardTitle}</small>
-                  <small className='text-gray-600 font-bold text-xl'>{data.cardCapacity}</small>
-                  <small className='text-gray-600 font-bold text-xl'>{data.time}</small>
+                  <small className='text-gray-600 font-bold text-md'>{data.cardTitle}</small>
+                  <small className='text-gray-600 font-bold text-md'>{data.cardCapacity}</small>
+                  <small className='text-gray-600 font-bold text-md'>{data.time}</small>
                 </div>
                 <div className='text-4xl'>{data.cardIcon}</div>
               </article>
@@ -71,19 +71,19 @@ const Dashboardliteral = () => {
               </div>
               <div className='w-[100%] pt-4'>
                 <ul className='w-inherit flex flex-row flex-wrap gap-4 items-center justify-start w-[90%] mx-auto'>
-                  <li className='flex flex-row items-center justify-center bg-slate-200 hover:bg-blue-500 hover:text-white transition-all duration-500 cursor-pointer rounded-full text-xl'>
+                  <li className='flex flex-row items-center justify-center bg-slate-200 hover:bg-blue-500 hover:text-white transition-all duration-500 cursor-pointer rounded-full text-lg'>
                     <FaClock/><small className='pl-2'>History</small>
                   </li>
-                  <li className='flex flex-row items-center justify-center bg-slate-200 hover:bg-blue-500 hover:text-white transition-all duration-500 cursor-pointer rounded-full text-xl'>
+                  <li className='flex flex-row items-center justify-center bg-slate-200 hover:bg-blue-500 hover:text-white transition-all duration-500 cursor-pointer rounded-full text-lg'>
                     <FaEnvelope/><small className='pl-2'>All Notofications</small>
                   </li>
-                  <li className='flex flex-row items-center justify-center bg-slate-200 hover:bg-blue-500 hover:text-white transition-all duration-500 cursor-pointer rounded-full text-xl'>
+                  <li className='flex flex-row items-center justify-center bg-slate-200 hover:bg-blue-500 hover:text-white transition-all duration-500 cursor-pointer rounded-full text-lg'>
                     <FaHome/><small className='pl-2'>Dashboard</small>
                   </li>
-                  <li className='flex flex-row items-center justify-center bg-slate-200 hover:bg-blue-500 hover:text-white transition-all duration-500 cursor-pointer rounded-full text-xl'>
+                  <li className='flex flex-row items-center justify-center bg-slate-200 hover:bg-blue-500 hover:text-white transition-all duration-500 cursor-pointer rounded-full text-lg'>
                     <FaReact/><small className='pl-2'>Chemistry</small>
                   </li>
-                  <li className='flex flex-row items-center justify-center bg-slate-200 hover:bg-blue-500 hover:text-white transition-all duration-500 cursor-pointer rounded-full text-xl'>
+                  <li className='flex flex-row items-center justify-center bg-slate-200 hover:bg-blue-500 hover:text-white transition-all duration-500 cursor-pointer rounded-full text-lg'>
                     <FaVectorSquare/><small className='pl-2'>Graphs</small>
                   </li>
                 </ul>
@@ -96,7 +96,6 @@ const Dashboardliteral = () => {
           <section className=''>
             <Dashboardfooter />
           </section>
-
         </main>
       </article>
     </>

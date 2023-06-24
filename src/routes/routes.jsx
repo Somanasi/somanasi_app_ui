@@ -5,7 +5,7 @@ import {
   } from "react-router-dom";
   import App from "../App";
     
-  import { Error, Home, Courses, Blog, AboutUs, ContactUs, SingleBlog, SingleCourse, Login, Register, Terms, Dashboard, UserProfile, } from "../views";
+  import { Error, Home, Courses, Blog, AboutUs, ContactUs, SingleBlog, SingleCourse, Login, Register, Terms, Dashboard, UserProfile, ChangePassword,} from "../views";
   import { loginAction } from "../modules/auth/login/services/loginAction";
   import { registerAction } from "../modules/auth/signup/services/registerAction";
   const routes = createBrowserRouter(
@@ -32,6 +32,7 @@ import {
         {/* Portal */}
         <Route element={<Dashboard />} path="dashboard" />
         <Route element={<UserProfile />} path="profile" />
+        <Route element={<ChangePassword />} path="changepassword" />
       </>
     )
   );
