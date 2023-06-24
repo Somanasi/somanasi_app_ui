@@ -10,7 +10,7 @@ const Dashboardliteral = () => {
     <>
       <article className='m-0 sm:px-1 md:px-2 lg:px-16'>
         {/* top section */}
-        <div className='py-2 flex flex-row justify-between items-center'>
+        <div className='py-2 flex flex-row justify-between items-center mt-4'>
           {/* Navigator */}
           <div className='font-bold text-xl'>
             Dashboard
@@ -29,6 +29,7 @@ const Dashboardliteral = () => {
             <div className='p-2 hover:text-white hover:bg-blue-700  transition-all duration-300 rounded-md text-gray-500 cursor-pointer bg-gray-300'><FaFilter/></div>
           </div>
         </div>
+        <hr/>
 
       
         {/* Display section */}
@@ -66,7 +67,7 @@ const Dashboardliteral = () => {
             {/* Table section */}
             <div className='m-0 py-2 lg:px-4 md:px-2 shadow-inner'>
               <div className='flex flex-row justify-between items-center border-b border-gray-300 py-2'>
-                <h1 className='text-xl text-gray-500 font-bold'>Visualize ~ Studies</h1>
+                <h1 className='text-xl text-gray-500 font-bold'>Most visited</h1>
                 <FaEllipsisV/>
               </div>
               <div className='w-[100%] pt-4'>

@@ -17,6 +17,7 @@ const Topbar = () => {
           <div className='p-2 hover:text-white hover:bg-blue-700  transition-all duration-300 mr-4 rounded-md text-gray-500 cursor-pointer bg-gray-300'><FaCog/></div>
         </div>
        </header>
+       <hr/>
     </>
   )
 }

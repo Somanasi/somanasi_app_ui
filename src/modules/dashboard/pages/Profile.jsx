@@ -1,30 +1,34 @@
-import React from 'react'
-import { FaFilter, FaLifeRing, } from 'react-icons/fa'
+import React, { useState } from 'react'
+import { FaLifeRing, } from 'react-icons/fa'
 
 
 const Profile = () => {
+  const [updateprofile, setUpdateProfile] = useState(false)
+
   return (
     <>
        <article className='m-0 sm:px-1 md:px-2 lg:px-16'>
         {/* top section */}
-        <div className='py-2 flex flex-row justify-between items-center'>
+        <div className='py-2 flex flex-row justify-between items-center mt-4'>
           {/* Navigator */}
           <div className='font-bold text-xl'>
-            My Profile
+         {!updateprofile ? "View profile" : "Update profile"}
           </div>
 
           {/* Filter page */}
           <div className='flex flex-row items-center'> 
-            <div className='p-2 hover:text-white hover:bg-blue-700  transition-all duration-300 mr-4 rounded-md text-gray-500 cursor-pointer bg-gray-300'><FaLifeRing/></div>
-            <div className='p-2 hover:text-white hover:bg-blue-700  transition-all duration-300 rounded-md text-gray-500 cursor-pointer bg-gray-300'><FaFilter/></div>
+            <button className={`px-2 py-1 mr-2 rounded-md text-md font-bold cursor-pointer text-white ${!updateprofile ? "bg-orange-400" : "bg-blue-400"}`} onClick={() => {setUpdateProfile(!updateprofile)}}>
+            {!updateprofile ? "Update profile" : "View profile"}</button>
+            <div className='p-2 hover:text-white hover:bg-blue-700  transition-all duration-300 rounded-md text-gray-500 cursor-pointer bg-gray-300'><FaLifeRing/></div>
           </div>
         </div>
+        <hr/>
 
         
 
         {/* Display section */}
         <main className='w-100 p-0 m-0 flex'>
-          <section className='flex-1 mt-4'>
+         {!updateprofile ? <section className='flex-1 mt-4'>
             {/* Top section */}
             <article className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-4 gap-2'>
               {/* Avatar */}
@@ -84,6 +88,9 @@ const Profile = () => {
               </div>
             </article>
           </section>
+          :
+          <p>Profile</p>
+          }
         </main>
       </article>
     </>
