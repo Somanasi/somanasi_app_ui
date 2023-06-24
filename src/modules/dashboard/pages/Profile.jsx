@@ -1,6 +1,5 @@
 import React from 'react'
 import { FaFilter, FaLifeRing, } from 'react-icons/fa'
-// import { Dashboardfooter } from "../components/layouts/Dashboardfooter"
 
 
 const Profile = () => {

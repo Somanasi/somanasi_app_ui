@@ -1,7 +1,5 @@
 import React, { useState } from 'react'
 import { FaAccessibleIcon, FaBars, FaChevronRight, FaInfo } from 'react-icons/fa'
-// import { FaTimes } from "react-icons/fa";
-// import { NavigationsLinks } from '../../data/cards';
 import { NavigationsLinks } from '../../data/cards'
 import { Link } from "react-router-dom"
 
@@ -47,25 +45,25 @@ const Sidebar = () => {
       <section className='flex flex-col justify-center items-left mt-2 transition-all duration-500'>
         {NavigationsLinks.map((item, id) => {
           return (
-            <article key={id} className='p-2 flex flex-row items-center justify-start'>
-              <div className='flex flex-col items-start w-[100%] rounded-md'>
+            <article key={id} className='p-2 flex flex-row items-center justify-start transition-all duration-500'>
+              <div className='flex flex-col items-start w-[100%] rounded-md group'>
                 <div
                   className={`flex flex-row items-center justify-between cursor-pointer py-2 px-2 flex-grow text-md w-[100%] rounded-md ${expanded == id && "bg-slate-900"}`}
                   onClick={() => handleHeadingClick(id)}
                 >
                  <div className='flex flex-row items-center justify-start'>
-                  <span className='text-white'>{item.headingIcon}</span>
+                  <span className='text-white group-hover:text-orange-500'>{item.headingIcon}</span>
                   <span className='ml-3 text-white'>{item.heading}</span>
                  </div>
-                 <><span className={`w-6 h-6 flex items-center justify-center text-white transition-all ${expanded == id ? " rotate-[90deg]" : " rotate-[0deg]"}`}><FaChevronRight/></span></>
+                 <><span className={`w-6 h-6 flex items-center justify-center text-white transition-all group-hover:text-green-500 ${expanded == id ? " rotate-[90deg]" : " rotate-[0deg]"}`}><FaChevronRight/></span></>
                 </div>
-                {expanded === id && ( // Render the links only if expanded is true for this item
-                  <div className='ml-9 flex flex-col justify-center items-start transition-all duration-500 w-[80%] rounded-md'>  
+                {expanded === id && (
+                  <div className='ml-8 flex flex-col justify-center items-start transition-all duration-500 w-[84%] rounded-md group'>  
                     {item.data.map((link, key) => {
                       return (
-                        <Link to={link.path} key={key} className='flex flex-row justify-start items-center mt-2 text-white text-sm'>
+                        <Link to={link.path} key={key} className='flex flex-row justify-start items-center mt-1 text-white text-sm hover:ml-2 transition-all duration-500 bg-gray-700 rounded-md p-2 w-[100%]'>
                           {link.icon}
-                          <span className='ml-2'>{link.text}</span>
+                          <span className='ml-2 group-hover:ml-2 transition-all duration-500'>{link.text}</span>
                         </Link>
                       );
                     })}

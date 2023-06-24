@@ -12,8 +12,10 @@ const Dashboard = () => {
 
      {/* Right display */}
      <section className='flex-grow bg-slate-100 relative'>
+      
       {/* Top Display */}
       <Topbar />
+
       {/* Main display init */}
       <Dashboardliteral/>
 
