@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
-import { FaAccessibleIcon, FaBars, FaInfo, FaSignOutAlt } from 'react-icons/fa'
+import { FaAccessibleIcon, FaBars, FaInfo } from 'react-icons/fa'
 // import { FaTimes } from "react-icons/fa";
 // import { NavigationsLinks } from '../../data/cards';
 import { NavigationsLinks } from '../../data/cards'
+import { Link } from "react-router-dom"
 
 const Sidebar = () => {
 
@@ -19,7 +20,7 @@ const Sidebar = () => {
     
   return (
     <>
-    <section className={`flex flex-col justify-between m-0 py-4 px-2 bg-blue-950 transition-all ${toggle ? 'lg:w-[20%] md:w-[30%] duration-300' : 'lg:w-[4%] md:w-[6%] duration-500'}`}>
+    <section className={`flex flex-col justify-between m-0 py-4 px-2 bg-blue-950 transition-all ${toggle ? 'lg:w-[18%] md:w-[30%] duration-300' : 'lg:w-[3%] md:w-[4%] duration-500'}`}>
      <nav>
       {/* Dashboard logo */}
       <section className={'flex items-center justify-between py-2 px-2 bg-slate-50 rounded-md'+ (toggle ? ' pl-2' : ' pl-4 bg-transparent')}>
@@ -35,8 +36,8 @@ const Sidebar = () => {
 
         </div>
         <div className='mt-2 flex flex-col items-center justify-center'>
-          <small className='text-white text-xl'>Michael&nbsp;Douglas</small>
-          <small className='text-white text-xl'>gtech29.gmail@gmail.com</small>
+          <small className='text-white text-md'>Michael&nbsp;Douglas</small>
+          <small className='text-white text-md'>gtech29.gmail@gmail.com</small>
         </div>
       </div>
       </section>
@@ -47,22 +48,22 @@ const Sidebar = () => {
         {NavigationsLinks.map((item, id) => {
           return (
             <article key={id} className='p-2 flex flex-row items-center justify-start'>
-              <div className='flex flex-col items-start'>
+              <div className='flex flex-col items-start w-[100%] rounded-md'>
                 <div
-                  className='flex flex-row items-center justify-start cursor-pointer py-1 px-2 flex-grow text-2xl'
+                  className='flex flex-row items-center justify-start cursor-pointer py-1 px-2 flex-grow text-md flex-1'
                   onClick={() => handleHeadingClick(id)}
                 >
                   <span className='text-white'>{item.headingIcon}</span>
-                  <span className='ml-5 text-white'>{item.heading}</span>
+                  <span className='ml-3 text-white'>{item.heading}</span>
                 </div>
                 {expanded === id && ( // Render the links only if expanded is true for this item
-                  <div className='ml-14 flex flex-col justify-center items-start transition-all duration-500'>
+                  <div className='ml-9 flex flex-col justify-center items-start transition-all duration-500 w-[80%] rounded-md'>  
                     {item.data.map((link, key) => {
                       return (
-                        <button key={key} className='flex flex-row justify-start items-center mt-2 text-white text-xl'>
+                        <Link to={link.path} key={key} className='flex flex-row justify-start items-center mt-2 text-white text-sm'>
                           {link.icon}
                           <span className='ml-2'>{link.text}</span>
-                        </button>
+                        </Link>
                       );
                     })}
                   </div>
@@ -78,7 +79,7 @@ const Sidebar = () => {
      {/* Start di rhe logut */}
      <div className={'flex flex-row justify-around items-center bg-slate-50 rounded-md py-2'+ (toggle ? ' flex-row' : ' flex-col')}>
       <button className='gid items-center p-2 bg-slate-400 rounded-sm'><FaAccessibleIcon/></button>
-      <small className={'font-bold text-blue-600'+ (toggle ? ' block' : ' hidden')}>Logedin ~ 12:00noon</small>
+      <small className={'font-bold text-blue-600'+ (toggle ? ' block' : ' hidden gap-y-2')}>Logedin ~ 12:00noon</small>
       <FaInfo className={'cursor-pointer'+ (toggle && "mt-2")}/>
      </div>
     </section>

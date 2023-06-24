@@ -10,6 +10,7 @@ import SingleBlog from '../modules/blog/views/SingleBlog'
 import SingleCourse from '../modules/courses/view/SingleCourse'
 import Terms from '../modules/terms_and_policies/views/Terms'
 import Dashboard from '../modules/dashboard/view/Dashboard'
+import UserProfile from '../modules/dashboard/view/UserProfile'
 
 
 export {
@@ -25,4 +26,5 @@ export {
     SingleCourse,
     Terms,
     Dashboard,
+    UserProfile,
 }

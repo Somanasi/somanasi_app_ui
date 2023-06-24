@@ -1,5 +1,5 @@
 // HIGHLIGHTS >>  Cards data >> User data section
-import { FaUserFriends, FaStar, FaCompass,  FaRegChartBar, FaRegFileVideo, FaUsers, FaRoute, FaTasks, FaClipboardCheck,FaChartLine, FaHive , FaCalendarAlt, FaPalette, FaLock, FaUserCog, FaListAlt, FaHistory, FaCloudUploadAlt, FaSatellite, FaSyncAlt} from "react-icons/fa";
+import { FaUserFriends, FaStar, FaCompass,  FaRegChartBar, FaRegFileVideo, FaUsers, FaRoute, FaTasks, FaClipboardCheck,FaChartLine, FaHive , FaCalendarAlt, FaPalette, FaLock, FaUserCog, FaListAlt, FaHistory, FaCloudUploadAlt, FaSatellite, FaSyncAlt, FaHome} from "react-icons/fa";
 
 export const DashboardCardData = [
     {
@@ -45,9 +45,10 @@ export const NavigationsLinks = [
         heading: "Dashboard",
         headingIcon: <FaPalette />,
         data: [
-          { icon: <FaCalendarAlt />, text: "Calenda" },
-          { icon: <FaSatellite />, text: "Upgrade Pro" },
-          { icon: <FaCloudUploadAlt />, text: "Backups" },
+          { icon: <FaHome/>, text: "Home Page", path: "/dashboard" },
+          { icon: <FaCalendarAlt />, text: "Calenda", path: "/calenda" },
+          { icon: <FaSatellite />, text: "Upgrade Pro", path: "/upgrade" },
+          { icon: <FaCloudUploadAlt />, text: "Backups", path: "/backup" },
         ]
     },
     {
@@ -55,10 +56,10 @@ export const NavigationsLinks = [
         heading: "User Settings",
         headingIcon: <FaUserCog />,
         data: [
-          { icon: <FaListAlt />, text: "View Profile" },
-          { icon: <FaLock />, text: "Change Password" },
-          { icon: <FaHistory />, text: "Manage History" },
-          { icon: <FaSyncAlt />, text: "Synch Data" },
+          { icon: <FaListAlt />, text: "View Profile", path: "/profile" },
+          { icon: <FaLock />, text: "Change Password", path: "/changepassword" },
+          { icon: <FaHistory />, text: "Manage History", path: "/history" },
+          { icon: <FaSyncAlt />, text: "Synch Data", path: "/syncdata" },
         ]
     },
     {
@@ -66,9 +67,9 @@ export const NavigationsLinks = [
         heading: "Courses",
         headingIcon: <FaTasks />,
         data: [
-          { icon: <FaClipboardCheck />, text: "Complete" },
-          { icon: <FaChartLine />, text: "In progress" },
-          { icon: <FaStar />, text: "Favorite" },
+          { icon: <FaClipboardCheck />, text: "Complete", path: "/completecourses" },
+          { icon: <FaChartLine />, text: "In progress", path: "/coursesinprogress" },
+          { icon: <FaStar />, text: "Favorite", path: "/favoritecourses" },
         ],
     },
     {
@@ -76,10 +77,10 @@ export const NavigationsLinks = [
         heading: "Activities",
         headingIcon: <FaRoute />,
         data: [
-          { icon: <FaHive />, text: "Packages" },
-          { icon: <FaUsers />, text: "Community" },
-          { icon: <FaRegFileVideo />, text: "Conferences" },
-          { icon: <FaRegChartBar />, text: "Analytics" },
+          { icon: <FaHive />, text: "Packages", path: "/packages" },
+          { icon: <FaUsers />, text: "Community", path: "/comunity" },
+          { icon: <FaRegFileVideo />, text: "Conferences", path: "/conferences" },
+          { icon: <FaRegChartBar />, text: "Analytics", path: "/analytics" },
         ],
     },
 ]
