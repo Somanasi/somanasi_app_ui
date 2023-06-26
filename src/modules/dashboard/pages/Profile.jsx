@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { FaLifeRing, } from 'react-icons/fa'
+import { FaCamera, FaLifeRing, } from 'react-icons/fa'
 
 
 const Profile = () => {
@@ -88,8 +88,55 @@ const Profile = () => {
               </div>
             </article>
           </section>
+
           :
-          <p>Profile</p>
+          // Elese condition
+          <div className='w-[100%] grid sm:gridcols-1 md:grid-cols-2 gap-2 mt-4'>
+            <div className='bg-blue-50 mt-2 py-4 px-2 flex flex-col items-center justify-center'>
+              <h1 className='text-gray-500 font-bold'>Chanege Profile Photo</h1>
+              <div className='mt-2 flex flex-col items-center justify-center'>
+                <div className='w-[250px] h-[250px] bg-slate-300 rounded-full relative'>
+                  <div className='w-full h-full rounded-full overflow-hidden'>
+
+                  </div>
+                  <div className='absolute bottom-[2rem] right-[2rem] w-[30px] h-[30px]'>
+                   <input type="file" id="file" className='hidden'/>
+                   <label for="file"><FaCamera className='w-full h-full text-gray-600'/></label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Right section >> Fields updates */}
+            <div className='w-full mt-2'>
+              <h1 className='text-gray-500 font-bold'>Personal Details</h1>
+              <form className='flex-1 mt-2'>
+                <div class="mb-6">
+                    <label for="repeat-password" class="block mb-2 text-sm font-bold text-gray-900 dark:text-white">Name</label>
+                    <input type="text" id="repeat-password" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5 outline-none" required value='Michael Douglas'/>
+                </div>
+                <div class="mb-6">
+                    <label for="repeat-password" class="block mb-2 text-sm font-bold text-gray-900 dark:text-white">National ID</label>
+                    <input type="text" id="repeat-password" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5 outline-none" value='98364523' required />
+                </div>
+                <div class="mb-6">
+                    <label for="repeat-password" class="block mb-2 text-sm font-bold text-gray-900 dark:text-white">Age</label>
+                    <input type="text" id="repeat-password" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5 outline-none" value='27' required />
+                </div>
+                <div class="mb-6">
+                    <label for="repeat-password" class="block mb-2 text-sm font-bold text-gray-900 dark:text-white">Gender</label>
+                    <input type="text" id="repeat-password" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5 outline-none" value='Male' required />
+                </div>
+                <div class="mb-6">
+                    <label for="repeat-password" class="block mb-2 text-sm font-bold text-gray-900 dark:text-white">Nationality</label>
+                    <input type="text" id="repeat-password" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5 outline-none" value='Kenyan' required />
+                </div>
+          
+                <button type="submit" class="text-white bg-green-600 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Save Update</button>
+              </form>
+            </div>
+
+          </div>
           }
         </main>
       </article>

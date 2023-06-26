@@ -1,7 +1,6 @@
 import React from 'react'
-import { Form, NavLink, useActionData } from 'react-router-dom'
-import InputWithLabel from '../../../shared/components/InputWithLabel'
-import Button from '../../../shared/components/Button'
+import { Form, NavLink, useActionData } from 'react-router-dom';
+import {InputWithLabel, Button} from '../../../modules/shared';
 
 //import axios from 'axios';
 

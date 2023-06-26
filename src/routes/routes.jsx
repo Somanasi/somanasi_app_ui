@@ -5,9 +5,15 @@ import {
   } from "react-router-dom";
   import App from "../App";
     
+<<<<<<< HEAD
   import { Error, Home, Courses, Blog, AboutUs, ContactUs, SingleBlog, SingleCourse, Login, Register, Terms, Dashboard, UserProfile, ChangePassword,} from "../views";
   import { loginAction } from "../modules/auth/login/services/loginAction";
   import { registerAction } from "../modules/auth/signup/services/registerAction";
+=======
+  import { Error, Home, Courses, Blog, AboutUs, ContactUs, SingleBlog, SingleCourse, Login, Register, Terms, Dashboard, } from "../views";
+  import { loginAction } from "../auth/login/services/loginAction";
+  import { registerAction } from "../auth/signup/services/registerAction";
+>>>>>>> e6d9c5016164cec0543dc5948b8f373c2dff903e
   const routes = createBrowserRouter(
     createRoutesFromElements(
       <>

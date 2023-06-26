@@ -1,5 +1,5 @@
-import { Event, constants } from '../../../shared/services';
-import call from '../../../../services/htpp';
+import { Event, constants } from '../../../modules/shared/services';
+import call from "../../../services/htpp"
 import { redirect } from 'react-router-dom';
 
 export const loginAction = async ({request}) => {

@@ -12,7 +12,7 @@ import {
 import Button from "../shared/components/Button";
 import ListItems from "./ListItems";
 import { useAppState, useDispatchAppState } from "../../store/ApplicationContext";
-import Logout from "../auth/logout/components/Logout";
+import Logout from "../../auth/logout/components/Logout";
 import isSpecifiedPath from "../shared/utils/RouterUtil";
 
 
