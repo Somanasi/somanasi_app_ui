@@ -1,6 +1,6 @@
 import React from 'react'
 import { Form, NavLink, useActionData } from 'react-router-dom'
-import {InputWithLabel, Button} from '../../../shared'
+import {InputWithLabel, Button} from '../../../modules/shared'
 
 const Register = () => {
   const errors = useActionData();
