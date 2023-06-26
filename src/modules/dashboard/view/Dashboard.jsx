@@ -11,7 +11,7 @@ const Dashboard = () => {
      <Sidebar />
 
      {/* Right display */}
-     <section className='flex-grow bg-slate-100 relative'>
+     <section className='flex-grow bg-slate-100 relative transition-all duration-500'>
       
       {/* Top Display */}
       <Topbar />

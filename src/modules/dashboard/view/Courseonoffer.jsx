@@ -1,9 +1,9 @@
 import React from 'react'
-import ChangePasswordPage from '../pages/Changepassword'
 import Sidebar from '../components/layouts/Sidebar'
 import Topbar from '../components/layouts/Topbar'
+import Courseavailable from '../pages/Courseavailable'
 
-const ChangePassword = () => {
+const Courseonoffer = () => {
   return (
     <main className='w-[100%] h-screen flex m-0 p-0'>
         {/* Side bar */}
@@ -15,11 +15,11 @@ const ChangePassword = () => {
         <Topbar />
 
         {/* Main display init */}
-         <ChangePasswordPage/>
+        <Courseavailable/>
 
         </section>
     </main>
   )
 }
 
-export default ChangePassword
+export default Courseonoffer

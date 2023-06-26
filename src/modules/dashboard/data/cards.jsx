@@ -1,5 +1,5 @@
 // HIGHLIGHTS >>  Cards data >> User data section
-import { FaUserFriends, FaStar, FaCompass,  FaRegChartBar, FaRegFileVideo, FaUsers, FaRoute, FaTasks, FaClipboardCheck,FaChartLine, FaHive , FaCalendarAlt, FaPalette, FaLock, FaUserCog, FaListAlt, FaHistory, FaCloudUploadAlt, FaSatellite, FaSyncAlt,FaWindows} from "react-icons/fa";
+import { FaUserFriends, FaStar, FaCompass,  FaRegChartBar, FaRegFileVideo, FaUsers, FaRoute, FaTasks, FaClipboardCheck,FaChartLine, FaHive , FaCalendarAlt, FaPalette, FaLock, FaUserCog, FaListAlt, FaHistory, FaCloudUploadAlt, FaSatellite, FaSyncAlt,FaWindows, FaGraduationCap} from "react-icons/fa";
 
 export const DashboardCardData = [
     {
@@ -67,6 +67,7 @@ export const NavigationsLinks = [
         heading: "Courses",
         headingIcon: <FaTasks />,
         data: [
+          { icon: <FaGraduationCap />, text: "Available courses", path: "/coursesonoffer" },
           { icon: <FaClipboardCheck />, text: "Complete", path: "/completecourses" },
           { icon: <FaChartLine />, text: "In progress", path: "/coursesinprogress" },
           { icon: <FaStar />, text: "Favorite", path: "/favoritecourses" },

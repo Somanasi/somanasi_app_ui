@@ -12,6 +12,7 @@ import Terms from '../modules/terms_and_policies/views/Terms'
 import Dashboard from '../modules/dashboard/view/Dashboard'
 import UserProfile from '../modules/dashboard/view/UserProfile'
 import ChangePassword from '../modules/dashboard/view/ChangePassword'
+import Courseonoffer from '../modules/dashboard/view/Courseonoffer'
 
 export {
     Error,
@@ -28,4 +29,5 @@ export {
     Dashboard,
     UserProfile,
     ChangePassword,
+    Courseonoffer,
 }

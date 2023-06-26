@@ -18,7 +18,7 @@ const Sidebar = () => {
     
   return (
     <>
-    <section className={`flex flex-col justify-between m-0 py-4 px-2 bg-blue-950 transition-all ${toggle ? 'lg:w-[18%] md:w-[30%] duration-300' : 'lg:w-[3%] md:w-[4%] duration-500'}`}>
+    <section className={`flex flex-col justify-between m-0 py-4 px-2 bg-blue-950 transition-all ${toggle ? 'lg:w-[18%] md:w-[30%] duration-500' : 'lg:w-[3%] md:w-[4%] duration-500'}`}>
      <nav>
       {/* Dashboard logo */}
       <section className={'flex items-center justify-between py-2 px-2 bg-slate-50 rounded-md'+ (toggle ? ' pl-2' : ' pl-4 bg-transparent')}>
@@ -28,7 +28,7 @@ const Sidebar = () => {
 
 
       {/* Profile settings */}
-      <section className={'py-2 px-2 rounded-md mt-2 transition-all duration-500'+ (toggle ? ' block' : ' hidden')}>
+      <section className={'py-2 px-2 rounded-md mt-2 transition-all '+ (toggle ? ' duration-500 block' : ' duration-500 hidden')}>
       <div className='flex flex-col items-center justify-center shadow py-4'>
         <div className='w-[80px] h-[80px] rounded-full bg-slate-400'>
 
