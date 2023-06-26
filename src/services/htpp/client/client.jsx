@@ -1,9 +1,10 @@
 import axios from "axios";
-import AuthService from "../../../modules/auth";
-import { handleLogout as Logout } from "../../../modules/auth/logout/components/Logout";
+import AuthService from "../../../auth";
+import { handleLogout as Logout } from "../../../auth/logout/components/Logout";
+import { apiBaseURL } from "../../../environments";
 
 const client = axios.create({
-  baseURL: import.meta.env.REACT_APP_BASE_API_URL,
+  baseURL: apiBaseURL, 
 });
 
 /**
