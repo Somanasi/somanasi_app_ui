@@ -8,6 +8,7 @@ import {
   import { Error, Home, Courses, Blog, AboutUs, ContactUs, SingleBlog, SingleCourse, Login, Register, Terms, Dashboard, AdminDashoboard, } from "../views";
   import { loginAction } from "../auth/login/services/loginAction";
   import { registerAction } from "../auth/signup/services/registerAction";
+import { testAction } from "../modules/dashboard/admin/views/AdminDashoboard";
   const routes = createBrowserRouter(
     createRoutesFromElements(
       <Route element={<App />} errorElement={<Error />} path="/">
@@ -20,7 +21,12 @@ import {
         <Route element={<SingleBlog />} path="blog/:id"/>
         <Route element={<AboutUs />} path="about_us" />
         <Route element={<ContactUs />} path="contact_us" />
-        <Route element={<Login />} path="login" action={loginAction}/>
+
+        <Route 
+          element={<Login />} 
+          path="login" 
+          action={loginAction} 
+        />
 
         <Route element={<Register />} 
         path="register"
@@ -29,7 +35,7 @@ import {
 
         <Route element={<Terms />} path="terms" />
         <Route element={<Dashboard />} path="dashboard" />
-        <Route element={<AdminDashoboard />} path="admin" />
+        <Route element={<AdminDashoboard />} path="admin" action={testAction} />
       </Route>
     )
   );

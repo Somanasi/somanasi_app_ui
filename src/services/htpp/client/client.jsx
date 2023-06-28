@@ -16,6 +16,7 @@ const authInterceptor = (config) => {
   if (AuthService.checkAuth()) {
     config.headers.Authorization = `Bearer ${AuthService.token()}`;
     config.headers.common.accept = `application/json`;
+    config.headers.common["Content-Type"]= `application/json`;
   }
   return config;
 };
