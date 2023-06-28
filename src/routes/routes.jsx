@@ -8,7 +8,6 @@ import {
   import { Error, Home, Courses, Blog, AboutUs, ContactUs, SingleBlog, SingleCourse, Login, Register, Terms, Dashboard, AdminDashoboard, } from "../views";
   import { loginAction } from "../auth/login/services/loginAction";
   import { registerAction } from "../auth/signup/services/registerAction";
-import { testAction } from "../modules/dashboard/admin/views/AdminDashoboard";
   const routes = createBrowserRouter(
     createRoutesFromElements(
       <Route element={<App />} errorElement={<Error />} path="/">
@@ -35,7 +34,7 @@ import { testAction } from "../modules/dashboard/admin/views/AdminDashoboard";
 
         <Route element={<Terms />} path="terms" />
         <Route element={<Dashboard />} path="dashboard" />
-        <Route element={<AdminDashoboard />} path="admin" action={testAction} />
+        <Route element={<AdminDashoboard />} path="admin" />
       </Route>
     )
   );
