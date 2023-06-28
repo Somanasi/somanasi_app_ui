@@ -13,6 +13,10 @@ main.login {
                 div.form-group {
                     @include u.selectInputWithButtonSubmit;
 
+                    span.error {
+                        @include u.errorSpan;
+                    }
+
                     button[type="submit"] {
                         background-color: #faab00;
                         color: #f5f8de;
@@ -25,7 +29,7 @@ main.login {
             div.forgot_password {
                 position: absolute;
                 right: 0;
-                top: 57%;
+                top: 64%;
 
                 a {
                     text-decoration: underline;

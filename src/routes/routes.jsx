@@ -20,7 +20,12 @@ import {
         <Route element={<SingleBlog />} path="blog/:id"/>
         <Route element={<AboutUs />} path="about_us" />
         <Route element={<ContactUs />} path="contact_us" />
-        <Route element={<Login />} path="login" action={loginAction}/>
+
+        <Route 
+          element={<Login />} 
+          path="login" 
+          action={loginAction} 
+        />
 
         <Route element={<Register />} 
         path="register"
