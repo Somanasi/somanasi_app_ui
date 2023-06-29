@@ -1,7 +1,8 @@
+import AuthService from '../..';
 import { Event, constants } from '../../../modules/shared/services';
 import call from "../../../services/htpp"
 import { redirect } from 'react-router-dom';
-
+    
 const loginAction = async ({request}) => {
     
     const payload = Object.fromEntries(await request.formData());
@@ -15,8 +16,6 @@ const loginAction = async ({request}) => {
         if(payload.password.length < 8){
         return {error: "Password must be over 8 characters long!"}
         }
-        
-
     /**
      * @todo set loading state
      */
@@ -25,6 +24,8 @@ const loginAction = async ({request}) => {
          * @todo unset loading state
          */
         Event('onSuccess', response.message);
+        AuthService.setToken(response.data.data.token);
+        AuthService.setUser(response.data.data.user);
         return redirect('/dashboard');
     }).catch((error) => {
         /**
