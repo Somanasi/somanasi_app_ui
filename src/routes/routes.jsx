@@ -5,7 +5,7 @@ import {
   } from "react-router-dom";
   import App from "../App";
     
-  import { Error, Home, Courses, Blog, AboutUs, ContactUs, SingleBlog, SingleCourse, Login, Register, Terms, Dashboard, UserProfile, ChangePassword, Courseonoffer,} from "../views";
+  import { Error, Home, Courses, Blog, AboutUs, ContactUs, SingleBlog, SingleCourse, Login, Register, Terms, Dashboard, UserProfile, ChangePassword, Courseonoffer, Blogpage,} from "../views";
 
   import { loginAction } from "../auth/login/services/loginAction";
   import { registerAction } from "../auth/signup/services/registerAction";
@@ -35,6 +35,7 @@ import {
         <Route element={<UserProfile />} path="profile" />
         <Route element={<ChangePassword />} path="changepassword" />
         <Route element={<Courseonoffer />} path="coursesonoffer" />
+        <Route element={<Blogpage />} path="blogpage" />
       </>
     )
   );

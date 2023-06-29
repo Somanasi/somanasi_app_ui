@@ -13,6 +13,7 @@ import Dashboard from '../modules/dashboard/view/Dashboard'
 import UserProfile from '../modules/dashboard/view/UserProfile'
 import ChangePassword from '../modules/dashboard/view/ChangePassword'
 import Courseonoffer from '../modules/dashboard/view/Courseonoffer'
+import Blogpage from '../modules/dashboard/view/Blogpage'
 
 export {
     Error,
@@ -30,4 +31,5 @@ export {
     UserProfile,
     ChangePassword,
     Courseonoffer,
+    Blogpage,
 }
