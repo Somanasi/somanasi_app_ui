@@ -8,6 +8,7 @@ import AboutUs from '../modules/contacts_and_about_us/view/AboutUs'
 import ContactUs from '../modules/contacts_and_about_us/view/ContactUs'
 import SingleBlog from '../modules/blog/views/SingleBlog'
 import SingleCourse from '../modules/courses/view/SingleCourse'
+import Lesson from '../modules/courses/view/Lesson'
 import Terms from '../modules/terms_and_policies/views/Terms'
 import Dashboard from '../modules/dashboard/view/Dashboard'
 
@@ -23,6 +24,7 @@ export {
     ContactUs,
     SingleBlog,
     SingleCourse,
+    Lesson,
     Terms,
     Dashboard,
 };

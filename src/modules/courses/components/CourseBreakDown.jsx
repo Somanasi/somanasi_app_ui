@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
+import { Link, useParams } from "react-router-dom";
 import { GoChevronRight, GoChevronUp } from 'react-icons/go';
 import  WeeklyLessons  from './WeeklyLessons';
 
 const CourseBreakDown = ({ breakdown }) => {
   const [seeLessons, setSeeLessons] = useState(false);
-  
+  const params = useParams();
   const handleLessonView = (event) => {
     event.preventDefault();
     setSeeLessons(!seeLessons);
@@ -29,7 +30,7 @@ const CourseBreakDown = ({ breakdown }) => {
         seeLessons ?
         <div className='course_breakdown_card_lessons py-2 '>
         {breakdown.lessons.map((lesson, index) => {
-          return <WeeklyLessons lesson={lesson} key={index} />;
+          return <Link to={"/courses/"+params.id+"/"+lesson.id+"/"+breakdown.tag}><WeeklyLessons lesson={lesson} key={index} /></Link>;
         })}
       </div>
       : ""
