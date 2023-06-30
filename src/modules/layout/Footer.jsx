@@ -4,6 +4,7 @@ import isSpecifiedPath from "../shared/utils/RouterUtil";
 const Footer = () => {
 
   if(isSpecifiedPath('/dashboard')) return null;
+  if(isSpecifiedPath('/admin')) return null;
  
   return (
     <footer className="bg-tertiary flex flex-col px-4 pt-12">

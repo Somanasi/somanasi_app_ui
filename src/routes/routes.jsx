@@ -34,7 +34,17 @@ import {
 
         <Route element={<Terms />} path="terms" />
         <Route element={<Dashboard />} path="dashboard" />
-        <Route element={<AdminDashoboard />} path="admin" />
+
+
+        <Route 
+          element={<AdminDashoboard />} 
+          path="admin"
+        >
+          {/* <Route element={< ManageCon />} path="content" /> */}
+
+        </Route>
+
+
       </Route>
     )
   );
