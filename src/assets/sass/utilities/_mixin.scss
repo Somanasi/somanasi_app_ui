@@ -44,3 +44,8 @@
         }
     }
 }
+
+@mixin errorSpan {
+    color: red;
+    font-size: f.rem(12);
+}

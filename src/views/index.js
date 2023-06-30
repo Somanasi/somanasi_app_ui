@@ -2,16 +2,16 @@ import Error from '../modules/error/views/Error'
 import Home from '../modules/home/view/Home'
 import Courses from '../modules/courses/view/Courses'
 import Blog from '../modules/blog/views/Blog'
-import Login from '../modules/auth/login/view/Login'
-import Register from '../modules/auth/signup/view/Register'
+import Login from '../auth/login/view/Login'
+import Register from '../auth/signup/view/Register'
 import AboutUs from '../modules/contacts_and_about_us/view/AboutUs'
 import ContactUs from '../modules/contacts_and_about_us/view/ContactUs'
 import SingleBlog from '../modules/blog/views/SingleBlog'
 import SingleCourse from '../modules/courses/view/SingleCourse'
 import Lesson from '../modules/courses/view/Lesson'
 import Terms from '../modules/terms_and_policies/views/Terms'
-import Dashboard from '../modules/dashboard/view/Dashboard'
-
+import Dashboard from '../modules/dashboard/users/views/Dashboard'
+import AdminDashoboard from '../modules/dashboard/admin/views/AdminDashoboard'
 
 export {
     Error,
@@ -27,4 +27,5 @@ export {
     Lesson,
     Terms,
     Dashboard,
+    AdminDashoboard
 };

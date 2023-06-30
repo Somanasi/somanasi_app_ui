@@ -1,4 +1,8 @@
 @use './variables' as v;
+@use '../utilities/' as u;
 h1{
     font-size: v.$font-large;
+}
+span.error {
+    @include u.errorSpan;
 }

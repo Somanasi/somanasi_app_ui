@@ -1,5 +1,5 @@
-import {Event, constants } from '../../../shared/services';
-import call from '../../../../services/htpp';
+import { Event, constants  } from "../../../modules/shared/services";
+import call from "../../../services/htpp";
 import { redirect } from 'react-router-dom';
 
 const registerAction = async({request}) => {
@@ -12,12 +12,14 @@ const registerAction = async({request}) => {
          * @todo unset loading state
          */
         Event('onSuccess', response.message);
-        redirect('/login');
+        return redirect('/login');
     }).catch((error) => {
         /**
          * @todo unset loading state
          */
+        console.log(error);
         Event('onError', error.response.errorMessage);
+        return redirect('/register');
     });
 
 }

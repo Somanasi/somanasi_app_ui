@@ -1,6 +1,6 @@
 import React from 'react'
 import { Form, NavLink, useActionData } from 'react-router-dom'
-import {InputWithLabel, Button} from '../../../shared'
+import {InputWithLabel, Button} from '../../../modules/shared'
 
 const Register = () => {
   const errors = useActionData();
@@ -61,7 +61,7 @@ const Register = () => {
               </div>
             </div>
             <div className="form-group terms_and_policy mb-6">
-              <input type="checkbox" required/>
+              <input type="checkbox" required name='tcnp'/>
               <label htmlFor=""><span className='mr-1'> Click here to agree to our </span> <NavLink to={'terms'}> terms and conditions</NavLink> <span>and our </span> <NavLink>data protection policy</NavLink></label>
             </div>
               <div className='form-group'>
