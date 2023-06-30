@@ -19,7 +19,7 @@ const Blogs = () => {
         </div>
         <hr/>
 
-        {/* Display section */}
+        {/* Display section */}   
         <main className='sm:w-[100%] mt-10'>
             <form className='flex-1 flex flex-col'>
                 <div className='flex flex-row justify-between items-center gap-x-8 sm:flex-col-1 md:flex-col-2'>

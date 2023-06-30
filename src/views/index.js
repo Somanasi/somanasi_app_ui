@@ -14,6 +14,7 @@ import UserProfile from '../modules/dashboard/view/UserProfile'
 import ChangePassword from '../modules/dashboard/view/ChangePassword'
 import Courseonoffer from '../modules/dashboard/view/Courseonoffer'
 import Blogpage from '../modules/dashboard/view/Blogpage'
+import Generatereport from '../modules/dashboard/view/Genratereport'
 
 export {
     Error,
@@ -32,4 +33,5 @@ export {
     ChangePassword,
     Courseonoffer,
     Blogpage,
+    Generatereport,
 }
