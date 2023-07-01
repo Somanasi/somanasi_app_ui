@@ -18,6 +18,14 @@ const AuthService = {
             token = localStorage.getItem('elimuendelezi_token');
         }
         return token;
+    },
+    setUser(user) {
+        localStorage.removeItem('elimuendelezi_user');
+        localStorage.setItem('elimuendelezi_token', JSON.stringify(user));
+    },
+    setToken(token) {
+        localStorage.removeItem('elimuendelezi_token');
+        localStorage.setItem('elimuendelezi_token', JSON.stringify(token));
     }
 }
 

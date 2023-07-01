@@ -12,12 +12,14 @@ const registerAction = async({request}) => {
          * @todo unset loading state
          */
         Event('onSuccess', response.message);
-        redirect('/login');
+        return redirect('/login');
     }).catch((error) => {
         /**
          * @todo unset loading state
          */
+        console.log(error);
         Event('onError', error.response.errorMessage);
+        return redirect('/register');
     });
 
 }

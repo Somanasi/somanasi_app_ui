@@ -21,7 +21,8 @@ const Navbar = () => {
   const visible = useAppState();
 
   if(isSpecifiedPath('/dashboard')) return null;
-
+  if(isSpecifiedPath('/admin')) return null;
+  
   return (
     <header className="bg-warning h-1/4">
       <div>
