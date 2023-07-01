@@ -46,9 +46,9 @@ export const NavigationsLinks = [
         headingIcon: <FaPalette />,
         data: [
           { icon: <FaWindows/>, text: "Home Page", path: "/dashboard" },
-          { icon: <FaCalendarAlt />, text: "Calenda", path: "/calenda" },
-          { icon: <FaBlog />, text: "Create blog", path: "/blogpage" },
-          { icon: <FaCloudUploadAlt />, text: "Backups", path: "/backup" },
+          { icon: <FaCalendarAlt />, text: "Calenda", path: "/dashboard/calenda" },
+          { icon: <FaBlog />, text: "Create blog", path: "/dashboard/blogpage" },
+          { icon: <FaCloudUploadAlt />, text: "Backups", path: "/dashboard/backup" },
         ]
     },
     {
@@ -56,10 +56,10 @@ export const NavigationsLinks = [
         heading: "User Settings",
         headingIcon: <FaUserCog />,
         data: [
-          { icon: <FaListAlt />, text: "View Profile", path: "/profile" },
-          { icon: <FaLock />, text: "Change Password", path: "/changepassword" },
-          { icon: <FaHistory />, text: "Manage History", path: "/history" },
-          { icon: <FaSyncAlt />, text: "Synch Data", path: "/syncdata" },
+          { icon: <FaListAlt />, text: "View Profile", path: "/dashboard/profile" },
+          { icon: <FaLock />, text: "Change Password", path: "/dashboard/changepassword" },
+          { icon: <FaHistory />, text: "Manage History", path: "/dashboard/history" },
+          { icon: <FaSyncAlt />, text: "Synch Data", path: "/dashboard/syncdata" },
         ]
     },
     {
@@ -67,11 +67,11 @@ export const NavigationsLinks = [
         heading: "Courses",
         headingIcon: <FaTasks />,
         data: [
-          { icon: <FaGraduationCap />, text: "Available courses", path: "/coursesonoffer" },
-          { icon: <FaClipboardCheck />, text: "Complete", path: "/completecourses" },
-          { icon: <FaChartLine />, text: "In progress", path: "/coursesinprogress" },
-          { icon: <FaStar />, text: "Favorite", path: "/favoritecourses" },
-          { icon: <FaDownload />, text: "Genarate report", path: "/downloadcoursesummary" },
+          { icon: <FaGraduationCap />, text: "Available courses", path: "/dashboard/coursesonoffer" },
+          { icon: <FaClipboardCheck />, text: "Complete", path: "/dashboard/completecourses" },
+          { icon: <FaChartLine />, text: "In progress", path: "/dashboard/coursesinprogress" },
+          { icon: <FaStar />, text: "Favorite", path: "/dashboard/favoritecourses" },
+          { icon: <FaDownload />, text: "Genarate report", path: "/dashboard/downloadcoursesummary" },
         ],
     },
     {
@@ -79,10 +79,10 @@ export const NavigationsLinks = [
         heading: "Activities",
         headingIcon: <FaRoute />,
         data: [
-          { icon: <FaHive />, text: "Packages", path: "/packages" },
-          { icon: <FaUsers />, text: "Community", path: "/comunity" },
-          { icon: <FaRegFileVideo />, text: "Conferences", path: "/conferences" },
-          { icon: <FaRegChartBar />, text: "Analytics", path: "/analytics" },
+          { icon: <FaHive />, text: "Packages", path: "/dashboard/packages" },
+          { icon: <FaUsers />, text: "Community", path: "/dashboard/comunity" },
+          { icon: <FaRegFileVideo />, text: "Conferences", path: "/dashboard/conferences" },
+          { icon: <FaRegChartBar />, text: "Analytics", path: "/dashboard/analytics" },
         ],
     },
 ]
