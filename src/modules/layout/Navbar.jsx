@@ -73,6 +73,12 @@ const Navbar = () => {
             </span>
             <NavLink to={"/login"}>Accounts</NavLink>
           </ListItems>
+          <ListItems>
+            <span>
+              <GoPerson size={20} />
+            </span>
+            <NavLink to={"/dashboard"}>Dashboard</NavLink>
+          </ListItems>
           {
             visible.isLoggedIn ?
               <Logout onClick={() => toggle({
