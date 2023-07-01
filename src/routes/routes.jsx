@@ -41,11 +41,12 @@ import {
             <Route element={<Generatereport />} path="downloadcoursesummary" />
           </Route>
 
-          <Route 
-            element={<AdminDashoboard />} 
-            path="admin"
-          >
+        <Route 
+          element={<AdminDashoboard />} 
+          path="admin"
+        >
           {/* <Route element={< ManageCon />} path="content" /> */}
+
         </Route>
       </Route>
       </>

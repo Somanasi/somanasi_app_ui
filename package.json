@@ -9,9 +9,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
+<<<<<<< HEAD
+    "axios": "^1.4.0",
+    "chart.js": "^4.3.0",
+=======
     "@react-pdf/renderer": "^3.1.12",
     "chart.js": "^4.3.0",
     "axios": "^1.4.0",
+>>>>>>> d868b1ba7d5862cd4420b7f94ce9ea862d4e9022
     "lodash": "^4.17.21",
     "react": "^18.2.0",
     "react-chartjs-2": "^5.2.0",
