@@ -49,3 +49,13 @@
     color: red;
     font-size: f.rem(12);
 }
+
+@mixin grid($layout, $direction: null) {
+    display: grid;
+    
+    @if $direction == 'row' {
+      grid-template-rows: $layout;
+    } @else {
+      grid-template-columns: $layout;
+    }
+  }

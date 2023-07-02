@@ -1,19 +1,17 @@
-import React from 'react'
-import { AdminDashboardStateProvider } from '../adminStore'
-import {Outlet} from 'react-router-dom'
-import SideBar from '../components/SideBar'
-import MainAdminDashboardApp from '../components/MainAdminDashboardApp'
-import AdminDashboardFooter from '../components/AdminDashboardFooter'
+import React from "react";
+import { AdminDashboardStateProvider } from "../adminStore";
+import { Outlet } from "react-router-dom";
+import SideBar from "../components/SideBar";
 
 const AdminDashoboard = () => {
   return (
     <AdminDashboardStateProvider>
+      <div className='admin'>
         <SideBar />
-        <MainAdminDashboardApp />
         <Outlet />
-        <AdminDashboardFooter />
+      </div>
     </AdminDashboardStateProvider>
-  )
-}
+  );
+};
 
-export default AdminDashoboard
+export default AdminDashoboard;

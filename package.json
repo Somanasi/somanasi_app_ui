@@ -6,17 +6,26 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "lint": "eslint . --ext .js,.jsx",
+    "prettify": "prettier --write ."
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx}": [
+      "npm run lint",
+      "npm run prettify",
+      "git add"
+    ]
+  },  
   "dependencies": {
-<<<<<<< HEAD
-    "axios": "^1.4.0",
-    "chart.js": "^4.3.0",
-=======
     "@react-pdf/renderer": "^3.1.12",
-    "chart.js": "^4.3.0",
     "axios": "^1.4.0",
->>>>>>> d868b1ba7d5862cd4420b7f94ce9ea862d4e9022
+    "chart.js": "^4.3.0",
     "lodash": "^4.17.21",
     "react": "^18.2.0",
     "react-chartjs-2": "^5.2.0",
@@ -35,7 +44,13 @@
     "@types/react-dom": "^18.0.11",
     "@vitejs/plugin-react": "^3.1.0",
     "autoprefixer": "^10.4.14",
+    "eslint": "^8.44.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.3",
     "postcss": "^8.4.23",
+    "prettier": "^2.8.8",
     "tailwindcss": "^3.3.2",
     "vite": "^4.3.9"
   }
