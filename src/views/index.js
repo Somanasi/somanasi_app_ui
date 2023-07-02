@@ -11,8 +11,18 @@ import SingleCourse from '../modules/courses/view/SingleCourse'
 import Lesson from '../modules/courses/view/Lesson'
 import Quizes from '../modules/courses/view/Quizes'
 import Terms from '../modules/terms_and_policies/views/Terms'
+import UserProfile from '../modules/dashboard/users/views/UserProfile'
+import ChangePassword from '../modules/dashboard/users/views/ChangePassword'
+import Courseonoffer from '../modules/dashboard/users/views/Courseonoffer'
+import Blogpage from '../modules/dashboard/users/views/Blogpage'
+import Generatereport from '../modules/dashboard/users/views/Genratereport'
 import Dashboard from '../modules/dashboard/users/views/Dashboard'
+import DashboardHome from "../modules/dashboard/users/views/DashboardHome"
 import AdminDashoboard from '../modules/dashboard/admin/views/AdminDashoboard'
+import MainAdminDashboardApp from '../modules/dashboard/admin/views/MainAdminDashboardApp'
+import CreateContent from '../modules/dashboard/admin/modules/content/views/CreateContent'
+import ManageContent from '../modules/dashboard/admin/modules/content/views/ManageContent'
+import ContentStat from  '../modules/dashboard/admin/modules/content/views/ContentStat'
 
 export {
     Error,
@@ -29,5 +39,16 @@ export {
     Quizes,
     Terms,
     Dashboard,
-    AdminDashoboard
-};
+    UserProfile,
+    ChangePassword,
+    Courseonoffer,
+    Blogpage,
+    Generatereport,
+    AdminDashoboard,
+    DashboardHome,
+    MainAdminDashboardApp,
+    CreateContent,
+    ManageContent,
+    ContentStat,
+}
+   

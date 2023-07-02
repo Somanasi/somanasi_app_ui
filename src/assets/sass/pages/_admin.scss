@@ -1,0 +1,42 @@
+@use '../utilities/' as u;
+
+div.admin{
+    @include u.grid(2fr 10fr, 'column');
+    aside, main{
+        height: 100vh;
+    }
+    aside {
+        padding: u.rem(32) 0 u.rem(32) 0;
+        > div, 
+        >li {
+            @include u.custom_flex_display(row, center, none);
+            margin: 0 0 u.rem(32) 0;
+            > span.caption, 
+            >span, 
+            >button {
+                display: block;
+            }
+        }
+        div{
+            >span.caption{
+                margin: 0 u.rem(32) 0 0;
+           }
+        }
+        li {
+            >span.caption{
+                margin: 0 0 0 u.rem(32);
+           }
+        }
+    }
+    aside.expand{
+        width: 80vw;
+    }
+    aside.minimize{
+        width: 12vw;
+        div, li {
+            span.caption{
+                display: none;
+        }
+    }
+    }
+}

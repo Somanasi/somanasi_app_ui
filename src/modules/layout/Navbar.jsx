@@ -10,7 +10,7 @@ import {
   BsPhoneFlip
 } from "react-icons/bs";
 import Button from "../shared/components/Button";
-import ListItems from "./ListItems";
+import {ListItems} from "../shared";
 import { useAppState, useDispatchAppState } from "../../store/ApplicationContext";
 import Logout from "../../auth/logout/components/Logout";
 import isSpecifiedPath from "../shared/utils/RouterUtil";
@@ -72,6 +72,12 @@ const Navbar = () => {
               <GoPerson size={20} />
             </span>
             <NavLink to={"/login"}>Accounts</NavLink>
+          </ListItems>
+          <ListItems>
+            <span>
+              <GoPerson size={20} />
+            </span>
+            <NavLink to={"/dashboard"}>Dashboard</NavLink>
           </ListItems>
           {
             visible.isLoggedIn ?

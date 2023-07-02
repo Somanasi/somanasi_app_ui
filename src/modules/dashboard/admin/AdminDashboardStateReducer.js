@@ -11,7 +11,12 @@ export const AdminDashboardStateReducer = (state, action) => {
               };
             }
             return state;
-            
+        case 'TOGGLEADMINDASHBOARDSIDEBAR':
+          state = {
+            ...state,
+            toggleDashboardSidebar: !state.toggleDashboardSidebar,
+          };   
+          return state;
         default: return state;
     }
 };
