@@ -32,6 +32,7 @@ const CourseBreakDown = ({ breakdown }) => {
         {breakdown.lessons.map((lesson, index) => {
           return <Link to={"/courses/"+params.id+"/"+lesson.id+"/"+breakdown.tag}><WeeklyLessons lesson={lesson} key={index} /></Link>;
         })}
+        <Link to={"/courses/"+params.id+"/quizes/"+breakdown.tag}>{breakdown.tag} Course Quizes</Link>
       </div>
       : ""
       }

@@ -20,6 +20,7 @@ const dummyData = [
         course_breakdown: [
             {
                 tag: "Week 1",
+                quiz: "Week 1 Quiz",
                 lessons: [
                     { id: 0, type: "video", lesson_title:"lorem ipsum", lesson: "1", completionTime: "5 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
                     { id: 1, type: "document", lesson_title:"lorem ipsum", lesson: "2", completionTime: "2 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
@@ -30,6 +31,7 @@ const dummyData = [
             },
             {
                 tag: "Week 2",
+                quiz: "Week 1 Quiz",
                 lessons: [
                     { id: 0, type: "video", lesson_title:"lorem ipsum", lesson: "1", completionTime: "5 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
                     { id: 1, type: "document", lesson_title:"lorem ipsum", lesson: "2", completionTime: "2 hours", downloadPdfLink: "/123456789", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eum, ad accusantium iure molestias iste atque qui quia enim facere in cupiditate, maiores " },
