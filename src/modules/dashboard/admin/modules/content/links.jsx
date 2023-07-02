@@ -1,9 +1,11 @@
+import { AiFillFileText } from 'react-icons/ai';
+
 export default {
     to: "admin/management/content",
     order: 1,
     disabled: false,
-    title: "Admin Dashboard",
-    icon: "FaUserShield",
+    title: "Content Management",
+    icon: <AiFillFileText size={20} />,
     sublinks:[
         {
             to: "content",

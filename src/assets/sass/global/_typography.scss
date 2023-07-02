@@ -6,3 +6,6 @@ h1{
 span.error {
     @include u.errorSpan;
 }
+li {
+    list-style:none;
+}

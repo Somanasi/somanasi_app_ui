@@ -1,5 +1,8 @@
 import { createContext, useContext, useReducer } from "react";
 import { AdminDashboardStateReducer } from "./AdminDashboardStateReducer";
+import { FaUserShield } from 'react-icons/fa';
+
+
 
 const AdminDashboardContext = createContext(null);
 const AdminContextDispatcher = createContext(null);
@@ -13,9 +16,10 @@ export const AdminDashboardStateProvider = ({ children }) => {
                 order: 2,
                 disabled: false,
                 title: "Admin Dashboard",
-                icon: "FaUserShield",
+                icon: <FaUserShield size={20}/>,
             }
-        ]
+        ],
+        toggleDashboardSidebar: false,
     });
     return (
         <AdminDashboardContext.Provider value={state}>

@@ -17,6 +17,10 @@ import Generatereport from '../modules/dashboard/users/views/Genratereport'
 import Dashboard from '../modules/dashboard/users/views/Dashboard'
 import DashboardHome from "../modules/dashboard/users/views/DashboardHome"
 import AdminDashoboard from '../modules/dashboard/admin/views/AdminDashoboard'
+import MainAdminDashboardApp from '../modules/dashboard/admin/views/MainAdminDashboardApp'
+import CreateContent from '../modules/dashboard/admin/modules/content/views/CreateContent'
+import ManageContent from '../modules/dashboard/admin/modules/content/views/ManageContent'
+import ContentStat from  '../modules/dashboard/admin/modules/content/views/ContentStat'
 
 export {
     Error,
@@ -38,5 +42,9 @@ export {
     Generatereport,
     AdminDashoboard,
     DashboardHome,
+    MainAdminDashboardApp,
+    CreateContent,
+    ManageContent,
+    ContentStat,
 }
    
