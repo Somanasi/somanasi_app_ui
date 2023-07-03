@@ -4,7 +4,7 @@ import React from 'react'
 const LinkPackages = ({link}) => {
   return (
     <>  
-        {link.icon}
+        <span className="icon">{link.icon}</span>
         <span className="caption">{link.title}</span>
     </>
   )

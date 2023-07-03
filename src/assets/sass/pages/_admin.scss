@@ -6,26 +6,34 @@ div.admin{
         height: 100vh;
     }
     aside {
-        padding: u.rem(32) 0 u.rem(32) 0;
+        padding: u.rem(32) u.rem(32) u.rem(16) u.rem(16);
+        background-color: #152238;
+        @include u.custom_flex_display(column, none, none);
         > div, 
         >li {
-            @include u.custom_flex_display(row, center, none);
+            @include u.custom_flex_display(row, none, none);
             margin: 0 0 u.rem(32) 0;
+            // background-color: #ffffff;
+            > span.icon,
             > span.caption, 
             >span, 
             >button {
                 display: block;
+                color: #ffffff;
             }
         }
         div{
             >span.caption{
-                margin: 0 u.rem(32) 0 0;
+                margin: 0 u.rem(160) 0 0;
            }
         }
         li {
             >span.caption{
-                margin: 0 0 0 u.rem(32);
+                margin: 0 0 0 u.rem(24);
            }
+        }
+        >div.avatar-container{
+            width: 100%;
         }
     }
     aside.expand{
@@ -33,10 +41,24 @@ div.admin{
     }
     aside.minimize{
         width: 12vw;
-        div, li {
+        position: relative;
+        div.information {
+            margin-bottom: u.rem(96);
+        }
+        div.information, li {
+            @include u.custom_flex_display(row, center, none);
+            padding-left: u.rem(4);
             span.caption{
                 display: none;
         }
     }
+    >div.avatar-container{
+        position: absolute;
+        top: 10%;
+        left: 0;
+        padding: u.rem(12);
+        border-radius: 50%;
     }
+    }
+
 }
