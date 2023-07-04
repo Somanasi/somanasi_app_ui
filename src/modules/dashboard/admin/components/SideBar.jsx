@@ -5,7 +5,7 @@ import userLinks from '../modules/users/userLinks';
 import { adminState, adminStateDispatcher } from '../adminStore'
 import { Button, ListItems } from '../../../shared';
 import LinkPackages from './LinkPackages';
-import { useAppState, useDispatchAppState } from '../../../../store/ApplicationContext';
+// import { useAppState, useDispatchAppState } from '../../../../store/ApplicationContext';
 import { getRandomColor, getUserInitials, } from '../../../shared/utils';
 
 const SideBar = () => {
@@ -17,10 +17,6 @@ const SideBar = () => {
   // ADMIN DASHBOARD GLOBAL STATE
   const adminStateDispatcherGlobal = adminStateDispatcher();
   const adminStateGlobal = adminState();
-
-  const allLinks = 
-
-  
 
   useEffect(() => {
 

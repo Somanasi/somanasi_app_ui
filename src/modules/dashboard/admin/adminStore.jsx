@@ -20,6 +20,7 @@ export const AdminDashboardStateProvider = ({ children }) => {
             }
         ],
         toggleDashboardSidebar: false,
+        showSublinks: false,
     });
     return (
         <AdminDashboardContext.Provider value={state}>

@@ -17,6 +17,11 @@ export const AdminDashboardStateReducer = (state, action) => {
             toggleDashboardSidebar: !state.toggleDashboardSidebar,
           };   
           return state;
+        case 'SHOWSUBLINKS':
+          state = {
+            ...state,
+            showSublinks: !state.showSublinks,
+          }
         default: return state;
     }
 };
