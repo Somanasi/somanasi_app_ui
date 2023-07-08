@@ -21,6 +21,7 @@ import MainAdminDashboardApp from '../modules/dashboard/admin/views/MainAdminDas
 import CreateContent from '../modules/dashboard/admin/modules/content/views/CreateContent'
 import ManageContent from '../modules/dashboard/admin/modules/content/views/ManageContent'
 import ContentStat from  '../modules/dashboard/admin/modules/content/views/ContentStat'
+import ManageUsers from '../modules/dashboard/admin/modules/users/views/ManageUsers'
 
 export {
     Error,
@@ -46,5 +47,6 @@ export {
     CreateContent,
     ManageContent,
     ContentStat,
+    ManageUsers,
 }
    

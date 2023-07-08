@@ -1,5 +1,5 @@
 import React from "react";
-import { PageTitle, DurationFormat, } from "./utils";
+import { PageTitle, DurationFormat, getUserInitials, getRandomColor, } from "./utils";
 import SearchInput from "./components/SearchInput";
 import Button from "./components/Button";
 import InputWithLabel from "./components/InputWithLabel";

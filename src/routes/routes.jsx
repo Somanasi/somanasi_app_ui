@@ -24,11 +24,18 @@ import {
     Courseonoffer, 
     Blogpage,
     Generatereport, 
+
+    // Admin routes
     AdminDashoboard,
     MainAdminDashboardApp,
+
+    // Admin routes: Content Management
     CreateContent,
     ManageContent,
     ContentStat,
+
+    // Admin routes: User Management
+    ManageUsers,
    } from "../views";
   import { loginAction } from "../auth/login/services/loginAction";
   import { registerAction } from "../auth/signup/services/registerAction";
@@ -70,9 +77,14 @@ import {
           path="admin"
         >
           <Route element={<MainAdminDashboardApp />} index />
+
+          {/* CONTENT ROUTES */}
           <Route element={<CreateContent />} path="content/create" />
           <Route element={<ManageContent />} path="content/manage" />
           <Route element={<ContentStat />} path="content/stats" />
+          
+          {/* USER ROUTES */}
+          <Route element={<ManageUsers />} path="users/manage" />
         </Route>
       </Route>
       </>

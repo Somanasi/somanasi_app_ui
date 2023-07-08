@@ -12,14 +12,15 @@ export const AdminDashboardStateProvider = ({ children }) => {
     {
         links: [
             {
-                to: "admin/management",
+                to: "/admin",
                 order: 2,
                 disabled: false,
+                showSublinks: false,
                 title: "Admin Dashboard",
                 icon: <FaUserShield size={20}/>,
             }
         ],
-        toggleDashboardSidebar: false,
+        toggleDashboardSidebar: true,
     });
     return (
         <AdminDashboardContext.Provider value={state}>
