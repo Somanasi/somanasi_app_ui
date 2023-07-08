@@ -3,13 +3,14 @@ import { AiOutlineMenu } from 'react-icons/ai';
 import links from '../modules/content/links'
 import userLinks from '../modules/users/userLinks';
 import { adminState, adminStateDispatcher } from '../adminStore'
-import { Button, ListItems } from '../../../shared';
+import { Button,} from '../../../shared';
 import LinkPackages from './LinkPackages';
 // import { useAppState, useDispatchAppState } from '../../../../store/ApplicationContext';
 import { getRandomColor, getUserInitials, } from '../../../shared/utils';
 
 const SideBar = () => {
   
+
  //APP GLOBAL STATE
   // const globalState = useAppState();
   // const globalStateDispatcher = useDispatchAppState();
@@ -32,10 +33,8 @@ const SideBar = () => {
   const toggleAdminDashboard = () => {
     adminStateDispatcherGlobal({type: "TOGGLEADMINDASHBOARDSIDEBAR"});
   };
-  
 
 const portalLinks = adminStateGlobal.links.filter((link) => link.disabled === false);
-// console.log(portalLinks)
 
  const imgURL = '';
 
@@ -45,7 +44,7 @@ const portalLinks = adminStateGlobal.links.filter((link) => link.disabled === fa
 
 
   return (
-    <aside 
+    <aside
     className={
       adminStateGlobal.toggleDashboardSidebar ? 
       " expand" : " minimize"
@@ -66,11 +65,9 @@ const portalLinks = adminStateGlobal.links.filter((link) => link.disabled === fa
       </div>
 
      {
-      portalLinks.map((link) =>{
+      portalLinks.map((link, index) =>{
         return (
-          <ListItems link={link} key={link.to}>
-            <LinkPackages link={link} />
-          </ListItems>
+          <LinkPackages link={link} key={link.to} />
         )
       })
      }
