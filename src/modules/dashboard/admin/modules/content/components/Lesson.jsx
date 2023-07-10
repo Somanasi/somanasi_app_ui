@@ -13,3 +13,4 @@ const Lesson = () => {
 }
 
 export default Lesson
+export default Lesson
