@@ -2,7 +2,8 @@ import { AiFillFileText } from 'react-icons/ai';
 import { BsFileEarmarkText} from 'react-icons/bs';
 import { RiFileAddLine, RiBarChart2Line  } from 'react-icons/ri';
 
-export default {
+export default [
+    {
     to: "management/content",
     order: 1,
     disabled: false,
@@ -33,4 +34,5 @@ export default {
         },
        
     ]
-};
+    },
+];
